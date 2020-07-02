@@ -1,0 +1,79 @@
+// Mixins
+$mobile-small-width: 320px;
+$mobile-big-width: 480px;
+$tablet-width: 768px;
+$laptop-small-width: 1024px;
+$laptop-width: 1440px;
+$desktop-width: 1680px;
+$desktop-big-width: 1920px;
+
+@mixin box-shadow($shadows...) {
+    -webkit-box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin rango-default {
+    speak: none;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Webkul Rango" !important;
+}
+
+@mixin remove-padding-margin {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+@mixin phone-sm {
+    @media (min-width: #{$mobile-small-width}) and (max-width: #{$mobile-big-width - 1px}) {
+        @content;
+    }
+}
+@mixin phone-md {
+    @media (min-width: #{$mobile-big-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-small-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin laptop-sm {
+    @media (min-width: #{$laptop-small-width}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$laptop-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-big {
+    @media (min-width: #{$desktop-big-width}) {
+        @content;
+    }
+}

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Bagisto'),
+    'name' => env('APP_NAME', 'Reina Batata'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost:8000'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => env('APP_TIMEZONE','Asia/Kolkata'),
+    'timezone' => env('APP_TIMEZONE','America/Argentina/Buenos_Aires'),
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'es'),
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return [
     | (use capital letters!)
     */
 
-    'default_country' => null,
+    'default_country' => 'AR',
 
     /*
     |--------------------------------------------------------------------------
@@ -116,8 +116,8 @@ return [
     | Here you may specify the base currency code for your application.
     |
     */
-    
-    'currency' => env('APP_CURRENCY', 'USD'),
+
+    'currency' => env('APP_CURRENCY', 'ARS'),
 
     /*
     |--------------------------------------------------------------------------
@@ -269,6 +269,7 @@ return [
         Webkul\Velocity\Providers\VelocityServiceProvider::class,
         Webkul\BookingProduct\Providers\BookingProductServiceProvider::class,
         Webkul\SocialLogin\Providers\SocialLoginServiceProvider::class,
+        Laravel\Mercadopago\Providers\MPServiceProvider::class,
     ],
 
     /*

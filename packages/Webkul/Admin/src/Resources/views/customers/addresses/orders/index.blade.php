@@ -20,7 +20,7 @@
         <div class="page-content">
 
             <div class="tabs">
-                <ul>
+                <ul class="mb-0">
                     <li><a href="{{ route('admin.address.addresses.index', ['id' => $customer->id]) }}">{{ __('address::app.admin.addresses.address-list') }}</a></li>
 
                     <li class="active"><a href="{{ route('admin.address.orders.index', ['id' => $customer->id]) }}">{{ __('address::app.admin.addresses.order-list') }}</a></li>

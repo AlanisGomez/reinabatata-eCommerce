@@ -23,5 +23,12 @@ return [
             'name' => 'Velocity',
             'parent' => 'default'
         ],
+
+        'reinabatata' => [
+            'views_path' => 'resources/themes/reinabatata/views',
+            'assets_path' => 'public/themes/reinabatata/assets',
+            'name' => 'Reina Batata',
+            'parent' => 'velocity'
+        ],
     ]
 ];
