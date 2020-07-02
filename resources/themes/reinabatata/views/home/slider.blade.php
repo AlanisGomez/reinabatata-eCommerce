@@ -9,7 +9,12 @@
 @push('scripts')
     <script type="text/x-template" id="slider-template">
         <div class="slides-container ltr">
+            <img
+            loading="lazy"
+            class="col-12 no-padding banner-icon d-block d-md-none"
+            src="{{ asset('/themes/reinabatata/assets/images/Ilustration.svg') }}" />
             <carousel-component
+                class="d-none d-md-block"
                 loop="true"
                 timeout="5000"
                 autoplay="true"
@@ -40,7 +45,7 @@
                     <slide slot="slide-0">
                         <img
                             loading="lazy"
-                            class="col-12 no-padding banner-icon"
+                            class="col-12 no-padding banner-icon d-none d-md-block"
                             src="{{ asset('/themes/velocity/assets/images/banner.png') }}" />
                     </slide>
                 @endif
