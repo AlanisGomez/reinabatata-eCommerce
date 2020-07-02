@@ -3,8 +3,8 @@
 return [
     'mercadopago' => [
         'code' => 'mercadopago',
-        'title' => 'Tarjeta de Crédito / Débito',
-        'description' => '',
+        'title' => 'Mercado Pago',
+        'description' => 'Pagar con Mercado Pago',
         'class' => 'Laravel\Mercadopago\Payment\MercadoPago',
         'active' => true
     ]

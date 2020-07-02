@@ -24,7 +24,7 @@
         <button type="button" class="decrease" @click="decreaseQty()">-</button>
 
         <input
-            :value="qty"
+            :value='qty'
             class="control"
             :name="controlName"
             :v-validate="validations"
@@ -213,6 +213,12 @@
                     this.qty = val;
 
                     this.$emit('onQtyUpdated', this.qty)
+                },
+                qty: function (val) {
+                    this.$emit('onQtyUpdated', this.qty)
+                    setTimeout(() => {
+                        this.$emit('submit')
+                    }, 100);
                 }
             },
 

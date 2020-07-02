@@ -15,14 +15,15 @@
         <link rel="stylesheet" href="{{ asset('themes/velocity/assets/css/google-font.css') }}" />
 
         @if (core()->getCurrentLocale()->direction == 'rtl')
-            <link href="{{ asset('themes/velocity/assets/css/bootstrap-flipped.css') }}" rel="stylesheet">
+            <link href="{{ asset('themes/reinabatata/assets/css/bootstrap-flipped.css') }}" rel="stylesheet">
         @endif
 
         @if ($favicon = core()->getCurrentChannel()->favicon_url)
             <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
         @else
-            <link rel="icon" sizes="16x16" href="{{ asset('/themes/velocity/assets/images/static/v-icon.png') }}" />
+            <link rel="icon" sizes="16x16" href="{{ asset('/themes/reinabatata/assets/images/static/favico-rb.svg') }}" />
         @endif
+
 
         <script
             type="text/javascript"

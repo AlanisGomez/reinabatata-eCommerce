@@ -40,15 +40,21 @@ class MPController extends Controller
     public function createPayment()
     {
         // dd(env("MP_CLIENT_ID"));
-        MercadoPago\SDK::setClientId(env("MP_CLIENT_ID"));
-        MercadoPago\SDK::setClientSecret(env("MP_CLIENT_SECRET"));
+        MercadoPago\SDK::setAccessToken(env('MP_TOKEN_SANDBOX'));
+        // MercadoPago\SDK::setClientId(env("MP_CLIENT_ID"));
+        // MercadoPago\SDK::setClientSecret(env("MP_CLIENT_SECRET"));
 
         # Create a preference object
         $preference = new MercadoPago\Preference();
         $paymentMP = new MercadoPagoPayment();
         $paymentData = $paymentMP->getFormFields();
-        // dd($paymentData);
+        dd($paymentData);
 
+        $preference->payment_methods = array(
+            "excluded_payment_types" => array(
+                array("id" => "ticket")
+            )
+        );
         $preference->back_urls = $paymentData['back_urls'];
         $preference->external_reference = $paymentData['external_reference'];
         $preference->notification_url = $paymentData['notification_url'];

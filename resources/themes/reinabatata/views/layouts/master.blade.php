@@ -18,12 +18,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="{{ asset('themes/reinabatata/assets/css/reinabatata.css') }}" />
-        <!-- <link rel="stylesheet" href="{{ asset('themes/velocity/assets/css/bootstrap.min.css') }}" /> -->
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="{{ asset('themes/velocity/assets/css/google-font.css') }}" /> -->
 
         @if (core()->getCurrentLocale()->direction == 'rtl')
-            <link href="{{ asset('themes/velocity/assets/css/bootstrap-flipped.css') }}" rel="stylesheet">
+            <link href="{{ asset('themes/reinabatata/assets/css/bootstrap-flipped.css') }}" rel="stylesheet">
         @endif
 
         @if ($favicon = core()->getCurrentChannel()->favicon_url)

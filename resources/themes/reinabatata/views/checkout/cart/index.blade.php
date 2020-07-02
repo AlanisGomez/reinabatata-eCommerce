@@ -46,6 +46,7 @@
 
                         <div class="cart-content col-12">
                             <form
+                                ref="form"
                                 action="{{ route('shop.checkout.cart.update') }}"
                                 method="POST"
                                 @submit.prevent="onSubmit">
@@ -113,7 +114,9 @@
                                                 <div class="product-quantity col-3">
                                                     <quantity-changer
                                                         :control-name="'qty[{{$item->id}}]'"
-                                                        quantity="{{ $item->quantity }}">
+                                                        quantity="{{ $item->quantity }}"
+                                                        @submit="submit"
+                                                    >
                                                     </quantity-changer>
                                                 </div>
 
@@ -199,7 +202,9 @@
                                                     <div class="product-quantity col-lg-4 col-6 no-padding">
                                                         <quantity-changer
                                                             :control-name="'qty[{{$item->id}}]'"
-                                                            quantity="{{ $item->quantity }}">
+                                                            quantity="{{ $item->quantity }}"
+                                                            @submit="submit"
+                                                            >
                                                         </quantity-changer>
                                                     </div>
 
@@ -222,13 +227,6 @@
                                         href="{{ route('shop.home.index') }}">
                                         {{ __('shop::app.checkout.cart.continue-shopping') }}
                                     </a> -->
-<!--
-                                    <button
-                                        type="submit"
-                                        class="theme-btn btn light mr15 pull-right unset">
-
-                                        {{ __('shop::app.checkout.cart.update-cart') }}
-                                    </button> -->
                                 {!! view_render_event('bagisto.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
                             </form>
                         </div>
@@ -279,6 +277,11 @@
                 data: function () {
                     return {
                         isMobileDevice: this.isMobile(),
+                    }
+                },
+                methods : {
+                    submit : function(){
+                    this.$refs.form.submit()
                     }
                 }
             })
