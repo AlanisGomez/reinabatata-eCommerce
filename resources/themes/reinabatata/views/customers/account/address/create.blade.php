@@ -5,7 +5,8 @@
 @endsection
 
 @section('page-detail-wrapper')
-    <div class="account-head mb-15">
+<div class="myAccount-Form-container">
+    <div class="account-head mt-3 mb-15">
         <span class="back-icon"><a href="{{ route('customer.account.index') }}"><i class="icon icon-menu-back"></i></a></span>
         <span class="account-heading">{{ __('shop::app.customer.account.address.create.title') }}</span>
         <span></span>
@@ -20,13 +21,13 @@
 
                 {!! view_render_event('bagisto.shop.customers.account.address.create_form_controls.before') !!}
 
-                <div class="mb-3" :class="[errors.has('company_name') ? 'has-error' : '']">
+                <!-- <div class="mb-3" :class="[errors.has('company_name') ? 'has-error' : '']">
                     <label for="company_name">{{ __('shop::app.customer.account.address.create.company_name') }}</label>
                     <input type="text" class="form-control" name="company_name" value="{{ old('company_name') }}" data-vv-as="&quot;{{ __('shop::app.customer.account.address.create.company_name') }}&quot;">
                     <span class="control-error" v-if="errors.has('company_name')">@{{ errors.first('company_name') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.shop.customers.account.address.create_form_controls.company_name.after') !!}
+                {!! view_render_event('bagisto.shop.customers.account.address.create_form_controls.company_name.after') !!} -->
 
                 <!-- <div class="mb-3" :class="[errors.has('first_name') ? 'has-error' : '']">
                     <label for="first_name" class="mandatory">{{ __('shop::app.customer.account.address.create.first_name') }}</label>
@@ -103,12 +104,13 @@
                 {!! view_render_event('bagisto.shop.customers.account.address.create_form_controls.after') !!}
 
                 <div class="button-group">
-                    <button class="btn btn-primary btn-block" type="submit">
+                    <button class="btn btn-primary" type="submit">
                         {{ __('shop::app.customer.account.address.create.submit') }}
                     </button>
                 </div>
             </div>
         </form>
+</div>
 
     {!! view_render_event('bagisto.shop.customers.account.address.create.after') !!}
 @endsection

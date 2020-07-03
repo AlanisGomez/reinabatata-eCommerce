@@ -74,7 +74,7 @@ return [
 
     'reviews' => [
         'title' => 'Título',
-        'add-review-page-title' => 'Añadir opinión',
+        'add-review-page-title' => 'Agregar opinión',
         'write-review' => 'Escribir una opinión',
         'review-title' => 'Título de la opinión',
         'product-review-page-title' => 'Opinión del producto',
@@ -196,7 +196,7 @@ return [
                 'index' => [
                     'page-title' => 'Cliente - Dirección',
                     'title' => 'Dirección',
-                    'add' => 'Añadir dirección',
+                    'add' => 'Agregar dirección',
                     'edit' => 'Editar',
                     'empty' => 'No tienes ninguna dirección guardada, por favor, crea una clicando en el enlace de abajo',
                     'create' => 'Crear Dirección',
@@ -211,7 +211,7 @@ return [
 
                 'create' => [
                     'page-title' => 'Cliente - Formulario de dirección',
-                    'title' => 'Añadir dirección',
+                    'title' => 'Agregar dirección',
                     'street-address' => 'Calle',
                     'country' => 'País',
                     'state' => 'Provincia',
@@ -220,7 +220,7 @@ return [
                     'postcode' => 'Código postal',
                     'phone' => 'Teléfono',
                     'submit' => 'Guardar dirección',
-                    'success' => 'La dirección se ha añadido correctamente.',
+                    'success' => 'La dirección agregó correctamente.',
                     'error' => 'La dirección no se puede añadir.'
                 ],
 
@@ -309,11 +309,11 @@ return [
                 'moveall' => 'Mover todos los productos al carrito',
                 'move-to-cart' => 'Mover al carrito',
                 'error' => 'No se puede agregar el producto a la lista de deseos por problemas desconocidos, inténtelo más tarde.',
-                'add' => 'Artículo añadido a la lista de deseos',
+                'add' => 'Artículo agregado a la lista de deseos',
                 'remove' => 'Artículo eliminado de la lista de deseos',
                 'moved' => 'Producto movido al carrito exitosamente',
                 'move-error' => 'El artículo no se puede añadir a la lista de deseos, por favor inténtalo más tarde',
-                'success' => 'Artículo añadido a la lista de deseos',
+                'success' => 'Artículo agregado a la lista de deseos',
                 'failure' => 'El artículo no se puede añadir a la lista de deseos, por favor inténtalo más tarde',
                 'already' => 'Este artículo ya está en tu lista de deseos.',
                 'removed' => 'Artículo eliminado de la lista de deseos',

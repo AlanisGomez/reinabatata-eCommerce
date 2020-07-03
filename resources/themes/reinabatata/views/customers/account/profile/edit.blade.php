@@ -5,6 +5,7 @@
 @endsection
 
 @section('page-detail-wrapper')
+<div class="myAccount-Form-container">
     <div class="account-head mt-3">
         <h1 class="account-heading">
             {{ __('shop::app.customer.account.profile.index.title') }}
@@ -13,7 +14,6 @@
 
     {!! view_render_event('bagisto.shop.customers.account.profile.edit.before', ['customer' => $customer]) !!}
 
-        <div class="profile-update-form">
             <form
                 method="POST"
                 @submit.prevent="onSubmit"
@@ -113,11 +113,11 @@
 
                 <button
                     type="submit"
-                    class="btn btn-primary btn-block my-3">
+                    class="btn btn-primary my-3">
                     {{ __('velocity::app.shop.general.update') }}
                 </button>
             </form>
-        </div>
+    </div>
 
     {!! view_render_event('bagisto.shop.customers.account.profile.edit.after', ['customer' => $customer]) !!}
 @endsection

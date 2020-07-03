@@ -3,8 +3,7 @@ import accounting from 'accounting';
 import VueCarousel from 'vue-carousel';
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/index.css';
-import de from 'vee-validate/dist/locale/de';
-import ar from 'vee-validate/dist/locale/ar';
+import es from 'vee-validate/dist/locale/es';
 import VeeValidate, { Validator } from 'vee-validate';
 import axios from 'axios';
 
@@ -21,8 +20,7 @@ Vue.prototype.$http = axios;
 
 Vue.use(VeeValidate, {
     dictionary: {
-        ar: ar,
-        de: de,
+        es: es,
     }
 });
 

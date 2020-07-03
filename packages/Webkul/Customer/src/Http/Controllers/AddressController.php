@@ -76,10 +76,10 @@ class AddressController extends Controller
 
         $this->validate(request(), [
             'company_name' => 'string',
-            'first_name'   => 'string|required',
-            'last_name'    => 'string|required',
+            'first_name'   => 'string',
+            'last_name'    => 'string',
             'address1'     => 'string|required',
-            'country'      => 'string|required',
+            'country'      => 'string',
             'state'        => 'string|required',
             'city'         => 'string|required',
             'postcode'     => 'required',
@@ -140,10 +140,10 @@ class AddressController extends Controller
 
         $this->validate(request(), [
             'company_name' => 'string',
-            'first_name'   => 'string|required',
-            'last_name'    => 'string|required',
+            'first_name'   => 'string',
+            'last_name'    => 'string',
             'address1'     => 'string|required',
-            'country'      => 'string|required',
+            'country'      => 'string',
             'state'        => 'string|required',
             'city'         => 'string|required',
             'postcode'     => 'required',

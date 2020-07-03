@@ -905,7 +905,7 @@ return [
             'no' => 'No',
             'dash' => '-',
             'delete' => 'Borrar',
-            'create-btn-title' => 'Añadir dirección',
+            'create-btn-title' => 'Agregar dirección',
             'save-btn-title' => 'Guardar dirección',
             'general' => 'General',
             'success-create' => 'Éxito: dirección del cliente creada con éxito.',
