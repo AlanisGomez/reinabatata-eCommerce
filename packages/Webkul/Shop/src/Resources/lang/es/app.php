@@ -40,9 +40,9 @@ return [
     ],
 
     'minicart' => [
-        'view-cart' => 'Ver Cesta',
+        'view-cart' => 'Ver carrito',
         'checkout' => 'Hacer pedido',
-        'cart' => 'Cesta',
+        'cart' => 'Carrito',
         'zero' => '0'
     ],
 
@@ -79,7 +79,7 @@ return [
         'review-title' => 'Título de la opinión',
         'product-review-page-title' => 'Opinión del producto',
         'rating-reviews' => 'Calificación y opiniones',
-        'submit' => 'ENVIAR',
+        'submit' => 'Enviar',
         'delete-all' => 'Todas las opiniones se han eliminado con éxito',
         'ratingreviews' => ':rating calificaciones & :review opiniones',
         'star' => 'Star',
@@ -131,10 +131,10 @@ return [
             'title' => 'Iniciar sesión',
             'email' => 'Email',
             'password' => 'Contraseña',
-            'forgot_pass' => '¿Has olvidado la contraseña?',
+            'forgot_pass' => '¿Olvidaste tu contrseña?',
             'button_title' => 'Entrar',
             'remember' => 'Recuérdame',
-            'footer' => '© Copyright :year Webkul Software, All rights reserved',
+            'footer' => '© Copyright :year Euphoria Software, todos los derechos reservados',
             'invalid-creds' => 'Por favor, verificá tus credenciales e intentá de nuevo',
             'verify-first' => 'Verifica tu correo electrónico primero',
             'not-activated' => 'La activación de la cuenta será aprovada por el administrador',
@@ -306,7 +306,7 @@ return [
                 'page-title' => 'Cliente - Lista de deseos',
                 'title' => 'Lista de deseos',
                 'deleteall' => 'Eliminar todo',
-                'moveall' => 'Mover todos los productos a la cesta',
+                'moveall' => 'Mover todos los productos al carrito',
                 'move-to-cart' => 'Mover al carrito',
                 'error' => 'No se puede agregar el producto a la lista de deseos por problemas desconocidos, inténtelo más tarde.',
                 'add' => 'Artículo añadido a la lista de deseos',
@@ -351,7 +351,7 @@ return [
 
     'products' => [
         'layered-nav-title' => 'Filtrar por',
-        'price-label' => 'Tan bajo como',
+        'price-label' => 'Al precio de',
         'remove-filter-link-title' => 'Limpiar todo',
         'filter-to' => 'a',
         'sort-by' => 'Ordenar por',
@@ -373,7 +373,7 @@ return [
         'cross-sell-title' => 'Más opciones',
         'reviews-title' => 'Calificación y Opiniones',
         'write-review-btn' => 'Escribe una valoración',
-        'choose-option' => 'Sleccioná',
+        'choose-option' => 'Seleccioná',
         'sale' => 'On sale',
         'new' => 'Nuevo',
         'empty' => 'No hay prodcutos disponibles en esta categoría',
@@ -407,7 +407,7 @@ return [
                 'missing_fields' =>'Faltan algunos campos requeridos',
                 'missing_options' =>'Faltan opciones configurables del producto',
             ],
-            'create-error' => 'Se encontraron problemas con la cesta de compra',
+            'create-error' => 'Se encontraron algunos problemas con el carrito',
             'title' => 'Mi carrito',
             'empty' => 'Tu carrito está vacío',
             'update-cart' => 'Actualizar cesta',
@@ -596,22 +596,22 @@ return [
             'registration' => [
                 'subject' => 'Nuevo registro de cliente',
                 'customer-registration' => 'Cliente registrado exitosamente',
-                'dear' => 'Estimado/a :customer_name',
-                'greeting' => '¡Bienvenido y gracias por registrarte en Bassar!',
-                'summary' => 'Your account has now been created successfully and you can login using your email address and password credentials. Upon logging in, you will be able to access other services including reviewing past orders, wishlists and editing your account information.',
+                'dear' => ':customer_name',
+                'greeting' => '¡Bienvenido y gracias por registrarte en Reina Batata!',
+                'summary' => 'Tu cuenta se creó con éxito, ya podes iniciar sesión con tu email y contraseña.',
                 'thanks' => '¡Gracias!',
             ],
 
             'verification' => [
                 'heading' => 'Verificación por correo',
                 'subject' => 'Verificación por correo',
-                'verify' => 'Verifica tu cuenta',
+                'verify' => 'Verificá tu cuenta',
                 'summary' => 'Este mensaje es para verificar que esta dirección de mail es tuya.
                 Por favor, seleccioná el botón de abajo para verificar tu cuenta.'
             ],
 
             'subscription' => [
-                'subject' => 'Subscripción mail',
+                'subject' => 'Mail de suscripción',
                 'greeting' => ' Bienvenido a Reina Batata - Subscripción por mail',
                 'unsubscribe' => 'Darse de baja',
                 'summary' => 'Gracias por ponernos en tu bandeja de entrada. Ha pasado un tiempo desde que leyó el último correo electrónico de Reina Batata, y no queremos abrumar su bandeja de entrada. Si ya no quiere recibir
@@ -621,7 +621,7 @@ return [
     ],
 
     'webkul' => [
-        'copy-right' => '© Copyright :year Webkul Software, All rights reserved',
+        'copy-right' => '© Copyright :year Euphoria Software, todos los derechos reservado.',
     ],
 
     'response' => [

@@ -198,6 +198,8 @@ return [
             'already_added'         => 'Item already added to compare list',
             'removed'               => 'Item successfully removed from compare list',
             'empty-text'            => "You don't have any items in your compare list",
+            'product_image'         => 'Product Image',
+            'actions'               => 'Actions',
         ],
         'login-form'        => [
             'sign-up'               => 'Sign up',
@@ -205,13 +207,13 @@ return [
             'customer-login'        => 'Customer Login',
             'registered-user'       => 'Registered User',
             'your-email-address'    => 'Ingresá tu email',
-            'form-login-text'       => 'If you have an account, sign in with your email address.',
+            'form-login-text'       => 'Si ya tenés una cuenta, ingresá con tu email.',
         ],
         'signup-form'       => [
             'login'             => 'Login',
             'become-user'       => 'Become User',
             'user-registration' => 'User Registration',
-            'form-sginup-text'  => 'If you are new to our store, we glad to have you as member.',
+            'form-sginup-text'  => 'Ya estás muy cerca! registrate para comprar',
         ],
         'forget-password'   => [
             'login'                 => 'Login',
