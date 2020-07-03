@@ -111,7 +111,7 @@
 
                                                 </div>
 
-                                                <div class="product-quantity col-3">
+                                                <div class="product-quantity col-3 d-md-flex justify-content-center">
                                                     <quantity-changer
                                                         :control-name="'qty[{{$item->id}}]'"
                                                         quantity="{{ $item->quantity }}"
@@ -281,7 +281,8 @@
                 },
                 methods : {
                     submit : function(){
-                    this.$refs.form.submit()
+                        this.$refs.form.submit()
+                        this.$root.showLoader();
                     }
                 }
             })
