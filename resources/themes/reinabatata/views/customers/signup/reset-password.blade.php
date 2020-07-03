@@ -85,7 +85,7 @@
 
                             {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.after') !!}
 
-                            <button class="theme-btn" type="submit">
+                            <button class="btn btn-primary" type="submit">
                                 {{ __('shop::app.customer.reset-password.submit-btn-title') }}
                             </button>
                         </form>

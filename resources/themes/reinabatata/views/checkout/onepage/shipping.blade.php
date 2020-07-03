@@ -27,12 +27,12 @@
                                     data-vv-as="&quot;{{ __('shop::app.checkout.onepage.shipping-method') }}&quot;" />
                                 <label class="address" for="{{ $rate->method }}" aria-label="Silver">
                                     <span></span>
-                                        <div class="pl30">
-                                            <div class="row">
+                                        <div>
+                                            <div>
                                                 <b>{{ core()->currency($rate->base_price) }}</b>
                                             </div>
 
-                                            <div class="row">
+                                            <div>
                                                 <b>{{ $rate->method_title }}</b> - {{ __($rate->method_description) }}
                                             </div>
                                         </div>

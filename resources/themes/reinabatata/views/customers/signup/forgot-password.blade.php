@@ -14,7 +14,7 @@
                     </h2>
 
                     <a href="{{ route('customer.session.index') }}" class="btn-new-customer">
-                        <button type="button" class="theme-btn light">
+                        <button type="button" class="theme-btn btn light">
                             {{  __('velocity::app.customer.signup-form.login') }}
                         </button>
                     </a>
@@ -46,6 +46,7 @@
                             </label>
 
                             <input
+                                class="form-control"
                                 type="email"
                                 name="email"
                                 class="form-style"
@@ -58,7 +59,7 @@
 
                         {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.after') !!}
 
-                        <button class="theme-btn" type="submit">
+                        <button class="theme-btn btn btn-primary" type="submit">
                             {{ __('shop::app.customer.forgot-password.submit') }}
                         </button>
                     </form>

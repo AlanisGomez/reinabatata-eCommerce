@@ -28,14 +28,14 @@
                                     data-vv-as="&quot;{{ __('shop::app.checkout.onepage.payment-method') }}&quot;" />
                             <label class="address" for="{{ $payment['method'] }}" aria-label="Silver">
                                 <span></span>
-                                <div class="pl30">
-                                    <div class="row">
+                                <div>
+                                    <div>
                                         <span class="payment-method method-label">
                                             <b>{{ $payment['method_title'] }}</b>
                                         </span>
                                     </div>
 
-                                    <div class="row">
+                                    <div>
                                         <span class="method-summary">{{ __($payment['description']) }}</span>
                                     </div>
                                 </div>

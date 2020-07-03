@@ -258,7 +258,7 @@ return [
             'no'                     => 'No',
             'yes'                    => 'Yes',
             'view'                   => 'View',
-            'filter'                 => 'Filter',
+            'filter'                 => 'Fltro',
             'orders'                 => 'Orders',
             'update'                 => 'Update',
             'reviews'                => 'Reviews',

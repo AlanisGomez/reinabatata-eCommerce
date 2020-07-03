@@ -106,44 +106,10 @@
                 @endif
             </div>
 
-            <div class="col-4" @click="toggleLayeredNavigation({event: $event, actionType: 'open'})">
+            <div class="col-12 d-flex justify-content-end" @click="toggleLayeredNavigation({event: $event, actionType: 'open'})">
                 <a class="unset">
                     <i class="material-icons">filter_list</i>
                     <span>{{ __('velocity::app.shop.general.filter') }}</span>
-                </a>
-            </div>
-
-            <div class="col-4">
-                <a
-                    class="unset"
-                    href="{{
-                        $toolbarHelper->isOrderCurrent('name-asc')
-                        ? $toolbarHelper->getOrderUrl('name-asc')
-                        : $toolbarHelper->getOrderUrl('name-desc')
-                    }}">
-
-                    <i class="material-icons">sort_by_alpha</i>
-                    <span>{{ __('shop::app.products.sort-by') }}</span>
-                </a>
-            </div>
-
-            <div class="col-4">
-                @php
-                    $isList = $toolbarHelper->isModeActive('list');
-                @endphp
-
-                <a
-                    class="unset"
-                    href="{{
-                        $isList
-                        ? $toolbarHelper->getModeUrl('grid')
-                        : $toolbarHelper->getModeUrl('list')
-                    }}">
-
-                    <i class="material-icons">
-                        @if ($isList) list @else view_module @endif
-                    </i>
-                    <span>{{ __('velocity::app.shop.general.view') }}</span>
                 </a>
             </div>
         </div>

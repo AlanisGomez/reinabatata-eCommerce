@@ -26,10 +26,10 @@
     <script type="text/x-template" id="cart-template">
         <div class="container">
             <section class="cart-details row  mx-0 px-0 mt-3 col-12">
-                <h1 class="fw5 col-12">{{ __('shop::app.checkout.cart.title') }}</h1>
+                <h1 class="fw5 col-12 no-padding">{{ __('shop::app.checkout.cart.title') }}</h1>
 
                 @if ($cart)
-                    <div class="cart-details-header col-lg-7 col-md-12">
+                    <div class="cart-details-header no-padding col-lg-7 col-md-12">
                         <div class="cart-items-name ">
                             <span class="fw6 fs16 d-none d-md-block">
                                 {{ __('velocity::app.checkout.items') }}
@@ -101,7 +101,7 @@
                                                         @endforeach
                                                     @endif
 
-                                                    <div class="row col-12 no-padding no-margin">
+                                                    <div>
                                                         @include ('shop::products.price', ['product' => $product])
                                                     </div>
 
@@ -185,7 +185,7 @@
                                                 </a>
 
                                                 @if (isset($item->additional['attributes']))
-                                                    <div class="row col-12 no-padding no-margin">
+                                                    <div>
 
                                                         @foreach ($item->additional['attributes'] as $attribute)
                                                             <b>{{ $attribute['attribute_name'] }} : </b>{{ $attribute['option_label'] }}</br>

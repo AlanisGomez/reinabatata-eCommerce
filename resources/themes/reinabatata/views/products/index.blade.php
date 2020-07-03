@@ -80,7 +80,7 @@ $isProductsDisplayMode = in_array(
                         @endif
                     </div>
 
-                    <div class="col-12 no-padding">
+                    <div class="col-12 no-padding d-none d-md-inline-block">
                         <div class="hero-image">
                             @if (!is_null($category->image))
                                 <img class="logo" src="{{ $category->image_url }}" />

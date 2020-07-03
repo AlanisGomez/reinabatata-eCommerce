@@ -31,7 +31,7 @@
     $filterAttributes = collect($attributes);
 ?>
 
-<div class="layered-filter-wrapper col-3">
+<div class="layered-filter-wrapper col-md-3">
 
     {!! view_render_event('bagisto.shop.products.list.layered-nagigation.before') !!}
 

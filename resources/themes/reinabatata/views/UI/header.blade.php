@@ -345,7 +345,7 @@
         </div> -->
 
         <div class="content-list right row">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-6 offset-md-2">
                 <ul type="none" class="no-margin">
                     <li v-for="(content, index) in headerContent" :key="index">
                         <a
@@ -356,6 +356,17 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="social-icons col-md-4 d-flex justify-content-end">
+                <a href="https://webkul.com" target="_blank" class="unset mr-3" rel="noopener noreferrer">
+                    <i class="fs24 rango-facebook" title="facebook"></i>
+                </a>
+                <a href="https://webkul.com" target="_blank" class="unset mr-3" rel="noopener noreferrer">
+                    <i class="fs24 rango-instagram" title="instagram"></i>
+                </a>
+                <a href="https://webkul.com" target="_blank" class="unset mr-3" rel="noopener noreferrer">
+                <i class="fs24 rango-phone" title="whatsapp"></i>
+                </a>
             </div>
         </div>
     </header>
