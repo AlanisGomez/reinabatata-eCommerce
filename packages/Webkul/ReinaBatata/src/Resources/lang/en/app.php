@@ -272,10 +272,10 @@ return [
             'enter-current-password' => 'Enter your current password',
 
             'alert' => [
-                'info'      => 'Info',
+                'info'      => 'Información',
                 'error'     => 'Error',
-                'success'   => 'Success',
-                'warning'   => 'Warning',
+                'success'   => 'Éxito',
+                'warning'   => 'Cuidado',
             ],
         ],
         'wishlist'  => [

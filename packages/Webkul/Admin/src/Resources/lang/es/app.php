@@ -139,9 +139,9 @@ return [
     'datagrid' => [
         'mass-ops' => [
             'method-error' => '¡Error! Se detectó un método incorrecto, verifique la configuración de acción masiva',
-            'delete-success' => 'Selected :resource fueron eliminados con éxito',
+            'delete-success' => ':resource fueron eliminados con éxito',
             'partial-action' => 'Algunas acciones no se realizaron debido a restricciones restringidas del sistema en :resource',
-            'update-success' => 'Selected :resource fueron actualizados con éxito',
+            'update-success' => ':resource fueron actualizados con éxito',
             'no-resource' => 'El recurso proporcionado es insuficiente para la acción.'
         ],
 
