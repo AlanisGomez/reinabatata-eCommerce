@@ -1,4 +1,4 @@
-<div class="customer-sidebar row no-margin no-padding">
+<div class="customer-sidebar pt-4">
     @foreach ($menu->items as $menuItem)
         <ul type="none" class="navigation">
             {{-- rearrange menu items --}}

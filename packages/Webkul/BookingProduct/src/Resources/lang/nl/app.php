@@ -23,7 +23,7 @@ return [
                 'slots' => 'Slots',
                 'from' => 'Van',
                 'to' => 'To',
-                'qty' => 'Qty',
+                'qty' => 'Cantidad',
                 'add-slot' => 'Slot toevoegen',
                 'sunday' => 'Slot toevoegen',
                 'monday' => 'maandag',

@@ -21,7 +21,7 @@
 
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!! __('shop::app.mail.order.greeting-admin', [
-                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #0041FF; font-weight: bold;">#' . $order->increment_id . '</a>',
+                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #fa8ba4; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
@@ -199,7 +199,7 @@
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#0041FF" href="mailto:' . config('mail.admin.address') . '">' . config('mail.admin.address') . '</a>'
+                        'support_email' => '<a style="color:#fa8ba4" href="mailto:' . config('mail.admin.address') . '">' . config('mail.admin.address') . '</a>'
                         ])
                 !!}
             </p>

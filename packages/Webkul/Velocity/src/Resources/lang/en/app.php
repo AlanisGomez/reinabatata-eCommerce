@@ -145,9 +145,9 @@ return [
         'view-all'           => 'View All',
         'add-to-cart'        => 'Add To Cart',
         'hot-categories'     => 'Hot Categories',
-        'payment-methods'    => 'Payment Methods',
+        'payment-methods'    => 'Metodos de pago',
         'customer-reviews'   => 'Customer Reviews',
-        'shipping-methods'   => 'Shipping Methods',
+        'shipping-methods'   => 'Metodos de envío',
         'popular-categories' => 'Popular Categories',
     ],
 
@@ -161,7 +161,7 @@ return [
         'profile'           => 'Profile',
         'wishlist'          => 'Wishlist',
         'all-categories'    => 'All Categories',
-        'search-text'       => 'Search products here',
+        'search-text'       => 'Buscá un producto',
         'welcome-message'   => 'Welcome, :customer_name',
         'dropdown-text'     => 'Manage Cart, Orders & Wishlist',
     ],
@@ -177,17 +177,17 @@ return [
     ],
 
     'checkout'      => [
-        'qty'       => 'Qty',
+        'qty'       => 'Cantidad',
         'checkout'  => 'Checkout',
         'cart'      => [
             'view-cart'     => 'View Cart',
-            'cart-summary'  => 'Cart Summary',
+            'cart-summary'  => 'Resumen',
         ],
-        'qty'       => 'Qty',
-        'items'     => 'Items',
+        'qty'       => 'Cantidad',
+        'items'     => 'Productos',
         'subtotal'  => 'Subtotal',
-        'sub-total' => 'Sub Total',
-        'proceed'   => 'Proceed to checkout',
+        'sub-total' => 'Subtotal',
+        'proceed'   => 'Comprar',
     ],
 
     'customer'      => [
@@ -206,7 +206,7 @@ return [
             'new-customer'          => 'New Customer',
             'customer-login'        => 'Customer Login',
             'registered-user'       => 'Registered User',
-            'your-email-address'    => 'Your email address',
+            'your-email-address'    => 'Ingresá tu email',
             'form-login-text'       => 'If you have an account, sign in with your email address.',
         ],
         'signup-form'       => [

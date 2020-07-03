@@ -23,7 +23,7 @@
                 @auth('customer')
                     <div class="modal-content customer-options">
                         <div class="customer-session">
-                            <label class="">
+                            <label class="fw6">
                                 {{ auth()->guard('customer')->user()->first_name }}
                             </label>
                         </div>

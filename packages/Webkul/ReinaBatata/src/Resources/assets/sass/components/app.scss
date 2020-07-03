@@ -912,6 +912,14 @@
             font-weight: 600;
         }
 
+        .myAccount-container {
+            width: 100%;
+
+            @include laptop-sm {
+                width: 60%;
+            }
+        }
+
         .account-table-content {
             > .row,
             .control-group {

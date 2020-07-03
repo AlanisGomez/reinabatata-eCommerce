@@ -6,7 +6,7 @@
             @include('shop::customers.account.partials.sidemenu')
         </div>
 
-        <div class="account-layout col-12 col-md-6">
+        <div class="account-layout col-12 col-md-10">
             @yield('page-detail-wrapper')
         </div>
     </div>

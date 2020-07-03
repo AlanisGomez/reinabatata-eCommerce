@@ -14,6 +14,7 @@
 
 
 @section('page-detail-wrapper')
+<div class="myAccount-container">
     <div class="account-head mt-3 mb-0">
         <span class="back-icon">
             <a href="{{ route('customer.account.index') }}">
@@ -59,4 +60,5 @@
         {{ __('shop::app.header.logout') }}
     </a>
     {!! view_render_event('bagisto.shop.customers.account.profile.view.after', ['customer' => $customer]) !!}
+    </div>
 @endsection

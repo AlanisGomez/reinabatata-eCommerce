@@ -23,7 +23,7 @@ return [
                 'slots' => 'Slots',
                 'from' => 'From',
                 'to' => 'To',
-                'qty' => 'Qty',
+                'qty' => 'Cantidad',
                 'add-slot' => 'Add Slot',
                 'sunday' => 'Sunday',
                 'monday' => 'Monday',

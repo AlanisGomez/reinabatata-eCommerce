@@ -39,7 +39,7 @@ return [
         'wishlist' => 'Wishlist',
         'cart' => 'Cart',
         'logout' => 'Logout',
-        'search-text' => 'Search products here'
+        'search-text' => 'Buscá un producto'
     ],
 
     'minicart' => [
@@ -277,7 +277,7 @@ return [
                     'shipments' => 'Shipments',
                     'SKU' => 'SKU',
                     'product-name' => 'Name',
-                    'qty' => 'Qty',
+                    'qty' => 'Cantidad',
                     'item-status' => 'Item Status',
                     'item-ordered' => 'Ordered (:qty_ordered)',
                     'item-invoice' => 'Invoiced (:qty_invoiced)',
@@ -410,7 +410,7 @@ return [
         'links' => 'Links',
         'sample' => 'Sample',
         'name' => 'Name',
-        'qty' => 'Qty',
+        'qty' => 'Cantidad',
         'starting-at' => 'Starting at',
         'customize-options' => 'Customize Options',
         'choose-selection' => 'Choose a selection',
@@ -444,7 +444,7 @@ return [
             'empty' => 'Your shopping cart is empty',
             'update-cart' => 'Update Cart',
             'continue-shopping' => 'Continue Shopping',
-            'proceed-to-checkout' => 'Proceed To Checkout',
+            'proceed-to-checkout' => 'Comprar',
             'remove' => 'Remove',
             'remove-link' => 'Remove',
             'move-to-wishlist' => 'Move to Wishlist',
@@ -525,7 +525,7 @@ return [
             'flat-desc' => 'This is a flat rate',
             'password' => 'Password',
             'login-exist-message' => 'You already have an account with us, Sign in or continue as guest.',
-            'enter-coupon-code' => 'Enter Coupon Code'
+            'enter-coupon-code' => 'Ingresá tu cupón'
         ],
 
         'total' => [
@@ -579,7 +579,7 @@ return [
             'final-summary' => 'Thanks for showing your interest in our store we will send you tracking number once it shipped',
             'help' => 'If you need any kind of help please contact us at :support_email',
             'thanks' => 'Thanks!',
-            
+
             'comment' => [
                 'subject' => 'New comment added to your order',
                 'dear' => 'Dear :customer_name',

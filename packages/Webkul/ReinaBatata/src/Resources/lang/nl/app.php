@@ -145,9 +145,9 @@ return [
         'view-all' => 'Bekijk alles',
         'add-to-cart' => 'In Winkelwagen',
         'hot-categories' => 'Hot Categories',
-        'payment-methods' => 'Payment Methods',
+        'payment-methods' => 'Metodos de pago',
         'customer-reviews' => 'Customer Reviews',
-        'shipping-methods' => 'Shipping Methods',
+        'shipping-methods' => 'Metodos de envío',
         'popular-categories' => 'Popular Categories',
     ],
 

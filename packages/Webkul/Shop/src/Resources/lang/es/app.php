@@ -15,14 +15,14 @@ return [
     ],
 
     'common' => [
-        'error' => 'Algo ha ido mal, por favor prueba más tarde.'
+        'error' => 'Algo salió mal, por favor probá más tarde.'
     ],
 
     'home' => [
         'page-title' => config('app.name') . ' - Inicio',
         'featured-products' => 'Productos destacados',
         'new-products' => 'Nuevos ingresos',
-        'verify-email' => 'Verifica tu cuenta de correo',
+        'verify-email' => 'Verificá tu cuenta de correo',
         'resend-verify-email' => 'Reenviar correo de verificación'
     ],
 
@@ -30,7 +30,7 @@ return [
         'title' => 'Cuenta',
         'dropdown-text' => 'Gestioná tu carrito, pedidos y lista de deseos',
         'sign-in' => 'Entrar',
-        'sign-up' => 'Regístrate',
+        'sign-up' => 'Registrate',
         'account' => 'Cuenta',
         'cart' => 'Carrito',
         'profile' => 'Mis datos',
@@ -47,21 +47,21 @@ return [
     ],
 
     'footer' => [
-        'subscribe-newsletter' => 'Suscríbete a la Newsletter',
-        'subscribe' => 'Suscríbete',
-        'locale' => 'Idioma',
+        'subscribe-newsletter' => 'Suscribite al Newsletter',
+        'subscribe' => 'Suscribite',
+        'locale' => 'Region',
         'currency' => 'Moneda',
     ],
 
     'subscription' => [
         'unsubscribe' => 'Darse de baja',
-        'subscribe' => 'Suscríbete',
-        'subscribed' => 'Te has suscrito a la newsletter',
-        'not-subscribed' => 'No se pudo suscribir a la newsletter, inténtalo de nuevo más tarde',
+        'subscribe' => 'Suscribite',
+        'subscribed' => 'Te subscribiste a nuestro newsletter',
+        'not-subscribed' => 'No se pudo suscribir al newsletter, por favor intentalo de nuevo más tarde',
         'already' => 'Ya estás suscrito',
-        'unsubscribed' => 'Te has desuscrito',
-        'already-unsub' => 'Ya estás desuscrito',
-        'not-subscribed' => '¡Error! El correo no se puede enviar actualmente, inténtalo de nuevo más tarde'
+        'unsubscribed' => 'Ya no estás suscrito',
+        'already-unsub' => 'Ya no estás suscrito',
+        'not-subscribed' => '¡Error! El correo no se puede enviar actualmente, intentalo de nuevo más tarde'
     ],
 
     'search' => [
@@ -69,7 +69,7 @@ return [
         'page-title' => 'Búsqueda',
         'found-results' => 'Resultados',
         'found-result' => 'Resultado',
-        'analysed-keywords' => 'Analysed Keywords'
+        'analysed-keywords' => 'Palabras clave '
     ],
 
     'reviews' => [
@@ -90,52 +90,52 @@ return [
 
     'customer' => [
         'signup-text' => [
-            'account_exists' => 'Ya tienes una cuenta',
+            'account_exists' => 'Ya tenés una cuenta',
             'title' => 'Entrar'
         ],
 
         'signup-form' => [
             'page-title' => 'Cliente - Formulario de registro',
-            'title' => 'Regístrate',
+            'title' => 'Registrate',
             'firstname' => 'Nombre',
             'lastname' => 'Apellido',
             'email' => 'Email',
             'password' => 'Contraseña',
             'confirm_pass' => 'Confirma la contraseña',
             'button_title' => 'Registro',
-            'agree' => 'De acuerdo',
+            'agree' => 'Esto de acuerdo',
             'terms' => 'Términos',
-            'conditions' => 'Condiciones',
+            'conditions' => 'Condiciónes',
             'using' => 'Mediante el uso de este sitio web',
             'agreement' => 'Acuerdo',
             'success' => 'Cuenta creada exitosamente',
-            'success-verify' => 'Cuenta creada con éxito, se ha enviado un correo electrónico para su verificación.',
-            'success-verify-email-unsent' => 'Cuenta creada correctamente, pero no se envió el correo electrónico de verificación',
-            'failed' => '¡Error! No se puede crear su cuenta, intente nuevamente más tarde',
-            'already-verified' => 'Su cuenta ya está verificada o intente enviar un nuevo correo electrónico de verificación nuevamente',
-            'verification-not-sent' => '¡Error! Problema al enviar el correo electrónico de verificación, intente nuevamente más tarde',
-            'verification-sent' => 'El correo de verificación ha sido enviado',
-            'verified' => 'Su cuenta ha sido verificada, intente iniciar sesión ahora',
-            'verify-failed' => 'No podemos verificar su cuenta de correo',
-            'dont-have-account' => 'No tienes cuenta con nosotros',
+            'success-verify' => 'Cuenta creada con éxito, te enviamos un correo electrónico para su verificación.',
+            'success-verify-email-unsent' => 'Cuenta creada correctamente, pero no se pudo enviar el correo electrónico de verificación',
+            'failed' => '¡Error! No se puede crear tu cuenta, intentá nuevamente más tarde',
+            'already-verified' => 'Tu cuenta ya está verificada. Intentá enviar un nuevo correo electrónico de verificación nuevamente',
+            'verification-not-sent' => '¡Error! Problema al enviar el correo electrónico de verificación, intentá nuevamente más tarde',
+            'verification-sent' => 'Te enviamos un correo de verificación',
+            'verified' => 'Tu cuenta ha sido verificada, intentá iniciar sesión ahora',
+            'verify-failed' => 'No podemos verificar tu cuenta de correo',
+            'dont-have-account' => 'No tenés cuenta con nosotros',
             'customer-registration' => 'Registrado con éxito'
         ],
 
         'login-text' => [
-            'no_account' => 'No tienes una cuenta',
-            'title' => 'Regístrate',
+            'no_account' => 'No tenés una cuenta',
+            'title' => 'Registrate',
         ],
 
         'login-form' => [
             'page-title' => 'Cliente-Formulario de registro',
-            'title' => 'Entrar',
+            'title' => 'Iniciar sesión',
             'email' => 'Email',
             'password' => 'Contraseña',
             'forgot_pass' => '¿Has olvidado la contraseña?',
             'button_title' => 'Entrar',
             'remember' => 'Recuérdame',
             'footer' => '© Copyright :year Webkul Software, All rights reserved',
-            'invalid-creds' => 'Por favor, verifica tus credenciales e intenta de nuevo',
+            'invalid-creds' => 'Por favor, verificá tus credenciales e intentá de nuevo',
             'verify-first' => 'Verifica tu correo electrónico primero',
             'not-activated' => 'La activación de la cuenta será aprovada por el administrador',
             'resend-verification' => 'Se ha reenviado un correo de verificación'
@@ -144,7 +144,7 @@ return [
         'forgot-password' => [
             'title' => 'Recuperar contraseña',
             'email' => 'Email',
-            'submit' => 'ENVIAR',
+            'submit' => 'Enviar',
             'page_title' => 'Cliente - Formulario de contraseña olvidada'
         ],
 
@@ -169,7 +169,7 @@ return [
                 ],
 
                 'edit-success' => 'Perfil actualizado exitosamente',
-                'edit-fail' => '¡Error! El perfil no puede ser actualizado, por favor, inténtalo más tarde',
+                'edit-fail' => '¡Error! El perfil no puede ser actualizado, por favor, intentalo más tarde',
                 'unmatch' => 'La anterior contraseña no coincide',
 
                 'fname' => 'Nombre',
@@ -177,9 +177,9 @@ return [
                 'gender' => 'Género',
                 'other' => 'Otro',
                 'male' => 'Masculino',
-                'female' => 'Hembra',
+                'female' => 'Femenino',
                 'dob' => 'Fecha de nacimiento',
-                'phone' => 'Móvil',
+                'phone' => 'Celular',
                 'email' => 'Email',
                 'opassword' => 'Contraseña anterior',
                 'password' => 'Contraseña',
@@ -204,9 +204,9 @@ return [
                     'make-default' => 'Elegir por defecto',
                     'default' => 'Por defecto',
                     'contact' => 'Contacto',
-                    'confirm-delete' =>  '¿Quieres eleminar esta dirección?',
+                    'confirm-delete' =>  '¿Querés eleminar esta dirección?',
                     'default-delete' => 'La dirección por defecto no puede ser cambiada',
-                    'enter-password' => 'Enter Your Password.',
+                    'enter-password' => 'Ingresá tu contraseña',
                 ],
 
                 'create' => [
@@ -234,7 +234,7 @@ return [
                 'delete' => [
                     'success' => 'Dirección eliminada correctamente',
                     'failure' => 'La dirección no puede ser eliminada',
-                    'wrong-password' => 'Wrong Password !'
+                    'wrong-password' => 'Contraseña incorrecta'
                 ]
             ],
 
@@ -247,13 +247,13 @@ return [
                     'status' => 'Estado',
                     'total' => 'Total',
                     'order_number' => 'Número de pedido',
-                    'processing' => 'Processing',
-                    'completed' => 'Completed',
-                    'canceled' => 'Canceled',
-                    'closed' => 'Closed',
-                    'pending' => 'Pending',
-                    'pending-payment' => 'Pending Payment',
-                    'fraud' => 'Fraud'
+                    'processing' => 'Procesando',
+                    'completed' => 'Completado',
+                    'canceled' => 'Cancelado',
+                    'closed' => 'Cerrado',
+                    'pending' => 'Pendiente',
+                    'pending-payment' => 'Pago pendiente',
+                    'fraud' => 'Falló'
                 ],
 
                 'view' => [
@@ -265,8 +265,8 @@ return [
                     'shipments' => 'Envíos',
                     'SKU' => 'SKU',
                     'product-name' => 'Nombre',
-                    'qty' => 'Qty',
-                    'item-status' => 'Estado Item',
+                    'qty' => 'Cantidad',
+                    'item-status' => 'Estado producto',
                     'item-ordered' => 'Ordenado (:qty_ordered)',
                     'item-invoice' => 'Facturado (:qty_invoiced)',
                     'item-shipped' => 'Enviado (:qty_shipped)',
@@ -274,7 +274,7 @@ return [
                     'price' => 'Precio',
                     'total' => 'Total',
                     'subtotal' => 'Total parcial',
-                    'shipping-handling' => 'Envío y Manipulación',
+                    'shipping-handling' => 'Envío y manipulación',
                     'tax' => 'Impuesto',
                     'discount' => 'Descuento',
                     'tax-percent' => 'Porcentaje IVA',
@@ -291,14 +291,14 @@ return [
                     'individual-invoice' => 'Factura #:invoice_id',
                     'individual-shipment' => 'Envío #:shipment_id',
                     'print' => 'Imprimir',
-                    'invoice-id' => 'Factura Id',
-                    'order-id' => 'Pedido Id',
+                    'invoice-id' => 'Nº de factura',
+                    'order-id' => 'Nº de Pedido',
                     'order-date' => 'Fecha pedido',
                     'bill-to' => 'Facturar a',
                     'ship-to' => 'Envío a',
                     'contact' => 'Contacto',
-                    'tracking-number' => 'Tracking Number',
-                    'cancel-confirm-msg' => 'Estás segura de que deseas cancelar este pedido ?'
+                    'tracking-number' => 'Número de tracking',
+                    'cancel-confirm-msg' => '¿Estás seguro de que deseas cancelar este pedido?'
                 ]
             ],
 
@@ -383,13 +383,13 @@ return [
         'whoops' => 'Ups!',
         'quantity' => 'Cantidad',
         'in-stock' => 'En stock',
-        'out-of-stock' => 'Sin estoc',
+        'out-of-stock' => 'Sin stock',
         'view-all' => 'Ver todo',
         'select-above-options' => 'Primero selecciona las opciones de arriba.',
         'less-quantity' => 'La cantidad no debe ser inferior a uno.',
         'available-for-order' => 'Disponible para ordenar',
-        'settings' => 'Settings',
-        'compare_options' => 'Compare Options',
+        'settings' => 'Opciones',
+        'compare_options' => 'Opcion de comparación',
     ],
 
     // 'reviews' => [
@@ -603,18 +603,18 @@ return [
             ],
 
             'verification' => [
-                'heading' => 'Bassar - Verificación por correo',
+                'heading' => 'Verificación por correo',
                 'subject' => 'Verificación por correo',
                 'verify' => 'Verifica tu cuenta',
                 'summary' => 'Este mensaje es para verificar que esta dirección de mail es tuya.
-                Por favor, clica el botón de abajo para verificar tu cuenta.'
+                Por favor, seleccioná el botón de abajo para verificar tu cuenta.'
             ],
 
             'subscription' => [
                 'subject' => 'Subscripción mail',
-                'greeting' => ' Bienvenido a Bassar - Subscripción por mail',
+                'greeting' => ' Bienvenido a Reina Batata - Subscripción por mail',
                 'unsubscribe' => 'Darse de baja',
-                'summary' => 'Gracias por ponernos en tu bandeja de entrada. Ha pasado un tiempo desde que leyó el último correo electrónico de Bassar, y no queremos abrumar su bandeja de entrada. Si ya no quiere recibir
+                'summary' => 'Gracias por ponernos en tu bandeja de entrada. Ha pasado un tiempo desde que leyó el último correo electrónico de Reina Batata, y no queremos abrumar su bandeja de entrada. Si ya no quiere recibir
                 las últimas noticias de marketing, haga clic en el botón de abajo.'
             ]
         ]
