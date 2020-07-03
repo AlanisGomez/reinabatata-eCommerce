@@ -40,7 +40,7 @@ class CustomerAddressForm extends FormRequest
                 'billing.state'      => ['required'],
                 'billing.postcode'   => ['required'],
                 'billing.phone'      => ['required'],
-                'billing.country'    => ['string'],
+                'billing.country'    => ['required'],
             ];
         }
 
@@ -59,7 +59,7 @@ class CustomerAddressForm extends FormRequest
                     'shipping.state'      => ['required'],
                     'shipping.postcode'   => ['required'],
                     'shipping.phone'      => ['required'],
-                    'shipping.country'    => ['string'],
+                    'shipping.country'    => ['required'],
                 ]);
             }
         }

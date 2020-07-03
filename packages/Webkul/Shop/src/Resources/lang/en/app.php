@@ -100,8 +100,8 @@ return [
         'signup-form' => [
             'page-title' => 'Create New Customer Account',
             'title' => 'Sign Up',
-            'firstname' => 'Nombre',
-            'lastname' => 'Apellido',
+            'firstname' => 'First Name',
+            'lastname' => 'Last Name',
             'email' => 'Email',
             'password' => 'Password',
             'confirm_pass' => 'Confirm Password',
@@ -175,8 +175,8 @@ return [
                 'edit-fail' => 'Error! Profile cannot be updated, please try again later.',
                 'unmatch' => 'The old password does not match.',
 
-                'fname' => 'Nombre',
-                'lname' => 'Apellido',
+                'fname' => 'First Name',
+                'lname' => 'Last Name',
                 'gender' => 'Gender',
                 'other' => 'Other',
                 'male' => 'Male',
@@ -215,8 +215,8 @@ return [
                 'create' => [
                     'page-title' => 'Add Address Form',
                     'company_name' => 'Company name',
-                    'first_name' => 'Nombre',
-                    'last_name' => 'Apellido',
+                    'first_name' => 'First name',
+                    'last_name' => 'Last name',
                     'vat_id' => 'Vat id',
                     'vat_help_note' => '[Note: Use Country Code with VAT Id. Eg. INV01234567891]',
                     'title' => 'Add Address',
@@ -235,8 +235,8 @@ return [
                 'edit' => [
                     'page-title' => 'Edit Address',
                     'company_name' => 'Company name',
-                    'first_name' => 'Nombre',
-                    'last_name' => 'Apellido',
+                    'first_name' => 'First name',
+                    'last_name' => 'Last name',
                     'vat_id' => 'Vat id',
                     'title' => 'Edit Address',
                     'street-address' => 'Street Address',
@@ -485,8 +485,8 @@ return [
             'billing-address' => 'Billing Address',
             'sign-in' => 'Sign In',
             'company-name' => 'Company Name',
-            'first-name' => 'Nombre',
-            'last-name' => 'Apellido',
+            'first-name' => 'First Name',
+            'last-name' => 'Last Name',
             'email' => 'Email',
             'address1' => 'Street Address',
             'city' => 'City',
@@ -579,7 +579,7 @@ return [
             'final-summary' => 'Thanks for showing your interest in our store we will send you tracking number once it shipped',
             'help' => 'If you need any kind of help please contact us at :support_email',
             'thanks' => 'Thanks!',
-
+            
             'comment' => [
                 'subject' => 'New comment added to your order',
                 'dear' => 'Dear :customer_name',

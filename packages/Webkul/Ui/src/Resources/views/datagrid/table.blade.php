@@ -8,7 +8,7 @@
     @push('scripts')
         <script type="text/x-template" id="datagrid-filters">
             <div class="grid-container">
-                <div class="datagrid-filters d-none" id="datagrid-filters">
+                <div class="datagrid-filters" id="datagrid-filters">
 
                     <div class="filter-left">
                         <div class="search-filter">
@@ -690,7 +690,7 @@
                                 _method : element.getAttribute('data-method')
                             }).then(function(response) {
                                 this.result = response;
-
+                                
                                 if (response.data.redirect) {
                                     window.location.href = response.data.redirect;
                                 } else {

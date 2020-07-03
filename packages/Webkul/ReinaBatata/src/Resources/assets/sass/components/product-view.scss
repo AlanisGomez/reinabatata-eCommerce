@@ -41,6 +41,9 @@
                     @include laptop-sm {
 
                         width: 35%;
+                        label {
+                            display: block;
+                        }
                     }
 
                     &:last-child {

@@ -20,8 +20,8 @@ return [
 
     'home' => [
         'page-title' => config('app.name') . ' - Inicio',
-        'featured-products' => 'Productos Destacados',
-        'new-products' => 'Nuevos Productos',
+        'featured-products' => 'Productos destacados',
+        'new-products' => 'Nuevos ingresos',
         'verify-email' => 'Verifica tu cuenta de correo',
         'resend-verify-email' => 'Reenviar correo de verificación'
     ],

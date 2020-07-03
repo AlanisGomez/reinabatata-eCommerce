@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="tabs">
-            <ul class="mb-0">
+            <ul>
                 <li v-for="tab in tabs" :class="{ 'active': tab.isActive }" @click="selectTab(tab)">
                     <a>{{ tab.name }}</a>
                 </li>

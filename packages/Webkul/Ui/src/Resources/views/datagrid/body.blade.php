@@ -59,7 +59,7 @@
                                     data-method="{{ $action['method'] }}"
                                     data-action="{{ route($action['route'], $record->{$index}) }}"
                                     data-token="{{ csrf_token() }}"
-
+                                    
                                     @if (isset($action['target']))
                                         target="{{ $action['target'] }}"
                                     @endif
