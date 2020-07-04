@@ -50,6 +50,7 @@
                     if (response.data.status == 'success') {
                         this.$root.miniCartKey++;
 
+
                         if (this.moveToCart == "true") {
                             let existingItems = this.getStorageValue('wishlist_product');
 
@@ -59,14 +60,17 @@
                             this.setStorageValue('wishlist_product', updatedItems);
                         }
 
-                        window.showAlert(`alert-success`, this.__('shop.general.alert.success'), response.data.message);
+                        // window.showAlert(`alert-success`, this.__('shop.general.alert.success'), response.data.message);
+                        
+                        if (response.data.redirectionRoute) {
+                            window.location.href = response.data.redirectionRoute;
+                        }
 
                         if (this.reloadPage == "1") {
                             window.location.reload();
                         }
-                    } else {
-                        window.showAlert(`alert-warning`, response.data.label ? response.data.label : this.__('shop.general.alert.warning'), response.data.message);
 
+                    } else {
                         if (response.data.redirectionRoute) {
                             window.location.href = response.data.redirectionRoute;
                         }
