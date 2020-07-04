@@ -648,8 +648,8 @@ abstract class AbstractType
     {
         if ($this->haveSpecialPrice()) {
             $html = '<div class="sticker sale">' . trans('shop::app.products.sale') . '</div>'
-                . '<span class="regular-price">' . core()->currency($this->product->price) . '</span>'
-                . '<span class="special-price">' . core()->currency($this->getSpecialPrice()) . '</span>';
+            . '<span class="special-price">' . core()->currency($this->getSpecialPrice()) . '</span>'
+            . '<span class="regular-price">' . core()->currency($this->product->price) . '</span>';
         } else {
             $html = '<span>' . core()->currency($this->product->price) . '</span>';
         }

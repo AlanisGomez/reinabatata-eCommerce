@@ -222,11 +222,11 @@
                                 </div>
 
                                 {!! view_render_event('bagisto.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
-                                    <!-- <a
-                                        class="col-12 link-color remove-decoration fs16 no-padding"
+                                    <a
+                                        class="col-12 d-none d-md-block link-color remove-decoration fs16 no-padding"
                                         href="{{ route('shop.home.index') }}">
                                         {{ __('shop::app.checkout.cart.continue-shopping') }}
-                                    </a> -->
+                                    </a>
                                 {!! view_render_event('bagisto.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
                             </form>
                         </div>

@@ -11,7 +11,7 @@
 
     <div class="carousel-products vc-full-screen">
         <carousel-component
-            slides-per-page="6"
+            slides-per-page="4"
             navigation-enabled="hide"
             pagination-enabled="hide"
             id="related-products-carousel"
@@ -31,7 +31,7 @@
     <div class="carousel-products vc-small-screen">
         <carousel-component
             :slides-count="{{ sizeof($relatedProducts) }}"
-            slides-per-page="2"
+            slides-per-page="1"
             id="related-products-carousel"
             navigation-enabled="hide"
             pagination-enabled="hide">
