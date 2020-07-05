@@ -26,7 +26,7 @@
     <script type="text/x-template" id="cart-template">
         <div class="container">
             <section class="cart-details row  mx-0 px-0 mt-3 col-12">
-                <h1 class="fw5 col-12 no-padding">{{ __('shop::app.checkout.cart.title') }}</h1>
+                <h1 class="fw5 col-12 px-0 px-md-3">{{ __('shop::app.checkout.cart.title') }}</h1>
 
                 @if ($cart)
                     <div class="cart-details-header no-padding col-lg-7 col-md-12">
@@ -243,7 +243,7 @@
                             <div class="mt-3">
                                 <a
                                 href="{{ route('shop.checkout.onepage.index') }}"
-                                class="btn btn-primary btn-block text-uppercase remove-decoration fw6 text-center">
+                                class="btn btn-primary text-uppercase remove-decoration fw6 text-center">
                                 {{ __('velocity::app.checkout.proceed') }}
                             </a>
                         </div>
@@ -282,7 +282,7 @@
                 methods : {
                     submit : function(){
                         this.$refs.form.submit()
-                        this.$root.showLoader();
+                        this.$root.showLoader()
                     }
                 }
             })

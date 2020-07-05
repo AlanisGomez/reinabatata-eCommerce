@@ -33,13 +33,13 @@
                     <button
                         type="submit"
                         {{ ! $product->isSaleable() ? 'disabled' : '' }}
-                        class="btn btn-add-to-cart {{ $addToCartBtnClass ?? '' }}">
+                        class="btn btn-add-to-cart btn-primary">
 
                         @if (! (isset($showCartIcon) && !$showCartIcon))
                             <i class="material-icons text-down-3">shopping_cart</i>
                         @endif
 
-                        <span class="fs14 fw6 text-uppercase text-up-4">
+                        <span class="fs14 fw6 text-up-4">
                             {{ $btnText ?? __('shop::app.products.add-to-cart') }}
                         </span>
                     </button>

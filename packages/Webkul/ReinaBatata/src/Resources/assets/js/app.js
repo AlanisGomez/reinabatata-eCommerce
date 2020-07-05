@@ -157,7 +157,6 @@ $(document).ready(function () {
                         event.target.submit();
                     } else {
                         this.toggleButtonDisability({ event, actionType: false });
-
                         eventBus.$emit('onFormError')
                     }
                 });

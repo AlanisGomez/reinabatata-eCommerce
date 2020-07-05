@@ -6,7 +6,7 @@ return [
         'name'       => 'velocity::app.admin.layouts.velocity',
         'route'      => 'velocity.admin.content.index',
         'sort'       => 5,
-        'icon-class' => 'velocity-icon',
+        'icon-class' => 'reinabatata-icon',
     ], [
         'key'        => 'velocity.meta-data',
         'name'       => 'velocity::app.admin.layouts.meta-data',

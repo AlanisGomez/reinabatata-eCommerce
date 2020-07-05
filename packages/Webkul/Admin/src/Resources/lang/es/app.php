@@ -250,12 +250,12 @@ return [
         ],
 
         'reset-password' => [
-            'title' => 'Reset Password',
-            'email' => 'Registered Email',
-            'password' => 'Password',
-            'confirm-password' => 'Confirm Password',
-            'back-link-title' => 'Back to Sign In',
-            'submit-btn-title' => 'Reset Password'
+            'title' => 'Cambiar contraseña',
+            'email' => 'Email',
+            'password' => 'Contraseñas',
+            'confirm-password' => 'Confirmar contraseña',
+            'back-link-title' => 'Volver al inicio',
+            'submit-btn-title' => 'Cambiar contraseña'
         ],
 
         'roles' => [

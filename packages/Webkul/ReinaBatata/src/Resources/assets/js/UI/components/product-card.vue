@@ -24,14 +24,14 @@
 
                 <div class="product-price" v-html="product.priceHTML"></div>
 
-                <div class="product-rating" v-if="product.totalReviews && product.totalReviews > 0">
+                <!-- <div class="product-rating" v-if="product.totalReviews && product.totalReviews > 0">
                     <star-ratings :ratings="product.avgRating"></star-ratings>
                     <span>{{ __('products.reviews-count', {'totalReviews': product.totalReviews}) }}</span>
                 </div>
 
                 <div class="product-rating" v-else>
                     <span class="fs14" v-text="product.firstReviewText"></span>
-                </div>
+                </div> -->
 
                 <vnode-injector :nodes="getDynamicHTML(product.addToCartHtml)"></vnode-injector>
             </div>

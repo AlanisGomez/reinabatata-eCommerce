@@ -12,7 +12,7 @@
     <div class="carousel-products vc-full-screen">
         <carousel-component
             slides-per-page="4"
-            navigation-enabled="hide"
+            navigation-enabled="true"
             pagination-enabled="hide"
             id="related-products-carousel"
             :slides-count="{{ sizeof($relatedProducts) }}">

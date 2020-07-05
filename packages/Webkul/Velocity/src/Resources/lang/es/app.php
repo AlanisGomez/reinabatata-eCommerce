@@ -7,8 +7,8 @@ return [
                 'general'  => 'General',
                 'category'  => 'Categoría',
                 'settings'  => 'Opciones',
-                'extension_name' => 'Velocity Theme',
-                'error-module-inactive' => 'Advertencia: El estado de Velocity theme es inactivo',
+                'extension_name' => 'Reina Batata Theme',
+                'error-module-inactive' => 'Advertencia: El estado de Reina Batata theme es inactivo',
             ],
 
             'settings' => [
@@ -40,7 +40,7 @@ return [
             ]
         ],
         'layouts'   => [
-            'velocity' => 'Velocity',
+            'velocity' => 'Reina Batata',
             'cms-pages' => 'Páginas de CMS',
             'meta-data' => 'Meta Data',
             'category-menu' => 'Menú de categoría',

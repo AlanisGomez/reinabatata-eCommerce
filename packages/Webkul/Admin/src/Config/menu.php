@@ -211,5 +211,6 @@ return [
         'route'      => 'admin.cms.index',
         'sort'       => 1,
         'icon-class' => '',
-    ]
+    ],
+    
 ];

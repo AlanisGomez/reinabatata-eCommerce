@@ -509,7 +509,7 @@ class Core
      */
     public function currencySymbol($code)
     {
-        $formatter = new \NumberFormatter(app()->getLocale() . '@currency=' . $code, \NumberFormatter::CURRENCY);
+        $formatter = new \NumberFormatter('@currency=' . $code . app()->getLocale(), \NumberFormatter::CURRENCY);
 
         return $formatter->getSymbol(\NumberFormatter::CURRENCY_SYMBOL);
     }
@@ -528,7 +528,17 @@ class Core
 
         $formatter = new \NumberFormatter(app()->getLocale(), \NumberFormatter::CURRENCY);
 
-        return $formatter->formatCurrency($price, $currencyCode);
+        if ($symbol = $this->getCurrentCurrency()->symbol) {
+            if ($this->currencySymbol($currencyCode) == $symbol) {
+                return $formatter->formatCurrency($price, $currencyCode);
+            } else {
+                $formatter->setSymbol(\NumberFormatter::CURRENCY_SYMBOL, $symbol);
+
+                return $formatter->format($this->convertPrice($price));
+            }
+        } else {
+            return $formatter->formatCurrency($price, $currencyCode);
+        }
     }
 
     /**

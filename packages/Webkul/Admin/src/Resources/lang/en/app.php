@@ -262,18 +262,18 @@ return [
 
         'roles' => [
             'title' => 'Roles',
-            'add-role-title' => 'Add Role',
-            'edit-role-title' => 'Edit Role',
-            'save-btn-title' => 'Save Role',
+            'add-role-title' => 'Agregar Rol',
+            'edit-role-title' => 'Editar Rol',
+            'save-btn-title' => 'Guardar Rol',
             'general' => 'General',
-            'name' => 'Name',
-            'description' => 'Description',
-            'access-control' => 'Access Control',
-            'permissions' => 'Permissions',
-            'custom' => 'Custom',
-            'all' => 'All'
+            'name' => 'Nombre',
+            'description' => 'Descripción',
+            'access-control' => 'COntrol de acceso',
+            'permissions' => 'Permisos',
+            'custom' => 'Personalizado',
+            'all' => 'Todos'
         ],
-
+        
         'users' => [
             'title' => 'User',
             'add-user-title' => 'Add User',

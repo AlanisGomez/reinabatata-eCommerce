@@ -21,7 +21,7 @@
 @push('scripts')
     <script type="text/x-template" id="wishlist-product-template">
         <section class="cart-details row mx-0 mt-3 col-12">
-            <h1 class="fw6 col-6">
+            <h1 class="fw6 col-12">
                 {{ __('shop::app.customer.account.wishlist.title') }}
             </h1>
 

@@ -42,7 +42,7 @@
             add-class="product-gallary"
             :slides-count="thumbs.length">
 
-            <slide :slot="`slide-${index}`" v-for="(thumb, index) in thumbs">
+            <slide :slot="`slide-${index}`" :key="index" v-for="(thumb, index) in thumbs">
                 <li
                     @click="changeImage({
                         largeImageUrl: thumb.large_image_url,

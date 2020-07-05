@@ -11,7 +11,7 @@
         <div class="slides-container ltr">
             <img
             loading="lazy"
-            class="col-12 no-padding banner-icon d-block d-md-none"
+            class="col-12 no-padding banner-icon d-block d-md-none mt-3"
             src="{{ asset('/themes/reinabatata/assets/images/Ilustration.svg') }}" />
             <carousel-component
                 class="d-none d-md-block"

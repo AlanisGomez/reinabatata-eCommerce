@@ -359,7 +359,7 @@ return [
         'from-z-a' => 'De Z-A',
         'newest-first' => 'Lo más nuevo primero',
         'oldest-first' => 'Lo más antiguo primero',
-        'cheapest-first' => 'Lo más barato primero',
+        'cheapest-first' => 'Lo más economico primero',
         'expensive-first' => 'Lo más caro primero',
         'show' => 'Show',
         'pager-info' => 'Mostrar :showing of :total Items',

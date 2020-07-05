@@ -12,18 +12,18 @@
                     <h2 class="fs24 fw6">
                         {{ __('velocity::app.customer.forget-password.forgot-password')}}
                     </h2>
-
-                    <a href="{{ route('customer.session.index') }}" class="btn-new-customer">
+                    <a href="{{ route('customer.session.index') }}" class="d-none d-md-inline pull-right">
                         <button type="button" class="theme-btn btn light">
                             {{  __('velocity::app.customer.signup-form.login') }}
                         </button>
                     </a>
+
                 </div>
 
                 <div class="body col-12">
-                    <h3 class="fw6">
+                    <h4 class="fw6">
                         {{ __('velocity::app.customer.forget-password.recover-password')}}
-                    </h3>
+                    </h4>
 
                     <p class="fs16">
                         {{ __('velocity::app.customer.forget-password.recover-password-text')}}
@@ -59,10 +59,18 @@
 
                         {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.after') !!}
 
-                        <button class="theme-btn btn btn-primary" type="submit">
+                        <button class="theme-btn btn btn-primary btn-block" type="submit">
                             {{ __('shop::app.customer.forgot-password.submit') }}
                         </button>
                     </form>
+
+                    <div class="seperator d-md-none d-block"><span>O</span></div>
+
+                    <a href="{{ route('customer.session.index') }}" class="btn-new-customer d-block d-md-none">
+                        <button type="button" class="theme-btn btn light btn-block">
+                            {{  __('velocity::app.customer.signup-form.login') }}
+                        </button>
+                    </a>
 
                     {!! view_render_event('bagisto.shop.customers.forget_password.after') !!}
                 </div>

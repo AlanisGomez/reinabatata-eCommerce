@@ -112,7 +112,7 @@
                 .then(response => {
                     this.cartItems = this.cartItems.filter(item => item.id != productId);
 
-                    window.showAlert(`alert-${response.data.status}`, response.data.label, response.data.message);
+                    // window.showAlert(`alert-${response.data.status}`, response.data.label, response.data.message);
                 })
                 .catch(exception => {
                     console.log(this.__('error.something_went_wrong'));

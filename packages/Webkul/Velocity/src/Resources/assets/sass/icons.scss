@@ -1,18 +1,18 @@
-.velocity-icon {
-    width: 60px;
-    height: 55px;
+.reinabatata-icon {
+    width: 50px;
+    height: 52px;
     display: inline-block;
     background-size: cover;
-    background-image: url("../images/Icon-Velocity.svg");
+    background-image: url("../images/ReinaBatata-outline.svg");
 }
 
 .router-link-active,
 .active {
-    .velocity-icon {
-        background-image: url("../images/Icon-Velocity-Active.svg");
+    .reinabatata-icon {
+        background-image: url("../images/ReinaBatata-outline-Active.svg");
     }
 
-    &.velocity-icon {
-        background-image: url("../images/Icon-Velocity-Active.svg");
+    &.reinabatata-icon {
+        background-image: url("../images/ReinaBatata-outline-Active.svg");
     }
 }

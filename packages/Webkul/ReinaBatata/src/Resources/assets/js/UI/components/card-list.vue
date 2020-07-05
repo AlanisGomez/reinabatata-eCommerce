@@ -47,7 +47,7 @@
                         </div>
                     </div>
 
-                    <template v-if="card['review-count']">
+                    <!-- <template v-if="card['review-count']">
                         <star-ratings :ratings="card['star-rating']"></star-ratings>
                     </template>
 
@@ -55,7 +55,7 @@
                         <div class="mt10">
                             <span class="fs14">Be the first to write a review</span>
                         </div>
-                    </template>
+                    </template> -->
 
                     <div class="button-row mt10 card-bottom-container">
                         <add-to-cart-btn></add-to-cart-btn>

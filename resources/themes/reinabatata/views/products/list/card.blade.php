@@ -100,7 +100,7 @@
                         title="{{ $product->name }}"
                         class="unset">
 
-                        <span class="fs16">{{ $product->name }}</span>
+                        <span class="fs18 fw6">{{ $product->name }}</span>
                     </a>
                 </div>
 
@@ -108,7 +108,7 @@
                     @include ('shop::products.price', ['product' => $product])
                 </div>
 
-                @if ($totalReviews)
+                <!-- @if ($totalReviews)
                     <div class="product-rating col-12 no-padding">
                         <star-ratings ratings="{{ $avgRatings }}"></star-ratings>
                         <span class="align-top">
@@ -119,7 +119,9 @@
                     <div class="product-rating col-12 no-padding">
                         <span class="fs14">{{ __('velocity::app.products.be-first-review') }}</span>
                     </div>
-                @endif
+                @endif -->
+
+                <hr>
 
                 <div class="cart-wish-wrap no-padding ml0">
                     @include ('shop::products.add-to-cart', [

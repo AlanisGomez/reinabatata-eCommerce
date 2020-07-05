@@ -118,7 +118,7 @@
                             :value="sliderConfig.priceFrom"
                             id="price_from" />
 
-                        <label class="col text-center" for="to">to</label>
+                        <label class="col text-center" for="to">a</label>
                         <input
                         type="text"
                         disabled

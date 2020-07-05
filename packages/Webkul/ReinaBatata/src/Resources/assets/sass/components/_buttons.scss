@@ -123,8 +123,12 @@ fieldset:disabled a.btn {
 //
 
 .btn-block {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
+
+    @include laptop-sm {
+        width: 30%;
+    }
 
   // Vertically space out multiple block buttons
   + .btn-block {

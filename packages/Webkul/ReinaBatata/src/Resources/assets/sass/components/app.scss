@@ -44,6 +44,23 @@
     }
 }
 
+.seperator {
+    position: relative;
+    border-top: solid 1px #D3D3D3;
+    margin: 30px 0px 25px 0px;
+    display: inline-block;
+    width: 100%;
+
+    span {
+        background-color: #FFFFFF;
+        position: absolute;
+        left: 20px;
+        top: -12px;
+        padding: 0px 15px;
+        text-align: center;
+    }
+}
+
 .customer-rating {
     .rating-container {
         padding: 30px 0;
@@ -886,6 +903,8 @@
         }
     }
 
+
+
     .account-layout {
         color: $body-color;
         padding: 1rem 2rem;
@@ -1475,8 +1494,9 @@
     .order-summary-container {
         top: 75px;
 
-        .theme-btn {
-            display: none;
+        .btn {
+            display: block;
+            width: 100%;
         }
 
         &.bottom {
@@ -1689,6 +1709,11 @@
     height: max-content;
     position: sticky !important;
     max-width: 500px !important;
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
 
     > div {
         width: 100%;

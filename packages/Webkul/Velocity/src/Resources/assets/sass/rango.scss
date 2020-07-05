@@ -1,19 +1,19 @@
 
 
-.velocity-icon {
+.reinabatata-icon {
     width: 60px;
     height: 55px;
     display: inline-block;
     background-size: cover;
-    background-image: url("../images/Icon-Velocity.svg");
+    background-image: url("../images/Patita-outline.svg");
 }
 
-.router-link-active .velocity-icon, .active .velocity-icon {
-    background-image: url("../images/Icon-Velocity-Active.svg");
+.router-link-active .reinabatata-icon, .active .reinabatata-icon {
+    background-image: url("../images/ReinaBatata-outline.svg");
 }
 
-.router-link-active.velocity-icon, .active.velocity-icon {
-    background-image: url("../images/Icon-Velocity-Active.svg");
+.router-link-active.reinabatata-icon, .active.reinabatata-icon {
+    background-image: url("../images/Patita-outline.svg");
 }
 
 @font-face {
