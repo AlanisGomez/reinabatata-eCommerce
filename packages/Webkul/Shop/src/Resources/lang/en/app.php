@@ -258,13 +258,13 @@ return [
                     'date' => 'Date',
                     'status' => 'Status',
                     'total' => 'Total',
-                    'order_number' => 'Order Number',
-                    'processing' => 'Processing',
-                    'completed' => 'Completed',
-                    'canceled' => 'Canceled',
-                    'closed' => 'Closed',
-                    'pending' => 'Pending',
-                    'pending-payment' => 'Pending Payment',
+                    'order_number' => 'Número de orden',
+                    'processing' => 'Procesando',
+                    'completed' => 'Completado',
+                    'canceled' => 'Cancelado',
+                    'closed' => 'Cerrado',
+                    'pending' => 'Pendiente',
+                    'pending-payment' => 'Pago pendiente',
                     'fraud' => 'Fraud'
                 ],
 
@@ -581,11 +581,11 @@ return [
             'thanks' => 'Thanks!',
 
             'comment' => [
-                'subject' => 'New comment added to your order',
-                'dear' => 'Dear :customer_name',
+                'subject' => 'Compra Reina Batata',
+                'dear' => ' :customer_name',
                 'final-summary' => 'Thanks for showing your interest in our store',
-                'help' => 'If you need any kind of help please contact us at :support_email',
-                'thanks' => 'Thanks!',
+                'help' => 'Si necesitas ayuda, contactanos en :support_email',
+                'thanks' => '¡Gracias!',
             ],
 
             'cancel' => [

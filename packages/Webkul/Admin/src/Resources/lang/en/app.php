@@ -273,7 +273,7 @@ return [
             'custom' => 'Personalizado',
             'all' => 'Todos'
         ],
-        
+
         'users' => [
             'title' => 'User',
             'add-user-title' => 'Add User',
@@ -372,12 +372,12 @@ return [
             'cancel-confirm-msg' => 'Are you sure you want to cancel this order ?',
             'refund-btn-title' => 'Refund',
             'refunds' => 'Refunds',
-            'comment-added-success' => 'Comment addded successfully.',
+            'comment-added-success' => 'Comentario agregado correctamente',
             'comment' => 'Comment',
-            'submit-comment' => 'Submit Comment',
-            'notify-customer' => 'Notify Customer',
-            'customer-notified' => ':date | Customer <b>Notified</b>',
-            'customer-not-notified' => ':date | Customer <b>Not Notified</b>'
+            'submit-comment' => 'Enviar comentario',
+            'notify-customer' => 'Notificar al cliente',
+            'customer-notified' => ':date | Cliente <b>Notificado</b>',
+            'customer-not-notified' => ':date | Cliente <b>Notificado</b>'
         ],
 
         'invoices' => [

@@ -558,8 +558,8 @@ return [
         'order' => [
             'subject' => 'Nuova Conferma Ordine',
             'heading' => 'Conferma Ordine!',
-            'dear' => ':customer_name',
-            'dear-admin' => ':admin_name',
+            'dear' => ' :customer_name',
+            'dear-admin' => ' :admin_name ',
             'greeting' => 'Grazie per il tuo Oridne :order_id su :created_at',
             'greeting-admin' => 'Id Ordine :order_id su :created_at',
             'summary' => 'Riepilogo Ordine',
@@ -675,7 +675,7 @@ return [
                 'subject' => 'Email Iscrizione',
                 'greeting' => ' Benvenuto ' . config('app.name') . ' - Email Iscrizione',
                 'unsubscribe' => 'Cancellati',
-                'summary' => 'Grazie per avere scelto di ricevere le nostre email. È passato un po\' di tempo da quando hai letto le email di ' . config('app.name') . '. Non è un nostro desidero inondare la tua casella email con le nostre comunicazioni. Se desideri comunque 
+                'summary' => 'Grazie per avere scelto di ricevere le nostre email. È passato un po\' di tempo da quando hai letto le email di ' . config('app.name') . '. Non è un nostro desidero inondare la tua casella email con le nostre comunicazioni. Se desideri comunque
                 non ricevere più le nostre news clicca il bottone qui sotto.'
             ]
         ]

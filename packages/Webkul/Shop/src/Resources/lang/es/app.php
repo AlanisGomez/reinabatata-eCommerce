@@ -518,10 +518,10 @@ return [
         'order' => [
             'subject' => 'Nuevo pedido confirmado',
             'heading' => '¡Pedido Confirmado!',
-            'dear' => ':customer_name',
-            'dear-admin' => ':admin_name',
-            'greeting' => 'Gracias por tu compra :order_id placed on :created_at',
-            'greeting-admin' => 'Pedido número :order_id placed on :created_at',
+            'dear' => ' :customer_name',
+            'dear-admin' => ' :admin_name',
+            'greeting' => 'Gracias por tu compra :order_id solicitada el :created_at',
+            'greeting-admin' => 'Número de pedido :order_id, solicitado el :created_at',
             'summary' => 'Detalle de facturación',
             'shipping-address' => 'Dirección de envío',
             'billing-address' => 'Dirección de facturación',
@@ -560,7 +560,7 @@ return [
             ]
         ],
         'invoice' => [
-            'heading' => 'Tu factura #:invoice_id for Order #:order_id',
+            'heading' => 'Tu factura #:invoice_id del pedido #:order_id',
             'subject' => 'Factura de tu pedido #:order_id',
             'summary' => 'Detalle de facturación',
         ],
@@ -614,8 +614,8 @@ return [
                 'subject' => 'Mail de suscripción',
                 'greeting' => ' Bienvenido a Reina Batata - Subscripción por mail',
                 'unsubscribe' => 'Darse de baja',
-                'summary' => 'Gracias por ponernos en tu bandeja de entrada. Ha pasado un tiempo desde que leyó el último correo electrónico de Reina Batata, y no queremos abrumar su bandeja de entrada. Si ya no quiere recibir
-                las últimas noticias de marketing, haga clic en el botón de abajo.'
+                'summary' => 'Gracias por ponernos en tu bandeja de entrada. Te vamos a mantener al tanto de nuestras promociones y sorteos. Si ya no queŕes recibir
+                nuestras últimas noticias, hacé clic en el botón de abajo.'
             ]
         ]
     ],

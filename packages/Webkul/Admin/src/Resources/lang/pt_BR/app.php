@@ -372,10 +372,10 @@ return [
             'cancel-confirm-msg' => 'Tem certeza que deseja cancelar esse pedido ?',
             'refunds' => 'Refunds',
             'refunded' => 'Refunded',
-            'comment-added-success' => 'Comment addded successfully.',
+            'comment-added-success' => 'Comentario agregado correctamente.',
             'comment' => 'Comment',
-            'submit-comment' => 'Submit Comment',
-            'notify-customer' => 'Notify Customer',
+            'submit-comment' => 'Enviar comentario',
+            'notify-customer' => 'Notificar al cliente',
         ],
 
         'invoices' => [

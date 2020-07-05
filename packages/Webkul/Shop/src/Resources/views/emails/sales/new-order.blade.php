@@ -195,6 +195,10 @@
                 {{ __('shop::app.mail.order.final-summary') }}
             </p>
 
+            <p  style="font-size: 16px;color: #5E5E5E;line-height: 24px; font-weight:600">
+                Si elegiste pagar a traves de Transferencia Bancaria, a la brevedad te enviaremos un correo con los datos necesarios para finalizar la transacción
+            </p>
+
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [

@@ -374,8 +374,8 @@ return [
             'refunds' => 'Terugbetalingen',
             'comment-added-success' => 'Comment addded successfully.',
             'comment' => 'Comment',
-            'submit-comment' => 'Submit Comment',
-            'notify-customer' => 'Notify Customer',
+            'submit-comment' => 'Enviar comentario',
+            'notify-customer' => 'Notificar al cliente',
         ],
 
         'invoices' => [

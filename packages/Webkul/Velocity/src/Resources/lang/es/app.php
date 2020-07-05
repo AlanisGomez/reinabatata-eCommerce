@@ -225,9 +225,9 @@ return [
 
     'error'         => [
         'go-to-home'            => 'Volver al inicio',
-        'page-lost-short'       => 'Contenido perdido',
+        'page-lost-short'       => 'Error 404',
         'something_went_wrong'  => 'Algo salió mal',
-        'page-lost-description' => "La página que estás buscando no está disponible. Intente buscar nuevamente o use el botón Volver Abajo.",
+        'page-lost-description' => "La página que estás buscando no está disponible. Intentá en otro momento.",
     ],
 
     'products'      => [
