@@ -3,7 +3,7 @@
         <div class="coupon-container">
             <div class="discount-control mt-3 mb-4">
                 <form class="d-md-flex justify-content-between" method="post" @submit.prevent="applyCoupon">
-                    <div class="control-group" :class="[error_message ? 'has-error' : '']">
+                    <div class="control-group pr-md-2" :class="[error_message ? 'has-error' : '']">
                         <input
                             type="text"
                             name="code"

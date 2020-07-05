@@ -27,7 +27,9 @@
                         <div class="row ltr">
                             <div class="col-12 no-padding carousel-products vc-full-screen" v-if="!isMobileView">
                                 <carousel-component
-                                    slides-per-page="4"
+                                    :perPageCustom="[[1024, 4]]"
+                                     slides-per-page="4"
+                                    scrollPerPage="true"
                                     navigation-enabled="true"
                                     pagination-enabled="hide"
                                     autoplay="true"
@@ -50,6 +52,7 @@
 
                             <div class="col-12 no-padding carousel-products vc-small-screen" v-else>
                                 <carousel-component
+                                    :perPageCustom="[[320, 1], [375, 1.2], [410, 1.3],[768, 3]]"
                                     slides-per-page="1"
                                     navigation-enabled="hide"
                                     pagination-enabled="hide"

@@ -11,7 +11,8 @@
 
     <div class="carousel-products vc-full-screen">
         <carousel-component
-            slides-per-page="6"
+            :perPageCustom="[[1024, 4]]"
+            scrollPerPage="true"
             navigation-enabled="hide"
             pagination-enabled="hide"
             id="upsell-products-carousel"
@@ -31,7 +32,7 @@
     <div class="carousel-products vc-small-screen">
         <carousel-component
             :slides-count="{{ sizeof($productUpSells) }}"
-            slides-per-page="2"
+            :perPageCustom="[[320, 1], [375, 1.2], [410, 1.3],[768, 3]]"
             id="upsell-products-carousel"
             navigation-enabled="hide"
             pagination-enabled="hide">

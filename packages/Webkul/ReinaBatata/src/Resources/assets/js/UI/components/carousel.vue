@@ -5,8 +5,10 @@
         :paginationEnabled="true"
         navigationNextLabel="<i class='material-icons'>keyboard_arrow_right</i>"
         navigationPrevLabel="<i class='material-icons'>keyboard_arrow_left</i>"
-        :perPage="parseInt(slidesPerPage)"
+        :perPageCustom="perPageCustom"
+        :perPage="slidesPerPage ? parseInt(slidesPerPage) : 0"
         :loop="loop == 'true' ? true : false"
+        :scrollPerPage="scrollPerPage == 'true' ? true : false"
         :autoplay="autoplay == 'true' ? true : false"
         :autoplayTimeout="timeout ? parseInt(timeout) : 5000"
         :autoplayHoverPause="autoplayHoverPause == 'true' ? true : false"
@@ -34,7 +36,9 @@
             'autoplay',
             'autoplayHoverPause',
             'addClass',
+            'scrollPerPage',
             'slidesCount',
+            'perPageCustom',
             'slidesPerPage',
             'sliderDirection',
             'navigationEnabled',

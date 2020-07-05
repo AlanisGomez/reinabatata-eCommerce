@@ -126,10 +126,6 @@ fieldset:disabled a.btn {
     display: block;
     width: 100%;
 
-    @include laptop-sm {
-        width: 30%;
-    }
-
   // Vertically space out multiple block buttons
   + .btn-block {
     margin-top: $btn-block-spacing-y;
