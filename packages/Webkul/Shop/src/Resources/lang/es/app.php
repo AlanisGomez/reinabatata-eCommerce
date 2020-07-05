@@ -518,8 +518,8 @@ return [
         'order' => [
             'subject' => 'Nuevo pedido confirmado',
             'heading' => '¡Pedido Confirmado!',
-            'dear' => 'Estimado/a :customer_name',
-            'dear-admin' => 'Estimado/a :admin_name',
+            'dear' => ':customer_name',
+            'dear-admin' => ':admin_name',
             'greeting' => 'Gracias por tu compra :order_id placed on :created_at',
             'greeting-admin' => 'Pedido número :order_id placed on :created_at',
             'summary' => 'Detalle de facturación',
@@ -541,7 +541,7 @@ return [
             'cancel' => [
                 'subject' => 'Confirmación de pedido cancelado',
                 'heading' => 'Pedido cancelado',
-                'dear' => 'Estimado/a :customer_name',
+                'dear' => ':customer_name',
                 'greeting' => 'Tu pedido con el número #:order_id placed on :created_at ha sido cancelado',
                 'summary' => 'Detalle de facturación',
                 'shipping-address' => 'Dirección de envío',
@@ -575,16 +575,16 @@ return [
             'greeting' => 'El pedido :order_id ha sido enviado a :created_at',
         ],
         'forget-password' => [
-            'subject' => 'Restablecer contraseña cliente',
-            'dear' => 'Estimado/a :name',
-            'info' => 'Te hemos enviado este correo porque hemos recibido una solicitud para restablecer la contraseña de tu cuenta',
+            'subject' => 'Restablecer contraseña',
+            'dear' => ':name',
+            'info' => 'Te enviamos este correo porque recibimos una solicitud para restablecer la contraseña de tu cuenta',
             'reset-password' => 'Restablecer contraseña',
-            'final-summary' => 'Si no has solicitado cambiar de contraseña, ninguna acción es requerida por tu parte.',
+            'final-summary' => 'Si no solicitaste cambiar tu contraseña, ignorá este correo.',
             'thanks' => '¡Gracias!'
         ],
         'customer' => [
             'new' => [
-                'dear' => 'Estimado/a :customer_name',
+                'dear' => ':customer_name',
                 'username-email' => 'Nombre de usuario/Email',
                 'subject' => 'Nuevo registro de cliente',
                 'password' => 'Contraseña',

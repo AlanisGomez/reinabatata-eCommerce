@@ -41,7 +41,7 @@
                                     id="email"
                                     type="text"
                                     name="email"
-                                    class="form-style"
+                                    class="form-control"
                                     value="{{ old('email') }}"
                                     v-validate="'required|email'" />
 
@@ -57,7 +57,7 @@
 
                                 <input
                                     ref="password"
-                                    class="form-style"
+                                    class="form-control"
                                     name="password"
                                     type="password"
                                     v-validate="'required|min:6'" />
@@ -74,7 +74,7 @@
 
                                 <input
                                     type="password"
-                                    class="form-style"
+                                    class="form-control"
                                     name="password_confirmation"
                                     v-validate="'required|min:6|confirmed:password'" />
 

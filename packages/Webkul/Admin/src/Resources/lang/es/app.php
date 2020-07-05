@@ -242,11 +242,11 @@ return [
         'forget-password' => [
             'title' => 'Contraseña olvidada',
             'header-title' => 'Recuperar contraseña',
-            'email' => 'Registar email',
+            'email' => 'Ingresá tu email',
             'password' => 'Contraseña',
             'confirm-password' => 'Confirmar contraseña',
             'back-link-title' => 'Regresar a inicio de sesión',
-            'submit-btn-title' => 'Enviar correo electrónico de restablecimiento de contraseña'
+            'submit-btn-title' => 'Restablecer contraseña'
         ],
 
         'reset-password' => [

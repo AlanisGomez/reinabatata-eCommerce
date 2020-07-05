@@ -28,7 +28,7 @@
                             <div class="col-12 no-padding carousel-products vc-full-screen" v-if="!isMobileView">
                                 <carousel-component
                                     :perPageCustom="[[1024, 4]]"
-                                     slides-per-page="4"
+                                    slides-per-page="4"
                                     scrollPerPage="true"
                                     navigation-enabled="true"
                                     pagination-enabled="hide"
