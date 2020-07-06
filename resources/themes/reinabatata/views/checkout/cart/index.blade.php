@@ -29,7 +29,7 @@
                 <h1 class="fw5 col-12 px-0 px-md-3">{{ __('shop::app.checkout.cart.title') }}</h1>
 
                 @if ($cart)
-                    <div class="cart-details-header no-padding col-lg-7 col-md-12">
+                    <div class="cart-details-header col-lg-7 col-md-12">
                         <div class="cart-items-name ">
                             <span class="fw6 fs16 d-none d-md-block">
                                 {{ __('velocity::app.checkout.items') }}

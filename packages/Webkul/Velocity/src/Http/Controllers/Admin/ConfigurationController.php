@@ -112,11 +112,11 @@ class ConfigurationController extends Controller
         unset($params['slides']);
 
         $params['locale'] = $this->locale;
-        
+
         // update row
         $product = $this->velocityMetaDataRepository->update($params, $id);
 
-        session()->flash('success', trans('admin::app.response.update-success', ['name' => 'Velocity Theme']));
+        session()->flash('success', trans('admin::app.response.update-success', ['name' => 'Reina Batata']));
 
         return redirect()->route($this->_config['redirect'], ['locale' => $this->locale]);
     }
@@ -125,7 +125,7 @@ class ConfigurationController extends Controller
      * @param  array    $data
      * @param  int      $index
      * @param  array    $advertisement
-     * 
+     *
      * @return array
      */
     public function uploadAdvertisementImages($data, $index, $advertisement)
@@ -138,13 +138,13 @@ class ConfigurationController extends Controller
             if ($image != "") {
                 $file = 'images.' . $index . '.' . $imageId;
                 $dir = 'velocity/images';
-    
+
                 if (Str::contains($imageId, 'image_')) {
                     if (request()->hasFile($file) && $image) {
                         $filter_index = substr($imageId, 6, 1);
                         if ( isset($data[$filter_index]) ) {
                             $size = array_key_last($saveData[$index]);
-                            
+
                             $saveImage[$size + 1] = request()->file($file)->store($dir);
                         } else {
                             $saveImage[substr($imageId, 6, 1)] = request()->file($file)->store($dir);
@@ -153,13 +153,13 @@ class ConfigurationController extends Controller
                 } else {
                     if ( isset($advertisement[$index][$imageId]) && $advertisement[$index][$imageId] && !request()->hasFile($file)) {
                         $saveImage[$imageId] = $advertisement[$index][$imageId];
-    
+
                         unset($advertisement[$index][$imageId]);
                     }
-    
+
                     if (request()->hasFile($file) && isset($advertisement[$index][$imageId])) {
                         Storage::delete($advertisement[$index][$imageId]);
-    
+
                         $saveImage[$imageId] = request()->file($file)->store($dir);
                     }
                 }
@@ -192,7 +192,7 @@ class ConfigurationController extends Controller
     /**
      * @param  array    $data
      * @param  int      $index
-     * 
+     *
      * @return mixed
      */
     public function uploadImage($data, $index)
@@ -215,7 +215,7 @@ class ConfigurationController extends Controller
 
     /**
      * @param  array  $addImages
-     * 
+     *
      * @return array
      */
     public function manageAddImages($addImages)
@@ -236,7 +236,7 @@ class ConfigurationController extends Controller
                 ];
             }
         }
-        
+
         return $imagePaths;
     }
 

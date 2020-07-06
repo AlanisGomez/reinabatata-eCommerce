@@ -9,15 +9,14 @@
 
     <div class="product-image-group">
         <div class="row col-12">
-            <figure class="img-container">
-                @include ('shop::products.view.stock', ['product' => $product])
-                <magnify-image src="{{ $images[0]['large_image_url'] }}" v-if="!isMobile()">
-                </magnify-image>
-                <img
-                    v-else
-                    class="vc-small-product-image"
-                    src="{{ $images[0]['large_image_url'] }}" />
-            </figure>
+            @include ('shop::products.view.stock', ['product' => $product])
+            <magnify-image src="{{ $images[0]['large_image_url'] }}" v-if="!isMobile()">
+            </magnify-image>
+
+            <img
+                v-else
+                class="vc-small-product-image"
+                src="{{ $images[0]['large_image_url'] }}" />
         </div>
 
         <div class="row col-12">
@@ -29,17 +28,17 @@
 {!! view_render_event('bagisto.shop.products.view.gallery.after', ['product' => $product]) !!}
 
 <script type="text/x-template" id="product-gallery-template">
-    <ul class="thumb-list col-12 row ltr" type="none"  v-if="thumbs.length > 1">
+     <ul class="thumb-list col-12 row ltr" type="none">
         <li class="arrow left" @click="scroll('prev')" v-if="thumbs.length > 4">
             <i class="rango-arrow-left fs24"></i>
         </li>
 
         <carousel-component
-            slides-per-page="3"
+            slides-per-page="4"
             :id="galleryCarouselId"
             pagination-enabled="hide"
             navigation-enabled="hide"
-            add-class="product-gallary"
+            add-class="product-gallery"
             :slides-count="thumbs.length">
 
             <slide :slot="`slide-${index}`" :key="index" v-for="(thumb, index) in thumbs">
@@ -88,10 +87,12 @@
 
                 watch: {
                     'images': function(newVal, oldVal) {
+                        if (this.images[0]) {
                         this.changeImage({
                             largeImageUrl: this.images[0]['large_image_url'],
                             originalImageUrl: this.images[0]['original_image_url'],
                         })
+                    }
 
                         this.prepareThumbs()
                     }

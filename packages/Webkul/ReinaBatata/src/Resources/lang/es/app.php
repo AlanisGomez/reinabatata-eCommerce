@@ -7,7 +7,7 @@ return [
                 'general'  => 'General',
                 'category'  => 'Categoría',
                 'settings'  => 'Opciones',
-                'extension_name' => 'Velocity Theme',
+                'extension_name' => 'Reina Batata Theme',
                 'error-module-inactive' => 'Advertencia: El estado de Velocity theme es inactivo',
             ],
 

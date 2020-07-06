@@ -134,7 +134,7 @@ return [
             'forgot_pass' => '¿Olvidaste tu contrseña?',
             'button_title' => 'Entrar',
             'remember' => 'Recuérdame',
-            'footer' => '© Copyright :year Euphoria Software, todos los derechos reservados',
+            'footer' => '© :year - Marketplace desarrollado por Euphorium Software',
             'invalid-creds' => 'Por favor, verificá tus credenciales e intentá de nuevo',
             'verify-first' => 'Verifica tu correo electrónico primero',
             'not-activated' => 'La activación de la cuenta será aprovada por el administrador',
@@ -621,7 +621,7 @@ return [
     ],
 
     'webkul' => [
-        'copy-right' => '© Copyright :year Euphoria Software, todos los derechos reservado.',
+        'copy-right' => '©:year - Marketplace desarrollado por Euphorium Software.',
     ],
 
     'response' => [

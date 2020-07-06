@@ -196,6 +196,10 @@
         </div>
 
         <div style="width: 100%;margin-top: 65px;font-size: 16px;color: #5E5E5E;line-height: 24px;display: inline-block">
+            <p  style="font-size: 16px;color: #5E5E5E;line-height: 24px; font-weight:600">
+                Si elegiste pagar a traves de Transferencia Bancaria, a la brevedad te enviaremos un correo con los datos necesarios para finalizar la transacción.
+            </p>
+
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [

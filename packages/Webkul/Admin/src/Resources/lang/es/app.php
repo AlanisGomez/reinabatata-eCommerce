@@ -176,7 +176,7 @@ return [
         'base-total' => 'Total base',
         'grand-total' => 'Total',
         'order-date' => 'Fecha de pedido',
-        'channel-name' => 'Nombre del canal',
+        'channel-name' => 'Canal',
         'billed-to' => 'Facturado a',
         'shipped-to' => 'Enviado a',
         'order-id' => 'Id de pedido',
@@ -365,8 +365,8 @@ return [
             'discount-amount' => 'Importe del descuento',
             'discount-amount' => 'Importe del descuento',
             'grand-total' => 'Total',
-            'total-paid' => 'Total pagada',
-            'total-refunded' => 'Total reembolsada',
+            'total-paid' => 'Total pagado',
+            'total-refunded' => 'Total reembolsado',
             'total-due' => 'Total adeudado',
             'cancel-confirm-msg' => '¿Estás seguro de que deseas cancelar este pedido?',
             'refund-btn-title' => 'Reembolso',
@@ -934,7 +934,7 @@ return [
             'phone' => 'Teléfono',
             'customer_group' => 'Customer Group',
             'save-btn-title' => 'Save Customer',
-            'channel_name' => 'Nombre del canal',
+            'channel_name' => 'Canal',
             'state' => 'Estado',
             'select-state' => 'Seleccione una región, estado o provincia.',
             'country' => 'País',
@@ -1218,7 +1218,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Powered by <a href="https://bagisto.com/" target="_blank">Bagisto</a>, A Community Project by <a href="https://webkul.com/" target="_blank">Webkul</a>',
+        'copy-right' => '© :year - Marketplace desarrollado por Euphorium Software',
     ],
 
     'admin' => [
@@ -1308,8 +1308,8 @@ return [
             'sandbox' => 'Sandbox',
             'all-channels' => 'Todo',
             'all-locales' => 'Todo',
-            'invoice-slip-design' => 'Diseño de deslizamiento de factura de caja de arena',
-            'logo' => 'logo'
+            'invoice-slip-design' => 'Diseño de factura PDF',
+            'logo' => 'Logo'
         ]
     ]
 ];

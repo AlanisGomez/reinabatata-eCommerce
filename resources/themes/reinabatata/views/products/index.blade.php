@@ -57,14 +57,14 @@ $isProductsDisplayMode = in_array(
 
 @push('scripts')
     <script type="text/x-template" id="category-template">
-        <section class="row velocity-divide-page category-page-wrapper">
+        <section class="row velocity-divide-page category-page-wrapper d-flex justify-content-center">
             {!! view_render_event('bagisto.shop.productOrCategory.index.before', ['category' => $category]) !!}
 
             @if (in_array($category->display_mode, [null, 'products_only', 'products_and_description']))
                 @include ('shop::products.list.layered-navigation')
             @endif
 
-            <div class="category-container col-12 col-md-9">
+            <div class="category-container col-12 col-md-8">
                 <div class="row remove-padding-margin">
                     <div class="pl0 col-12">
                         <h1 class="fw6 mb10">{{ $category->name }}</h1>

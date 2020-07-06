@@ -455,6 +455,18 @@ return [
         'route'      => 'velocity.admin.content.index',
         'sort'       => 2,
         'icon-class' => '',
+    ], [
+        'key'        => 'cms',
+        'name'       => 'admin::app.layouts.cms',
+        'route'      => 'admin.cms.index',
+        'sort'       => 5,
+        'icon-class' => 'cms-icon',
+    ], [
+        'key'        => 'cms.pages',
+        'name'       => 'admin::app.cms.pages.pages',
+        'route'      => 'admin.cms.index',
+        'sort'       => 1,
+        'icon-class' => '',
     ],
 ];
 
