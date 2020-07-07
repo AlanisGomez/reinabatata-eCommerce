@@ -269,7 +269,6 @@ return [
         Webkul\ReinaBatata\Providers\ReinaBatataServiceProvider::class,
         Webkul\BookingProduct\Providers\BookingProductServiceProvider::class,
         Webkul\SocialLogin\Providers\SocialLoginServiceProvider::class,
-        Laravel\Mercadopago\Providers\MPServiceProvider::class,
     ],
 
     /*
