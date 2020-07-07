@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Mercadopago\Repositories;
+namespace Webkul\Mercadopago\Repositories;
 
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Facades\Event;
@@ -23,7 +23,7 @@ class OrderMPRepository extends Repository
 
     function model()
     {
-        return 'Laravel\Mercadopago\Models\OrderMP';
+        return 'Webkul\Mercadopago\Models\OrderMP';
     }
 
     /**
@@ -35,7 +35,7 @@ class OrderMPRepository extends Repository
         DB::beginTransaction();
 
         try {
-    
+
             $orderMP = $this->model->create($data);
 
         } catch (\Exception $e) {
@@ -59,7 +59,7 @@ class OrderMPRepository extends Repository
         if (! $order->canCancel())
             return false;
 
-        $this->updateOrderStatus($orderId,'canceled');    
+        $this->updateOrderStatus($orderId,'canceled');
         return true;
     }
 
@@ -90,7 +90,7 @@ class OrderMPRepository extends Repository
         return true;
     }
 
-    public function updateOrderStatus($orderId,$status) 
+    public function updateOrderStatus($orderId,$status)
     {
         $order = $this->model->findOrFail($orderId);
         if($order->status != 'refunded' && $order->status != 'canceled') {

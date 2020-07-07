@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Mercadopago\Http\Controllers;
+namespace Webkul\Mercadopago\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

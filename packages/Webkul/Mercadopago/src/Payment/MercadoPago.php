@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Mercadopago\Payment;
+namespace Webkul\Mercadopago\Payment;
 
 use Illuminate\Support\Facades\Config;
 use Webkul\Payment\Payment\Payment;

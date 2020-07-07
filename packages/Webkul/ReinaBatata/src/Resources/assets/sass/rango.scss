@@ -1,19 +1,19 @@
 .reinabatata-icon {
-    width: 60px;
-    height: 55px;
+    width: 40px;
+    height: 42px;
     display: inline-block;
     background-size: cover;
-    background-image: url("../images/Icon-ReinaBatata.svg");
+    background-image: url("../images/ReinaBatata-outline.svg");
 }
 
 .router-link-active .reinabatata-icon,
 .active .reinabatata-icon {
-    background-image: url("../images/Icon-ReinaBatata-Active.svg");
+    background-image: url("../images/ReinaBatata-outline-Active.svg");
 }
 
 .router-link-active.reinabatata-icon,
 .active.reinabatata-icon {
-    background-image: url("../images/Icon-ReinaBatata-Active.svg");
+    background-image: url("../images/ReinaBatata-outline-Active.svg");
 }
 
 @font-face {

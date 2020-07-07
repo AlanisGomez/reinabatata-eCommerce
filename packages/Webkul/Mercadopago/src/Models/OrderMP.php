@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Mercadopago\Models;
+namespace Webkul\Mercadopago\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Webkul\Sales\Models\Order as Order;

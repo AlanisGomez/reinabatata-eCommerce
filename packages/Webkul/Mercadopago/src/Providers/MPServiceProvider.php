@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Mercadopago\Providers;
+namespace Webkul\Mercadopago\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;

@@ -1,5 +1,5 @@
 {
-    "name": "laravel/mercadopago",
+    "name": "webkul/mercadopago",
     "license": "MIT",
     "authors": [
         {
@@ -12,13 +12,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Mercadopago\\": "src/"
+            "Webkul\\Mercadopago\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Laravel\\Mercadopago\\Providers\\MPServiceProvider"
+                "Webkul\\Mercadopago\\Providers\\MPServiceProvider"
             ],
             "aliases": {}
         }

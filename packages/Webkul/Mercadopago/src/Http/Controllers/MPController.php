@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Mercadopago\Http\Controllers;
+namespace Webkul\Mercadopago\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Webkul\Checkout\Facades\Cart;
 use Webkul\Sales\Repositories\OrderRepository;
-use Laravel\Mercadopago\Repositories\OrderMPRepository;
+use Webkul\Mercadopago\Repositories\OrderMPRepository;
 use MercadoPago;
-use Laravel\Mercadopago\Payment\MercadoPago as MercadoPagoPayment;
+use Webkul\Mercadopago\Payment\MercadoPago as MercadoPagoPayment;
 
 class MPController extends Controller
 {
