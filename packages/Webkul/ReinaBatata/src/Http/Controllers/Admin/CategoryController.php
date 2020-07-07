@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Admin;
+namespace Webkul\ReinaBatata\Http\Controllers\Admin;
 
 use Illuminate\Http\Response;
 use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\Velocity\Repositories\CategoryRepository as VelocityCategoryRepository;
+use Webkul\ReinaBatata\Repositories\CategoryRepository as ReinaBatataCategoryRepository;
 
 class CategoryController extends Controller
 {
@@ -16,27 +16,27 @@ class CategoryController extends Controller
     protected $categoryRepository;
 
     /**
-     * VelocityCategory Repository object
+     * ReinaBatataCategory Repository object
      *
-     * @var \Webkul\Velocity\Repositories\CategoryRepository
+     * @var \Webkul\ReinaBatata\Repositories\CategoryRepository
     */
-    protected $velocityCategoryRepository;
+    protected $reinabatataCategoryRepository;
 
     /**
      * Create a new controller instance.
      *
      * @param  \Webkul\Category\Repositories\CategoryRepository  $categoryRepository;
-     * @param  \Webkul\Velocity\Repositories\CategoryRepository  $velocityCategory;
+     * @param  \Webkul\ReinaBatata\Repositories\CategoryRepository  $reinabatataCategory;
      * @return void
      */
     public function __construct(
         CategoryRepository $categoryRepository,
-        VelocityCategoryRepository $velocityCategoryRepository
+        ReinaBatataCategoryRepository $reinabatataCategoryRepository
     )
     {
         $this->categoryRepository = $categoryRepository;
 
-        $this->velocityCategoryRepository = $velocityCategoryRepository;
+        $this->reinabatataCategoryRepository = $reinabatataCategoryRepository;
 
         $this->_config = request('_config');
     }
@@ -47,10 +47,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        if (! core()->getConfigData('velocity.configuration.general.status')) {
-            session()->flash('error', trans('velocity::app.admin.system.velocity.error-module-inactive'));
+        if (! core()->getConfigData('reinabatata.configuration.general.status')) {
+            session()->flash('error', trans('reinabatata::app.admin.system.reinabatata.error-module-inactive'));
 
-            return redirect()->route('admin.configuration.index', ['slug' => 'velocity', 'slug2' => 'configuration']);
+            return redirect()->route('admin.configuration.index', ['slug' => 'reinabatata', 'slug2' => 'configuration']);
         }
 
         return view($this->_config['view']);
@@ -63,7 +63,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        $categories = $this->velocityCategoryRepository->getChannelCategories();
+        $categories = $this->reinabatataCategoryRepository->getChannelCategories();
 
         return view($this->_config['view'], compact('categories'));
     }
@@ -75,7 +75,7 @@ class CategoryController extends Controller
      */
     public function store()
     {
-        $this->velocityCategoryRepository->create(request()->all());
+        $this->reinabatataCategoryRepository->create(request()->all());
 
         session()->flash('success', trans('admin::app.response.create-success', ['name' => 'Category Menu']));
 
@@ -92,9 +92,9 @@ class CategoryController extends Controller
     {
         $categories = $this->categoryRepository->getVisibleCategoryTree(core()->getCurrentChannel()->root_category_id);
 
-        $velocityCategory = $this->velocityCategoryRepository->findOrFail($id);
+        $reinabatataCategory = $this->reinabatataCategoryRepository->findOrFail($id);
 
-        return view($this->_config['view'], compact('categories', 'velocityCategory'));
+        return view($this->_config['view'], compact('categories', 'reinabatataCategory'));
     }
 
     /**
@@ -105,7 +105,7 @@ class CategoryController extends Controller
      */
     public function update($id)
     {
-        $velocityCategory = $this->velocityCategoryRepository->update(request()->all(), $id);
+        $reinabatataCategory = $this->reinabatataCategoryRepository->update(request()->all(), $id);
 
         session()->flash('success', trans('admin::app.response.update-success', ['name' => 'Category Menu']));
 
@@ -120,10 +120,10 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        $velocityCategory = $this->velocityCategoryRepository->findOrFail($id);
+        $reinabatataCategory = $this->reinabatataCategoryRepository->findOrFail($id);
 
         try {
-            $this->velocityCategoryRepository->delete($id);
+            $this->reinabatataCategoryRepository->delete($id);
 
             session()->flash('success', trans('admin::app.response.delete-success', ['name' => 'Category Menu']));
 
@@ -145,14 +145,14 @@ class CategoryController extends Controller
         $menuIds = explode(',', request()->input('indexes'));
 
         foreach ($menuIds as $menuId) {
-            $velocityCategory = $this->velocityCategoryRepository->find($menuId);
+            $reinabatataCategory = $this->reinabatataCategoryRepository->find($menuId);
 
-            if (isset($velocityCategory)) {
-                $this->velocityCategoryRepository->delete($menuId);
+            if (isset($reinabatataCategory)) {
+                $this->reinabatataCategoryRepository->delete($menuId);
             }
         }
 
-        session()->flash('success', trans('velocity::app.admin.category.mass-delete-success'));
+        session()->flash('success', trans('reinabatata::app.admin.category.mass-delete-success'));
 
         return redirect()->route($this->_config['redirect']);
     }

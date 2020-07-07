@@ -10,12 +10,12 @@
 
             <div class="control-group" :class="[errors.has('{{$locale}}[catalog_type]') ? 'has-error' : '']">
                 <label for="catalog_type" class="required">
-                    {{ __('velocity::app.admin.contents.content.catalog-type') }}</label>
+                    {{ __('reinabatata::app.admin.contents.content.catalog-type') }}</label>
 
-                <select class="control" v-validate="'required'" id="catalog_type" name="{{$locale}}[catalog_type]" v-model="catalog_type" data-vv-as="&quot;{{ __('velocity::app.admin.contents.content.catalog-type') }}&quot;" @change="loadCatalogType($event)">
-                    <option value="">{{ __('velocity::app.admin.contents.select') }}</option>
+                <select class="control" v-validate="'required'" id="catalog_type" name="{{$locale}}[catalog_type]" v-model="catalog_type" data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.content.catalog-type') }}&quot;" @change="loadCatalogType($event)">
+                    <option value="">{{ __('reinabatata::app.admin.contents.select') }}</option>
 
-                    @foreach (velocity()->getCatalogType() as $key => $catalog_type)
+                    @foreach (reinabatata()->getCatalogType() as $key => $catalog_type)
                         <option value="{{ $key }}" {{ $catalogType == $key ? 'selected' : '' }}>{{ $catalog_type }}</option>
                     @endforeach
                 </select>
@@ -26,9 +26,9 @@
             <div v-if="catalog_type == 'custom'">
                 <field-autocomplete
                     :fieldLabel="'{{ __('admin::app.catalog.attributes.options') }}'"
-                    :fieldPlaceholder="'{{ __('velocity::app.admin.contents.search-hint') }}'"
-                    :routePath="'{{ route('velocity.admin.content.search') }}'"
-                    :linkedResults='@json(app('Webkul\Velocity\Repositories\ContentRepository')->getProducts($content->id))'
+                    :fieldPlaceholder="'{{ __('reinabatata::app.admin.contents.search-hint') }}'"
+                    :routePath="'{{ route('reinabatata.admin.content.search') }}'"
+                    :linkedResults='@json(app('Webkul\ReinaBatata\Repositories\ContentRepository')->getProducts($content->id))'
                 ></field-autocomplete>
             </div>
         </div>
@@ -68,7 +68,7 @@
                         </li>
 
                         <li v-if='! searched_results.length && search_field.length && ! is_searching'>
-                            {{ __('velocity::app.admin.contents.no-result-found') }}
+                            {{ __('reinabatata::app.admin.contents.no-result-found') }}
                         </li>
 
                         <li v-if="is_searching && search_field.length">

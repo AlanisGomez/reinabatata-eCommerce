@@ -57,7 +57,7 @@ $isProductsDisplayMode = in_array(
 
 @push('scripts')
     <script type="text/x-template" id="category-template">
-        <section class="row velocity-divide-page category-page-wrapper d-flex justify-content-center">
+        <section class="row reinabatata-divide-page category-page-wrapper d-flex justify-content-center">
             {!! view_render_event('bagisto.shop.productOrCategory.index.before', ['category' => $category]) !!}
 
             @if (in_array($category->display_mode, [null, 'products_only', 'products_and_description']))

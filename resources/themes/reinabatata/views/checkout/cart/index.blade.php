@@ -32,15 +32,15 @@
                     <div class="cart-details-header col-lg-7 col-md-12">
                         <div class="cart-items-name ">
                             <span class="fw6 fs16 d-none d-md-block">
-                                {{ __('velocity::app.checkout.items') }}
+                                {{ __('reinabatata::app.checkout.items') }}
                             </span>
 
                             <span class="fw6 fs16  d-none d-md-block">
-                                {{ __('velocity::app.checkout.qty') }}
+                                {{ __('reinabatata::app.checkout.qty') }}
                             </span>
 
                             <span class="fw6 fs16  d-none d-md-block">
-                                {{ __('velocity::app.checkout.subtotal') }}
+                                {{ __('reinabatata::app.checkout.subtotal') }}
                             </span>
                         </div>
 
@@ -244,7 +244,7 @@
                                 <a
                                 href="{{ route('shop.checkout.onepage.index') }}"
                                 class="btn btn-primary text-uppercase remove-decoration fw6 text-center">
-                                {{ __('velocity::app.checkout.proceed') }}
+                                {{ __('reinabatata::app.checkout.proceed') }}
                             </a>
                         </div>
                         <!-- <coupon-component class="d-none d-md"></coupon-component> -->

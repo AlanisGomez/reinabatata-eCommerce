@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Webkul\ReinaBatata\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Velocity\Contracts\Category as CategoryContract;
+use Webkul\ReinaBatata\Contracts\Category as CategoryContract;
 
 class Category extends Model implements CategoryContract
 {
-    
-    protected $table = 'velocity_category';
+
+    protected $table = 'reinabatata_category';
 
     protected $fillable = [
         'category_id',

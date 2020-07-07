@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Repositories\Product;
+namespace Webkul\ReinaBatata\Repositories\Product;
 
 use Webkul\Core\Eloquent\Repository;
 use Illuminate\Container\Container as App;

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateVelocityMetaData extends Migration
+class UpdateReinaBatataMetaData extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class UpdateVelocityMetaData extends Migration
      */
     public function up()
     {
-        Schema::table('velocity_meta_data', function (Blueprint $table) {
+        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
             $table->json('product_view_images')->nullable();
         });
     }
@@ -25,7 +25,7 @@ class UpdateVelocityMetaData extends Migration
      */
     public function down()
     {
-        Schema::table('velocity_meta_data', function (Blueprint $table) {
+        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
             $table->dropColumn('product_view_images');
         });
     }

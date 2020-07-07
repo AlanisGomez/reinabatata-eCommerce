@@ -1,7 +1,7 @@
 @extends('admin::layouts.content')
 
 @section('page_title')
-    {{ __('velocity::app.admin.contents.add-title') }}
+    {{ __('reinabatata::app.admin.contents.add-title') }}
 @stop
 
 @section('content')
@@ -20,14 +20,14 @@
                     <h1>
                         <i class="icon angle-left-icon back-link" onclick="history.length > 1 ? history.go(-1) : window.location = '{{ url('/admin/dashboard') }}';"></i>
 
-                        {{ __('velocity::app.admin.contents.add-title') }}
+                        {{ __('reinabatata::app.admin.contents.add-title') }}
                     </h1>
 
                     <div class="control-group">
                         <select class="control" id="locale-switcher" onChange="window.location.href = this.value">
                             @foreach (core()->getAllLocales() as $localeModel)
 
-                                <option value="{{ route('velocity.admin.content.update', $content->id) . '?locale=' . $localeModel->code }}" {{ ($localeModel->code) == $locale ? 'selected' : '' }}>
+                                <option value="{{ route('reinabatata.admin.content.update', $content->id) . '?locale=' . $localeModel->code }}" {{ ($localeModel->code) == $locale ? 'selected' : '' }}>
                                     {{ $localeModel->name }}
                                 </option>
 
@@ -38,7 +38,7 @@
 
                 <div class="page-action">
                     <button type="submit" class="btn btn-lg btn-primary">
-                        {{ __('velocity::app.admin.contents.save-btn-title') }}
+                        {{ __('reinabatata::app.admin.contents.save-btn-title') }}
                     </button>
                 </div>
             </div>
@@ -51,37 +51,37 @@
 
                 {!! view_render_event('bagisto.admin.content.edit_form_accordian.page.before', ['content' => $content]) !!}
 
-                <accordian :title="'{{ __('velocity::app.admin.contents.tab.page') }}'" :active="true">
+                <accordian :title="'{{ __('reinabatata::app.admin.contents.tab.page') }}'" :active="true">
                     <div slot="body">
 
                         {!! view_render_event('bagisto.admin.content.edit_form_accordian.page.controls.before', ['content' => $content]) !!}
 
                         <div class="control-group" :class="[errors.has('{{$locale}}[title]') ? 'has-error' : '']">
                             <label for="title" class="required">
-                                {{ __('velocity::app.admin.contents.page.title') }}
+                                {{ __('reinabatata::app.admin.contents.page.title') }}
                                 <span class="locale">[{{ $locale }}]</span>
                             </label>
-                            <input type="text" v-validate="'required|max:100'" class="control" id="title" name="{{$locale}}[title]" value="{{ old($locale)['title'] ?? $content->translate($locale)['title'] }}" data-vv-as="&quot;{{ __('velocity::app.admin.contents.page.title') }}&quot;"/>
+                            <input type="text" v-validate="'required|max:100'" class="control" id="title" name="{{$locale}}[title]" value="{{ old($locale)['title'] ?? $content->translate($locale)['title'] }}" data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.page.title') }}&quot;"/>
 
                             <span class="control-error" v-if="errors.has('{{$locale}}[title]')">@{{ errors.first('{!!$locale!!}[title]') }}</span>
                         </div>
 
                         <div class="control-group" :class="[errors.has('position') ? 'has-error' : '']">
                             <label for="position" class="required">
-                                {{ __('velocity::app.admin.contents.page.position') }}</span>
+                                {{ __('reinabatata::app.admin.contents.page.position') }}</span>
                             </label>
-                            <input type="text" v-validate="'required|numeric|max:2'" class="control" id="position" name="position" value="{{ old('position') ?? $content->position }}" data-vv-as="&quot;{{ __('velocity::app.admin.contents.page.position') }}&quot;"/>
+                            <input type="text" v-validate="'required|numeric|max:2'" class="control" id="position" name="position" value="{{ old('position') ?? $content->position }}" data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.page.position') }}&quot;"/>
                             <span class="control-error" v-if="errors.has('position')">@{{ errors.first('position') }}</span>
                         </div>
 
                         <div class="control-group" :class="[errors.has('status') ? 'has-error' : '']">
-                            <label for="status" class="required">{{ __('velocity::app.admin.contents.page.status') }}</label>
-                            <select class="control" v-validate="'required'" id="status" name="status" data-vv-as="&quot;{{ __('velocity::app.admin.contents.page.status') }}&quot;">
+                            <label for="status" class="required">{{ __('reinabatata::app.admin.contents.page.status') }}</label>
+                            <select class="control" v-validate="'required'" id="status" name="status" data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.page.status') }}&quot;">
                                 <option value="0" {{ !$content->status ? 'selected' : '' }}>
-                                    {{ __('velocity::app.admin.contents.inactive') }}
+                                    {{ __('reinabatata::app.admin.contents.inactive') }}
                                 </option>
                                 <option value="1" {{ $content->status ? 'selected' : '' }}>
-                                    {{ __('velocity::app.admin.contents.active') }}
+                                    {{ __('reinabatata::app.admin.contents.active') }}
                                 </option>
                             </select>
                             <span class="control-error" v-if="errors.has('status')">@{{ errors.first('status') }}</span>
@@ -96,7 +96,7 @@
 
                 {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.before', ['content' => $content]) !!}
 
-                <accordian :title="'{{ __('velocity::app.admin.contents.tab.content') }}'" :active="true">
+                <accordian :title="'{{ __('reinabatata::app.admin.contents.tab.content') }}'" :active="true">
                     <div slot="body">
 
                         {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.controls.before', ['content' => $content]) !!}
@@ -124,7 +124,7 @@
         <div>
             {{-- <div :class="`control-group ${errors.has('{{$locale}}[custom_title]') ? 'has-error' : ''}`">
                 <label for="custom_title">
-                    {{ __('velocity::app.admin.contents.content.custom-title') }}
+                    {{ __('reinabatata::app.admin.contents.content.custom-title') }}
                     <span class="locale">[{{ $locale }}]</span>
                 </label>
 
@@ -135,7 +135,7 @@
                     v-validate="'max:100'"
                     name="{{$locale}}[custom_title]"
                     value="{{ old($locale)['custom_title'] ?? ($content->translate($locale)['custom_title'] ?? '') }}"
-                    data-vv-as="&quot;{{ __('velocity::app.admin.contents.content.custom-title') }}&quot;" />
+                    data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.content.custom-title') }}&quot;" />
 
                 <span
                     class="control-error"
@@ -146,7 +146,7 @@
 
             <div :class="`control-group ${errors.has('{{$locale}}[custom_heading]') ? 'has-error' : ''}`">
                 <label for="custom_heading">
-                    {{ __('velocity::app.admin.contents.content.custom-heading') }}
+                    {{ __('reinabatata::app.admin.contents.content.custom-heading') }}
                     <span class="locale">[{{ $locale }}]</span>
                 </label>
 
@@ -156,7 +156,7 @@
                     id="custom_heading"
                     v-validate="'max:100'"
                     name="{{$locale}}[custom_heading]"
-                    value="{{ old($locale)['custom_heading'] ?? $content->translate($locale)['custom_title'] }}" data-vv-as="&quot;{{ __('velocity::app.admin.contents.content.custom-heading') }}&quot;" />
+                    value="{{ old($locale)['custom_heading'] ?? $content->translate($locale)['custom_title'] }}" data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.content.custom-heading') }}&quot;" />
 
                 <span
                     class="control-error"
@@ -169,7 +169,7 @@
                 <label
                     for="content_type"
                     class="required">
-                    {{ __('velocity::app.admin.contents.content.content-type') }}
+                    {{ __('reinabatata::app.admin.contents.content.content-type') }}
                 </label>
 
                 @php
@@ -182,13 +182,13 @@
                     name="content_type"
                     v-model="content_type"
                     v-validate="'required'"
-                    data-vv-as="&quot;{{ __('velocity::app.admin.contents.content.content-type') }}&quot;" @change="loadFields($event)">
+                    data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.content.content-type') }}&quot;" @change="loadFields($event)">
 
                     <option value="">
-                        {{ __('velocity::app.admin.contents.select') }}
+                        {{ __('reinabatata::app.admin.contents.select') }}
                     </option>
 
-                    @foreach (velocity()->getContentType() as $key => $content_type)
+                    @foreach (reinabatata()->getContentType() as $key => $content_type)
                         <option
                             value="{{ $key }}"
                             {{ $contentType == $key ? 'selected' : '' }}>
@@ -210,7 +210,7 @@
                 <div :class="`control-group ${errors.has('{{$locale}}[page_link]') ? 'has-error' : ''}`">
 
                     <label for="page_link" class="required">
-                        {{ __('velocity::app.admin.contents.content.page-link') }}
+                        {{ __('reinabatata::app.admin.contents.content.page-link') }}
                     </label>
 
                     <input
@@ -220,7 +220,7 @@
                         name="{{$locale}}[page_link]"
                         v-validate="'required|max:150'"
                         value="{{ old($locale)['page_link'] ?? $content->translate($locale)['page_link'] }}"
-                        data-vv-as="&quot;{{ __('velocity::app.admin.contents.content.page-link') }}&quot;" />
+                        data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.content.page-link') }}&quot;" />
 
                     <span
                         class="control-error"
@@ -231,7 +231,7 @@
 
                 <div class="control-group">
                     <label for="link_target">
-                        {{ __('velocity::app.admin.contents.content.link-target') }}
+                        {{ __('reinabatata::app.admin.contents.content.link-target') }}
                     </label>
 
                     <select
@@ -239,10 +239,10 @@
                         id="link_target"
                         name="link_target">
                         <option value="0" {{ !$content->link_target ? 'selected' : '' }}>
-                            {{ __('velocity::app.admin.contents.self') }}
+                            {{ __('reinabatata::app.admin.contents.self') }}
                         </option>
                         <option value="1" {{ $content->link_target ? 'selected' : '' }}>
-                            {{ __('velocity::app.admin.contents.new-tab') }}
+                            {{ __('reinabatata::app.admin.contents.new-tab') }}
                         </option>
                     </select>
                 </div>
@@ -251,21 +251,21 @@
             </div>
 
             <div v-else-if="content_type == 'product'">
-                @include ('velocity::admin.content.content-type.edit-product')
+                @include ('reinabatata::admin.content.content-type.edit-product')
             </div>
 
             <div v-else-if="content_type == 'static'">
                 {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.static.before', ['content' => $content]) !!}
 
                 <div :class="`control-group ${errors.has('{{$locale}}[description]') ? 'has-error' : ''}`">
-                    <label for="description" class="required">{{ __('velocity::app.admin.contents.content.static-description') }}</label>
+                    <label for="description" class="required">{{ __('reinabatata::app.admin.contents.content.static-description') }}</label>
 
                     <textarea
                         class="control"
                         id="description"
                         v-validate="'required'"
                         name="{{$locale}}[description]"
-                        data-vv-as="&quot;{{ __('velocity::app.admin.contents.content.static-description') }}&quot;">
+                        data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.content.static-description') }}&quot;">
                         {{ old($locale)['description'] ?? $content->translate($locale)['description'] }}
                     </textarea>
 
@@ -280,7 +280,7 @@
             </div>
 
             <div v-else-if="content_type == 'category'">
-                @include ('velocity::admin.content.content-type.category')
+                @include ('reinabatata::admin.content.content-type.category')
             </div>
         </div>
     </script>

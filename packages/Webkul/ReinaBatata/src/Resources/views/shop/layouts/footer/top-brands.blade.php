@@ -1,5 +1,5 @@
 @php
-    $brandname = app('Webkul\Velocity\Helpers\Helper');
+    $brandname = app('Webkul\ReinaBatata\Helpers\Helper');
     $topBrandsCollection = $brandname->getBrandsWithCategories();
 @endphp
 
@@ -8,7 +8,7 @@
         <div class="top-brands-body">
                 @if ($topBrandsCollection)
                     <div class="top-brands-header">
-                        <h2>{{ __('velocity::app.shop.general.top-brands') }}</h2>
+                        <h2>{{ __('reinabatata::app.shop.general.top-brands') }}</h2>
                     </div>
 
                     <ul class="list-group">

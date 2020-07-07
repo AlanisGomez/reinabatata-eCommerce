@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVelocityContentsTable extends Migration
+class CreateReinaBatataContentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateVelocityContentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('velocity_contents', function (Blueprint $table) {
+        Schema::create('reinabatata_contents', function (Blueprint $table) {
             $table->increments('id');
 
             $table->string('content_type', 100)->nullable();
             $table->integer('position')->unsigned()->nullable();
             $table->boolean('status')->default(0);
-            
+
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateVelocityContentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('velocity_contents');
+        Schema::dropIfExists('reinabatata_contents');
     }
 }

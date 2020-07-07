@@ -2,7 +2,7 @@
     $direction = core()->getCurrentLocale()->direction;
 @endphp
 
-@if ($velocityMetaData && $velocityMetaData->slider)
+@if ($reinabatataMetaData && $reinabatataMetaData->slider)
     <slider-component direction="{{ $direction }}"></slider-component>
 @endif
 
@@ -46,7 +46,7 @@
                         <img
                             loading="lazy"
                             class="col-12 no-padding banner-icon d-none d-md-block"
-                            src="{{ asset('/themes/velocity/assets/images/banner.png') }}" />
+                            src="{{ asset('/themes/reinabatata/assets/images/banner.png') }}" />
                     </slide>
                 @endif
 

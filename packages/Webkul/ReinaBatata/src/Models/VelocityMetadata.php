@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Webkul\ReinaBatata\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Velocity\Contracts\VelocityMetadata as VelocityMetadataContract;
+use Webkul\ReinaBatata\Contracts\ReinaBatataMetadata as ReinaBatataMetadataContract;
 
-class VelocityMetadata extends Model implements VelocityMetadataContract
+class ReinaBatataMetadata extends Model implements ReinaBatataMetadataContract
 {
-    protected $table = 'velocity_meta_data';
+    protected $table = 'reinabatata_meta_data';
 
     protected $guarded = [];
 

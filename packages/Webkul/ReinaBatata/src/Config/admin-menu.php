@@ -2,21 +2,21 @@
 
 return [
     [
-        'key'        => 'velocity',
-        'name'       => 'velocity::app.admin.layouts.velocity',
-        'route'      => 'velocity.admin.content.index',
+        'key'        => 'reinabatata',
+        'name'       => 'reinabatata::app.admin.layouts.reinabatata',
+        'route'      => 'reinabatata.admin.content.index',
         'sort'       => 5,
-        'icon-class' => 'velocity-icon',
+        'icon-class' => 'reinabatata-icon',
     ], [
-        'key'        => 'velocity.meta-data',
-        'name'       => 'velocity::app.admin.layouts.meta-data',
-        'route'      => 'velocity.admin.meta-data',
+        'key'        => 'reinabatata.meta-data',
+        'name'       => 'reinabatata::app.admin.layouts.meta-data',
+        'route'      => 'reinabatata.admin.meta-data',
         'sort'       => 1,
         'icon-class' => '',
     ], [
-        'key'        => 'velocity.header',
-        'name'       => 'velocity::app.admin.layouts.header-content',
-        'route'      => 'velocity.admin.content.index',
+        'key'        => 'reinabatata.header',
+        'name'       => 'reinabatata::app.admin.layouts.header-content',
+        'route'      => 'reinabatata.admin.content.index',
         'sort'       => 2,
         'icon-class' => '',
     ],

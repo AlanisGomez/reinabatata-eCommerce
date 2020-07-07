@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddLocaleVelocityMetaData extends Migration
+class AddLocaleReinaBatataMetaData extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddLocaleVelocityMetaData extends Migration
      */
     public function up()
     {
-        Schema::table('velocity_meta_data', function (Blueprint $table) {
+        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
             $table->text('locale');
         });
     }
@@ -25,7 +25,7 @@ class AddLocaleVelocityMetaData extends Migration
      */
     public function down()
     {
-        Schema::table('velocity_meta_data', function (Blueprint $table) {
+        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
             $table->dropColumn('locale');
         });
     }

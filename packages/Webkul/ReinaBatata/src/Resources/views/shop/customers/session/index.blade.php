@@ -13,12 +13,12 @@
                 <div class="col-lg-10 col-md-12 offset-lg-1">
                     <div class="heading">
                         <h2 class="fs24 fw6">
-                            {{ __('velocity::app.customer.login-form.customer-login')}}
+                            {{ __('reinabatata::app.customer.login-form.customer-login')}}
                         </h2>
 
                         <a href="{{ route('customer.register.index') }}" class="btn-new-customer">
                             <button type="button" class="theme-btn light">
-                                {{ __('velocity::app.customer.login-form.sign-up')}}
+                                {{ __('reinabatata::app.customer.login-form.sign-up')}}
                             </button>
                         </a>
                     </div>
@@ -26,11 +26,11 @@
                     <div class="body col-12">
                         <div class="form-header">
                             <h3 class="fw6">
-                                {{ __('velocity::app.customer.login-form.registered-user')}}
+                                {{ __('reinabatata::app.customer.login-form.registered-user')}}
                             </h3>
 
                             <p class="fs16">
-                                {{ __('velocity::app.customer.login-form.form-login-text')}}
+                                {{ __('reinabatata::app.customer.login-form.form-login-text')}}
                             </p>
                         </div>
 

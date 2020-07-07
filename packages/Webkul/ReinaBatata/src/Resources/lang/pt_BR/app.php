@@ -3,12 +3,12 @@
 return [
     'admin' => [
         'system'   => [
-            'velocity' => [
+            'reinabatata' => [
                 'general'  => 'Geral',
                 'category'  => 'Categoria',
                 'settings'  => 'Configurações',
-                'extension_name' => 'Velocity Tema',
-                'error-module-inactive' => 'Atenção: Tema Velocity está inativo',
+                'extension_name' => 'ReinaBatata Tema',
+                'error-module-inactive' => 'Atenção: Tema ReinaBatata está inativo',
             ],
 
             'settings' => [
@@ -40,7 +40,7 @@ return [
             ]
         ],
         'layouts' => [
-            'velocity' => 'Velocity',
+            'reinabatata' => 'ReinaBatata',
             'cms-pages' => 'CMS Páginas',
             'meta-data' => 'Meta Data',
             'category-menu' => 'Categoria Menu',
@@ -91,7 +91,7 @@ return [
         ],
         'meta-data' => [
             'footer' => 'Rodapé',
-            'title' => 'Velocity meta data',
+            'title' => 'ReinaBatata meta data',
             'activate-slider' => 'Ativar Slider',
             'home-page-content' => 'Conteúdo da Página Inicial',
             'footer-left-content' => 'Conteúdo Rodapé Esquerdo',

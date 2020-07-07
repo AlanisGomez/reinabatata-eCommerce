@@ -84,7 +84,7 @@
                             <button
                                 type="submit"
                                 class="theme-btn fs16">
-                                {{ __('velocity::app.products.submit-review') }}
+                                {{ __('reinabatata::app.products.submit-review') }}
                             </button>
                         </div>
                     </form>

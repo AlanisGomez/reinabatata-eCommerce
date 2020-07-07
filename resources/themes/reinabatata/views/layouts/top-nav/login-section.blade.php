@@ -34,7 +34,7 @@
                             </li>
 
                             <li>
-                                <a href="{{ route('customer.orders.index') }}" class="unset">{{ __('velocity::app.shop.general.orders') }}</a>
+                                <a href="{{ route('customer.orders.index') }}" class="unset">{{ __('reinabatata::app.shop.general.orders') }}</a>
                             </li>
 
                             <li>

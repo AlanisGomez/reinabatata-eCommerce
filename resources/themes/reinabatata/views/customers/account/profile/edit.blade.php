@@ -63,7 +63,7 @@
 
                 <div class="row mb-2">
                     <label class="col-12">
-                        {{ __('velocity::app.shop.general.enter-current-password') }}
+                        {{ __('reinabatata::app.shop.general.enter-current-password') }}
                     </label>
 
                     <div :class="`col-12 ${errors.has('oldpassword') ? 'has-error' : ''}`">
@@ -75,7 +75,7 @@
 
                 <div class="row mb-2">
                     <label class="col-12">
-                        {{ __('velocity::app.shop.general.new-password') }}
+                        {{ __('reinabatata::app.shop.general.new-password') }}
                     </label>
 
                     <div :class="`col-12 ${errors.has('password') ? 'has-error' : ''}`">
@@ -96,7 +96,7 @@
 
                 <div class="row mb-2">
                     <label class="col-12">
-                        {{ __('velocity::app.shop.general.confirm-new-password') }}
+                        {{ __('reinabatata::app.shop.general.confirm-new-password') }}
                     </label>
 
                     <div :class="`col-12 ${errors.has('password_confirmation') ? 'has-error' : ''}`">
@@ -114,7 +114,7 @@
                 <button
                     type="submit"
                     class="btn btn-primary my-3">
-                    {{ __('velocity::app.shop.general.update') }}
+                    {{ __('reinabatata::app.shop.general.update') }}
                 </button>
             </form>
     </div>

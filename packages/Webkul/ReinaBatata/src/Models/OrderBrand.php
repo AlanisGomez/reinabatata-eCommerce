@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Webkul\ReinaBatata\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Velocity\Contracts\OrderBrand as OrderBrandContract;
+use Webkul\ReinaBatata\Contracts\OrderBrand as OrderBrandContract;
 use Webkul\Attribute\Models\AttributeOptionProxy;
 use Webkul\Category\Models\CategoryProxy;
 
 class OrderBrand extends Model implements OrderBrandContract
 {
-    
+
     protected $table = 'order_brands';
 
     protected $fillable = [
@@ -31,5 +31,5 @@ class OrderBrand extends Model implements OrderBrandContract
     {
         return $this->belongsToMany(CategoryProxy::modelClass(), 'product_categories','product_id');
     }
-    
+
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Providers;
+namespace Webkul\ReinaBatata\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Event;
@@ -19,7 +19,7 @@ class EventServiceProvider extends ServiceProvider
             'bagisto.admin.settings.locale.create.after',
         ], function($viewRenderEventManager) {
                 $viewRenderEventManager->addTemplate(
-                    'velocity::admin.settings.locales.locale-logo'
+                    'reinabatata::admin.settings.locales.locale-logo'
                 );
             }
         );
@@ -29,7 +29,7 @@ class EventServiceProvider extends ServiceProvider
             'bagisto.admin.catalog.category.create_form_accordian.description_images.controls.after',
         ], function($viewRenderEventManager) {
                 $viewRenderEventManager->addTemplate(
-                    'velocity::admin.catelog.categories.category-icon'
+                    'reinabatata::admin.catelog.categories.category-icon'
                 );
             }
         );
@@ -39,30 +39,30 @@ class EventServiceProvider extends ServiceProvider
             'bagisto.admin.settings.slider.create.after',
         ], function($viewRenderEventManager) {
                 $viewRenderEventManager->addTemplate(
-                    'velocity::admin.settings.sliders.velocity-slider'
+                    'reinabatata::admin.settings.sliders.reinabatata-slider'
                 );
             }
         );
 
         Event::listen('bagisto.admin.layout.head', function($viewRenderEventManager) {
-            $viewRenderEventManager->addTemplate('velocity::admin.layouts.style');
+            $viewRenderEventManager->addTemplate('reinabatata::admin.layouts.style');
         });
 
         Event::listen([
             'core.locale.create.after',
             'core.locale.update.after',
-        ], 'Webkul\Velocity\Helpers\AdminHelper@saveLocaleImg');
+        ], 'Webkul\ReinaBatata\Helpers\AdminHelper@saveLocaleImg');
 
         Event::listen([
             'catalog.category.create.after',
             'catalog.category.update.after',
-        ], 'Webkul\Velocity\Helpers\AdminHelper@storeCategoryIcon');
+        ], 'Webkul\ReinaBatata\Helpers\AdminHelper@storeCategoryIcon');
 
         Event::listen([
             'core.settings.slider.create.after',
             'core.settings.slider.update.after',
-        ], 'Webkul\Velocity\Helpers\AdminHelper@storeSliderDetails');
+        ], 'Webkul\ReinaBatata\Helpers\AdminHelper@storeSliderDetails');
 
-        Event::listen('checkout.order.save.after', 'Webkul\Velocity\Helpers\Helper@topBrand');
+        Event::listen('checkout.order.save.after', 'Webkul\ReinaBatata\Helpers\Helper@topBrand');
     }
 }

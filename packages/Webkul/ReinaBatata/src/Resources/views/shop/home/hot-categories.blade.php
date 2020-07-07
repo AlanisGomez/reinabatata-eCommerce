@@ -1,5 +1,5 @@
 <div class="container-fluid hot-categories-container">
-    <card-list-header heading="{{ __('velocity::app.home.hot-categories') }}">
+    <card-list-header heading="{{ __('reinabatata::app.home.hot-categories') }}">
     </card-list-header>
 
     <div class="row">
@@ -13,7 +13,7 @@
     <script type="text/x-template" id="hot-category-template">
         <div class="col-lg-3 col-md-12 hot-category-wrapper" v-if="hotCategoryDetails">
             <div class="card">
-                <div class="row velocity-divide-page">
+                <div class="row reinabatata-divide-page">
                     <div class="left">
                         <img :src="`${$root.baseUrl}/storage/${hotCategoryDetails.category_icon_path}`" />
                     </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Helpers;
+namespace Webkul\ReinaBatata\Helpers;
 
 use Illuminate\Support\Facades\Storage;
 use Webkul\Category\Repositories\CategoryRepository;
@@ -80,7 +80,7 @@ class AdminHelper
 
             foreach ($data[$type] as $imageId => $image) {
                 $file = $type . '.' . $imageId;
-                $dir = 'velocity/' . $type . '/' . $model->id;
+                $dir = 'reinabatata/' . $type . '/' . $model->id;
 
                 if ($request->hasFile($file)) {
                     if ($model->{$type}) {

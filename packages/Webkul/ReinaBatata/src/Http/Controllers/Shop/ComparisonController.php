@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Shop;
+namespace Webkul\ReinaBatata\Http\Controllers\Shop;
 
-use Webkul\Velocity\Helpers\Helper;
+use Webkul\ReinaBatata\Helpers\Helper;
 use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Velocity\Repositories\VelocityCustomerCompareProductRepository as CustomerCompareProductRepository;
+use Webkul\ReinaBatata\Repositories\ReinaBatataCustomerCompareProductRepository as CustomerCompareProductRepository;
 
 class ComparisonController extends Controller
 {
@@ -17,14 +17,14 @@ class ComparisonController extends Controller
     {
         if (request()->get('data')) {
             $productSlugs = null;
-            
+
             $productCollection = [];
 
             if (auth()->guard('customer')->user()) {
                 $productCollection = $this->compareProductsRepository
                     ->leftJoin(
                         'product_flat',
-                        'velocity_customer_compare_products.product_flat_id',
+                        'reinabatata_customer_compare_products.product_flat_id',
                         'product_flat.id'
                     )
                     ->where('customer_id', auth()->guard('customer')->user()->id)
@@ -38,12 +38,12 @@ class ComparisonController extends Controller
                 }
 
                 $items = implode('&', $items);
-                $productCollection = $this->velocityHelper->fetchProductCollection($items);
+                $productCollection = $this->reinabatataHelper->fetchProductCollection($items);
 
             } else {
                 // for product details
                 if ($items = request()->get('items')) {
-                    $productCollection = $this->velocityHelper->fetchProductCollection($items);
+                    $productCollection = $this->reinabatataHelper->fetchProductCollection($items);
                 }
             }
 
@@ -87,7 +87,7 @@ class ComparisonController extends Controller
 
             if ($productFlat) {
                 $productId = $productFlat->id;
-                
+
                 $this->compareProductsRepository->create([
                     'customer_id'     => $customerId,
                     'product_flat_id' => $productId,
@@ -96,14 +96,14 @@ class ComparisonController extends Controller
 
             return response()->json([
                 'status'  => 'success',
-                'message' => trans('velocity::app.customer.compare.added'),
-                'label'   => trans('velocity::app.shop.general.alert.success'),
+                'message' => trans('reinabatata::app.customer.compare.added'),
+                'label'   => trans('reinabatata::app.shop.general.alert.success'),
             ], 201);
         } else {
             return response()->json([
                 'status'  => 'success',
-                'label'   => trans('velocity::app.shop.general.alert.success'),
-                'message' => trans('velocity::app.customer.compare.already_added'),
+                'label'   => trans('reinabatata::app.shop.general.alert.success'),
+                'message' => trans('reinabatata::app.customer.compare.already_added'),
             ], 200);
         }
     }
@@ -132,8 +132,8 @@ class ComparisonController extends Controller
 
         return [
             'status'  => 'success',
-            'message' => trans('velocity::app.customer.compare.removed'),
-            'label'   => trans('velocity::app.shop.general.alert.success'),
+            'message' => trans('reinabatata::app.customer.compare.removed'),
+            'label'   => trans('reinabatata::app.shop.general.alert.success'),
         ];
     }
 }

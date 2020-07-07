@@ -313,7 +313,7 @@ header #search-form > *:focus {
             // -webkit-box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.14);
         }
 
-        .velocity-divide-page {
+        .reinabatata-divide-page {
             .left {
                 width: 30px;
                 height: 30px;
@@ -503,8 +503,8 @@ header #search-form > *:focus {
                     position: relative;
                     color: $black;
                     text-decoration: none;
-                    &:hover{
-                        color:$primary;
+                    &:hover {
+                        color: $primary;
                     }
                 }
             }
@@ -512,7 +512,7 @@ header #search-form > *:focus {
     }
 }
 
-.velocity-divide-page {
+.reinabatata-divide-page {
     position: relative;
 
     .left {
@@ -543,7 +543,7 @@ header #search-form > *:focus {
     background-image: url("../images/static/broken-clock.png");
 }
 
-.velocity-icon {
+.reinabatata-icon {
     width: 150px;
     height: 150px;
     background-image: url("../images/static/v-icon.png");

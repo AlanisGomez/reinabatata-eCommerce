@@ -14,12 +14,12 @@
                     <ul class="nav nav-tabs mb-4 justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link active" href="{{ route('customer.session.index') }}">
-                                <h3 class="fs18 mb-0 fw6">{{ __('velocity::app.customer.signup-form.login')}}</h3>
+                                <h3 class="fs18 mb-0 fw6">{{ __('reinabatata::app.customer.signup-form.login')}}</h3>
                             </a>
                         </li>
                         <li  class="nav-item">
                             <a  class="nav-link" href="{{ route('customer.register.index') }}">
-                                <h3 class="fs18 mb-0 fw6">{{ __('velocity::app.customer.login-form.sign-up')}}</h3>
+                                <h3 class="fs18 mb-0 fw6">{{ __('reinabatata::app.customer.login-form.sign-up')}}</h3>
                             </a>
                         </li>
                     </ul>
@@ -28,7 +28,7 @@
                         <div class="content-login">
                         <div class="form-header">
                             <p class="fs16">
-                                {{ __('velocity::app.customer.login-form.form-login-text')}}
+                                {{ __('reinabatata::app.customer.login-form.form-login-text')}}
                             </p>
                         </div>
 

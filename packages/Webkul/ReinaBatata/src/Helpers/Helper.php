@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Velocity\Helpers;
+namespace Webkul\ReinaBatata\Helpers;
 
 use Illuminate\Support\Facades\DB;
 use Webkul\Product\Helpers\Review;
 use Webkul\Product\Models\Product as ProductModel;
 use Webkul\Product\Repositories\ProductRepository;
 use Webkul\Product\Repositories\ProductFlatRepository;
-use Webkul\Velocity\Repositories\OrderBrandsRepository;
+use Webkul\ReinaBatata\Repositories\OrderBrandsRepository;
 use Webkul\Attribute\Repositories\AttributeOptionRepository;
 use Webkul\Product\Repositories\ProductReviewRepository;
-use Webkul\Velocity\Repositories\VelocityMetadataRepository;
+use Webkul\ReinaBatata\Repositories\ReinaBatataMetadataRepository;
 
 class Helper extends Review
 {
@@ -24,7 +24,7 @@ class Helper extends Review
     /**
      * orderBrands object
      *
-     * @var \Webkul\Velocity\Repositories\OrderBrandsRepository
+     * @var \Webkul\ReinaBatata\Repositories\OrderBrandsRepository
      */
     protected $orderBrandsRepository;
 
@@ -57,20 +57,20 @@ class Helper extends Review
     protected $productReviewRepository;
 
     /**
-     * VelocityMetadata object
+     * ReinaBatataMetadata object
      *
-     * @var \Webkul\Velocity\Repositories\VelocityMetadataRepository
+     * @var \Webkul\ReinaBatata\Repositories\ReinaBatataMetadataRepository
      */
-    protected $velocityMetadataRepository;
+    protected $reinabatataMetadataRepository;
 
     /**
      * Create a helper instamce
      *
      * @param  \Webkul\Product\Contracts\Product                        $productModel
-     * @param  \Webkul\Velocity\Repositories\OrderBrandsRepository      $orderBrands
+     * @param  \Webkul\ReinaBatata\Repositories\OrderBrandsRepository      $orderBrands
      * @param  \Webkul\Attribute\Repositories\AttributeOptionRepository $attributeOptionRepository
      * @param  \Webkul\Product\Repositories\ProductReviewRepository     $productReviewRepository
-     * @param  \Webkul\Velocity\Repositories\VelocityMetadataRepository $velocityMetadataRepository
+     * @param  \Webkul\ReinaBatata\Repositories\ReinaBatataMetadataRepository $reinabatataMetadataRepository
      *
      * @return void
      */
@@ -81,7 +81,7 @@ class Helper extends Review
         ProductFlatRepository $productFlatRepository,
         OrderBrandsRepository $orderBrandsRepository,
         ProductReviewRepository $productReviewRepository,
-        VelocityMetadataRepository $velocityMetadataRepository
+        ReinaBatataMetadataRepository $reinabatataMetadataRepository
     ) {
         $this->productModel =  $productModel;
 
@@ -95,7 +95,7 @@ class Helper extends Review
 
         $this->productReviewRepository =  $productReviewRepository;
 
-        $this->velocityMetadataRepository =  $velocityMetadataRepository;
+        $this->reinabatataMetadataRepository =  $reinabatataMetadataRepository;
     }
 
     /**
@@ -214,19 +214,19 @@ class Helper extends Review
      *
      * @return array
      */
-    public function getVelocityMetaData($locale = null, $default = true)
+    public function getReinaBatataMetaData($locale = null, $default = true)
     {
         if (! $locale) {
             $locale = request()->get('locale') ?: app()->getLocale();
         }
 
         try {
-            $metaData = $this->velocityMetadataRepository->findOneWhere([
+            $metaData = $this->reinabatataMetadataRepository->findOneWhere([
                 'locale' => $locale
             ]);
 
             if (! $metaData && $default) {
-                $metaData = $this->velocityMetadataRepository->findOneWhere([
+                $metaData = $this->reinabatataMetadataRepository->findOneWhere([
                     'locale' => 'en'
                 ]);
             }
@@ -331,7 +331,7 @@ class Helper extends Review
             'slug'              => $product->url_key,
             'description'       => $product->description,
             'shortDescription'  => $product->short_description,
-            'firstReviewText'   => trans('velocity::app.products.be-first-review'),
+            'firstReviewText'   => trans('reinabatata::app.products.be-first-review'),
             'new'               => $product->new ? __('shop::app.products.new') : false,
             'priceHTML'         => view('shop::products.price', ['product' => $product])->render(),
             'defaultAddToCart'  => view('shop::products.add-buttons', ['product' => $product])->render(),

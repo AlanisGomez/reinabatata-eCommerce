@@ -10,11 +10,11 @@
                 <i class="material-icons align-vertical-top">perm_identity</i>
                 <span class="text-center">
                     @guest('customer')
-                        {{ __('velocity::app.header.welcome-message', ['customer_name' => trans('velocity::app.header.guest')]) }}!
+                        {{ __('reinabatata::app.header.welcome-message', ['customer_name' => trans('reinabatata::app.header.guest')]) }}!
                     @endguest
 
                     @auth('customer')
-                        {{ __('velocity::app.header.welcome-message', ['customer_name' => auth()->guard('customer')->user()->first_name]) }}
+                        {{ __('reinabatata::app.header.welcome-message', ['customer_name' => auth()->guard('customer')->user()->first_name]) }}
                     @endauth
                 </span>
                 <span class="select-icon rango-arrow-down"></span>
@@ -79,7 +79,7 @@
                             </li>
 
                             <li>
-                                <a href="{{ route('customer.orders.index') }}" class="unset">{{ __('velocity::app.shop.general.orders') }}</a>
+                                <a href="{{ route('customer.orders.index') }}" class="unset">{{ __('reinabatata::app.shop.general.orders') }}</a>
                             </li>
 
                             <li>
@@ -87,7 +87,7 @@
                             </li>
 
                             <li>
-                                <a href="{{ route('velocity.customer.product.compare') }}" class="unset">{{ __('velocity::app.customer.compare.text') }}</a>
+                                <a href="{{ route('reinabatata.customer.product.compare') }}" class="unset">{{ __('reinabatata::app.customer.compare.text') }}</a>
                             </li>
 
                             <li>

@@ -10,11 +10,11 @@
             <div class="col-lg-8 col-md-12 offset-lg-2">
                 <div class="heading">
                     <h2 class="fs24 fw6">
-                        {{ __('velocity::app.customer.forget-password.forgot-password')}}
+                        {{ __('reinabatata::app.customer.forget-password.forgot-password')}}
                     </h2>
                     <a href="{{ route('customer.session.index') }}" class="d-none d-md-inline pull-right">
                         <button type="button" class="theme-btn btn light">
-                            {{  __('velocity::app.customer.signup-form.login') }}
+                            {{  __('reinabatata::app.customer.signup-form.login') }}
                         </button>
                     </a>
 
@@ -22,11 +22,11 @@
 
                 <div class="body col-12">
                     <h4 class="fw6">
-                        {{ __('velocity::app.customer.forget-password.recover-password')}}
+                        {{ __('reinabatata::app.customer.forget-password.recover-password')}}
                     </h4>
 
                     <p class="fs16">
-                        {{ __('velocity::app.customer.forget-password.recover-password-text')}}
+                        {{ __('reinabatata::app.customer.forget-password.recover-password-text')}}
                     </p>
 
                     {!! view_render_event('bagisto.shop.customers.forget_password.before') !!}
@@ -68,7 +68,7 @@
 
                     <a href="{{ route('customer.session.index') }}" class="btn-new-customer d-block d-md-none">
                         <button type="button" class="theme-btn btn light btn-block">
-                            {{  __('velocity::app.customer.signup-form.login') }}
+                            {{  __('reinabatata::app.customer.signup-form.login') }}
                         </button>
                     </a>
 

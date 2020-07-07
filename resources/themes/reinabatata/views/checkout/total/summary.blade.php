@@ -1,8 +1,8 @@
 <div class="order-summary fs16">
-    <h5 class="fw6 mb-4">{{ __('velocity::app.checkout.cart.cart-summary') }}</h5>
+    <h5 class="fw6 mb-4">{{ __('reinabatata::app.checkout.cart.cart-summary') }}</h5>
 
     <div class="row">
-        <span class="col-6">{{ __('velocity::app.checkout.sub-total') }}</span>
+        <span class="col-6">{{ __('reinabatata::app.checkout.sub-total') }}</span>
         <span class="col-6 text-right">{{ core()->currency($cart->base_sub_total) }}</span>
     </div>
 

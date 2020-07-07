@@ -14,9 +14,9 @@
         </a>
     </div>
 
-    @if ($velocityMetaData)
-        {!! $velocityMetaData->footer_left_content !!}
+    @if ($reinabatataMetaData)
+        {!! $reinabatataMetaData->footer_left_content !!}
     @else
-        {!! __('velocity::app.admin.meta-data.footer-left-raw-content') !!}
+        {!! __('reinabatata::app.admin.meta-data.footer-left-raw-content') !!}
     @endif
 </div>

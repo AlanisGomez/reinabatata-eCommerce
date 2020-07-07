@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Shop;
+namespace Webkul\ReinaBatata\Http\Controllers\Shop;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 
-use Webkul\Velocity\Helpers\Helper;
+use Webkul\ReinaBatata\Helpers\Helper;
 use Webkul\Product\Helpers\ProductImage;
 use Webkul\Product\Repositories\SearchRepository;
 use Webkul\Product\Repositories\ProductRepository;
 use Webkul\Customer\Repositories\WishlistRepository;
 use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRepository;
-use Webkul\Velocity\Repositories\VelocityCustomerCompareProductRepository as CustomerCompareProductRepository;
+use Webkul\ReinaBatata\Repositories\Product\ProductRepository as ReinaBatataProductRepository;
+use Webkul\ReinaBatata\Repositories\ReinaBatataCustomerCompareProductRepository as CustomerCompareProductRepository;
 
 class Controller extends BaseController
 {
@@ -48,14 +48,14 @@ class Controller extends BaseController
     protected $productRepository;
 
     /**
-     * ProductRepository object of velocity package
+     * ProductRepository object of ReinaBatata package
      *
-     * @var \Webkul\Velocity\Repositories\Product\ProductRepository
+     * @var \Webkul\ReinaBatata\Repositories\Product\ProductRepository
      */
-    protected $velocityProductRepository;
+    protected $vreinabatataProductRepository;
 
     /**
-     * CategoryRepository object of velocity package
+     * CategoryRepository object of reinabatata package
      *
      * @var \Webkul\Category\Repositories\CategoryRepository
      */
@@ -71,14 +71,14 @@ class Controller extends BaseController
     /**
      * Helper object
      *
-     * @var \Webkul\Velocity\Helpers\Helper
+     * @var \Webkul\ReinaBatata\Helpers\Helper
      */
-    protected $velocityHelper;
+    protected $reinabatataHelper;
 
     /**
-     * VelocityCustomerCompareProductRepository object of repository
+     * ReinaBatataCustomerCompareProductRepository object of repository
      *
-     * @var \Webkul\Velocity\Repositories\VelocityCustomerCompareProductRepository
+     * @var \Webkul\ReinaBatata\Repositories\ReinaBatataCustomerCompareProductRepository
      */
     protected $compareProductsRepository;
 
@@ -86,30 +86,30 @@ class Controller extends BaseController
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Velocity\Helpers\Helper                                         $velocityHelper
+     * @param  \Webkul\ReinaBatata\Helpers\Helper                                         $reinabatatayHelper
      * @param  \Webkul\Product\Helpers\ProductImage                                    $productImageHelper
      * @param  \Webkul\Product\Repositories\SearchRepository                           $searchRepository
      * @param  \Webkul\Product\Repositories\ProductRepository                          $productRepository
      * @param  \Webkul\Category\Repositories\CategoryRepository                        $categoryRepository
-     * @param  \Webkul\Velocity\Repositories\Product\ProductRepository                 $velocityProductRepository
-     * @param  \Webkul\Velocity\Repositories\VelocityCustomerCompareProductRepository  $compareProductsRepository
-     * @param  \Webkul\Velocity\Repositories\VelocityCustomerCompareProductRepository  $compareProductsRepository
-     *  
+     * @param  \Webkul\ReinaBatata\Repositories\Product\ProductRepository                 $reinabatataProductRepository
+     * @param  \Webkul\ReinaBatata\Repositories\ReinaBatataCustomerCompareProductRepository  $compareProductsRepository
+     * @param  \Webkul\ReinaBatata\Repositories\ReinaBatataCustomerCompareProductRepository  $compareProductsRepository
+     *
      * @return void
      */
     public function __construct(
-        Helper $velocityHelper,
+        Helper $reinabatataHelper,
         ProductImage $productImageHelper,
         SearchRepository $searchRepository,
         ProductRepository $productRepository,
         WishlistRepository $wishlistRepository,
         CategoryRepository $categoryRepository,
-        VelocityProductRepository $velocityProductRepository,
+        ReinaBatataProductRepository $reinabatataProductRepository,
         CustomerCompareProductRepository $compareProductsRepository
     ) {
         $this->_config = request('_config');
 
-        $this->velocityHelper = $velocityHelper;
+        $this->reinabatataHelper = $reinabatataHelper;
 
         $this->searchRepository = $searchRepository;
 
@@ -121,8 +121,8 @@ class Controller extends BaseController
 
         $this->wishlistRepository = $wishlistRepository;
 
-        $this->velocityProductRepository = $velocityProductRepository;
-        
+        $this->reinabatataProductRepository = $reinabatataProductRepository;
+
         $this->compareProductsRepository = $compareProductsRepository;
     }
 }

@@ -1,5 +1,5 @@
 <script type="text/x-template" id="content-header-template">
-    <header class="row velocity-divide-page vc-header header-shadow active">
+    <header class="row reinabatata-divide-page vc-header header-shadow active">
         <div class="vc-small-screen container" v-if="isMobile()">
             <div class="row">
                 <div class="col-6">
@@ -10,13 +10,13 @@
                                 <span>
                                     @guest('customer')
                                         <a class="unset" href="{{ route('customer.session.index') }}">
-                                        {{ __('velocity::app.responsive.header.greeting', ['customer' => 'Guest']) }}
+                                        {{ __('reinabatata::app.responsive.header.greeting', ['customer' => 'Guest']) }}
                                         </a>
                                     @endguest
 
                                     @auth('customer')
                                         <a class="unset" href="{{ route('customer.profile.index') }}">
-                                            {{ __('velocity::app.responsive.header.greeting', ['customer' => auth()->guard('customer')->user()->first_name]) }}
+                                            {{ __('reinabatata::app.responsive.header.greeting', ['customer' => auth()->guard('customer')->user()->first_name]) }}
                                         </a>
                                     @endauth
 
@@ -54,7 +54,7 @@
                                 @endif
                             @endforeach
 
-                            <ul type="none" class="velocity-content" v-if="headerContent.length > 0">
+                            <ul type="none" class="reinabatata-content" v-if="headerContent.length > 0">
                                 <li :key="index" v-for="(content, index) in headerContent">
                                     <a
                                         class="unset"
@@ -92,14 +92,14 @@
                                     <li>
                                         <a href="{{ route('customer.address.index') }}" class="unset">
                                             <i class="icon address text-down-3"></i>
-                                            <span>{{ __('velocity::app.shop.general.addresses') }}</span>
+                                            <span>{{ __('reinabatata::app.shop.general.addresses') }}</span>
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="{{ route('customer.reviews.index') }}" class="unset">
                                             <i class="icon reviews text-down-3"></i>
-                                            <span>{{ __('velocity::app.shop.general.reviews') }}</span>
+                                            <span>{{ __('reinabatata::app.shop.general.reviews') }}</span>
                                         </a>
                                     </li>
 
@@ -113,14 +113,14 @@
                                     <li>
                                         <a href="{{ route('customer.orders.index') }}" class="unset">
                                             <i class="icon orders text-down-3"></i>
-                                            <span>{{ __('velocity::app.shop.general.orders') }}</span>
+                                            <span>{{ __('reinabatata::app.shop.general.orders') }}</span>
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="{{ route('customer.downloadable_products.index') }}" class="unset">
                                             <i class="icon downloadables text-down-3"></i>
-                                            <span>{{ __('velocity::app.shop.general.downloadables') }}</span>
+                                            <span>{{ __('reinabatata::app.shop.general.downloadables') }}</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -137,7 +137,7 @@
                                             @elseif ($locale->code == "en")
                                                 <img
                                                     class="language-logo"
-                                                    src="{{ asset('/themes/velocity/assets/images/flags/en.png') }}" />
+                                                    src="{{ asset('/themes/reinabatata/assets/images/flags/en.png') }}" />
                                             @endif
                                         </div>
                                         <span>{{ $locale->name }}</span>
@@ -236,7 +236,7 @@
                         <div class="wrapper" v-else-if="languages">
                             <div class="drawer-section">
                                 <i class="rango-arrow-left fs24 text-down-4" @click="toggleMetaInfo('languages')"></i>
-                                <h4 class="display-inbl">{{ __('velocity::app.responsive.header.languages') }}</h4>
+                                <h4 class="display-inbl">{{ __('reinabatata::app.responsive.header.languages') }}</h4>
                                 <i class="material-icons pull-right text-dark" @click="closeDrawer()">cancel</i>
                             </div>
 
@@ -306,11 +306,11 @@
                     <a
                         class="compare-btn unset"
                         @auth('customer')
-                            href="{{ route('velocity.customer.product.compare') }}"
+                            href="{{ route('reinabatata.customer.product.compare') }}"
                         @endauth
 
                         @guest('customer')
-                            href="{{ route('velocity.product.compare') }}"
+                            href="{{ route('reinabatata.product.compare') }}"
                         @endguest
                         >
 
@@ -320,7 +320,7 @@
                         <i class="material-icons">compare_arrows</i>
                     </a>
 
-                    <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('velocity.product.guest-wishlist') }}'}`">
+                    <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('reinabatata.product.guest-wishlist') }}'}`">
                         <div class="badge-container" v-if="wishlistCount > 0">
                             <span class="badge" v-text="wishlistCount"></span>
                         </div>

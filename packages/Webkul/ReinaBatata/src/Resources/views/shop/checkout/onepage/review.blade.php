@@ -66,7 +66,7 @@
             </div>
 
             <div class="cart-item-list">
-                <h4 class="fw6">{{ __('velocity::app.checkout.items') }}</h4>
+                <h4 class="fw6">{{ __('reinabatata::app.checkout.items') }}</h4>
 
                 @foreach ($cart->items as $item)
                     @php

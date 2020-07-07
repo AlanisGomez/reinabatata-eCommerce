@@ -1,25 +1,29 @@
-
-
-.velocity-icon {
+.reinabatata-icon {
     width: 60px;
     height: 55px;
     display: inline-block;
     background-size: cover;
-    background-image: url("../images/Icon-Velocity.svg");
+    background-image: url("../images/Icon-ReinaBatata.svg");
 }
 
-.router-link-active .velocity-icon, .active .velocity-icon {
-    background-image: url("../images/Icon-Velocity-Active.svg");
+.router-link-active .reinabatata-icon,
+.active .reinabatata-icon {
+    background-image: url("../images/Icon-ReinaBatata-Active.svg");
 }
 
-.router-link-active.velocity-icon, .active.velocity-icon {
-    background-image: url("../images/Icon-Velocity-Active.svg");
+.router-link-active.reinabatata-icon,
+.active.reinabatata-icon {
+    background-image: url("../images/Icon-ReinaBatata-Active.svg");
 }
 
 @font-face {
-    font-family: 'Webkul Rango';
+    font-family: "Webkul Rango";
     src: url("../fonts/font-rango/rango.eot?o0evyv");
-    src: url("../fonts/font-rango/rango.eot?o0evyv#iefix") format("embedded-opentype"), url("../fonts/font-rango/rango.ttf?o0evyv") format("truetype"), url("../fonts/font-rango/rango.woff?o0evyv") format("woff"), url("../fonts/font-rango/rango.svg?o0evyv#rango") format("svg");
+    src: url("../fonts/font-rango/rango.eot?o0evyv#iefix")
+            format("embedded-opentype"),
+        url("../fonts/font-rango/rango.ttf?o0evyv") format("truetype"),
+        url("../fonts/font-rango/rango.woff?o0evyv") format("woff"),
+        url("../fonts/font-rango/rango.svg?o0evyv#rango") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -31,9 +35,10 @@
     color: #0041ff;
 }
 
-[class^="rango-"], [class*=" rango-"] {
+[class^="rango-"],
+[class*=" rango-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'Webkul Rango' !important;
+    font-family: "Webkul Rango" !important;
     speak: none;
     font-style: normal;
     font-weight: normal;

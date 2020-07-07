@@ -1,7 +1,7 @@
 @extends('shop::layouts.master')
 
 @inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
-@inject ('customHelper', 'Webkul\Velocity\Helpers\Helper')
+@inject ('customHelper', 'Webkul\ReinaBatata\Helpers\Helper')
 @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
 
 @php
@@ -107,7 +107,7 @@
 
                                 @if ($product->short_description)
                                     <div class="description">
-                                        <h3 class="col-lg-12">{{ __('velocity::app.products.short-description') }}</h3>
+                                        <h3 class="col-lg-12">{{ __('reinabatata::app.products.short-description') }}</h3>
 
                                         {!! $product->short_description !!}
                                     </div>
@@ -158,10 +158,10 @@
 
             <div class="store-meta-images col-3">
                 @if(
-                    isset($velocityMetaData['product_view_images'])
-                    && $velocityMetaData['product_view_images']
+                    isset($reinabatataMetaData['product_view_images'])
+                    && $reinabatataMetaData['product_view_images']
                 )
-                    @foreach (json_decode($velocityMetaData['product_view_images'], true) as $image)
+                    @foreach (json_decode($reinabatataMetaData['product_view_images'], true) as $image)
                         @if ($image && $image !== '')
                             <img src="{{ url()->to('/') }}/storage/{{ $image }}" />
                         @endif

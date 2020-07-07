@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Shop;
+namespace Webkul\ReinaBatata\Http\Controllers\Shop;
 
 use Illuminate\Http\Request;
-use Webkul\Velocity\Http\Shop\Controllers;
+use Webkul\ReinaBatata\Http\Shop\Controllers;
 use Webkul\Checkout\Contracts\Cart as CartModel;
 use Cart;
 
@@ -16,7 +16,7 @@ class ShopController extends Controller
      */
     public function search()
     {
-        $results = $this->velocityProductRepository->searchProductsFromCategory(request()->all());
+        $results = $this->reinabatataProductRepository->searchProductsFromCategory(request()->all());
 
         return view($this->_config['view'])->with('results', $results ? $results : null);
     }
@@ -65,13 +65,13 @@ class ShopController extends Controller
                 $count = request()->get('count');
 
                 if ($slug == "new-products") {
-                    $products = $this->velocityProductRepository->getNewProducts($count);
+                    $products = $this->reinabatataProductRepository->getNewProducts($count);
                 } else if ($slug == "featured-products") {
-                    $products = $this->velocityProductRepository->getFeaturedProducts($count);
+                    $products = $this->reinabatataProductRepository->getFeaturedProducts($count);
                 }
 
                 foreach ($products as $product) {
-                    array_push($formattedProducts, $this->velocityHelper->formatProduct($product));
+                    array_push($formattedProducts, $this->reinabatataHelper->formatProduct($product));
                 }
 
                 $response = [
@@ -91,7 +91,7 @@ class ShopController extends Controller
                     foreach ($products as $product) {
                         $productDetails = [];
 
-                        $productDetails = array_merge($productDetails, $this->velocityHelper->formatProduct($product));
+                        $productDetails = array_merge($productDetails, $this->reinabatataHelper->formatProduct($product));
 
                         array_push($customizedProducts, $productDetails);
                     }
@@ -219,7 +219,7 @@ class ShopController extends Controller
         if ($items = request()->get('items')) {
             $moveToCart = request()->get('moveToCart');
 
-            $productCollection = $this->velocityHelper->fetchProductCollection($items, $moveToCart);
+            $productCollection = $this->reinabatataHelper->fetchProductCollection($items, $moveToCart);
 
             $response = [
                 'status'   => 'success',
@@ -243,7 +243,7 @@ class ShopController extends Controller
             $formattedProducts = [];
 
             foreach ($productItems as $product) {
-                array_push($formattedProducts, $this->velocityHelper->formatProduct($product));
+                array_push($formattedProducts, $this->reinabatataHelper->formatProduct($product));
             }
 
             $productsArray['data'] = $formattedProducts;

@@ -3,10 +3,10 @@
     $advertisementTwo = null;
 @endphp
 
-@if ($velocityMetaData && $velocityMetaData->advertisement)
+@if ($reinabatataMetaData && $reinabatataMetaData->advertisement)
     @php
-        $advertisement = json_decode($velocityMetaData->advertisement, true);
-        
+        $advertisement = json_decode($reinabatataMetaData->advertisement, true);
+
         if (isset($advertisement[2]) && is_array($advertisement[2])) {
             $advertisementTwo = array_values(array_filter($advertisement[2]));
         }
@@ -24,7 +24,7 @@
                         <img src="{{ asset('/storage/' . $advertisementTwo[0]) }}" />
                     </a>
                 @endif
-                
+
                 @if ( isset($advertisementTwo[1]))
                     <a class="col-lg-3 col-md-12 pr0">
                         <img src="{{ asset('/storage/' . $advertisementTwo[1]) }}" />
@@ -39,11 +39,11 @@
     <div class="container-fluid advertisement-two-container">
         <div class="row">
             <a class="col-lg-9 col-md-12 no-padding">
-                <img src="{{ asset('/themes/velocity/assets/images/toster.png') }}" />
+                <img src="{{ asset('/themes/reinabatata/assets/images/toster.png') }}" />
             </a>
 
             <a class="col-lg-3 col-md-12 pr0">
-                <img src="{{ asset('/themes/velocity/assets/images/trimmer.png') }}" />
+                <img src="{{ asset('/themes/reinabatata/assets/images/trimmer.png') }}" />
             </a>
         </div>
     </div>

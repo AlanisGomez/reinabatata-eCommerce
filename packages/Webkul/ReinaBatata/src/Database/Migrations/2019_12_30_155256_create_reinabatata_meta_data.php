@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVelocityMetaData extends Migration
+class CreateReinaBatataMetaData extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateVelocityMetaData extends Migration
      */
     public function up()
     {
-        Schema::create('velocity_meta_data', function (Blueprint $table) {
+        Schema::create('reinabatata_meta_data', function (Blueprint $table) {
             $table->increments('id');
             $table->text('home_page_content');
             $table->text('footer_left_content');
@@ -35,6 +35,6 @@ class CreateVelocityMetaData extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('velocity_meta_data');
+        Schema::dropIfExists('reinabatata_meta_data');
     }
 }

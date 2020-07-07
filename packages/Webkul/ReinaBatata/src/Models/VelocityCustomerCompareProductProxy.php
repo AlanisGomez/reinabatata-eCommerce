@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Webkul\ReinaBatata\Models;
 
 use Konekt\Concord\Proxies\ModelProxy;
 
-class VelocityCustomerCompareProductProxy extends ModelProxy
+class ReinaBatataCustomerCompareProductProxy extends ModelProxy
 {
 
 }

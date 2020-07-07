@@ -46,13 +46,13 @@
 
 .seperator {
     position: relative;
-    border-top: solid 1px #D3D3D3;
+    border-top: solid 1px #d3d3d3;
     margin: 30px 0px 25px 0px;
     display: inline-block;
     width: 100%;
 
     span {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         position: absolute;
         left: 20px;
         top: -12px;
@@ -231,7 +231,7 @@
                 height: 24px;
                 margin-right: 0;
                 position: absolute;
-                background-image: url(/themes/velocity/assets/images/Icon-remove.svg);
+                background-image: url(/themes/reinabatata/assets/images/Icon-remove.svg);
             }
         }
     }
@@ -250,10 +250,10 @@
     margin: 0 auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    box-shadow: 0 1px 10px 0 rgba(0,0,0,.1);;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
     border: none;
 
-    @include laptop-sm{
+    @include laptop-sm {
         margin: 1rem;
     }
 
@@ -308,10 +308,9 @@
         }
     }
 
-
-        .sticker {
-            display: block;
-        }
+    .sticker {
+        display: block;
+    }
 
     .card-body {
         .compare-icon,
@@ -433,11 +432,11 @@
         font-weight: 600 !important;
         color: $dark-color !important;
         background-color: $white;
-        border: 1px solid $gray-400!important;
+        border: 1px solid $gray-400 !important;
     }
 
     button:nth-of-type(1) {
-        border-right: 0px!important;
+        border-right: 0px !important;
     }
 
     input {
@@ -456,13 +455,13 @@
     button:nth-of-type(1) {
         border-top-left-radius: $border-radius;
         border-bottom-left-radius: $border-radius;
-        border-right: 0px!important;
+        border-right: 0px !important;
     }
 
     button:nth-last-of-type(1) {
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
-        border-left: 0px!important;
+        border-left: 0px !important;
     }
 
     button:active,
@@ -717,7 +716,6 @@
         }
 
         .cart-items-name {
-
             @include laptop-sm {
                 display: grid;
                 grid-template-columns: 59% 20% 21%;
@@ -768,7 +766,7 @@
                 max-width: 90px;
                 max-height: 90px;
 
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -902,8 +900,6 @@
             }
         }
     }
-
-
 
     .account-layout {
         color: $body-color;
@@ -1134,8 +1130,6 @@
                     }
                 }
 
-
-
                 // .filter-left {
                 //     // @extend .pull-left;
                 // }
@@ -1174,10 +1168,10 @@
                         margin-left: 10px;
                         padding: 5px 10px;
                         background: #e7e7e7;
-                        letter-spacing: -.22px;
+                        letter-spacing: -0.22px;
+                    }
                 }
             }
-        }
 
             &.profile-page-content {
                 .edit-icon {
@@ -1186,14 +1180,13 @@
 
                 a:active {
                     text-decoration: none;
-
                 }
 
                 .table {
                     padding: 0;
                     width: 100%;
                     margin-bottom: 15px;
-                    box-shadow:  1px 2px 4px 1px rgba(167, 167, 167, 0.3);
+                    box-shadow: 1px 2px 4px 1px rgba(167, 167, 167, 0.3);
                     border-radius: $border-radius;
 
                     &:active {
@@ -1202,7 +1195,6 @@
                         border: none;
                     }
                 }
-
             }
 
             .accordian .accordian-header {
@@ -1275,7 +1267,7 @@
             img {
                 width: 100%;
                 height: 100%;
-                object-fit:cover;
+                object-fit: cover;
             }
         }
 
@@ -1427,12 +1419,12 @@
             }
         }
     }
-        .select-icon {
-            left: 95%;
-            top: -28px;
-            font-size: 22px;
-            position: relative;
-        }
+    .select-icon {
+        left: 95%;
+        top: -28px;
+        font-size: 22px;
+        position: relative;
+    }
 }
 
 #alert-container {
@@ -1446,7 +1438,7 @@
     }
 
     .alert {
-        width: 100%!important;
+        width: 100% !important;
         min-height: 45px !important;
         max-height: 100px !important;
 
@@ -1454,7 +1446,6 @@
             max-width: 400px !important;
             max-height: 200px !important;
         }
-
 
         &.alert-dismissible {
             .close {
@@ -1479,8 +1470,6 @@
 
 .checkout-process {
     padding: 0px 20px;
-
-
 
     h1 {
         font-weight: 500;
@@ -1524,10 +1513,7 @@
     }
 
     .coupon-container {
-
-
         input {
-
             @include laptop-sm {
                 width: 210px;
             }
@@ -1573,7 +1559,7 @@
             border: 2px solid $gray-400;
             border-radius: 6px;
 
-            &:focus{
+            &:focus {
                 border-color: $primary;
             }
 
@@ -1617,8 +1603,7 @@
 
     input[type="text"],
     input[type="password"],
-    input[type="search"]
-    {
+    input[type="search"] {
         width: 100%;
         resize: none;
         font-size: 16px;
@@ -1683,7 +1668,7 @@
 }
 
 .order-summary-details {
-     .order-summary {
+    .order-summary {
         border-radius: $border-radius;
 
         > h3 {
@@ -1713,7 +1698,6 @@
         display: block;
         width: 100%;
     }
-
 
     > div {
         width: 100%;
@@ -1771,7 +1755,6 @@
             width: 75%;
         }
     }
-
 }
 
 .search-result-status {
@@ -1868,7 +1851,6 @@
         background-color: $primary;
     }
 }
-
 
 #app {
     min-height: 65vh;
@@ -2445,7 +2427,7 @@
     margin-bottom: 42px;
     padding: 1rem;
 
-    @include laptop-sm{
+    @include laptop-sm {
         padding: 2.5rem;
     }
 
@@ -2730,7 +2712,6 @@
     animation: spin 1s ease-in-out infinite;
 }
 
-
 .image-search-container {
     top: 9px;
     right: 45px;
@@ -2755,7 +2736,7 @@
     margin-bottom: 20px;
     display: inline-block;
     border: 1px solid #0041ff;
-    background-color: rgba(0,65,255,.1);
+    background-color: rgba(0, 65, 255, 0.1);
 
     .searched-image {
         float: left;
@@ -2763,7 +2744,7 @@
         img {
             width: 150px;
             height: auto;
-            box-shadow: 1px 1px 3px 0 rgba(0,0,0,.32);
+            box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.32);
         }
     }
 
@@ -2781,6 +2762,10 @@
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

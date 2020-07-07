@@ -3,7 +3,7 @@
 return [
     'admin' => [
         'system'   => [
-            'velocity' => [
+            'reinabatata' => [
                 'general'  => 'عمومی',
                 'category'  => 'دسته بندی',
                 'settings'  => 'تنظیمات',
@@ -40,7 +40,7 @@ return [
             ]
         ],
         'layouts' => [
-            'velocity' => 'Velocity',
+            'reinabatata' => 'ReinaBatata',
             'cms-pages' => 'CMS صفحات',
             'meta-data' => 'Meta Data',
             'category-menu' => 'منوی دسته',

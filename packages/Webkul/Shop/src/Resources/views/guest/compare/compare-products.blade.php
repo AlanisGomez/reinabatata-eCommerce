@@ -45,7 +45,7 @@
     <script type="text/x-template" id="compare-product-template">
         <section class="comparison-component">
             <h1>
-                {{ __('velocity::app.customer.compare.compare_similar_items') }}
+                {{ __('reinabatata::app.customer.compare.compare_similar_items') }}
             </h1>
 
             <button
@@ -125,8 +125,8 @@
                                             @case('boolean')
                                                 <span
                                                     v-text="product.product['{{ $attribute['code'] }}']
-                                                            ? '{{ __('velocity::app.shop.general.yes') }}'
-                                                            : '{{ __('velocity::app.shop.general.no') }}'"
+                                                            ? '{{ __('reinabatata::app.shop.general.yes') }}'
+                                                            : '{{ __('reinabatata::app.shop.general.no') }}'"
                                                 ></span>
                                                 @break;
                                             @default
@@ -143,7 +143,7 @@
                 </template>
 
                 <span v-else-if="isProductListLoaded && products.length == 0">
-                    {{ __('velocity::app.customer.compare.empty-text') }}
+                    {{ __('reinabatata::app.customer.compare.empty-text') }}
                 </span>
             </table>
 
@@ -201,7 +201,7 @@
                         })
                         .catch(error => {
                             this.isProductListLoaded = true;
-                            console.log("{{ __('velocity::app.error.something_went_wrong') }}");
+                            console.log("{{ __('reinabatata::app.error.something_went_wrong') }}");
                         });
                     } else {
                         this.isProductListLoaded = true;
@@ -220,7 +220,7 @@
                             }
                         })
                         .catch(error => {
-                            console.log("{{ __('velocity::app.error.something_went_wrong') }}");
+                            console.log("{{ __('reinabatata::app.error.something_went_wrong') }}");
                         });
                     } else {
                         let existingItems = this.getStorageValue('compared_product');

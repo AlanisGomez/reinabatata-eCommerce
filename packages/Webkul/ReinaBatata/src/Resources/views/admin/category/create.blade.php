@@ -1,7 +1,7 @@
 @extends('admin::layouts.content')
 
 @section('page_title')
-    {{ __('velocity::app.admin.category.add-title') }}
+    {{ __('reinabatata::app.admin.category.add-title') }}
 @stop
 
 @section('content')
@@ -14,13 +14,13 @@
                     <h1>
                         <i class="icon angle-left-icon back-link" onclick="history.length > 1 ? history.go(-1) : window.location = '{{ url('/admin/dashboard') }}';"></i>
 
-                        {{ __('velocity::app.admin.category.add-title') }}
+                        {{ __('reinabatata::app.admin.category.add-title') }}
                     </h1>
                 </div>
-                
+
                 <div class="page-action">
                     <button type="submit" class="btn btn-lg btn-primary">
-                        {{ __('velocity::app.admin.category.save-btn-title') }}
+                        {{ __('reinabatata::app.admin.category.save-btn-title') }}
                     </button>
                 </div>
             </div>
@@ -30,54 +30,54 @@
 
                 {!! view_render_event('bagisto.admin.category.create_form_accordian.general.before') !!}
 
-                <accordian :title="'{{ __('velocity::app.admin.category.tab.general') }}'" :active="true">
+                <accordian :title="'{{ __('reinabatata::app.admin.category.tab.general') }}'" :active="true">
                     <div slot="body">
 
                         {!! view_render_event('bagisto.admin.category.create_form_accordian.general.content.before') !!}
 
                             <div class="control-group" :class="[errors.has('category_id') ? 'has-error' : '']">
                                 <label for="category_id" class="required">
-                                    {{ __('velocity::app.admin.category.select-category') }}
+                                    {{ __('reinabatata::app.admin.category.select-category') }}
                                 </label>
-                                
-                                <select v-validate="'required'" class="control" id="category_id" name="category_id" data-vv-as="&quot;{{ __('velocity::app.admin.category.select-category') }}&quot;">
-                                    <option value="">{{ __('velocity::app.admin.category.select') }}</option>
+
+                                <select v-validate="'required'" class="control" id="category_id" name="category_id" data-vv-as="&quot;{{ __('reinabatata::app.admin.category.select-category') }}&quot;">
+                                    <option value="">{{ __('reinabatata::app.admin.category.select') }}</option>
                                     @foreach ($categories as $category)
-                                        <option value="{{ $category['id'] }}">{{ $category['name'] }}</option>    
+                                        <option value="{{ $category['id'] }}">{{ $category['name'] }}</option>
                                     @endforeach
                                 </select>
-                                
+
                                 <span class="control-error" v-if="errors.has('category_id')">@{{ errors.first('category_id') }}</span>
                             </div>
 
                             <div class="control-group" :class="[errors.has('icon') ? 'has-error' : '']">
                                 <label for="icon" class="required">
-                                    {{ __('velocity::app.admin.category.icon-class') }}
+                                    {{ __('reinabatata::app.admin.category.icon-class') }}
                                 </label>
-                                
-                                <input type="text" v-validate="'required'" class="control" id="icon" name="icon" data-vv-as="&quot;{{ __('velocity::app.admin.category.icon-class') }}&quot;" />
-                                
+
+                                <input type="text" v-validate="'required'" class="control" id="icon" name="icon" data-vv-as="&quot;{{ __('reinabatata::app.admin.category.icon-class') }}&quot;" />
+
                                 <span class="control-error" v-if="errors.has('icon')">@{{ errors.first('icon') }}</span>
                             </div>
 
                             <div class="control-group" :class="[errors.has('tooltip') ? 'has-error' : '']">
                                 <label for="tooltip">
-                                    {{ __('velocity::app.admin.category.tooltip-content') }}
+                                    {{ __('reinabatata::app.admin.category.tooltip-content') }}
                                 </label>
-                                
-                                <textarea v-validate="'max:250'" class="control" id="tooltip" name="tooltip" data-vv-as="&quot;{{ __('velocity::app.admin.category.tooltip-content') }}&quot;"></textarea>
-                                
+
+                                <textarea v-validate="'max:250'" class="control" id="tooltip" name="tooltip" data-vv-as="&quot;{{ __('reinabatata::app.admin.category.tooltip-content') }}&quot;"></textarea>
+
                                 <span class="control-error" v-if="errors.has('tooltip')">@{{ errors.first('tooltip') }}</span>
                             </div>
 
                             <div class="control-group" :class="[errors.has('status') ? 'has-error' : '']">
-                                <label for="status" class="required">{{ __('velocity::app.admin.category.status') }}</label>
-                                <select class="control" v-validate="'required'" id="status" name="status" data-vv-as="&quot;{{ __('velocity::app.admin.category.status') }}&quot;">
+                                <label for="status" class="required">{{ __('reinabatata::app.admin.category.status') }}</label>
+                                <select class="control" v-validate="'required'" id="status" name="status" data-vv-as="&quot;{{ __('reinabatata::app.admin.category.status') }}&quot;">
                                     <option value="1">
-                                        {{ __('velocity::app.admin.category.active') }}
+                                        {{ __('reinabatata::app.admin.category.active') }}
                                     </option>
                                     <option value="0">
-                                        {{ __('velocity::app.admin.category.inactive') }}
+                                        {{ __('reinabatata::app.admin.category.inactive') }}
                                     </option>
                                 </select>
                                 <span class="control-error" v-if="errors.has('status')">@{{ errors.first('status') }}</span>
@@ -95,4 +95,3 @@
         </form>
     </div>
 @stop
-                        

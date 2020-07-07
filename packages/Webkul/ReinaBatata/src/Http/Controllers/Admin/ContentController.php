@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Admin;
+namespace Webkul\ReinaBatata\Http\Controllers\Admin;
 
 use Illuminate\Http\Response;
 use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Velocity\Repositories\ContentRepository;
+use Webkul\ReinaBatata\Repositories\ContentRepository;
 
 class ContentController extends Controller
 {
@@ -18,7 +18,7 @@ class ContentController extends Controller
     /**
      * ContentRepository object
      *
-     * @var \Webkul\Velocity\Repositories\ContentRepository
+     * @var \Webkul\ReinaBatata\Repositories\ContentRepository
     */
     protected $contentRepository;
 
@@ -26,7 +26,7 @@ class ContentController extends Controller
      * Create a new controller instance.
      *
      * @param  \Webkul\Product\Repositories\ProductRepository  $productRepository
-     * @param  \Webkul\Velocity\Repositories\ContentRepository  $contentRepository
+     * @param  \Webkul\ReinaBatata\Repositories\ContentRepository  $contentRepository
      * @return void
      */
     public function __construct(
@@ -177,7 +177,7 @@ class ContentController extends Controller
             }
         }
 
-        session()->flash('success', trans('velocity::app.admin.contents.mass-delete-success'));
+        session()->flash('success', trans('reinabatata::app.admin.contents.mass-delete-success'));
 
         return redirect()->route($this->_config['redirect']);
     }

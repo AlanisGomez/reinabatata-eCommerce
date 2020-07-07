@@ -38,7 +38,7 @@
                         }).catch(error => {
                             window.flashMessages = [{
                                 'type': `alert-danger`,
-                                'message': "{{ __('velocity::app.error.something_went_wrong') }}"
+                                'message': "{{ __('reinabatata::app.error.something_went_wrong') }}"
                             }];
 
                             this.$root.addFlashMessages()
@@ -55,14 +55,14 @@
 
                                 window.flashMessages = [{
                                     'type': `alert-success`,
-                                    'message': "{{ __('velocity::app.customer.compare.added') }}"
+                                    'message': "{{ __('reinabatata::app.customer.compare.added') }}"
                                 }];
 
                                 this.$root.addFlashMessages()
                             } else {
                                 window.flashMessages = [{
                                     'type': `alert-success`,
-                                    'message': "{{ __('velocity::app.customer.compare.already_added') }}"
+                                    'message': "{{ __('reinabatata::app.customer.compare.already_added') }}"
                                 }];
 
                                 this.$root.addFlashMessages()
@@ -72,7 +72,7 @@
 
                             window.flashMessages = [{
                                 'type': `alert-success`,
-                                'message': "{{ __('velocity::app.customer.compare.added') }}"
+                                'message': "{{ __('reinabatata::app.customer.compare.added') }}"
                             }];
 
                                 this.$root.addFlashMessages()

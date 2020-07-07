@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\Velocity\Providers;
+namespace Webkul\ReinaBatata\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Webkul\Velocity\Facades\Velocity as VelocityFacade;
+use Webkul\ReinaBatata\Facades\ReinaBatata as ReinaBatataFacade;
 
-class VelocityServiceProvider extends ServiceProvider
+class ReinaBatataServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -30,9 +30,9 @@ class VelocityServiceProvider extends ServiceProvider
 
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
-        $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'velocity');
+        $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'reinabatata');
 
-        $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'velocity');
+        $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'reinabatata');
     }
 
     /**
@@ -67,8 +67,8 @@ class VelocityServiceProvider extends ServiceProvider
     protected function registerFacades()
     {
         $loader = AliasLoader::getInstance();
-        
-        $loader->alias('velocity', VelocityFacade::class);
+
+        $loader->alias('reinabatata', ReinaBatataFacade::class);
     }
 
     /**
@@ -79,11 +79,11 @@ class VelocityServiceProvider extends ServiceProvider
     private function loadPublishableAssets()
     {
         $this->publishes([
-            __DIR__ . '/../../publishable/assets/' => public_path('themes/velocity/assets'),
+            __DIR__ . '/../../publishable/assets/' => public_path('themes/reinabatata/assets'),
         ], 'public');
 
         $this->publishes([
-            __DIR__ . '/../Resources/views/shop' => resource_path('themes/velocity/views'),
+            __DIR__ . '/../Resources/views/shop' => resource_path('themes/reinabatata/views'),
         ]);
 
         return true;
@@ -96,11 +96,11 @@ class VelocityServiceProvider extends ServiceProvider
      */
     private function loadGloableVariables()
     {
-        $velocityHelper = app('Webkul\Velocity\Helpers\Helper');
-        $velocityMetaData = $velocityHelper->getVelocityMetaData();
+        $reinaBatataHelper = app('Webkul\ReinaBatata\Helpers\Helper');
+        $reinaBatataMetaData = $reinaBatataHelper->getReinaBatataMetaData();
 
         view()->share('showRecentlyViewed', true);
-        view()->share('velocityMetaData', $velocityMetaData);
+        view()->share('reinabatataMetaData', $reinaBatataMetaData);
 
         return true;
     }

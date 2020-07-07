@@ -1,35 +1,35 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Admin;
+namespace Webkul\ReinaBatata\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Webkul\Velocity\Repositories\VelocityMetadataRepository;
+use Webkul\ReinaBatata\Repositories\ReinaBatataMetadataRepository;
 
 class ConfigurationController extends Controller
 {
     /**
-     * VelocityMetadataRepository object
+     * ReinaBatataMetadataRepository object
      *
-     * @var \Webkul\Velocity\Repositories\VelocityMetadataRepository
+     * @var \Webkul\ReinaBatata\Repositories\ReinaBatataMetadataRepository
      */
-    protected $velocityMetaDataRepository;
+    protected $reinabatataMetaDataRepository;
 
     protected $locale;
 
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Velocity\Repositories\MetadataRepository  $velocityMetaDataRepository
+     * @param  \Webkul\ReinaBatata\Repositories\MetadataRepository  $reinabatataMetaDataRepository
      * @return void
      */
-    public function __construct (VelocityMetadataRepository $velocityMetadataRepository)
+    public function __construct (ReinaBatataMetadataRepository $reinabatataMetadataRepository)
     {
         $this->_config = request('_config');
 
-        $this->velocityHelper = app('Webkul\Velocity\Helpers\Helper');
+        $this->reinabatataHelper = app('Webkul\ReinaBatata\Helpers\Helper');
 
-        $this->velocityMetaDataRepository = $velocityMetadataRepository;
+        $this->reinabatataMetaDataRepository = $reinabatataMetadataRepository;
 
         $this->locale = request()->get('locale') ?: app()->getLocale();
     }
@@ -39,18 +39,18 @@ class ConfigurationController extends Controller
      */
     public function renderMetaData()
     {
-        $velocityMetaData = $this->velocityHelper->getVelocityMetaData($this->locale, false);
+        $reinabatataMetaData = $this->reinabatataHelper->getReinaBatataMetaData($this->locale, false);
 
-        if (! $velocityMetaData) {
+        if (! $reinabatataMetaData) {
             $this->createMetaData($this->locale);
 
-            $velocityMetaData = $this->velocityHelper->getVelocityMetaData($this->locale);
+            $reinabatataMetaData = $this->reinabatataHelper->getReinaBatataMetaData($this->locale);
         }
 
-        $velocityMetaData->advertisement = $this->manageAddImages(json_decode($velocityMetaData->advertisement, true) ?: []);
+        $reinabatataMetaData->advertisement = $this->manageAddImages(json_decode($reinabatataMetaData->advertisement, true) ?: []);
 
         return view($this->_config['view'], [
-            'metaData' => $velocityMetaData,
+            'metaData' => $reinabatataMetaData,
         ]);
     }
 
@@ -71,11 +71,11 @@ class ConfigurationController extends Controller
             ];
         }
 
-        $velocityMetaData = $this->velocityMetaDataRepository->findOneWhere([
+        $reinabatataMetaData = $this->reinabatataMetaDataRepository->findOneWhere([
             'id' => $id,
         ]);
 
-        $advertisement = json_decode($velocityMetaData->advertisement, true);
+        $advertisement = json_decode($reinabatataMetaData->advertisement, true);
 
         $params['advertisement'] = [];
 
@@ -112,11 +112,11 @@ class ConfigurationController extends Controller
         unset($params['slides']);
 
         $params['locale'] = $this->locale;
-        
-        // update row
-        $product = $this->velocityMetaDataRepository->update($params, $id);
 
-        session()->flash('success', trans('admin::app.response.update-success', ['name' => 'Velocity Theme']));
+        // update row
+        $product = $this->reinabatataMetaDataRepository->update($params, $id);
+
+        session()->flash('success', trans('admin::app.response.update-success', ['name' => 'Reina Batata Theme']));
 
         return redirect()->route($this->_config['redirect'], ['locale' => $this->locale]);
     }
@@ -125,7 +125,7 @@ class ConfigurationController extends Controller
      * @param  array    $data
      * @param  int      $index
      * @param  array    $advertisement
-     * 
+     *
      * @return array
      */
     public function uploadAdvertisementImages($data, $index, $advertisement)
@@ -137,14 +137,14 @@ class ConfigurationController extends Controller
         foreach ($data as $imageId => $image) {
             if ($image != "") {
                 $file = 'images.' . $index . '.' . $imageId;
-                $dir = 'velocity/images';
-    
+                $dir = 'reinabatata/images';
+
                 if (Str::contains($imageId, 'image_')) {
                     if (request()->hasFile($file) && $image) {
                         $filter_index = substr($imageId, 6, 1);
                         if ( isset($data[$filter_index]) ) {
                             $size = array_key_last($saveData[$index]);
-                            
+
                             $saveImage[$size + 1] = request()->file($file)->store($dir);
                         } else {
                             $saveImage[substr($imageId, 6, 1)] = request()->file($file)->store($dir);
@@ -153,13 +153,13 @@ class ConfigurationController extends Controller
                 } else {
                     if ( isset($advertisement[$index][$imageId]) && $advertisement[$index][$imageId] && !request()->hasFile($file)) {
                         $saveImage[$imageId] = $advertisement[$index][$imageId];
-    
+
                         unset($advertisement[$index][$imageId]);
                     }
-    
+
                     if (request()->hasFile($file) && isset($advertisement[$index][$imageId])) {
                         Storage::delete($advertisement[$index][$imageId]);
-    
+
                         $saveImage[$imageId] = request()->file($file)->store($dir);
                     }
                 }
@@ -192,7 +192,7 @@ class ConfigurationController extends Controller
     /**
      * @param  array    $data
      * @param  int      $index
-     * 
+     *
      * @return mixed
      */
     public function uploadImage($data, $index)
@@ -202,7 +202,7 @@ class ConfigurationController extends Controller
 
         $image = '';
         $file = $type . '.' . $index;
-        $dir = "velocity/$type";
+        $dir = "reinabatata/$type";
 
         if ($request->hasFile($file)) {
             Storage::delete($dir . $file);
@@ -215,7 +215,7 @@ class ConfigurationController extends Controller
 
     /**
      * @param  array  $addImages
-     * 
+     *
      * @return array
      */
     public function manageAddImages($addImages)
@@ -236,17 +236,17 @@ class ConfigurationController extends Controller
                 ];
             }
         }
-        
+
         return $imagePaths;
     }
 
     private function createMetaData($locale)
     {
-        \DB::table('velocity_meta_data')->insert([
+        \DB::table('reinabatata_meta_data')->insert([
             'locale'                   => $locale,
 
             'home_page_content'        => "<p>@include('shop::home.advertisements.advertisement-four')@include('shop::home.featured-products') @include('shop::home.product-policy') @include('shop::home.advertisements.advertisement-three') @include('shop::home.new-products') @include('shop::home.advertisements.advertisement-two')</p>",
-            'footer_left_content'      => __('velocity::app.admin.meta-data.footer-left-raw-content'),
+            'footer_left_content'      => __('reinabatata::app.admin.meta-data.footer-left-raw-content'),
 
             'footer_middle_content'    => '<div class="col-lg-6 col-md-12 col-sm-12 no-padding"><ul type="none"><li><a href="https://webkul.com/about-us/company-profile/">About Us</a></li><li><a href="https://webkul.com/about-us/company-profile/">Customer Service</a></li><li><a href="https://webkul.com/about-us/company-profile/">What&rsquo;s New</a></li><li><a href="https://webkul.com/about-us/company-profile/">Contact Us </a></li></ul></div><div class="col-lg-6 col-md-12 col-sm-12 no-padding"><ul type="none"><li><a href="https://webkul.com/about-us/company-profile/"> Order and Returns </a></li><li><a href="https://webkul.com/about-us/company-profile/"> Payment Policy </a></li><li><a href="https://webkul.com/about-us/company-profile/"> Shipping Policy</a></li><li><a href="https://webkul.com/about-us/company-profile/"> Privacy and Cookies Policy </a></li></ul></div>',
             'slider'                   => 1,

@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Webkul\ReinaBatata\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Velocity\Contracts\VelocityCustomerCompareProduct as VelocityCustomerCompareProductContract;
+use Webkul\ReinaBatata\Contracts\ReinaBatataCustomerCompareProduct as ReinaBatataCustomerCompareProductContract;
 
-class VelocityCustomerCompareProduct extends Model implements VelocityCustomerCompareProductContract
+class ReinaBatataCustomerCompareProduct extends Model implements ReinaBatataCustomerCompareProductContract
 {
     protected $guarded = [];
 }

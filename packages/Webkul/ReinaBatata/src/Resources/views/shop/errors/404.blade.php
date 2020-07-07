@@ -15,11 +15,11 @@
             ></div>
 
             <div class="col-12 fs24">
-                {{ __('velocity::app.error.page-lost-short') }}
+                {{ __('reinabatata::app.error.page-lost-short') }}
             </div>
 
             <p class="col-12 fs20">
-                {{ __('velocity::app.error.page-lost-description') }}
+                {{ __('reinabatata::app.error.page-lost-description') }}
             </p>
         </div>
 
@@ -28,11 +28,11 @@
 
                 @if ($logo = core()->getCurrentChannel()->logo_url)
                     <div
-                        class="col-12 velocity-icon bg-image"
+                        class="col-12 reinabatata-icon bg-image"
                         style="background-image: url('{{ $logo }}')"
                     ></div>
                 @else
-                    <div class="col-12 velocity-icon bg-image"></div>
+                    <div class="col-12 reinabatata-icon bg-image"></div>
                 @endif
             </div>
 
@@ -42,7 +42,7 @@
                 </div>
 
                 <span class="col-12 fs16">
-                    {{ __('velocity::app.error.go-to-home') }}
+                    {{ __('reinabatata::app.error.go-to-home') }}
                 </span>
             </a>
         </div>

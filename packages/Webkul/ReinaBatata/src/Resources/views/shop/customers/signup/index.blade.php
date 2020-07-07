@@ -10,23 +10,23 @@
             <div class="col-lg-10 col-md-12 offset-lg-1">
                 <div class="heading">
                     <h2 class="fs24 fw6">
-                        {{ __('velocity::app.customer.signup-form.user-registration')}}
+                        {{ __('reinabatata::app.customer.signup-form.user-registration')}}
                     </h2>
 
                     <a href="{{ route('customer.session.index') }}" class="btn-new-customer">
                         <button type="button" class="theme-btn light">
-                            {{ __('velocity::app.customer.signup-form.login')}}
+                            {{ __('reinabatata::app.customer.signup-form.login')}}
                         </button>
                     </a>
                 </div>
 
                 <div class="body col-12">
                     <h3 class="fw6">
-                        {{ __('velocity::app.customer.signup-form.become-user')}}
+                        {{ __('reinabatata::app.customer.signup-form.become-user')}}
                     </h3>
 
                     <p class="fs16">
-                        {{ __('velocity::app.customer.signup-form.form-sginup-text')}}
+                        {{ __('reinabatata::app.customer.signup-form.form-sginup-text')}}
                     </p>
 
                     {!! view_render_event('bagisto.shop.customers.signup.before') !!}

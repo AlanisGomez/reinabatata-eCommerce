@@ -28,8 +28,8 @@ return [
         'sort'  => 4,
     ], [
         'key'   => 'account.compare',
-        'name'  => 'velocity::app.customer.compare.text',
-        'route' =>'velocity.customer.product.compare',
+        'name'  => 'reinabatata::app.customer.compare.text',
+        'route' =>'reinabatata.customer.product.compare',
         'sort'  => 5,
     ], [
         'key'   => 'account.orders',

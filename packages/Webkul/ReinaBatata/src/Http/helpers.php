@@ -1,11 +1,11 @@
 <?php
 
-    use Webkul\Velocity\Velocity;
+    use Webkul\ReinaBatata\ReinaBatata;
 
-    if (! function_exists('velocity')) {
-        function velocity()
+    if (! function_exists('reinabatata')) {
+        function reinabatata()
         {
-            return app()->make(Velocity::class);
+            return app()->make(ReinaBatata::class);
         }
     }
 ?>

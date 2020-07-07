@@ -3,11 +3,11 @@
 return [
     'admin' => [
         'system'   => [
-            'velocity' => [
+            'reinabatata' => [
                 'general'  => 'جنرال لواء',
                 'category'  => 'الفئة',
                 'settings'  => 'الإعدادات',
-                'extension_name' => 'Velocity موضوع',
+                'extension_name' => 'ReinaBatata موضوع',
                 'error-module-inactive' => 'Warning: حالة سمة السرعة غير نشطة',
             ],
 
@@ -40,7 +40,7 @@ return [
             ]
         ],
         'layouts' => [
-            'velocity' => 'Velocity',
+            'reinabatata' => 'ReinaBatata',
             'cms-pages' => 'CMS الصفحات',
             'meta-data' => 'Meta Data',
             'category-menu' => 'قائمة الفئة',
@@ -91,7 +91,7 @@ return [
         ],
         'meta-data' => [
             'footer' => 'تذييل',
-            'title' => 'Velocity meta data',
+            'title' => 'ReinaBatata meta data',
             'activate-slider' => 'تنشيط شريط التمرير',
             'home-page-content' => 'محتوى الصفحة الرئيسية',
             'footer-left-content' => 'تذييل يسار المحتوى',

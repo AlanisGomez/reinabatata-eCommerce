@@ -3,9 +3,9 @@
     $advertisementTwo = null;
 @endphp
 
-@if ($velocityMetaData && $velocityMetaData->advertisement)
+@if ($reinabatataMetaData && $reinabatataMetaData->advertisement)
     @php
-        $advertisement = json_decode($velocityMetaData->advertisement, true);
+        $advertisement = json_decode($reinabatataMetaData->advertisement, true);
 
         if (isset($advertisement[2]) && is_array($advertisement[2])) {
             $advertisementTwo = array_values(array_filter($advertisement[2]));

@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Velocity\Facades;
+namespace Webkul\ReinaBatata\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Velocity extends Facade
+class ReinaBatata extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class Velocity extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'velocity';
+        return 'reinabatata';
     }
 }

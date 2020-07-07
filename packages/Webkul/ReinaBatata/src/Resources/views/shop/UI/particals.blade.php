@@ -8,7 +8,7 @@
         <div class="mini-cart-content">
             <i class="material-icons-outlined text-down-3">shopping_cart</i>
             <span class="badge" v-text="itemCount" v-if="itemCount != 0"></span>
-            <span class="fs18 fw6 cart-text">{{ __('velocity::app.minicart.cart') }}</span>
+            <span class="fs18 fw6 cart-text">{{ __('reinabatata::app.minicart.cart') }}</span>
         </div>
         <div class="down-arrow-container">
             <span class="rango-arrow-down"></span>
@@ -41,7 +41,7 @@
     </div>
 </script>
 
-@include('velocity::UI.header')
+@include('reinabatata::UI.header')
 
 <script type="text/x-template" id="logo-template">
     <a
@@ -51,7 +51,7 @@
         @if ($logo = core()->getCurrentChannel()->logo_url)
             <img class="logo" src="{{ $logo }}" />
         @else
-            <img class="logo" src="{{ asset('themes/velocity/assets/images/logo-text.png') }}" />
+            <img class="logo" src="{{ asset('themes/reinabatata/assets/images/logo-text.png') }}" />
         @endif
     </a>
 </script>
@@ -63,7 +63,7 @@
                 method="GET"
                 role="search"
                 id="search-form"
-                action="{{ route('velocity.search.index') }}">
+                action="{{ route('reinabatata.search.index') }}">
 
                 <div
                     class="btn-toolbar full-width"
@@ -73,7 +73,7 @@
                         <div class="selectdiv">
                             <select class="form-control fs13 styled-select" name="category" @change="focusInput($event)">
                                 <option value="">
-                                    {{ __('velocity::app.header.all-categories') }}
+                                    {{ __('reinabatata::app.header.all-categories') }}
                                 </option>
 
                                 <template v-for="(category, index) in $root.sharedRootCategories">
@@ -104,7 +104,7 @@
                                 type="search"
                                 class="form-control"
                                 :value="searchedQuery.term ? searchedQuery.term.split('+').join(' ') : ''"
-                                placeholder="{{ __('velocity::app.header.search-text') }}" />
+                                placeholder="{{ __('reinabatata::app.header.search-text') }}" />
 
                             <button class="btn" type="submit" id="header-search-icon">
                                 <i class="fs16 fw6 rango-search"></i>
@@ -125,11 +125,11 @@
                 <a
                     class="compare-btn unset"
                     @auth('customer')
-                        href="{{ route('velocity.customer.product.compare') }}"
+                        href="{{ route('reinabatata.customer.product.compare') }}"
                     @endauth
 
                     @guest('customer')
-                        href="{{ route('velocity.product.compare') }}"
+                        href="{{ route('reinabatata.product.compare') }}"
                     @endguest
                     >
 
@@ -137,12 +137,12 @@
                     <div class="badge-container" v-if="compareCount > 0">
                         <span class="badge" v-text="compareCount"></span>
                     </div>
-                    <span>{{ __('velocity::app.customer.compare.text') }}</span>
+                    <span>{{ __('reinabatata::app.customer.compare.text') }}</span>
                 </a>
             {!! view_render_event('bagisto.shop.layout.header.compare.after') !!}
 
             {!! view_render_event('bagisto.shop.layout.header.wishlist.before') !!}
-                <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('velocity.product.guest-wishlist') }}'}`">
+                <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('reinabatata.product.guest-wishlist') }}'}`">
                     <i class="material-icons">favorite_border</i>
                     <div class="badge-container" v-if="wishlistCount > 0">
                         <span class="badge" v-text="wishlistCount"></span>

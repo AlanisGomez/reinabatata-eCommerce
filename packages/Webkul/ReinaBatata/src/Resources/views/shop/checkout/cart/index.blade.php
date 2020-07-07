@@ -32,15 +32,15 @@
                     <div class="cart-details-header col-lg-6 col-md-12">
                         <div class="row cart-header col-12 no-padding">
                             <span class="col-8 fw6 fs16 pr0">
-                                {{ __('velocity::app.checkout.items') }}
+                                {{ __('reinabatata::app.checkout.items') }}
                             </span>
 
                             <span class="col-2 fw6 fs16 no-padding text-right">
-                                {{ __('velocity::app.checkout.qty') }}
+                                {{ __('reinabatata::app.checkout.qty') }}
                             </span>
 
                             <span class="col-2 fw6 fs16 text-right pr0">
-                                {{ __('velocity::app.checkout.subtotal') }}
+                                {{ __('reinabatata::app.checkout.subtotal') }}
                             </span>
                         </div>
 

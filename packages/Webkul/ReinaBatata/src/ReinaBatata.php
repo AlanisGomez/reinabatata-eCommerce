@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Velocity;
+namespace Webkul\ReinaBatata;
 
 use Webkul\Category\Repositories\CategoryRepository;
 
-class Velocity
+class ReinaBatata
 {
     /**
      * Content Type List
@@ -34,7 +34,7 @@ class Velocity
 
 	/**
 	 * CategoryRepository object
-	 * 
+	 *
 	 * @var \Webkul\Category\Repositories\CategoryRepository
 	 */
 	protected $categoryRepository;

@@ -3,12 +3,12 @@
 return [
     'admin' => [
         'system'   => [
-            'velocity' => [
+            'reinabatata' => [
                 'general'  => 'Algemeen',
                 'category'  => 'Categorie',
                 'settings'  => 'Instellingen',
-                'extension_name' => 'Velocity Thema',
-                'error-module-inactive' => 'Waarschuwing: Velocity thema status is inactief',
+                'extension_name' => 'ReinaBatata Thema',
+                'error-module-inactive' => 'Waarschuwing: ReinaBatata thema status is inactief',
             ],
 
             'settings' => [
@@ -40,7 +40,7 @@ return [
             ]
         ],
         'layouts' => [
-            'velocity' => 'Velocity',
+            'reinabatata' => 'ReinaBatata',
             'cms-pages' => 'CMS Pagina\s',
             'meta-data' => 'Metagegevens',
             'category-menu' => 'Categorie Menu',
@@ -91,7 +91,7 @@ return [
         ],
         'meta-data' => [
             'footer' => 'Voettekst',
-            'title' => 'Velocity metadata',
+            'title' => 'ReinaBatata metadata',
             'activate-slider' => 'Activeer slider',
             'home-page-content' => 'Startpagina-inhoud',
             'footer-left-content' => 'Inhoud voettekst links',

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Webkul\ReinaBatata\Repositories;
 
 use Webkul\Core\Eloquent\Repository;
 
@@ -10,7 +10,7 @@ use Webkul\Core\Eloquent\Repository;
  * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
  */
 class OrderBrandsRepository extends Repository
-{   
+{
     /**
      * Specify Model class name
      *
@@ -18,7 +18,7 @@ class OrderBrandsRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Velocity\Contracts\OrderBrand';
+        return 'Webkul\ReinaBatata\Contracts\OrderBrand';
     }
-    
+
 }

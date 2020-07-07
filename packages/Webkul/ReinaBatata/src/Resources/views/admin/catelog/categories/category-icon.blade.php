@@ -1,5 +1,5 @@
 <div class="control-group">
-    <label>{{ __('velocity::app.admin.meta-data.category-logo') }}</label>
+    <label>{{ __('reinabatata::app.admin.meta-data.category-logo') }}</label>
 
     @if (isset($category) && $category->category_icon_path)
         <image-wrapper

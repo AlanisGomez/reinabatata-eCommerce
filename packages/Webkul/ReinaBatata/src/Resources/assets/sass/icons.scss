@@ -1,20 +1,20 @@
 @import "mixins";
-.velocity-icon {
+.reinabatata-icon {
     width: 60px;
     height: 55px;
     display: inline-block;
     background-size: cover;
-    background-image: url("../images/Icon-Velocity.svg");
+    background-image: url("../images/Icon-ReinaBatata.svg");
 }
 
 .router-link-active,
 .active {
-    .velocity-icon {
-        background-image: url("../images/Icon-Velocity-Active.svg");
+    .reinabatata-icon {
+        background-image: url("../images/Icon-ReinaBatata-Active.svg");
     }
 
-    &.velocity-icon {
-        background-image: url("../images/Icon-Velocity-Active.svg");
+    &.reinabatata-icon {
+        background-image: url("../images/Icon-ReinaBatata-Active.svg");
     }
 }
 
@@ -29,4 +29,3 @@
         height: 25rem;
     }
 }
-

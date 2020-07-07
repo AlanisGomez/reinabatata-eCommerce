@@ -2,67 +2,67 @@
 
 return [
     [
-        'key'  => 'velocity',
-        'name' => 'velocity::app.admin.system.velocity.extension_name',
+        'key'  => 'reinabatata',
+        'name' => 'reinabatata::app.admin.system.reinabatata.extension_name',
         'sort' => 2,
     ], [
-        'key'  => 'velocity.configuration',
-        'name' => 'velocity::app.admin.system.velocity.settings',
+        'key'  => 'reinabatata.configuration',
+        'name' => 'reinabatata::app.admin.system.reinabatata.settings',
         'sort' => 1,
     ], [
-        'key'   => 'velocity.configuration.general',
-        'name'  => 'velocity::app.admin.system.velocity.general',
+        'key'   => 'reinabatata.configuration.general',
+        'name'  => 'reinabatata::app.admin.system.reinabatata.general',
         'sort'  => 1,
         'fields' => [
             [
                 'name'    => 'status',
-                'title'   => 'velocity::app.admin.system.general.status',
+                'title'   => 'reinabatata::app.admin.system.general.status',
                 'type'    => 'select',
                 'options' => [
                     [
-                        'title' => 'velocity::app.admin.system.general.active',
+                        'title' => 'reinabatata::app.admin.system.general.active',
                         'value' => true,
                     ], [
-                        'title' => 'velocity::app.admin.system.general.inactive',
+                        'title' => 'reinabatata::app.admin.system.general.inactive',
                         'value' => false,
                     ]
                 ]
             ]
         ]
     ],  [
-        'key'    => 'velocity.configuration.category',
-        'name'   => 'velocity::app.admin.system.velocity.category',
+        'key'    => 'reinabatata.configuration.category',
+        'name'   => 'velreinabatataocity::app.admin.system.reinabatata.category',
         'sort'   => 1,
         'fields' => [
             [
                 'name'    => 'icon_status',
-                'title'   => 'velocity::app.admin.system.category.icon-status',
+                'title'   => 'reinabatata::app.admin.system.category.icon-status',
                 'type'    => 'select',
                 'options' => [
                     [
-                        'title' => 'velocity::app.admin.system.category.active',
+                        'title' => 'reinabatata::app.admin.system.category.active',
                         'value' => true,
                     ], [
-                        'title' => 'velocity::app.admin.system.category.inactive',
+                        'title' => 'reinabatata::app.admin.system.category.inactive',
                         'value' => false,
                     ]
                 ]
             ],  [
                 'name'    => 'image_status',
-                'title'   => 'velocity::app.admin.system.category.image-status',
+                'title'   => 'reinabatata::app.admin.system.category.image-status',
                 'type'    => 'select',
                 'options' => [
                     [
-                        'title' => 'velocity::app.admin.system.category.active',
+                        'title' => 'reinabatata::app.admin.system.category.active',
                         'value' => true,
                     ], [
-                        'title' => 'velocity::app.admin.system.category.inactive',
+                        'title' => 'reinabatata::app.admin.system.category.inactive',
                         'value' => false,
                     ]
                 ]
             ],  [
                 'name'          => 'image_height',
-                'title'         => 'velocity::app.admin.system.category.image-height',
+                'title'         => 'reinabatata::app.admin.system.category.image-height',
                 'type'          => 'depands',
                 'depand'        => 'image_status:true',
                 'validation'    => 'numeric|max:3',
@@ -70,7 +70,7 @@ return [
                 'locale_based'  => false,
             ],  [
                 'name'          => 'image_width',
-                'title'         => 'velocity::app.admin.system.category.image-width',
+                'title'         => 'reinabatata::app.admin.system.category.image-width',
                 'type'          => 'depands',
                 'depand'        => 'image_status:true',
                 'validation'    => 'numeric|max:3',
@@ -78,7 +78,7 @@ return [
                 'locale_based'  => false,
             ],  [
                 'name'          => 'image_alignment',
-                'title'         => 'velocity::app.admin.system.category.image-alignment',
+                'title'         => 'reinabatata::app.admin.system.category.image-alignment',
                 'channel_based' => false,
                 'locale_based'  => false,
                 'type'          => 'depands',
@@ -94,20 +94,20 @@ return [
                 ]
             ],  [
                 'name'    => 'tooltip_status',
-                'title'   => 'velocity::app.admin.system.category.show-tooltip',
+                'title'   => 'reinabatata::app.admin.system.category.show-tooltip',
                 'type'    => 'select',
                 'options' => [
                     [
-                        'title' => 'velocity::app.admin.system.category.active',
+                        'title' => 'reinabatata::app.admin.system.category.active',
                         'value' => true,
                     ], [
-                        'title' => 'velocity::app.admin.system.category.inactive',
+                        'title' => 'reinabatata::app.admin.system.category.inactive',
                         'value' => false,
                     ]
                 ]
             ],  [
                 'name'          => 'sub_category',
-                'title'         => 'velocity::app.admin.system.category.sub-category-show',
+                'title'         => 'reinabatata::app.admin.system.category.sub-category-show',
                 'channel_based' => false,
                 'locale_based'  => false,
                 'type'          => 'select',
@@ -122,7 +122,7 @@ return [
                 ]
             ],  [
                 'name'          => 'sub_category_num',
-                'title'         => 'velocity::app.admin.system.category.num-sub-category',
+                'title'         => 'reinabatata::app.admin.system.category.num-sub-category',
                 'channel_based' => false,
                 'locale_based'  => false,
                 'type'          => 'depands',

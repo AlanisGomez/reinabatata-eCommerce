@@ -3,9 +3,9 @@
     $advertisementFour = null;
 @endphp
 
-@if ($velocityMetaData && $velocityMetaData->advertisement)
+@if ($reinabatataMetaData && $reinabatataMetaData->advertisement)
     @php
-        $advertisement = json_decode($velocityMetaData->advertisement, true);
+        $advertisement = json_decode($reinabatataMetaData->advertisement, true);
 
         if (isset($advertisement[4]) && is_array($advertisement[4])) {
             $advertisementFour = array_values(array_filter($advertisement[4]));
@@ -53,20 +53,20 @@
     <div class="container-fluid advertisement-four-container">
         <div class="row">
             <a @if (isset($one)) href="{{ $one }}" @endif class="col-lg-4 col-12 no-padding">
-                <img class="col-12" src="{{ asset('/themes/velocity/assets/images/big-sale-banner.png') }}" />
+                <img class="col-12" src="{{ asset('/themes/reinabatata/assets/images/big-sale-banner.png') }}" />
             </a>
 
             <div class="col-lg-4 col-12 offers-ct-panel">
                 <a @if (isset($two)) href="{{ $two }}" @endif class="row col-12 remove-padding-margin">
-                    <img class="col-12 offers-ct-top" src="{{ asset('/themes/velocity/assets/images/seasons.png') }}" />
+                    <img class="col-12 offers-ct-top" src="{{ asset('/themes/reinabatata/assets/images/seasons.png') }}" />
                 </a>
                 <a @if (isset($three)) href="{{ $three }}" @endif class="row col-12 remove-padding-margin">
-                    <img class="col-12 offers-ct-bottom" src="{{ asset('/themes/velocity/assets/images/deals.png') }}" />
+                    <img class="col-12 offers-ct-bottom" src="{{ asset('/themes/reinabatata/assets/images/deals.png') }}" />
                 </a>
             </div>
 
             <a @if (isset($four)) href="{{ $four }}" @endif class="col-lg-4 col-12 no-padding">
-                <img class="col-12" src="{{ asset('/themes/velocity/assets/images/kids.png') }}" />
+                <img class="col-12" src="{{ asset('/themes/reinabatata/assets/images/kids.png') }}" />
             </a>
         </div>
     </div>

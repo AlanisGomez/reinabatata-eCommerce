@@ -2,6 +2,6 @@
 
 namespace Webkul\ReinaBatata\Contracts;
 
-interface Content
+interface ReinaBatataCustomerCompareProduct
 {
 }

@@ -1,1 +1,1 @@
-<link rel="stylesheet" href="{{ asset('themes/velocity/assets/css/velocity.css') }}">
+<link rel="stylesheet" href="{{ asset('themes/reinabatata/assets/css/reinabatata.css') }}">

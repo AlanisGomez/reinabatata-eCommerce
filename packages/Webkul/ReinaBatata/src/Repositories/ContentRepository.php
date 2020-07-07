@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Webkul\ReinaBatata\Repositories;
 
 use Illuminate\Container\Container as App;
 use Webkul\Core\Eloquent\Repository;
@@ -40,16 +40,16 @@ class ContentRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Velocity\Contracts\Content';
+        return 'Webkul\ReinaBatata\Contracts\Content';
     }
 
     /**
      * @param  array  $data
-     * @return \Webkul\Velocity\Models\Content
+     * @return \Webkul\ReinaBatata\Models\Content
      */
     public function create(array $data)
     {
-        // Event::fire('velocity.content.create.before');
+        // Event::fire('reinabatata.content.create.before');
 
         if (isset($data['locale']) && $data['locale'] == 'all') {
             $model = app()->make($this->model());
@@ -65,7 +65,7 @@ class ContentRepository extends Repository
 
         $content = $this->model->create($data);
 
-        // Event::fire('velocity.content.create.after', $content);
+        // Event::fire('reinabatata.content.create.after', $content);
 
         return $content;
     }
@@ -73,17 +73,17 @@ class ContentRepository extends Repository
     /**
      * @param  array  $data
      * @param  int  $id
-     * @return \Webkul\Velocity\Models\Content
+     * @return \Webkul\ReinaBatata\Models\Content
      */
     public function update(array $data, $id)
     {
         $content = $this->find($id);
 
-        // Event::fire('velocity.content.update.before', $id);
+        // Event::fire('reinabatata.content.update.before', $id);
 
         $content->update($data);
 
-        // Event::fire('velocity.content.update.after', $id);
+        // Event::fire('reinabatata.content.update.after', $id);
 
         return $content;
     }
@@ -131,20 +131,20 @@ class ContentRepository extends Repository
 
         $contentCollection = $query
             ->select(
-                'velocity_contents.content_type',
-                'velocity_contents_translations.title as title',
-                'velocity_contents_translations.page_link as page_link',
-                'velocity_contents_translations.link_target as link_target'
+                'reinabatata_contents.content_type',
+                'reinabatata_contents_translations.title as title',
+                'reinabatata_contents_translations.page_link as page_link',
+                'reinabatata_contents_translations.link_target as link_target'
             )
-            ->where('velocity_contents.status', 1)
-            ->leftJoin('velocity_contents_translations', 'velocity_contents.id', 'velocity_contents_translations.content_id')
-            ->distinct('velocity_contents_translations.id')
-            ->where('velocity_contents_translations.locale', app()->getLocale())
+            ->where('reinabatata_contents.status', 1)
+            ->leftJoin('reinabatata_contents_translations', 'reinabatata_contents.id', 'reinabatata_contents_translations.content_id')
+            ->distinct('reinabatata_contents_translations.id')
+            ->where('reinabatata_contents_translations.locale', app()->getLocale())
             ->limit(5)
             ->get();
 
         $formattedContent = [];
-        
+
         foreach ($contentCollection as $content) {
             array_push($formattedContent, [
                 'title'        => $content->title,

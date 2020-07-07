@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\DataGrids;
+namespace Webkul\ReinaBatata\DataGrids;
 
 use Illuminate\Support\Facades\DB;
 use Webkul\Ui\DataGrid\DataGrid;
@@ -13,9 +13,9 @@ class ContentDataGrid extends DataGrid
 
     public function prepareQueryBuilder()
     {
-        $queryBuilder = DB::table('velocity_contents as con')
+        $queryBuilder = DB::table('reinabatata_contents as con')
             ->select('con.id as content_id', 'con_trans.title', 'con.position', 'con.content_type', 'con.status')
-            ->leftJoin('velocity_contents_translations as con_trans', function($leftJoin) {
+            ->leftJoin('reinabatata_contents_translations as con_trans', function($leftJoin) {
                 $leftJoin->on('con.id', '=', 'con_trans.content_id')
                          ->where('con_trans.locale', app()->getLocale());
             })
@@ -30,7 +30,7 @@ class ContentDataGrid extends DataGrid
     {
         $this->addColumn([
             'index'      => 'content_id',
-            'label'      => trans('velocity::app.admin.contents.datagrid.id'),
+            'label'      => trans('reinabatata::app.admin.contents.datagrid.id'),
             'type'       => 'number',
             'searchable' => true,
             'sortable'   => true,
@@ -39,7 +39,7 @@ class ContentDataGrid extends DataGrid
 
         $this->addColumn([
             'index'      => 'title',
-            'label'      => trans('velocity::app.admin.contents.datagrid.title'),
+            'label'      => trans('reinabatata::app.admin.contents.datagrid.title'),
             'type'       => 'string',
             'searchable' => true,
             'sortable'   => true,
@@ -48,7 +48,7 @@ class ContentDataGrid extends DataGrid
 
         $this->addColumn([
             'index'      => 'position',
-            'label'      => trans('velocity::app.admin.contents.datagrid.position'),
+            'label'      => trans('reinabatata::app.admin.contents.datagrid.position'),
             'type'       => 'number',
             'searchable' => true,
             'sortable'   => true,
@@ -57,7 +57,7 @@ class ContentDataGrid extends DataGrid
 
         $this->addColumn([
             'index'      => 'status',
-            'label'      => trans('velocity::app.admin.contents.datagrid.status'),
+            'label'      => trans('reinabatata::app.admin.contents.datagrid.status'),
             'type'       => 'boolean',
             'sortable'   => true,
             'searchable' => false,
@@ -73,7 +73,7 @@ class ContentDataGrid extends DataGrid
 
         $this->addColumn([
             'index'      => 'content_type',
-            'label'      => trans('velocity::app.admin.contents.datagrid.content-type'),
+            'label'      => trans('reinabatata::app.admin.contents.datagrid.content-type'),
             'type'       => 'string',
             'sortable'   => true,
             'searchable' => true,
@@ -96,14 +96,14 @@ class ContentDataGrid extends DataGrid
         $this->addAction([
             'type'   => 'Edit',
             'method' => 'GET',
-            'route'  => 'velocity.admin.content.edit',
+            'route'  => 'reinabatata.admin.content.edit',
             'icon'   => 'icon pencil-lg-icon',
         ]);
 
         $this->addAction([
             'type'         => 'Delete',
             'method'       => 'POST',
-            'route'        => 'velocity.admin.content.delete',
+            'route'        => 'reinabatata.admin.content.delete',
             'confirm_text' => trans('ui::app.datagrid.massaction.delete', ['resource' => 'content']),
             'icon'         => 'icon trash-icon',
         ]);
@@ -113,7 +113,7 @@ class ContentDataGrid extends DataGrid
     {
         $this->addMassAction([
             'type'   => 'delete',
-            'action' => route('velocity.admin.content.mass-delete'),
+            'action' => route('reinabatata.admin.content.mass-delete'),
             'label'  => trans('admin::app.datagrid.delete'),
             'method' => 'DELETE',
         ]);

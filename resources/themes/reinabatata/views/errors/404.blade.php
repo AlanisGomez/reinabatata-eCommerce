@@ -17,16 +17,16 @@
         </div>
         <div class="col-12 col-md-6 pt-md-5">
             <div class="col-12 fs24">
-                {{ __('velocity::app.error.page-lost-short') }}
+                {{ __('reinabatata::app.error.page-lost-short') }}
             </div>
 
             <p class="col-12 fs20">
-                {{ __('velocity::app.error.page-lost-description') }}
+                {{ __('reinabatata::app.error.page-lost-description') }}
             </p>
 
             <a type="button" class="row btn btn-primary remove-decoration" href="{{ route('shop.home.index') }}">
                 <span class="col-12 fs16">
-                    {{ __('velocity::app.error.go-to-home') }}
+                    {{ __('reinabatata::app.error.go-to-home') }}
                 </span>
             </a>
         </div>

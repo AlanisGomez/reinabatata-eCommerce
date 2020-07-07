@@ -12,10 +12,10 @@
                 href="{{ $route }}"
             @elseif (! $isWished)
                 href="{{ route('customer.wishlist.add', $product->product_id) }}"
-                title="{{ __('velocity::app.shop.wishlist.add-wishlist-text') }}"
+                title="{{ __('reinabatata::app.shop.wishlist.add-wishlist-text') }}"
             @elseif (isset($itemId) && $itemId)
                 href="{{ route('customer.wishlist.remove', $itemId) }}"
-                title="{{ __('velocity::app.shop.wishlist.remove-wishlist-text') }}"
+                title="{{ __('reinabatata::app.shop.wishlist.remove-wishlist-text') }}"
             @endif>
 
             <wishlist-component active="{{ !$isWished }}" is-customer="true"></wishlist-component>

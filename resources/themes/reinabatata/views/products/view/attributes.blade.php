@@ -9,7 +9,7 @@
         <accordian :title="'{{ __('shop::app.products.specification') }}'" :active="'{{ $active }}' == true ? true : false">
             <div slot="header">
                 <h3 class="no-margin display-inbl">
-                    {{ __('velocity::app.products.more-infomation') }}
+                    {{ __('reinabatata::app.products.more-infomation') }}
                 </h3>
                 <i class="rango-arrow"></i>
             </div>

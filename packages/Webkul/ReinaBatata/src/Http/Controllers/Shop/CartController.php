@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Shop;
+namespace Webkul\ReinaBatata\Http\Controllers\Shop;
 
 use Cart;
 use Illuminate\Support\Facades\Log;
-use Webkul\Velocity\Helpers\Helper;
+use Webkul\ReinaBatata\Helpers\Helper;
 use Webkul\Checkout\Contracts\Cart as CartModel;
 use Webkul\Product\Repositories\ProductRepository;
 
@@ -74,7 +74,7 @@ class CartController extends Controller
                 $formattedItems = [];
 
                 foreach ($cart->items as $item) {
-                    array_push($formattedItems, $this->velocityHelper->formatCartItem($item));
+                    array_push($formattedItems, $this->reinabatataHelper->formatCartItem($item));
                 }
 
                 $response = [
@@ -94,7 +94,7 @@ class CartController extends Controller
         } catch(\Exception $exception) {
             $product = $this->productRepository->find($id);
 
-            Log::error('Velocity CartController: ' . $exception->getMessage(),
+            Log::error('ReinaBatata CartController: ' . $exception->getMessage(),
                 ['product_id' => $id, 'cart_id' => cart()->getCart() ?? 0]);
 
             $response = [
@@ -106,7 +106,7 @@ class CartController extends Controller
 
         return $response ?? [
             'status'  => 'danger',
-            'message' => __('velocity::app.error.something_went_wrong'),
+            'message' => __('reinabatata::app.error.something_went_wrong'),
         ];
     }
 
@@ -123,15 +123,15 @@ class CartController extends Controller
         if ($result) {
             $response = [
                 'status'  => 'success',
-                'label'   => trans('velocity::app.shop.general.alert.success'),
+                'label'   => trans('reinabatata::app.shop.general.alert.success'),
                 'message' => trans('shop::app.checkout.cart.item.success-remove'),
             ];
         }
 
         return response()->json($response ?? [
             'status'  => 'danger',
-            'label'   => trans('velocity::app.shop.general.alert.error'),
-            'message' => trans('velocity::app.error.something_went_wrong'),
+            'label'   => trans('reinabatata::app.shop.general.alert.error'),
+            'message' => trans('reinabatata::app.error.something_went_wrong'),
         ], 200);
     }
 }

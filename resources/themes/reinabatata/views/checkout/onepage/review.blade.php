@@ -13,7 +13,7 @@
             <div class="address-summary row no-gutters">
                 <div class="cart-item-list col-12">
                     <div class="card-title mb-3">
-                        <b>{{ __('velocity::app.checkout.items') }}</b>
+                        <b>{{ __('reinabatata::app.checkout.items') }}</b>
                     </div>
 
                     @foreach ($cart->items as $item)

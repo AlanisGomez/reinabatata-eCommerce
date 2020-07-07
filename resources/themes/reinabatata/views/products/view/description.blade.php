@@ -3,7 +3,7 @@
     <accordian :title="'{{ __('shop::app.products.description') }}'" :active="true">
         <div slot="header">
             <h3 class="no-margin display-inbl">
-                {{ __('velocity::app.products.details') }}
+                {{ __('reinabatata::app.products.details') }}
             </h3>
 
             <i class="rango-arrow"></i>

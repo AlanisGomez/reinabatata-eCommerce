@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Webkul\ReinaBatata\Models;
 
 use Konekt\Concord\Proxies\ModelProxy;
 
-class VelocityMetadataProxy extends ModelProxy
+class ReinaBatataMetadataProxy extends ModelProxy
 {
 }

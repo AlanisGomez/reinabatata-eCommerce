@@ -1,42 +1,42 @@
 <?php
 
 Route::group(['middleware' => ['web', 'locale', 'theme', 'currency']], function () {
-    Route::namespace('Webkul\Velocity\Http\Controllers\Shop')->group(function () {
+    Route::namespace('Webkul\ReinaBatata\Http\Controllers\Shop')->group(function () {
         Route::get('/product-details/{slug}', 'ShopController@fetchProductDetails')
-            ->name('velocity.shop.product');
+            ->name('reinabatata.shop.product');
 
         Route::get('/categorysearch', 'ShopController@search')
-            ->name('velocity.search.index')
+            ->name('reinabatata.search.index')
             ->defaults('_config', [
                 'view' => 'shop::search.search'
             ]);
 
         Route::get('/categories', 'ShopController@fetchCategories')
-        ->name('velocity.categoriest');
+        ->name('reinabatata.categoriest');
 
         Route::get('/category-details', 'ShopController@categoryDetails')
-            ->name('velocity.category.details');
+            ->name('reinabatata.category.details');
 
-        Route::get('/fancy-category-details/{slug}', 'ShopController@fetchFancyCategoryDetails')->name('velocity.fancy.category.details');
+        Route::get('/fancy-category-details/{slug}', 'ShopController@fetchFancyCategoryDetails')->name('reinabatata.fancy.category.details');
 
         Route::get('/mini-cart', 'CartController@getMiniCartDetails')
-            ->name('velocity.cart.get.details');
+            ->name('reinabatata.cart.get.details');
 
         Route::post('/cart/add', 'CartController@addProductToCart')
-            ->name('velocity.cart.add.product');
+            ->name('reinabatata.cart.add.product');
 
         Route::delete('/cart/remove/{id}', 'CartController@removeProductFromCart')
-            ->name('velocity.cart.remove.product');
+            ->name('reinabatata.cart.remove.product');
 
         Route::get('/comparison', 'ComparisonController@getComparisonList')
-            ->name('velocity.product.compare')
+            ->name('reinabatata.product.compare')
             ->defaults('_config', [
                 'view' => 'shop::guest.compare.index'
             ]);
 
         Route::group(['middleware' => ['customer']], function () {
             Route::get('/customer/account/comparison', 'ComparisonController@getComparisonList')
-                ->name('velocity.customer.product.compare')
+                ->name('reinabatata.customer.product.compare')
                 ->defaults('_config', [
                     'view' => 'shop::customers.account.compare.index'
                 ]);
@@ -49,18 +49,18 @@ Route::group(['middleware' => ['web', 'locale', 'theme', 'currency']], function 
             ->name('customer.product.delete.compare');
 
         Route::get('/guest-wishlist', 'ShopController@getWishlistList')
-            ->name('velocity.product.guest-wishlist')
+            ->name('reinabatata.product.guest-wishlist')
             ->defaults('_config', [
                 'view' => 'shop::guest.wishlist.index'
             ]);
 
         Route::get('/items-count', 'ShopController@getItemsCount')
-            ->name('velocity.product.item-count');
+            ->name('reinabatata.product.item-count');
 
         Route::get('/detailed-products', 'ShopController@getDetailedProducts')
-            ->name('velocity.product.details');
+            ->name('reinabatata.product.details');
 
         Route::get('/category-products/{categoryId}', 'ShopController@getCategoryProducts')
-            ->name('velocity.category.products');
+            ->name('reinabatata.category.products');
     });
 });

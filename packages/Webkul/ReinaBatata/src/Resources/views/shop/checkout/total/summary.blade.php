@@ -1,8 +1,8 @@
 <div class="order-summary fs16">
-    <h3 class="fw6">{{ __('velocity::app.checkout.cart.cart-summary') }}</h3>
+    <h3 class="fw6">{{ __('reinabatata::app.checkout.cart.cart-summary') }}</h3>
 
     <div class="row">
-        <span class="col-8">{{ __('velocity::app.checkout.sub-total') }}</span>
+        <span class="col-8">{{ __('reinabatata::app.checkout.sub-total') }}</span>
         <span class="col-4 text-right">{{ core()->currency($cart->base_sub_total) }}</span>
     </div>
 
@@ -48,7 +48,7 @@
         <a
             href="{{ route('shop.checkout.onepage.index') }}"
             class="theme-btn text-uppercase col-12 remove-decoration fw6 text-center">
-            {{ __('velocity::app.checkout.proceed') }}
+            {{ __('reinabatata::app.checkout.proceed') }}
         </a>
     </div>
 </div>

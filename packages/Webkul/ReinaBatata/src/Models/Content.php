@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Webkul\ReinaBatata\Models;
 
 use Webkul\Core\Eloquent\TranslatableModel;
-use Webkul\Velocity\Contracts\Content as ContentContract;
+use Webkul\ReinaBatata\Contracts\Content as ContentContract;
 
 class Content extends TranslatableModel implements ContentContract
 {
-    
-    protected $table = 'velocity_contents';
+
+    protected $table = 'reinabatata_contents';
 
     public $translatedAttributes = [
         'title',

@@ -1,7 +1,7 @@
 @extends('admin::layouts.content')
 
 @section('page_title')
-    {{ __('velocity::app.admin.meta-data.title') }}
+    {{ __('reinabatata::app.admin.meta-data.title') }}
 @stop
 
 @section('content')
@@ -11,9 +11,9 @@
             @submit.prevent="onSubmit"
             enctype="multipart/form-data"
             @if ($metaData)
-                action="{{ route('velocity.admin.store.meta-data', ['id' => $metaData->id]) }}"
+                action="{{ route('reinabatata.admin.store.meta-data', ['id' => $metaData->id]) }}"
             @else
-                action="{{ route('velocity.admin.store.meta-data', ['id' => 'new']) }}"
+                action="{{ route('reinabatata.admin.store.meta-data', ['id' => 'new']) }}"
             @endif
             >
 
@@ -21,19 +21,19 @@
 
             <div class="page-header">
                 <div class="page-title">
-                    <h1>{{ __('velocity::app.admin.meta-data.title') }}</h1>
+                    <h1>{{ __('reinabatata::app.admin.meta-data.title') }}</h1>
                 </div>
                 <div class="page-action">
                     <button type="submit" class="btn btn-lg btn-primary">
-                        {{ __('velocity::app.admin.meta-data.update-meta-data') }}
+                        {{ __('reinabatata::app.admin.meta-data.update-meta-data') }}
                     </button>
                 </div>
             </div>
 
-            <accordian :title="'{{ __('velocity::app.admin.meta-data.general') }}'" :active="true">
+            <accordian :title="'{{ __('reinabatata::app.admin.meta-data.general') }}'" :active="true">
                 <div slot="body">
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.activate-slider') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.activate-slider') }}</label>
 
                         <label class="switch">
                             <input
@@ -43,13 +43,13 @@
                                 class="control"
                                 data-vv-as="&quot;slides&quot;"
                                 {{ $metaData && $metaData->slider ? 'checked' : ''}} />
-                                
+
                             <span class="slider round"></span>
                         </label>
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.sidebar-categories') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.sidebar-categories') }}</label>
 
                         <input
                             type="text"
@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.home-page-content') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.home-page-content') }}</label>
 
                         <textarea
                             class="control"
@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.product-policy') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.product-policy') }}</label>
 
                         <textarea
                             class="control"
@@ -106,10 +106,10 @@
                 </div>
             </accordian>
 
-            <accordian :title="'{{ __('velocity::app.admin.meta-data.images') }}'" :active="false">
+            <accordian :title="'{{ __('reinabatata::app.admin.meta-data.images') }}'" :active="false">
                 <div slot="body">
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.advertisement-four') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.advertisement-four') }}</label>
 
                         @php
                             $images = [
@@ -123,7 +123,7 @@
                         @if(! isset($advertisement[4]))
                             <image-wrapper
                                 input-name="images[4]"
-                                :button-label="'{{ __('velocity::app.admin.meta-data.add-image-btn-title') }}'">
+                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'">
                             </image-wrapper>
                         @else
                             @foreach ($advertisement[4] as $index => $image)
@@ -139,16 +139,16 @@
                                 :multiple="true"
                                 input-name="images[4]"
                                 :images='@json($images[4])'
-                                :button-label="'{{ __('velocity::app.admin.meta-data.add-image-btn-title') }}'">
+                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'">
                             </image-wrapper>
                         @endif
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.advertisement-three') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.advertisement-three') }}</label>
                         @if(! isset($advertisement[3]))
                             <image-wrapper
-                                :button-label="'{{ __('velocity::app.admin.meta-data.add-image-btn-title') }}'"
+                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'"
                                 input-name="images[3]">
                             </image-wrapper>
                         @else
@@ -164,17 +164,17 @@
                             <image-wrapper
                                 input-name="images[3]"
                                 :images='@json($images[3])'
-                                :button-label="'{{ __('velocity::app.admin.meta-data.add-image-btn-title') }}'">
+                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'">
                             </image-wrapper>
                         @endif
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.advertisement-two') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.advertisement-two') }}</label>
 
                         @if(! isset($advertisement[2]))
                             <image-wrapper
-                                :button-label="'{{ __('velocity::app.admin.meta-data.add-image-btn-title') }}'"
+                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'"
                                 input-name="images[2]">
                             </image-wrapper>
                         @else
@@ -190,17 +190,17 @@
                             <image-wrapper
                                 input-name="images[2]"
                                 :images='@json($images[2])'
-                                :button-label="'{{ __('velocity::app.admin.meta-data.add-image-btn-title') }}'">
+                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'">
                             </image-wrapper>
                         @endif
                     </div>
                 </div>
             </accordian>
 
-            <accordian :title="'{{ __('velocity::app.admin.meta-data.footer') }}'" :active="false">
+            <accordian :title="'{{ __('reinabatata::app.admin.meta-data.footer') }}'" :active="false">
                 <div slot="body">
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.subscription-content') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.subscription-content') }}</label>
 
                         <textarea
                             class="control"
@@ -211,7 +211,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.footer-left-content') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.footer-left-content') }}</label>
 
                         <textarea
                             class="control"
@@ -222,7 +222,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('velocity::app.admin.meta-data.footer-middle-content') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.footer-middle-content') }}</label>
 
                         <textarea
                             class="control"

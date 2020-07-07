@@ -10,25 +10,11 @@ return [
             'name' => 'Default'
         ],
 
-        // 'bliss' => [
-        //     'views_path' => 'resources/themes/bliss/views',
-        //     'assets_path' => 'public/themes/bliss/assets',
-        //     'name' => 'Bliss',
-        //     'parent' => 'default'
-        // ]
-
-        'velocity' => [
-            'views_path' => 'resources/themes/velocity/views',
-            'assets_path' => 'public/themes/velocity/assets',
-            'name' => 'Velocity',
-            'parent' => 'default'
-        ],
-
         'reinabatata' => [
             'views_path' => 'resources/themes/reinabatata/views',
             'assets_path' => 'public/themes/reinabatata/assets',
             'name' => 'Reina Batata',
-            'parent' => 'velocity'
+            'parent' => 'default'
         ],
     ]
 ];

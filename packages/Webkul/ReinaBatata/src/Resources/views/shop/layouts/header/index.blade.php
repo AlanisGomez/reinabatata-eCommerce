@@ -1,5 +1,5 @@
 <header class="sticky-header" v-if="!isMobile()">
-    <div class="row col-12 remove-padding-margin velocity-divide-page">
+    <div class="row col-12 remove-padding-margin reinabatata-divide-page">
         <logo-component></logo-component>
         <searchbar-component></searchbar-component>
     </div>

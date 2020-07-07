@@ -3,7 +3,7 @@
 
 <div class="control-group" :class="[errors.has('{!!$locale!!}[page_link]') ? 'has-error' : '']">
     <label for="page_link" class="required">
-        {{ __('velocity::app.admin.contents.content.category-slug') }}
+        {{ __('reinabatata::app.admin.contents.content.category-slug') }}
     </label>
 
     @php
@@ -17,7 +17,7 @@
         name="{{$locale}}[page_link]"
         v-validate="'required|max:150'"
         value="{{ $pageTarget }}"
-        data-vv-as="&quot;{{ __('velocity::app.admin.contents.content.category-slug') }}&quot;" />
+        data-vv-as="&quot;{{ __('reinabatata::app.admin.contents.content.category-slug') }}&quot;" />
 
     <span class="control-error" v-if="errors.has('{!!$locale!!}[page_link]')">
         @{{ errors.first('{!!$locale!!}[page_link]') }}
@@ -26,7 +26,7 @@
 
 <div class="control-group">
     <label for="link_target">
-        {{ __('velocity::app.admin.contents.content.link-target') }}
+        {{ __('reinabatata::app.admin.contents.content.link-target') }}
     </label>
 
     @php
@@ -35,10 +35,10 @@
 
     <select class="control" id="link_target" name="{{$locale}}[link_target]" value="">
         <option value="0">
-            {{ __('velocity::app.admin.contents.self') }}
+            {{ __('reinabatata::app.admin.contents.self') }}
         </option>
         <option value="1" @if ($linkTarget == 1) selected="selected" @endif>
-            {{ __('velocity::app.admin.contents.new-tab') }}
+            {{ __('reinabatata::app.admin.contents.new-tab') }}
         </option>
     </select>
 </div>

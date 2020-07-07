@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVelocityContentsTranslationsTable extends Migration
+class CreateReinaBatataContentsTranslationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateVelocityContentsTranslationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('velocity_contents_translations', function (Blueprint $table) {
+        Schema::create('reinabatata_contents_translations', function (Blueprint $table) {
             $table->increments('id');
 
             $table->integer('content_id')->unsigned()->nullable();
-            $table->foreign('content_id')->references('id')->on('velocity_contents')->onDelete('cascade');
+            $table->foreign('content_id')->references('id')->on('reinabatata_contents')->onDelete('cascade');
 
             $table->string('title', 100)->nullable();
             $table->string('custom_title', 100)->nullable();
@@ -44,6 +44,6 @@ class CreateVelocityContentsTranslationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('velocity_contents_translations');
+        Schema::dropIfExists('reinabatata_contents_translations');
     }
 }

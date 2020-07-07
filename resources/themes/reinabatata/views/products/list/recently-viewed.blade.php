@@ -1,4 +1,4 @@
-@inject ('velocityHelper', 'Webkul\Velocity\Helpers\Helper')
+@inject ('reinabatataHelper', 'Webkul\ReinaBatata\Helpers\Helper')
 @inject ('productRatingHelper', 'Webkul\Product\Helpers\Review')
 @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
 
@@ -13,7 +13,7 @@
         <div :class="`${addClass} recently-viewed`">
             <div class="row remove-padding-margin">
                 <div class="col-12 no-padding">
-                    <h2 class="fs20 fw6 mb15">{{ __('velocity::app.products.recently-viewed') }}</h2>
+                    <h2 class="fs20 fw6 mb15">{{ __('reinabatata::app.products.recently-viewed') }}</h2>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
                 <span
                     class="fs16"
                     v-if="!recentlyViewed ||(recentlyViewed && Object.keys(recentlyViewed).length == 0)"
-                    v-text="'{{ __('velocity::app.products.not-available') }}'">
+                    v-text="'{{ __('reinabatata::app.products.not-available') }}'">
                 </span>
             </div>
         </div>

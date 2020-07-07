@@ -112,12 +112,12 @@
                     <div class="product-rating col-12 no-padding">
                         <star-ratings ratings="{{ $avgRatings }}"></star-ratings>
                         <span class="align-top">
-                            {{ __('velocity::app.products.ratings', ['totalRatings' => $totalReviews ]) }}
+                            {{ __('reinabatata::app.products.ratings', ['totalRatings' => $totalReviews ]) }}
                         </span>
                     </div>
                 @else
                     <div class="product-rating col-12 no-padding">
-                        <span class="fs14">{{ __('velocity::app.products.be-first-review') }}</span>
+                        <span class="fs14">{{ __('reinabatata::app.products.be-first-review') }}</span>
                     </div>
                 @endif -->
 

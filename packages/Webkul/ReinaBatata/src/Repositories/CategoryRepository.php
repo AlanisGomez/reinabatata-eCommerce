@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Webkul\ReinaBatata\Repositories;
 
 use Illuminate\Container\Container as App;
 use Webkul\Core\Eloquent\Repository;
 use Webkul\Category\Repositories\CategoryRepository as Category;
 
 class CategoryRepository extends Repository
-{   
+{
    /**
     * Category Repository object
     *
@@ -39,7 +39,7 @@ class CategoryRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Velocity\Contracts\Category';
+        return 'Webkul\ReinaBatata\Contracts\Category';
     }
 
     /**
@@ -51,15 +51,15 @@ class CategoryRepository extends Repository
     {
         $results = [];
 
-        $velocityCategories = $this->model->all(['category_id']);
+        $reinabatataCategories = $this->model->all(['category_id']);
 
-        $categoryMenues = json_decode(json_encode($velocityCategories), true);
-        
+        $categoryMenues = json_decode(json_encode($reinabatataCategories), true);
+
         $categories = $this->categoryRepository->getVisibleCategoryTree(core()->getCurrentChannel()->root_category_id);
 
         if (isset($categories->first()->id)) {
             foreach ($categories as $category) {
-                
+
                 if (! empty($categoryMenues) && !in_array($category->id, array_column($categoryMenues, 'category_id'))) {
                     $results[] = [
                         'id'   => $category->id,

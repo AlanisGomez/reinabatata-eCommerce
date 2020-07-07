@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Webkul\ReinaBatata\Repositories;
 
 use Webkul\Core\Eloquent\Repository;
 
@@ -22,10 +22,10 @@ class ReviewRepository extends Repository
     }
 
 
-    function getAll() 
+    function getAll()
     {
         $reviews = $this->model->get();
-        
+
         return $reviews;
     }
 }

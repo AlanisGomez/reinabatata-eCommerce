@@ -1,8 +1,8 @@
 @php
-    $velocityHelper = app('Webkul\Velocity\Helpers\Helper');
-    $velocityMetaData = $velocityHelper->getVelocityMetaData();
+    $reinabatataHelper = app('Webkul\ReinaBatata\Helpers\Helper');
+    $reinabatataMetaData = $reinabatataHelper->getReinaBatataMetaData();
 
-    view()->share('velocityMetaData', $velocityMetaData);
+    view()->share('reinabatataMetaData', $reinabatataMetaData);
 @endphp
 
 <!DOCTYPE html>
@@ -81,14 +81,14 @@
 
                     <div class="main-content-wrapper col-12 no-padding">
                         @php
-                            $velocityContent = app('Webkul\Velocity\Repositories\ContentRepository')->getAllContents();
+                            $reinabatataContent = app('Webkul\ReinaBatata\Repositories\ContentRepository')->getAllContents();
                         @endphp
 
                         <content-header
                             url="{{ url()->to('/') }}"
-                            :header-content="{{ json_encode($velocityContent) }}"
-                            heading= "{{ __('velocity::app.menu-navbar.text-category') }}"
-                            category-count="{{ $velocityMetaData ? $velocityMetaData->sidebar_category_count : 10 }}"
+                            :header-content="{{ json_encode($reinabatataContent) }}"
+                            heading= "{{ __('reinabatata::app.menu-navbar.text-category') }}"
+                            category-count="{{ $reinabatataMetaData ? $reinabatataMetaData->sidebar_category_count : 10 }}"
                         ></content-header>
 
                         <div class="">
@@ -97,7 +97,7 @@
                                     main-sidebar=true
                                     id="sidebar-level-0"
                                     url="{{ url()->to('/') }}"
-                                    category-count="{{ $velocityMetaData ? $velocityMetaData->sidebar_category_count : 10 }}"
+                                    category-count="{{ $reinabatataMetaData ? $reinabatataMetaData->sidebar_category_count : 10 }}"
                                     add-class="category-list-container pt10">
                                 </sidebar-component>
 
@@ -172,16 +172,16 @@
 
                 @if ($message = session('success'))
                     messageType = 'alert-success';
-                    messageLabel = "{{ __('velocity::app.shop.general.alert.success') }}";
+                    messageLabel = "{{ __('reinabatata::app.shop.general.alert.success') }}";
                 @elseif ($message = session('warning'))
                     messageType = 'alert-warning';
-                    messageLabel = "{{ __('velocity::app.shop.general.alert.warning') }}";
+                    messageLabel = "{{ __('reinabatata::app.shop.general.alert.warning') }}";
                 @elseif ($message = session('error'))
                     messageType = 'alert-danger';
-                    messageLabel = "{{ __('velocity::app.shop.general.alert.error') }}";
+                    messageLabel = "{{ __('reinabatata::app.shop.general.alert.error') }}";
                 @elseif ($message = session('info'))
                     messageType = 'alert-info';
-                    messageLabel = "{{ __('velocity::app.shop.general.alert.info') }}";
+                    messageLabel = "{{ __('reinabatata::app.shop.general.alert.info') }}";
                 @endif
 
                 if (messageType && '{{ $message }}' !== '') {
@@ -195,7 +195,7 @@
                     @endif
                 @endif
 
-                window._translations = @json(app('Webkul\Velocity\Helpers\Helper')->jsonTranslations());
+                window._translations = @json(app('Webkul\ReinaBatata\Helpers\Helper')->jsonTranslations());
             })();
         </script>
 

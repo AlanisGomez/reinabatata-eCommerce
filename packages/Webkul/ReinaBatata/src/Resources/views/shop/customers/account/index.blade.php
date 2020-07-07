@@ -1,7 +1,7 @@
 @extends('shop::layouts.master')
 
 @section('content-wrapper')
-    <div class="account-content row no-margin velocity-divide-page">
+    <div class="account-content row no-margin reinabatata-divide-page">
         <div class="sidebar left">
             @include('shop::customers.account.partials.sidemenu')
         </div>

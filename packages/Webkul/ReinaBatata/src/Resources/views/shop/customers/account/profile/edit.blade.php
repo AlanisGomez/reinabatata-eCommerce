@@ -70,7 +70,7 @@
                                 @if ($customer->gender == "Other")
                                     selected="selected"
                                 @endif>
-                                {{ __('velocity::app.shop.gender.other') }}
+                                {{ __('reinabatata::app.shop.gender.other') }}
                             </option>
 
                             <option
@@ -78,7 +78,7 @@
                                 @if ($customer->gender == "Male")
                                     selected="selected"
                                 @endif>
-                                {{ __('velocity::app.shop.gender.male') }}
+                                {{ __('reinabatata::app.shop.gender.male') }}
                             </option>
 
                             <option
@@ -86,7 +86,7 @@
                                 @if ($customer->gender == "Female")
                                     selected="selected"
                                 @endif>
-                                {{ __('velocity::app.shop.gender.female') }}
+                                {{ __('reinabatata::app.shop.gender.female') }}
                             </option>
                         </select>
 
@@ -136,7 +136,7 @@
 
                 <div class="row">
                     <label class="col-12">
-                        {{ __('velocity::app.shop.general.enter-current-password') }}
+                        {{ __('reinabatata::app.shop.general.enter-current-password') }}
                     </label>
 
                     <div :class="`col-12 ${errors.has('oldpassword') ? 'has-error' : ''}`">
@@ -148,7 +148,7 @@
 
                 <div class="row">
                     <label class="col-12">
-                        {{ __('velocity::app.shop.general.new-password') }}
+                        {{ __('reinabatata::app.shop.general.new-password') }}
                     </label>
 
                     <div :class="`col-12 ${errors.has('password') ? 'has-error' : ''}`">
@@ -168,7 +168,7 @@
 
                 <div class="row">
                     <label class="col-12">
-                        {{ __('velocity::app.shop.general.confirm-new-password') }}
+                        {{ __('reinabatata::app.shop.general.confirm-new-password') }}
                     </label>
 
                     <div :class="`col-12 ${errors.has('password_confirmation') ? 'has-error' : ''}`">
@@ -186,7 +186,7 @@
                 <button
                     type="submit"
                     class="theme-btn mb20">
-                    {{ __('velocity::app.shop.general.update') }}
+                    {{ __('reinabatata::app.shop.general.update') }}
                 </button>
             </form>
         </div>

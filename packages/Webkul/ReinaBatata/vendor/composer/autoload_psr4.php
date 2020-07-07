@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Webkul\\Velocity\\' => array($baseDir . '/src'),
+    'Webkul\\ReinaBatata\\' => array($baseDir . '/src'),
 );

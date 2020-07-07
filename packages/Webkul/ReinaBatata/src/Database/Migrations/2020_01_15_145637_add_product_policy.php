@@ -13,7 +13,7 @@ class AddProductPolicy extends Migration
      */
     public function up()
     {
-        Schema::table('velocity_meta_data', function (Blueprint $table) {
+        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
             $table->text('product_policy')->nullable();
         });
     }
@@ -25,7 +25,7 @@ class AddProductPolicy extends Migration
      */
     public function down()
     {
-        Schema::table('velocity_meta_data', function (Blueprint $table) {
+        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
             $table->dropColumn('product_policy');
         });
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\DataGrids;
+namespace Webkul\ReinaBatata\DataGrids;
 
 use Illuminate\Support\Facades\DB;
 use Webkul\Ui\DataGrid\DataGrid;
@@ -15,7 +15,7 @@ class CategoryDataGrid extends DataGrid
     {
         $defaultChannel = core()->getCurrentChannel();
 
-        $queryBuilder = DB::table('velocity_category as v_cat')
+        $queryBuilder = DB::table('reinabatata_category as v_cat')
             ->select('v_cat.id as category_menu_id', 'v_cat.category_id', 'ct.name', 'v_cat.icon', 'v_cat.tooltip', 'v_cat.status')
             ->leftJoin('categories as c', 'c.id', '=', 'v_cat.category_id')
             ->leftJoin('category_translations as ct', function($leftJoin) {
@@ -34,7 +34,7 @@ class CategoryDataGrid extends DataGrid
     {
         $this->addColumn([
             'index'      => 'category_id',
-            'label'      => trans('velocity::app.admin.category.datagrid.category-id'),
+            'label'      => trans('reinabatata::app.admin.category.datagrid.category-id'),
             'type'       => 'number',
             'searchable' => true,
             'sortable'   => true,
@@ -43,7 +43,7 @@ class CategoryDataGrid extends DataGrid
 
         $this->addColumn([
             'index'      => 'name',
-            'label'      => trans('velocity::app.admin.category.datagrid.category-name'),
+            'label'      => trans('reinabatata::app.admin.category.datagrid.category-name'),
             'type'       => 'string',
             'searchable' => true,
             'sortable'   => true,
@@ -52,7 +52,7 @@ class CategoryDataGrid extends DataGrid
 
         $this->addColumn([
             'index'      => 'icon',
-            'label'      => trans('velocity::app.admin.category.datagrid.category-icon'),
+            'label'      => trans('reinabatata::app.admin.category.datagrid.category-icon'),
             'type'       => 'string',
             'sortable'   => true,
             'searchable' => true,
@@ -65,7 +65,7 @@ class CategoryDataGrid extends DataGrid
 
         $this->addColumn([
             'index'      => 'status',
-            'label'      => trans('velocity::app.admin.category.datagrid.category-status'),
+            'label'      => trans('reinabatata::app.admin.category.datagrid.category-status'),
             'type'       => 'string',
             'sortable'   => true,
             'searchable' => true,
@@ -85,14 +85,14 @@ class CategoryDataGrid extends DataGrid
         $this->addAction([
             'type'   => 'Edit',
             'method' => 'GET',
-            'route'  => 'velocity.admin.category.edit',
+            'route'  => 'reinabatata.admin.category.edit',
             'icon'   => 'icon pencil-lg-icon',
         ]);
 
         $this->addAction([
             'type'         => 'Delete',
             'method'       => 'POST',
-            'route'        => 'velocity.admin.category.delete',
+            'route'        => 'reinabatata.admin.category.delete',
             'confirm_text' => trans('ui::app.datagrid.massaction.delete', ['resource' => 'Category']),
             'icon'         => 'icon trash-icon',
         ]);
@@ -102,7 +102,7 @@ class CategoryDataGrid extends DataGrid
     {
         $this->addMassAction([
             'type'   => 'delete',
-            'action' => route('velocity.admin.category.mass-delete'),
+            'action' => route('reinabatata.admin.category.mass-delete'),
             'label'  => trans('admin::app.datagrid.delete'),
             'method' => 'DELETE',
         ]);

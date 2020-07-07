@@ -1,9 +1,9 @@
 @extends('shop::customers.account.index')
 
-@include('velocity::guest.compare.compare-products')
+@include('reinabatata::guest.compare.compare-products')
 
 @section('page_title')
-    {{ __('velocity::app.customer.compare.compare_similar_items') }}
+    {{ __('reinabatata::app.customer.compare.compare_similar_items') }}
 @endsection
 
 @push('css')

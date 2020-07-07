@@ -13,7 +13,7 @@ class CreateCustomerCompareProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('velocity_customer_compare_products', function (Blueprint $table) {
+        Schema::create('reinabatata_customer_compare_products', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('product_flat_id');
             $table->foreign('product_flat_id')
@@ -38,6 +38,6 @@ class CreateCustomerCompareProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('velocity_customer_compare_products');
+        Schema::dropIfExists('reinabatata_customer_compare_products');
     }
 }

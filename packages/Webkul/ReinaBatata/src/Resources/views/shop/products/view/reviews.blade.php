@@ -1,5 +1,5 @@
 @inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
-@inject ('customHelper', 'Webkul\Velocity\Helpers\Helper')
+@inject ('customHelper', 'Webkul\ReinaBatata\Helpers\Helper')
 
 @php
     if (! isset($total)) {
@@ -21,7 +21,7 @@
                 {{-- customer ratings --}}
                 <div slot="header" class="col-lg-12 no-padding">
                     <h3 class="display-inbl">
-                        {{ __('velocity::app.products.customer-rating') }}
+                        {{ __('reinabatata::app.products.customer-rating') }}
                     </h3>
 
                     <i class="rango-arrow"></i>
@@ -46,7 +46,7 @@
 
                             @if (core()->getConfigData('catalog.products.review.guest_review') || auth()->guard('customer')->check())
                                 <a href="{{ route('shop.reviews.create', ['slug' => $product->url_key ]) }}">
-                                    <button type="button" class="theme-btn light">{{ __('velocity::app.products.write-your-review') }}</button>
+                                    <button type="button" class="theme-btn light">{{ __('reinabatata::app.products.write-your-review') }}</button>
                                 </a>
                             @endif
                         </div>
@@ -90,7 +90,7 @@
 
                         @if (core()->getConfigData('catalog.products.review.guest_review') || auth()->guard('customer')->check())
                             <a href="{{ route('shop.reviews.create', ['slug' => $product->url_key ]) }}">
-                                <button type="button" class="theme-btn light">{{ __('velocity::app.products.write-your-review') }}</button>
+                                <button type="button" class="theme-btn light">{{ __('reinabatata::app.products.write-your-review') }}</button>
                             </a>
                         @endif
                     </div>
@@ -120,7 +120,7 @@
                 {{-- customer reviews --}}
                 <div slot="header" class="col-lg-12 no-padding">
                     <h3 class="display-inbl">
-                        {{ __('velocity::app.products.reviews-title') }}
+                        {{ __('reinabatata::app.products.reviews-title') }}
                     </h3>
 
                     <i class="rango-arrow"></i>
@@ -141,7 +141,7 @@
                             </div>
 
                             <div class="col-lg-12 mt5">
-                                <span>{{ __('velocity::app.products.review-by') }} -</span>
+                                <span>{{ __('reinabatata::app.products.review-by') }} -</span>
 
                                 <span class="fs16 fw6">
                                     {{ $review->name }},
@@ -156,12 +156,12 @@
                     <a
                         href="{{ route('shop.reviews.index', ['slug' => $product->url_key ]) }}"
                         class="mb20 link-color"
-                    >{{ __('velocity::app.products.view-all-reviews') }}</a>
+                    >{{ __('reinabatata::app.products.view-all-reviews') }}</a>
                 </div>
             </accordian>
         @else
             <h3 class="display-inbl mb20 col-lg-12 no-padding">
-                {{ __('velocity::app.products.reviews-title') }}
+                {{ __('reinabatata::app.products.reviews-title') }}
             </h3>
 
             <div class="customer-reviews">
@@ -180,7 +180,7 @@
 
                         <div class="col-lg-12 mt5">
                             @if ("{{ $review->name }}")
-                                <span>{{ __('velocity::app.products.review-by') }} -</span>
+                                <span>{{ __('reinabatata::app.products.review-by') }} -</span>
 
                                 <label>
                                     {{ $review->name }},
@@ -199,7 +199,7 @@
         @if (core()->getConfigData('catalog.products.review.guest_review') || auth()->guard('customer')->check())
             <div class="customer-rating" style="border: none">
                 <a href="{{ route('shop.reviews.create', ['slug' => $product->url_key ]) }}">
-                    <button type="button" class="theme-btn light">{{ __('velocity::app.products.write-your-review') }}</button>
+                    <button type="button" class="theme-btn light">{{ __('reinabatata::app.products.write-your-review') }}</button>
                 </a>
             </div>
         @endif

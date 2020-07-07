@@ -94,14 +94,14 @@
                     <i class="material-icons" @click="toggleLayeredNavigation">keyboard_backspace</i>
 
                     <span class="fs24 fw6">
-                        {{ __('velocity::app.shop.general.filter') }}
+                        {{ __('reinabatata::app.shop.general.filter') }}
                     </span>
                     <span class="pull-right link-color" @click="toggleLayeredNavigation">
-                        {{ __('velocity::app.responsive.header.done') }}
+                        {{ __('reinabatata::app.responsive.header.done') }}
                     </span>
                 </div>
 
-                @if (request()->route()->getName() != 'velocity.search.index')
+                @if (request()->route()->getName() != 'reinabatata.search.index')
                     @include ('shop::products.list.layered-navigation')
                 @endif
             </div>
@@ -109,7 +109,7 @@
             <div class="col-4" @click="toggleLayeredNavigation({event: $event, actionType: 'open'})">
                 <a class="unset">
                     <i class="material-icons">filter_list</i>
-                    <span>{{ __('velocity::app.shop.general.filter') }}</span>
+                    <span>{{ __('reinabatata::app.shop.general.filter') }}</span>
                 </a>
             </div>
 
@@ -143,7 +143,7 @@
                     <i class="material-icons">
                         @if ($isList) list @else view_module @endif
                     </i>
-                    <span>{{ __('velocity::app.shop.general.view') }}</span>
+                    <span>{{ __('reinabatata::app.shop.general.view') }}</span>
                 </a>
             </div>
         </div>

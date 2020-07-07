@@ -1,5 +1,5 @@
 @php
-    $count = $velocityMetaData ? $velocityMetaData->featured_product_count : 10;
+    $count = $reinabatataMetaData ? $reinabatataMetaData->featured_product_count : 10;
 @endphp
 
 <featured-products></featured-products>

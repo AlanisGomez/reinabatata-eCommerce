@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Contracts;
+namespace Webkul\ReinaBatata\Contracts;
 
 interface Category
 {

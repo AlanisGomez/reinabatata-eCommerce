@@ -37,7 +37,7 @@
     </div>
 </script>
 
-@include('velocity::UI.header')
+@include('reinabatata::UI.header')
 
 <script type="text/x-template" id="logo-template">
     <a
@@ -59,7 +59,7 @@
                 method="GET"
                 role="search"
                 id="search-form"
-                action="{{ route('velocity.search.index') }}">
+                action="{{ route('reinabatata.search.index') }}">
 
                 <div
                     class="btn-toolbar full-width"
@@ -69,7 +69,7 @@
                         <div class="selectdiv d-none">
                             <select class="form-control fs13 styled-select" name="category" @change="focusInput($event)">
                                 <option value="">
-                                    {{ __('velocity::app.header.all-categories') }}
+                                    {{ __('reinabatata::app.header.all-categories') }}
                                 </option>
 
                                 <template v-for="(category, index) in $root.sharedRootCategories">
@@ -100,7 +100,7 @@
                                 type="search"
                                 class="form-control"
                                 :value="searchedQuery.term ? searchedQuery.term.split('+').join(' ') : ''"
-                                placeholder="{{ __('velocity::app.header.search-text') }}" />
+                                placeholder="{{ __('reinabatata::app.header.search-text') }}" />
 
                             <button class="btn" type="submit" id="header-search-icon">
                                 <i class="fs16 fw6 rango-search"></i>
@@ -116,7 +116,7 @@
         <div class="col-6 d-flex justify-content-end align-items-center">
 
         {!! view_render_event('bagisto.shop.layout.header.wishlist.before') !!}
-            <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('velocity.product.guest-wishlist') }}'}`">
+            <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('reinabatata.product.guest-wishlist') }}'}`">
                 <i class="material-icons">favorite_border</i>
             </a>
         {!! view_render_event('bagisto.shop.layout.header.wishlist.after') !!}

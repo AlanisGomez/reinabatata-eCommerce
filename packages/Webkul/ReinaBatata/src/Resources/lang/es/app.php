@@ -3,12 +3,12 @@
 return [
     'admin'         => [
         'system'    => [
-            'velocity' => [
+            'reinabatata' => [
                 'general'  => 'General',
                 'category'  => 'Categoría',
                 'settings'  => 'Opciones',
                 'extension_name' => 'Reina Batata Theme',
-                'error-module-inactive' => 'Advertencia: El estado de Velocity theme es inactivo',
+                'error-module-inactive' => 'Advertencia: El estado de ReinaBatata theme es inactivo',
             ],
 
             'settings' => [
@@ -40,7 +40,7 @@ return [
             ]
         ],
         'layouts'   => [
-            'velocity' => 'Velocity',
+            'reinabatata' => 'ReinaBatata',
             'cms-pages' => 'Páginas de CMS',
             'meta-data' => 'Meta Data',
             'category-menu' => 'Menú de categoría',
