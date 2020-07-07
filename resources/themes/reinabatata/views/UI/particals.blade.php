@@ -118,6 +118,9 @@
         {!! view_render_event('bagisto.shop.layout.header.wishlist.before') !!}
             <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('reinabatata.product.guest-wishlist') }}'}`">
                 <i class="material-icons">favorite_border</i>
+                <div class="badge-container" v-if="wishlistCount > 0">
+                    ss="badge" v-text="wishlistCount"></span>
+                </div>
             </a>
         {!! view_render_event('bagisto.shop.layout.header.wishlist.after') !!}
 

@@ -79,12 +79,7 @@
                     </label>
 
                     <div :class="`col-12 ${errors.has('password') ? 'has-error' : ''}`">
-                        <input
-                            class="form-control"
-                            value=""
-                            name="password"
-                            type="password"
-                            v-validate="'min:6|max:18'" />
+                        <input type="password" id="password" class="form-control" name="password" ref="password" data-vv-as="&quot;{{ __('shop::app.customer.account.profile.password') }}&quot;" v-validate="'min:6'">
 
                         <span class="control-error" v-if="errors.has('password')">
                             @{{ errors.first('password') }}
