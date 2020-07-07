@@ -64,7 +64,7 @@ $isProductsDisplayMode = in_array(
                 @include ('shop::products.list.layered-navigation')
             @endif
 
-            <div class="category-container col-12 col-md-8">
+            <div class="category-container col-12 col-md-9">
                 <div class="row remove-padding-margin">
                     <div class="pl0 col-12">
                         <h1 class="fw6 mb10">{{ $category->name }}</h1>
