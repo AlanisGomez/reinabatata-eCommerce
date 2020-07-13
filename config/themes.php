@@ -13,7 +13,7 @@ return [
         'reinabatata' => [
             'views_path' => 'resources/themes/reinabatata/views',
             'assets_path' => 'public/themes/reinabatata/assets',
-            'name' => 'Reina Batata',
+            'name' => 'ReinaBatata',
             'parent' => 'default'
         ],
     ]

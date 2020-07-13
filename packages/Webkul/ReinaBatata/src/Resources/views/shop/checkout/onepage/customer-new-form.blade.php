@@ -394,7 +394,7 @@
             </span>
         </div>
 
-        <div :class="`col-12 form-field ${errors.has('address-form.billing[country]') ? 'has-error' : ''}`">
+        <!-- <div :class="`col-12 form-field ${errors.has('address-form.billing[country]') ? 'has-error' : ''}`">
             <label for="billing[country]" class="mandatory">
                 {{ __('shop::app.checkout.onepage.country') }}
             </label>
@@ -418,7 +418,7 @@
 
             <div class="select-icon-container">
                 <i class="select-icon rango-arrow-down"></i>
-            </div>
+            </div> -->
 
             <span class="control-error" v-if="errors.has('address-form.billing[country]')">
                 @{{ errors.first('address-form.billing[country]') }}

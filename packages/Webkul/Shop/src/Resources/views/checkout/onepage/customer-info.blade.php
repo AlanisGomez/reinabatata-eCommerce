@@ -165,7 +165,7 @@
             </span>
         </div>
 
-        <div class="control-group" :class="[errors.has('address-form.billing[country]') ? 'has-error' : '']">
+        <!-- <div class="control-group" :class="[errors.has('address-form.billing[country]') ? 'has-error' : '']">
             <label for="billing[country]" class="required">
                 {{ __('shop::app.checkout.onepage.country') }}
             </label>
@@ -183,7 +183,7 @@
             <span class="control-error" v-if="errors.has('address-form.billing[country]')">
                 @{{ errors.first('address-form.billing[country]') }}
             </span>
-        </div>
+        </div> -->
 
         <div class="control-group" :class="[errors.has('address-form.billing[state]') ? 'has-error' : '']">
             <label for="billing[state]" class="required">
