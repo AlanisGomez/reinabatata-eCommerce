@@ -42,7 +42,7 @@
     @endif
 @endif
 
-<!-- @if (! $isRendered)
+@if (! $isRendered)
     <div class="container-fluid advertisement-three-container">
         <div class="row">
             <a @if (isset($one)) href="{{ $one }}" @endif class="col-lg-6 col-md-12 no-padding">
@@ -59,4 +59,4 @@
             </div>
         </div>
     </div>
-@endif -->
+@endif

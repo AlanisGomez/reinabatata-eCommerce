@@ -48,7 +48,7 @@
                         </label>
                     </div>
 
-                    <div class="control-group">
+                    <!-- <div class="control-group">
                         <label>{{ __('reinabatata::app.admin.meta-data.sidebar-categories') }}</label>
 
                         <input
@@ -57,7 +57,7 @@
                             id="sidebar_category_count"
                             name="sidebar_category_count"
                             value="{{ $metaData ? $metaData->sidebar_category_count : '10' }}" />
-                    </div>
+                    </div> -->
 
                     <div class="control-group">
                         <label>{{ __('shop::app.home.featured-products') }}</label>
@@ -92,7 +92,7 @@
                         </textarea>
                     </div>
 
-                    <div class="control-group">
+                    <!-- <div class="control-group">
                         <label>{{ __('reinabatata::app.admin.meta-data.product-policy') }}</label>
 
                         <textarea
@@ -101,7 +101,7 @@
                             name="product_policy">
                             {{ $metaData ? $metaData->product_policy : '' }}
                         </textarea>
-                    </div>
+                    </div> -->
 
                 </div>
             </accordian>
@@ -109,69 +109,14 @@
             <accordian :title="'{{ __('reinabatata::app.admin.meta-data.images') }}'" :active="false">
                 <div slot="body">
                     <div class="control-group">
-                        <label>{{ __('reinabatata::app.admin.meta-data.advertisement-four') }}</label>
+                        <label>{{ __('reinabatata::app.admin.meta-data.advertisement-two') }}</label>
 
                         @php
                             $images = [
-                                4 => [],
-                                3 => [],
                                 2 => [],
                             ];
                             $advertisement = json_decode($metaData->get('advertisement')->all()[0]->advertisement, true);
                         @endphp
-
-                        @if(! isset($advertisement[4]))
-                            <image-wrapper
-                                input-name="images[4]"
-                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'">
-                            </image-wrapper>
-                        @else
-                            @foreach ($advertisement[4] as $index => $image)
-                                @php
-                                    $images[4][] = [
-                                        'id' => 'image_' . $index,
-                                        'url' => asset('/storage/' . $image),
-                                    ];
-                                @endphp
-                            @endforeach
-
-                            <image-wrapper
-                                :multiple="true"
-                                input-name="images[4]"
-                                :images='@json($images[4])'
-                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'">
-                            </image-wrapper>
-                        @endif
-                    </div>
-
-                    <div class="control-group">
-                        <label>{{ __('reinabatata::app.admin.meta-data.advertisement-three') }}</label>
-                        @if(! isset($advertisement[3]))
-                            <image-wrapper
-                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'"
-                                input-name="images[3]">
-                            </image-wrapper>
-                        @else
-                            @foreach ($advertisement[3] as $index => $image)
-                                @php
-                                    $images[3][] = [
-                                        'id' => 'image_' . $index,
-                                        'url' => asset('/storage/' . $image),
-                                    ];
-                                @endphp
-                            @endforeach
-
-                            <image-wrapper
-                                input-name="images[3]"
-                                :images='@json($images[3])'
-                                :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'">
-                            </image-wrapper>
-                        @endif
-                    </div>
-
-                    <div class="control-group">
-                        <label>{{ __('reinabatata::app.admin.meta-data.advertisement-two') }}</label>
-
                         @if(! isset($advertisement[2]))
                             <image-wrapper
                                 :button-label="'{{ __('reinabatata::app.admin.meta-data.add-image-btn-title') }}'"
@@ -199,7 +144,7 @@
 
             <accordian :title="'{{ __('reinabatata::app.admin.meta-data.footer') }}'" :active="false">
                 <div slot="body">
-                    <div class="control-group">
+                    <!-- <div class="control-group">
                         <label>{{ __('reinabatata::app.admin.meta-data.subscription-content') }}</label>
 
                         <textarea
@@ -208,7 +153,7 @@
                             name="subscription_bar_content">
                             {{ $metaData ? $metaData->subscription_bar_content : '' }}
                         </textarea>
-                    </div>
+                    </div> -->
 
                     <div class="control-group">
                         <label>{{ __('reinabatata::app.admin.meta-data.footer-left-content') }}</label>

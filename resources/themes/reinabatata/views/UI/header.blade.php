@@ -358,13 +358,13 @@
                 </ul>
             </div>
             <div class="social-icons col-md-4 d-flex justify-content-end">
-                <a href="https://webkul.com" target="_blank" class="unset mr-3" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/reina.batata.1840" target="_blank" class="unset mr-3" rel="noopener noreferrer">
                     <i class="fs24 rango-facebook" title="facebook"></i>
                 </a>
-                <a href="https://webkul.com" target="_blank" class="unset mr-3" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/reinabatata.petshop/?hl=es-la" target="_blank" class="unset mr-3" rel="noopener noreferrer">
                     <i class="fs24 rango-instagram" title="instagram"></i>
                 </a>
-                <a href="https://webkul.com" target="_blank" class="unset mr-3" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=5491169122541" target="_blank" class="unset mr-3" rel="noopener noreferrer">
                 <i class="fs24 rango-phone" title="whatsapp"></i>
                 </a>
             </div>
