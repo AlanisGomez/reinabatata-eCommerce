@@ -382,7 +382,7 @@ return [
         'expensive-first' => 'Expensive First',
         'show' => 'Show',
         'pager-info' => 'Showing :showing of :total Items',
-        'description' => 'Description',
+        'description' => 'Descripción',
         'specification' => 'Specification',
         'total-reviews' => ':total Reviews',
         'total-rating' => ':total_rating Ratings & :total_reviews Reviews',

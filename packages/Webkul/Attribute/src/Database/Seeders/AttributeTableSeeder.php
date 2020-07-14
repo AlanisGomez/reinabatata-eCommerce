@@ -12,7 +12,7 @@ class AttributeTableSeeder extends Seeder
     public function run()
     {
         DB::table('attributes')->delete();
-        
+
         DB::table('attribute_translations')->delete();
 
         $now = Carbon::now();
@@ -88,7 +88,7 @@ class AttributeTableSeeder extends Seeder
                 'value_per_channel'   => '1',
                 'is_filterable'       => '0',
                 'is_configurable'     => '0',
-                'is_user_defined'     => '0',
+                'is_user_defined'     => '1',
                 'is_visible_on_front' => '0',
                 'use_in_flat'         => '1',
                 'created_at'          => $now,
@@ -424,13 +424,13 @@ class AttributeTableSeeder extends Seeder
                 'type'                => 'text',
                 'validation'          => 'decimal',
                 'position'            => '22',
-                'is_required'         => '1',
+                'is_required'         => '0',
                 'is_unique'           => '0',
                 'value_per_locale'    => '0',
                 'value_per_channel'   => '0',
                 'is_filterable'       => '0',
                 'is_configurable'     => '0',
-                'is_user_defined'     => '0',
+                'is_user_defined'     => '1',
                 'is_visible_on_front' => '0',
                 'use_in_flat'         => '1',
                 'created_at'          => $now,
@@ -487,7 +487,7 @@ class AttributeTableSeeder extends Seeder
                 'value_per_channel'   => '0',
                 'is_filterable'       => '1',
                 'is_configurable'     => '0',
-                'is_user_defined'     => '0',
+                'is_user_defined'     => '1',
                 'is_visible_on_front' => '1',
                 'use_in_flat'         => '1',
                 'created_at'          => $now,

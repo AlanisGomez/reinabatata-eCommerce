@@ -679,7 +679,7 @@ return [
             'shipping-method' => [
                 'title' => 'Verzendmethoden',
                 'save-btn-title' => 'Opslaan',
-                'description' => 'Description',
+                'description' => 'Descripción',
                 'active' => 'Actief',
                 'status' => 'Toestand'
             ]

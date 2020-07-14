@@ -47,7 +47,7 @@ return [
                 'name' => 'Name',
                 'price' => 'Price',
                 'quantity' => 'Quantity',
-                'description' => 'Description',
+                'description' => 'Descripción',
                 'special-price' => 'Special Price',
                 'special-price-from' => 'Valid From',
                 'special-price-to' => 'Valid Until',

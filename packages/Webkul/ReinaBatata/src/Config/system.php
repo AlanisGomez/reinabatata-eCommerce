@@ -31,7 +31,7 @@ return [
         ]
     ],  [
         'key'    => 'reinabatata.configuration.category',
-        'name'   => 'velreinabatataocity::app.admin.system.reinabatata.category',
+        'name'   => 'reinabatata::app.admin.system.reinabatata.category',
         'sort'   => 1,
         'fields' => [
             [

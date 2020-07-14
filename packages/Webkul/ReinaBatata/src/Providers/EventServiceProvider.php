@@ -39,7 +39,7 @@ class EventServiceProvider extends ServiceProvider
             'bagisto.admin.settings.slider.create.after',
         ], function($viewRenderEventManager) {
                 $viewRenderEventManager->addTemplate(
-                    'reinabatata::admin.settings.sliders.reinabatata-slider'
+                    'reinabatata::admin.settings.sliders.velocity-slider'
                 );
             }
         );
