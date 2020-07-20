@@ -58,6 +58,11 @@ abstract class Payment
         return $this->getConfigData('description');
     }
 
+    public function getImage()
+    {
+        return $this->getConfigData('image');
+    }
+
     /**
      * Retrieve information from payment configuration
      *

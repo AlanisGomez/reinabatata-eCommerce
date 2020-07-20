@@ -39,6 +39,7 @@
                                         <span class="method-summary">{{ __($payment['description']) }}</span>
                                     </div>
                                 </div>
+                                <div class="{{ __($payment['image']) }}"></div>
                             </label>
                         </div>
                     </div>
