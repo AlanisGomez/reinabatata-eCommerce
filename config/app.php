@@ -270,6 +270,7 @@ return [
         Webkul\BookingProduct\Providers\BookingProductServiceProvider::class,
         Webkul\SocialLogin\Providers\SocialLoginServiceProvider::class,
         Webkul\Mercadopago\Providers\MPServiceProvider::class,
+        Digibytes\Pickup\Providers\PickupServiceProvider::class,
     ],
 
     /*

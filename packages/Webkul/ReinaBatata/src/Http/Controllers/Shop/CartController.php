@@ -81,6 +81,7 @@ class CartController extends Controller
                     'status'         => 'success',
                     'totalCartItems' => sizeof($cart->items),
                     'message'        => trans('shop::app.checkout.cart.item.success'),
+                    'redirectionRoute' => route('shop.checkout.cart.index'),
                 ];
 
                 if ($customer = auth()->guard('customer')->user()) {

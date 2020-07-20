@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27eaa8c2fd064eec6c8484d492b66582",
+    "content-hash": "eb8c1513f3635c9f208ad6fc540f10e2",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -497,6 +497,39 @@
                 }
             ],
             "time": "2020-04-15T15:59:35+00:00"
+        },
+        {
+            "name": "digibytes/pickup",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ghermans/bagisto-pickup.git",
+                "reference": "de7a70157723fa59c451af857703f91eb6db1a72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ghermans/bagisto-pickup/zipball/de7a70157723fa59c451af857703f91eb6db1a72",
+                "reference": "de7a70157723fa59c451af857703f91eb6db1a72",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Digibytes\\Pickup\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Glenn Hermans",
+                    "email": "info@digibytes.be"
+                }
+            ],
+            "description": "Allow customers to pickup orders from your store",
+            "time": "2020-07-03T02:34:10+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -10178,7 +10211,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "digibytes/pickup": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
