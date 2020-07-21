@@ -1274,6 +1274,7 @@ return [
             'cash-on-delivery' => 'Pagar al recibir',
             'money-transfer' => 'Transferencia bancaria',
             'paypal-standard' => 'Paypal Standard',
+            'mercadopago' => 'Mercado Pago',
             'business-account' => 'Business Account',
             'newsletter' => 'Suscripción a Newsletter',
             'newsletter-subscription' => 'Permitir Subscripción a NewsLetter ',
