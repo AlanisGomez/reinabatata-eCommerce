@@ -75,6 +75,13 @@ class MPController extends Controller
         }
         $preference->items = $array;
 
+        # Create a shipment object
+        $shipments = new MercadoPago\Shipments();
+        $shipments->cost = $paymentData['shipping_method']['price'];
+        $shipments->mode = "not_specified";
+
+        $preference->shipments = $shipments;
+
         # Create a payer object
         $payer = new MercadoPago\Payer();
         $payer->name = $paymentData['billing_address']['first_name'];
