@@ -110,7 +110,7 @@
                                                             ? '{{ __('reinabatata::app.shop.general.yes') }}'
                                                             : '{{ __('reinabatata::app.shop.general.no') }}'"
                                                 ></span>
-                                                @break;
+                                                @break;                                                   
                                             @default
                                                 <span v-html="product['{{ $attribute['code'] }}'] ? product['{{ $attribute['code'] }}'] : product.product['{{ $attribute['code'] }}'] ? product.product['{{ $attribute['code'] }}'] : '__'" class="fs16"></span>
                                                 @break;

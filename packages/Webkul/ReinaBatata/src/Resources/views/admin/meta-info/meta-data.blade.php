@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('reinabatata::app.admin.meta-data.home-page-content') }}</label>
+                        <label style="width:100%;">{{ __('reinabatata::app.admin.meta-data.home-page-content') }} <span class="locale">[{{ $metaData ? $metaData->locale : 'en' }}]</span></label>
 
                         <textarea
                             class="control"
@@ -156,7 +156,7 @@
                     </div> -->
 
                     <div class="control-group">
-                        <label>{{ __('reinabatata::app.admin.meta-data.footer-left-content') }}</label>
+                        <label style="width:100%;">{{ __('reinabatata::app.admin.meta-data.footer-left-content') }} <span class="locale">[{{ $metaData ? $metaData->locale : 'en' }}]</span></label>
 
                         <textarea
                             class="control"
@@ -167,7 +167,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label>{{ __('reinabatata::app.admin.meta-data.footer-middle-content') }}</label>
+                        <label style="width:100%;">{{ __('reinabatata::app.admin.meta-data.footer-middle-content') }} <span class="locale">[{{ $metaData ? $metaData->locale : 'en' }}]</span></label>
 
                         <textarea
                             class="control"
