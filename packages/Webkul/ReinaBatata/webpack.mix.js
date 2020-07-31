@@ -24,7 +24,6 @@ mix
         __dirname + '/src/Resources/assets/sass/app.scss',
         __dirname + '/' + publicPath + '/css/reinabatata.css', {
         includePaths: ['node_modules/bootstrap-sass/assets/stylesheets/',
-            "node_modules/bootstrap/scss/bootstrap"
         ],
     }
     )
