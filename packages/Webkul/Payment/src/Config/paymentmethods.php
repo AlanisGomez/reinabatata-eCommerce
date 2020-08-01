@@ -8,6 +8,7 @@ return [
         'active'      => true,
         'sort'        => 1,
     ],
+    
     'moneytransfer'   => [
         'code'        => 'moneytransfer',
         'title'       => 'Money Transfer',
