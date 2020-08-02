@@ -581,7 +581,7 @@ return [
             'thanks' => 'Thanks!',
 
             'comment' => [
-                'subject' => 'Compra Reina Batata',
+                'subject' => 'Nuevo comentario en tu pedido #:order_id',
                 'dear' => ' :customer_name',
                 'final-summary' => 'Thanks for showing your interest in our store',
                 'help' => 'Si necesitas ayuda, contactanos en :support_email',

@@ -580,7 +580,7 @@ return [
             'thanks' => 'Grazie!',
 
             'comment' => [
-                'subject' => 'Nuovo commento aggiunto al tuo ordine',
+                'subject' => 'Nuovo commento aggiunto al tuo ordine #:order_id',
                 'dear' => ':customer_name',
                 'final-summary' => 'Grazie per aver mostrato interesse per il nostro store',
                 'help' => 'Se hai bisogno di aiuto contattaci all\'indirizzo :support_email',

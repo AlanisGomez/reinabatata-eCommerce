@@ -186,7 +186,6 @@ class ShopController extends Controller
      */
     public function getItemsCount()
     {
-        d('holi');
         if ($customer = auth()->guard('customer')->user()) {
             $wishlistItemsCount = $this->wishlistRepository->count([
                 'customer_id' => $customer->id,

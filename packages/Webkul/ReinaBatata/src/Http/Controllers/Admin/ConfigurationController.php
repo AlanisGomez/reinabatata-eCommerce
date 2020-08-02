@@ -116,7 +116,7 @@ class ConfigurationController extends Controller
         // update row
         $product = $this->reinabatataMetaDataRepository->update($params, $id);
 
-        session()->flash('success', trans('admin::app.response.update-success', ['name' => 'Reina Batata Theme']));
+        session()->flash('success', trans('admin::app.response.update-success', ['name' => trans('reinabatata::app.admin.meta-data.title')]));
 
         return redirect()->route($this->_config['redirect'], ['locale' => $this->locale]);
     }
