@@ -199,7 +199,7 @@
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#fa8ba4" href="mailto:' . config('mail.shop.address') . '">' . config('mail.shop.address'). '</a>'
+                        'support_email' => '<a style="color:#fa8ba4" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
                         ])
                 !!}
             </p>
