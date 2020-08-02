@@ -479,11 +479,9 @@
                     if (! this.isCustomer) {
                         let comparedItems = this.getStorageValue('compared_product');
                         let wishlistedItems = this.getStorageValue('wishlist_product');
-
                         if (wishlistedItems) {
                             this.wishlistCount = wishlistedItems.length;
                         }
-
                         if (comparedItems) {
                             this.compareCount = comparedItems.length;
                         }
@@ -498,7 +496,7 @@
                             });
                     }
                 },
-
+                
                 getMiniCartDetails: function () {
                     this.$http.get(`${this.$root.baseUrl}/mini-cart`)
                     .then(response => {
