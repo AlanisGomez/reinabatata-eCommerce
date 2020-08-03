@@ -40,9 +40,9 @@ class MPController extends Controller
     public function createPayment()
     {
         // dd(env("MP_CLIENT_ID"));
-        MercadoPago\SDK::setAccessToken(env('MP_TOKEN_SANDBOX'));
-        // MercadoPago\SDK::setClientId(env("MP_CLIENT_ID"));
-        // MercadoPago\SDK::setClientSecret(env("MP_CLIENT_SECRET"));
+        // MercadoPago\SDK::setAccessToken(env('MP_TOKEN_SANDBOX'));
+        MercadoPago\SDK::setClientId(env("MP_CLIENT_ID"));
+        MercadoPago\SDK::setClientSecret(env("MP_CLIENT_SECRET"));
 
         # Create a preference object
         $preference = new MercadoPago\Preference();
