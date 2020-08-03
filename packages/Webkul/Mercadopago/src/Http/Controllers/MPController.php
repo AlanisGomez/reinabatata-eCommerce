@@ -48,7 +48,7 @@ class MPController extends Controller
         $preference = new MercadoPago\Preference();
         $paymentMP = new MercadoPagoPayment();
         $paymentData = $paymentMP->getFormFields();
-        dd($paymentData);
+        // dd($paymentData);
 
         $preference->payment_methods = array(
             "excluded_payment_types" => array(
