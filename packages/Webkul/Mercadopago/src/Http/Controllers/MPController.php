@@ -48,7 +48,7 @@ class MPController extends Controller
         $preference = new MercadoPago\Preference();
         $paymentMP = new MercadoPagoPayment();
         $paymentData = $paymentMP->getFormFields();
-        // dd($paymentData);
+        dd($paymentData);
 
         $preference->payment_methods = array(
             "excluded_payment_types" => array(
@@ -86,7 +86,7 @@ class MPController extends Controller
         $payer = new MercadoPago\Payer();
         $payer->name = $paymentData['billing_address']['first_name'];
         $payer->surname = $paymentData['billing_address']['last_name'];
-        $payer->email = "test_user_33989953@testuser.com";
+        $payer->email = $paymentData['billing_address']['email'];
         $payer->phone = array(
             "area_code" => "",
             "number" => $paymentData['billing_address']['phone']
