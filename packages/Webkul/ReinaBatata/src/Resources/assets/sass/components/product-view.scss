@@ -413,6 +413,13 @@
     }
 }
 
+.products-collection {
+    @include laptop-sm {
+        margin-top: 1rem;
+        border-top: 1px solid $gray-300;
+    }
+}
+
 .store-meta-images {
     margin-top: 20px;
 

@@ -919,7 +919,9 @@
         }
 
         .account-head {
-            margin-bottom: 20px;
+            @include laptop-sm {
+                margin-bottom: 20px;
+            }
         }
 
         .account-heading {

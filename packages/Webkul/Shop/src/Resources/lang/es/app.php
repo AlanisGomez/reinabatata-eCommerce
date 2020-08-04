@@ -9,7 +9,7 @@ return [
         'profile' => 'Mis datos',
         'address' => 'Dirección',
         'reviews' => 'Opiniones',
-        'wishlist' => 'Lista de deseos',
+        'wishlist' => 'Favoritos',
         'orders' => 'Pedidos',
         'downloadable-products' => 'Productos descargables'
     ],
@@ -34,7 +34,7 @@ return [
         'account' => 'Cuenta',
         'cart' => 'Carrito',
         'profile' => 'Mis datos',
-        'wishlist' => 'Lista de deseos',
+        'wishlist' => 'Favoritos',
         'logout' => 'Cerrar sesión',
         'search-text' => 'Buscar productos'
     ],
@@ -303,8 +303,8 @@ return [
             ],
 
             'wishlist' => [
-                'page-title' => 'Cliente - Lista de deseos',
-                'title' => 'Lista de deseos',
+                'page-title' => 'Lista de deseos',
+                'title' => 'Favoritos',
                 'deleteall' => 'Eliminar todo',
                 'moveall' => 'Mover todos los productos al carrito',
                 'move-to-cart' => 'Mover al carrito',

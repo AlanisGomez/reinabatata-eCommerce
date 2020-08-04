@@ -159,7 +159,7 @@ return [
         'title'             => 'Cuenta',
         'account'           => 'Cuenta',
         'profile'           => 'Mis datos',
-        'wishlist'          => 'Lista de deseos',
+        'wishlist'          => 'Favoritos',
         'all-categories'    => 'Categorías',
         'search-text'       => 'Buscá un producto',
         'welcome-message'   => 'Hola, :customer_name',

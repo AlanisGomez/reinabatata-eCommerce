@@ -20,22 +20,23 @@
 
 @push('scripts')
     <script type="text/x-template" id="wishlist-product-template">
-        <section class="cart-details row mx-0 mt-3 col-12">
-            <h1 class="fw6 col-12">
+        <section class="container mt-3">
+            <h1 class="fw6 mb-2 col-12">
                 {{ __('shop::app.customer.account.wishlist.title') }}
             </h1>
 
-            <div class="col-6" v-if="products.length > 0">
-                <button
-                    class="theme-btn btn light"
+            <div class="col-12 d-flex flex-row-reverse" v-if="products.length > 0">
+                <a
+                    class=""
+                    href=''
                     @click="removeProduct('all')">
                     {{ __('shop::app.customer.account.wishlist.deleteall') }}
-                </button>
+                </a>
             </div>
 
             {!! view_render_event('bagisto.shop.customers.account.guest-customer.view.before') !!}
 
-            <div class="row products-collection col-12 ml0">
+            <div class="row products-collection px-md-0 col-12 ml0">
                 <shimmer-component v-if="!isProductListLoaded && !isMobile()"></shimmer-component>
 
                 <template v-else-if="isProductListLoaded && products.length > 0">
