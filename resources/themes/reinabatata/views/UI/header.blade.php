@@ -496,7 +496,7 @@
                             });
                     }
                 },
-                
+
                 getMiniCartDetails: function () {
                     this.$http.get(`${this.$root.baseUrl}/mini-cart`)
                     .then(response => {
