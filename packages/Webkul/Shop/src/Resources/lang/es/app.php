@@ -198,7 +198,7 @@ return [
                     'title' => 'Dirección',
                     'add' => 'Agregar dirección',
                     'edit' => 'Editar',
-                    'empty' => 'No tienes ninguna dirección guardada, por favor, crea una clicando en el enlace de abajo',
+                    'empty' => 'Todavía no ingresaste ninguna dirección',
                     'create' => 'Crear Dirección',
                     'delete' => 'Eliminar',
                     'make-default' => 'Elegir por defecto',

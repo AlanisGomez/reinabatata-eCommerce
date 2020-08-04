@@ -7,13 +7,19 @@
 @endsection
 
 @section('page-detail-wrapper')
-    <div class="account-head mt-3">
-        <span class="account-heading">{{ __('shop::app.customer.account.wishlist.title') }}</span>
-
+    <div class="account-head mt-3 d-md-flex align-items-center justify-content-between">
+        <h2 class="account-heading">{{ __('shop::app.customer.account.wishlist.title') }}</h2>
         @if (count($items))
-            <div class="account-action pull-right">
+            <div class="d-none d-md-inline-block account-action pull-right">
                 <a
                     class="remove-decoration theme-btn btn light"
+                    href="{{ route('customer.wishlist.removeall') }}">
+                    {{ __('shop::app.customer.account.wishlist.deleteall') }}
+                </a>
+            </div>
+            <div class="d-block d-md-none account-action mt-3">
+                <a
+                    class=""
                     href="{{ route('customer.wishlist.removeall') }}">
                     {{ __('shop::app.customer.account.wishlist.deleteall') }}
                 </a>

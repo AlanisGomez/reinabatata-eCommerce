@@ -58,7 +58,7 @@
 
     @if (! $addresses->isEmpty())
         <span class="account-action">
-            <a href="{{ route('customer.address.create') }}" class="theme-btn btn light unset pull-right">
+            <a href="{{ route('customer.address.create') }}" class="theme-btn btn light unset">
                 {{ __('shop::app.customer.account.address.index.add') }}
             </a>
         </span>
@@ -66,7 +66,7 @@
 
     @if ($addresses->isEmpty())
     <div>
-    <a href="{{ route('customer.address.create') }}" class="theme-btn light btn unset pull-right">
+    <a href="{{ route('customer.address.create') }}" class="theme-btn light btn unset ">
             {{ __('shop::app.customer.account.address.index.add') }}
         </a>
     </div>
