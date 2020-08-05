@@ -473,7 +473,7 @@ return [
             'billing-address' => 'Dirección de facturación',
             'shipping-address' => 'Dirección de envío',
             'contact' => 'Contacto',
-            'place-order' => 'Realizar pedido',
+            'place-order' => 'Confirmar pedido',
             'new-address' => 'Añadir nueva dirección',
             'save_as_address' => 'Guardar dirección',
             'apply-coupon' => 'Aplicar cupón',
