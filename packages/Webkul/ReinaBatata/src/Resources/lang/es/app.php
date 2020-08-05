@@ -100,7 +100,6 @@ return [
             'footer-left-raw-content' => '<p>Nos encanta crear softwares y resolver los problemas del mundo real con los binarios. Estamos altamente comprometidos con nuestros objetivos. Invertimos nuestros recursos para crear softwares y aplicaciones de clase mundial fáciles de usar para el negocio empresarial con la más alta experiencia en tecnología de punta.</p>',
             'slider-path' => 'URL del slider',
             'category-logo' => 'Logo de categoría',
-            'header_content_count' => 'Header Content Count',
             'product-policy' => 'Politica del producto',
             'update-meta-data' => 'Actualizar información',
             'product-view-image' => 'Imagen de vista del producto',

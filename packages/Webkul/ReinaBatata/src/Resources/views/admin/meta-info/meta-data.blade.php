@@ -60,7 +60,7 @@
                     </div> -->
 
                     <div class="control-group">
-                        <label>{{ __('reinabatata::app.admin.meta-data.header_content_count') }}</label>
+                        <label>{{ __('velocity::app.admin.meta-data.header_content_count') }}</label>
 
                         <input
                             type="text"

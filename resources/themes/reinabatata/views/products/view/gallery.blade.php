@@ -34,7 +34,7 @@
         </li>
 
         <carousel-component
-            slides-per-page="3"
+            slides-per-page="4"
             :id="galleryCarouselId"
             pagination-enabled="hide"
             navigation-enabled="hide"

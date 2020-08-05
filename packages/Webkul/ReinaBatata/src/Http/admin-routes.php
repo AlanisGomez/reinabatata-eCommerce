@@ -1,7 +1,7 @@
 <?php
 
 Route::group(['middleware' => ['web']], function () {
-    Route::prefix(config('app.admin_url') . '/reinabatata')->group(function () {
+    Route::prefix('admin/ReinaBatata')->group(function () {
         Route::group(['middleware' => ['admin']], function () {
             Route::namespace('Webkul\ReinaBatata\Http\Controllers\Admin')->group(function () {
                 // Content Pages Route

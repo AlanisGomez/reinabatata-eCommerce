@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddHeaderContentCountReinaBatataMetaDataTable extends Migration
+class AddHeaderContentCountVelocityMetaDataTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddHeaderContentCountReinaBatataMetaDataTable extends Migration
      */
     public function up()
     {
-        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
+        Schema::table('velocity_meta_data', function (Blueprint $table) {
             $table->text('header_content_count');
         });
     }
@@ -25,7 +25,7 @@ class AddHeaderContentCountReinaBatataMetaDataTable extends Migration
      */
     public function down()
     {
-        Schema::table('reinabatata_meta_data', function (Blueprint $table) {
+        Schema::table('velocity_meta_data', function (Blueprint $table) {
             $table->dropColumn('header_content_count');
         });
     }
