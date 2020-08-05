@@ -36,7 +36,7 @@
 
             {!! view_render_event('bagisto.shop.customers.account.guest-customer.view.before') !!}
 
-            <div class="row products-collection px-md-0 col-12 ml0">
+            <div class="row ml-md-3 pt-3 products-collection px-md-0 col-12">
                 <shimmer-component v-if="!isProductListLoaded && !isMobile()"></shimmer-component>
 
                 <template v-else-if="isProductListLoaded && products.length > 0">
