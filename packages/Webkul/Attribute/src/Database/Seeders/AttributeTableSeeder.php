@@ -424,7 +424,7 @@ class AttributeTableSeeder extends Seeder
                 'type'                => 'text',
                 'validation'          => 'decimal',
                 'position'            => '22',
-                'is_required'         => '0',
+                'is_required'         => '1',
                 'is_unique'           => '0',
                 'value_per_locale'    => '0',
                 'value_per_channel'   => '0',
