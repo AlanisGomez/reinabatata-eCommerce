@@ -487,7 +487,8 @@ return [
             'money-desc' => 'Transferencia bancaria',
             'paypal-desc' => 'Paypal',
             'free-desc' => 'Envío gratuito',
-            'flat-desc' => 'Esta es una tarifa plana'
+            'flat-desc' => 'Esta es una tarifa plana',
+            'enter-coupon-code' => 'Ingresá tu cupón'
         ],
 
         'total' => [

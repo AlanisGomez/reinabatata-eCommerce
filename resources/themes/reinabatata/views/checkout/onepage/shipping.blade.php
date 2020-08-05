@@ -29,7 +29,8 @@
                                     <span></span>
                                         <div>
                                             <div>
-                                                <b>{{ core()->currency($rate->base_price) }}</b>
+                                                <b v-if="{{ $rate['base_price'] }} === 0">Gratis</b>
+                                                <b v-else>{{ core()->currency($rate->base_price) }}</b> 
                                             </div>
 
                                             <div>
