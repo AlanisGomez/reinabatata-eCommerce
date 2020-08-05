@@ -29,7 +29,7 @@
                                     <span></span>
                                         <div>
                                             <div>
-                                                <b>{{ core()->currency($rate->base_price) }}</b>
+                                                <b>{{ core()->currency($rate->base_price)}}</b>
                                             </div>
 
                                             <div>

@@ -129,8 +129,8 @@ class ContentRepository extends Repository
     {
         $query = $this->model::orderBy('position', 'ASC');
 
-        $velocityMetaData = app('Webkul\Velocity\Helpers\Helper')->getVelocityMetaData();
-        $headerContentCount = $velocityMetaData->header_content_count;
+        $reinabatataMetaData = app('Webkul\ReinaBatata\Helpers\Helper')->getReinaBatataMetaData();
+        $headerContentCount = $reinabatataMetaData->header_content_count;
 
         $headerContentCount = $headerContentCount != '' ? $headerContentCount : 5;
 

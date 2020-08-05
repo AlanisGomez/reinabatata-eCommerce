@@ -147,8 +147,8 @@
 
                                 {!! view_render_event('bagisto.shop.products.view.short_description.after', ['product' => $product]) !!}
 
-                                <!-- {{-- product long description --}}
-                                @include ('shop::products.view.description') -->
+                                {{-- product long description --}}
+                                @include ('shop::products.view.description')
 
                                 <!-- {{-- reviews count --}}
                                 @include ('shop::products.view.reviews', ['accordian' => true]) -->
