@@ -129,11 +129,6 @@ class ContentRepository extends Repository
     {
         $query = $this->model::orderBy('position', 'ASC');
 
-        $velocityMetaData = app('Webkul\Velocity\Helpers\Helper')->getVelocityMetaData();
-        $headerContentCount = $velocityMetaData->header_content_count;
-
-        $headerContentCount = $headerContentCount != '' ? $headerContentCount : 5;
-
         $contentCollection = $query
             ->select(
                 'reinabatata_contents.content_type',
@@ -145,7 +140,7 @@ class ContentRepository extends Repository
             ->leftJoin('reinabatata_contents_translations', 'reinabatata_contents.id', 'reinabatata_contents_translations.content_id')
             ->distinct('reinabatata_contents_translations.id')
             ->where('reinabatata_contents_translations.locale', app()->getLocale())
-            ->limit($headerContentCount)
+            ->limit(5)
             ->get();
 
         $formattedContent = [];

@@ -648,13 +648,6 @@ return [
             'thanks' => 'Bedankt!'
         ],
 
-        'update-password' => [
-            'subject' => 'Wachtwoord bijgewerkt',
-            'dear' => 'Lieve :name',
-            'info' => 'Je ontvangt deze e-mail omdat je je wachtwoord hebt bijgewerkt.',
-            'thanks' => 'Bedankt!'
-        ],
-
         'customer' => [
             'new' => [
                 'dear' => 'Lieve :customer_name',
