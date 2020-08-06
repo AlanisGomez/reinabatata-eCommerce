@@ -1,5 +1,5 @@
 @php
-    $reinabatataHelper = app('Webkul\ReinaBatata\Helpers\Helper');
+    $reinabatataHelper = app('Webphorium\ReinaBatata\Helpers\Helper');
     $reinabatataMetaData = $reinabatataHelper->getReinaBatataMetaData();
 
     view()->share('reinabatataMetaData', $reinabatataMetaData);
@@ -81,7 +81,7 @@
 
                     <div class="main-content-wrapper col-12 no-padding">
                         @php
-                            $reinabatataContent = app('Webkul\ReinaBatata\Repositories\ContentRepository')->getAllContents();
+                            $reinabatataContent = app('Webphorium\ReinaBatata\Repositories\ContentRepository')->getAllContents();
                         @endphp
 
                         <content-header
@@ -195,7 +195,7 @@
                     @endif
                 @endif
 
-                window._translations = @json(app('Webkul\ReinaBatata\Helpers\Helper')->jsonTranslations());
+                window._translations = @json(app('Webphorium\ReinaBatata\Helpers\Helper')->jsonTranslations());
             })();
         </script>
 

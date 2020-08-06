@@ -2,7 +2,7 @@
     <div style="text-align: center;">
         <a href="{{ config('app.url') }}">
             @if (core()->getConfigData('general.design.admin_logo.logo_image'))
-                <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}"/>
+                <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}" style="height: 40px; width: 110px;"/>
             @else
                 <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
             @endif
@@ -21,7 +21,7 @@
 
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!! __('shop::app.mail.order.greeting-admin', [
-                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #fa8ba4; font-weight: bold;">#' . $order->increment_id . '</a>',
+                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #0041FF; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
@@ -196,14 +196,10 @@
         </div>
 
         <div style="width: 100%;margin-top: 65px;font-size: 16px;color: #5E5E5E;line-height: 24px;display: inline-block">
-            <p  style="font-size: 16px;color: #5E5E5E;line-height: 24px; font-weight:600">
-                Si elegiste pagar a traves de Transferencia Bancaria, a la brevedad te enviaremos un correo con los datos necesarios para finalizar la transacción.
-            </p>
-
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#fa8ba4" href="mailto:' . config('mail.admin.address') . '">' . config('mail.admin.address') . '</a>'
+                        'support_email' => '<a style="color:#0041FF" href="mailto:' . config('mail.admin.address') . '">' . config('mail.admin.address') . '</a>'
                         ])
                 !!}
             </p>

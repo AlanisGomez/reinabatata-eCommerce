@@ -2,19 +2,19 @@
 
 return [
     'wishlist' => [
-        'success' => 'Producto agregado a tu lista de favoritos',
-        'failure' => 'El producto no se pudo agregar a tu lista de favoritos',
-        'already' => 'El producto ya está en tu lista de favoritos',
-        'removed' => 'Producto removido correctemente de tu lista de favoritos',
-        'remove-fail' => 'El producto no pudo se removido de tu lista de favoritos',
-        'empty' => 'No tenés ningun producto en tu lista de favoritos',
-        'select-options' => 'Antes necesitas seleccionar algunas opciones',
-        'remove-all-success' => 'Todos los productos fueron removidos correctamente',
+        'success' => 'Item Successfully Added To Wishlist',
+        'failure' => 'Item Cannot Be Added To Wishlist',
+        'already' => 'Item Already Present In Your Wishlist',
+        'removed' => 'Item Successfully Removed From Wishlist',
+        'remove-fail' => 'Item Cannot Be Removed From Wishlist',
+        'empty' => 'You Don\'t Have Any Items In Your Wishlist',
+        'select-options' => 'Need To Select Options Before Adding To Wishlist',
+        'remove-all-success' => 'All The Items From Your Wishlist Have Been Removed',
     ],
     'reviews' => [
         'empty' => 'You have not reviewed any of product yet'
     ],
     'forget_password' => [
-        'reset_link_sent' => 'Te enviamos un email para recuperar tu contraseña'
+        'reset_link_sent' => 'We have e-mailed your reset password link.'
     ]
 ];

@@ -79,7 +79,7 @@ class WishlistController extends Controller
 
             return response()->json([
                 'data'    => null,
-                'message' => 'Producto removido correctamente.',
+                'message' => 'Item removed from wishlist successfully.',
             ]);
         }
     }

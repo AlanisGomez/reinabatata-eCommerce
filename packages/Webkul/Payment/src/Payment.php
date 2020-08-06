@@ -40,7 +40,6 @@ class Payment
                     'method'       => $object->getCode(),
                     'method_title' => $object->getTitle(),
                     'description'  => $object->getDescription(),
-                    'image' => $object->getImage(),
                     'sort'         => $object->getSortOrder(),
                 ];
             }

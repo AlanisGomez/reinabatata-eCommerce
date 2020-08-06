@@ -71,7 +71,7 @@
                         margin-top: 10px;
 
                         .name {
-                            color: #fa8ba4;
+                            color: #0041ff;
                         }
 
                         .info {
@@ -129,7 +129,7 @@
             .data {
                 padding-top: 13px;
                 font-size: 32px;
-                color: #5374e2;
+                color: $dashboard-stats-data;
 
                 .progress {
                     font-size: 14px;

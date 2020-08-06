@@ -382,8 +382,8 @@ return [
             'refunds' => 'Terugbetalingen',
             'comment-added-success' => 'Comment addded successfully.',
             'comment' => 'Comment',
-            'submit-comment' => 'Enviar comentario',
-            'notify-customer' => 'Notificar al cliente',
+            'submit-comment' => 'Submit Comment',
+            'notify-customer' => 'Notify Customer',
         ],
 
         'invoices' => [
@@ -687,7 +687,7 @@ return [
             'shipping-method' => [
                 'title' => 'Verzendmethoden',
                 'save-btn-title' => 'Opslaan',
-                'description' => 'Descripción',
+                'description' => 'Description',
                 'active' => 'Actief',
                 'status' => 'Toestand'
             ]

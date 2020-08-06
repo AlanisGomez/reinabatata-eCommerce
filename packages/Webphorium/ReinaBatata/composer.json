@@ -1,0 +1,30 @@
+{
+    "name": "webphorium/reinabatata-theme",
+    "description": "Reina Batata Theme for Webphorium Software.",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "alanis.gomez",
+            "email": "alanis.gomez99@gmail.com"
+        }
+    ],
+
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Webphorium\\ReinaBatata\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webphorium\\ReinaBatata\\Providers\\ReinaBatataServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+
+    "minimum-stability": "dev"
+}

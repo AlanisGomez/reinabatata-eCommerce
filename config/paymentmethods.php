@@ -6,7 +6,7 @@ return [
         'title' => 'Mercado Pago',
         'description' => 'Pagar con Mercado Pago',
         'image' => 'mercadopago-img',
-        'class' => 'Webkul\Mercadopago\Payment\MercadoPago',
+        'class' => 'Laravel\Mercadopago\Payment\MercadoPago',
         'active' => true
     ]
 ];

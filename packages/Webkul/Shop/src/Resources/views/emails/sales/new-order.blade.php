@@ -17,7 +17,7 @@
 
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!! __('shop::app.mail.order.greeting', [
-                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #fa8ba4; font-weight: bold;">#' . $order->increment_id . '</a>',
+                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #0041FF; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
@@ -191,15 +191,14 @@
         </div>
 
         <div style="margin-top: 65px;font-size: 16px;color: #5E5E5E;line-height: 24px;display: inline-block">
-
-            <p  style="font-size: 16px;color: #5E5E5E;line-height: 24px; font-weight:600">
-                Si elegiste pagar a traves de Transferencia Bancaria, a la brevedad te enviaremos un correo con los datos necesarios para finalizar la transacción.
+            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+                {{ __('shop::app.mail.order.final-summary') }}
             </p>
 
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#fa8ba4" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
+                        'support_email' => '<a style="color:#0041FF" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
                         ])
                 !!}
             </p>

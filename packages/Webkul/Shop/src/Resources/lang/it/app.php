@@ -558,8 +558,8 @@ return [
         'order' => [
             'subject' => 'Nuova Conferma Ordine',
             'heading' => 'Conferma Ordine!',
-            'dear' => ' :customer_name',
-            'dear-admin' => ' :admin_name ',
+            'dear' => ':customer_name',
+            'dear-admin' => ':admin_name',
             'greeting' => 'Grazie per il tuo Oridne :order_id su :created_at',
             'greeting-admin' => 'Id Ordine :order_id su :created_at',
             'summary' => 'Riepilogo Ordine',
@@ -640,6 +640,13 @@ return [
             'info' => 'Ricevi questa email perchè abbiamo ricevuto una richiesta di generazione di nuova password per il tuo account',
             'reset-password' => 'Generazione nuova Password',
             'final-summary' => 'Se non hai inviato tu questa richiesta, non è necessario effettuare alcuna operazione',
+            'thanks' => 'Grazie!'
+        ],
+
+        'update-password' => [
+            'subject' => 'Password aggiornata',
+            'dear' => 'Cara :name',
+            'info' => 'Ricevi questa email perché hai aggiornato la password.',
             'thanks' => 'Grazie!'
         ],
 

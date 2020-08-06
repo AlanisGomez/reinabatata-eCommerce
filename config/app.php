@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'ReinaBatata'),
+    'name' => env('APP_NAME', 'Bagisto'),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'dev'),
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost:8000'),
+    'url' => env('APP_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'admin_url' => env('APP_ADMIN_URL', 'admin'),    
+    'admin_url' => env('APP_ADMIN_URL', 'admin'),
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'timezone' => env('APP_TIMEZONE','America/Argentina/Buenos_Aires'),
+    'timezone' => env('APP_TIMEZONE','Asia/Kolkata'),
 
     /*
     |--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'es'),
+    'locale' => env('APP_LOCALE', 'en'),
 
     /*
     |--------------------------------------------------------------------------
@@ -118,7 +118,7 @@ return [
     | (use capital letters!)
     */
 
-    'default_country' => 'AR',
+    'default_country' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -129,7 +129,7 @@ return [
     |
     */
 
-    'currency' => env('APP_CURRENCY', 'ARS'),
+    'currency' => env('APP_CURRENCY', 'USD'),
 
     /*
     |--------------------------------------------------------------------------
@@ -278,11 +278,11 @@ return [
         Webkul\CartRule\Providers\CartRuleServiceProvider::class,
         Webkul\Rule\Providers\RuleServiceProvider::class,
         Webkul\CMS\Providers\CMSServiceProvider::class,
-        Webkul\ReinaBatata\Providers\ReinaBatataServiceProvider::class,
+        // Webkul\Velocity\Providers\VelocityServiceProvider::class,
         Webkul\BookingProduct\Providers\BookingProductServiceProvider::class,
         Webkul\SocialLogin\Providers\SocialLoginServiceProvider::class,
-        Webkul\Mercadopago\Providers\MPServiceProvider::class,
-        Digibytes\Pickup\Providers\PickupServiceProvider::class,
+        Laravel\Mercadopago\Providers\MPServiceProvider::class,
+        Webphorium\ReinaBatata\Providers\ReinaBatataServiceProvider::class,
     ],
 
     /*

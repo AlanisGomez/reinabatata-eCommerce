@@ -54,7 +54,7 @@ class AddressController extends Controller
     public function get()
     {
         $customer = auth($this->guard)->user();
-
+        
         $addresses = $customer->addresses()->get();
 
         return CustomerAddressResource::collection($addresses);
@@ -76,7 +76,7 @@ class AddressController extends Controller
 
         $this->validate(request(), [
             'address1' => 'string|required',
-            'country'  => 'string',
+            'country'  => 'string|required',
             'state'    => 'string|required',
             'city'     => 'string|required',
             'postcode' => 'required',
@@ -104,7 +104,7 @@ class AddressController extends Controller
 
         $this->validate(request(), [
             'address1' => 'string|required',
-            'country'  => 'string',
+            'country'  => 'string|required',
             'state'    => 'string|required',
             'city'     => 'string|required',
             'postcode' => 'required',

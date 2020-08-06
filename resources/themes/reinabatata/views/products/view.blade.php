@@ -1,7 +1,7 @@
 @extends('shop::layouts.master')
 
 @inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
-@inject ('customHelper', 'Webkul\ReinaBatata\Helpers\Helper')
+@inject ('customHelper', 'Webphorium\ReinaBatata\Helpers\Helper')
 @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
 
 @php

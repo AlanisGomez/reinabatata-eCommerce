@@ -13,7 +13,7 @@
             </div>
             <div class="page-action">
                 <a href="{{ route('admin.users.create') }}" class="btn btn-lg btn-primary">
-                    {{ __('Agregar Usuario') }}
+                    {{ __('Add User') }}
                 </a>
             </div>
         </div>

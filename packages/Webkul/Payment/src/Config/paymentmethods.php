@@ -8,7 +8,7 @@ return [
         'active'      => true,
         'sort'        => 1,
     ],
-    
+
     'moneytransfer'   => [
         'code'        => 'moneytransfer',
         'title'       => 'Money Transfer',
@@ -17,4 +17,15 @@ return [
         'active'      => true,
         'sort'        => 2,
     ],
+
+    'paypal_standard' => [
+        'code'             => 'paypal_standard',
+        'title'            => 'Paypal Standard',
+        'description'      => 'Paypal Standard',
+        'class'            => 'Webkul\Paypal\Payment\Standard',
+        'sandbox'          => true,
+        'active'           => true,
+        'business_account' => 'test@webkul.com',
+        'sort'             => 3,
+    ]
 ];

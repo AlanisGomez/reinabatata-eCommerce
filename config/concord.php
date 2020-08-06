@@ -23,7 +23,8 @@ return [
         \Webkul\CatalogRule\Providers\ModuleServiceProvider::class,
         \Webkul\CartRule\Providers\ModuleServiceProvider::class,
         \Webkul\CMS\Providers\ModuleServiceProvider::class,
-        \Webkul\ReinaBatata\Providers\ModuleServiceProvider::class,
+        // \Webkul\Velocity\Providers\ModuleServiceProvider::class,
         \Webkul\SocialLogin\Providers\ModuleServiceProvider::class,
+        \Webphorium\ReinaBatata\Providers\ModuleServiceProvider::class,
     ]
 ];
