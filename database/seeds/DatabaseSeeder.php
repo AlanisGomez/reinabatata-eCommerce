@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Webkul\Velocity\Database\Seeders\VelocityMetaDataSeeder;
+use Webphorium\ReinaBatata\Database\Seeders\ReinaBatataMetaDataSeeder;
 use Webkul\Admin\Database\Seeders\DatabaseSeeder as BagistoDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,6 +14,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(BagistoDatabaseSeeder::class);
-        $this->call(VelocityMetaDataSeeder::class);
+        $this->call(ReinaBatataMetaDataSeeder::class);
     }
 }
