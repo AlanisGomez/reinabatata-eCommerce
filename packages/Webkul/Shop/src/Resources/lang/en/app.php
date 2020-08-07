@@ -473,6 +473,7 @@ return [
             'postcode' => 'Código postal',
             'phone' => 'Teléfono',
             'country' => 'País',
+            'enter-coupon-code' => 'Cupón de descuento',
             'order-summary' => 'Detalle de facturación',
             'shipping-address' => 'Dirección de envío',
             'use_for_shipping' => 'Enviar a esta dirección',

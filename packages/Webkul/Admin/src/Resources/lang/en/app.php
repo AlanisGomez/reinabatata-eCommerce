@@ -2,6 +2,7 @@
 
 return [
     'save' => 'Guardar',
+    'copy-of' => 'Copy of',
     'create' => 'Crear',
     'update' => 'Actualizar',
     'delete' => 'Borrar',
@@ -19,7 +20,6 @@ return [
     'true' => 'Verdadero',
     'false' => 'Falso',
     'apply' => 'Aplicar',
-    'action' => 'Acción',
     'label' => 'Etiqueta',
     'name' => 'Nombre',
     'title' => 'Título',
@@ -150,6 +150,7 @@ return [
         'code' => 'Código',
         'admin-name' => 'Nombre',
         'name' => 'Nombre',
+        'copy' => 'Copy',
         'direction' => 'Dirección',
         'fullname' => 'Nombre completo',
         'type' => 'Tipo',
@@ -317,6 +318,14 @@ return [
             'invoice-btn-title' => 'Factura',
             'info' => 'Información',
             'invoices' => 'Facturas',
+            'invoices-change-title' => 'Change invoice state',
+            'invoices-change-state-desc' => 'Please select the new invoice state:',
+            'invoice-status-paid'    => 'Paid',
+            'invoice-status-pending' => 'Pending',
+            'invoice-status-overdue' => 'Overdue',
+            'invoice-status-update' => 'Save changes',
+            'invoice-status-confirmed' => 'The invoice state has been changed.',
+            'invoice-status-error' => 'Could not update the invoice state. ',
             'shipments' => 'Envíos',
             'order-and-account' => 'Pedido y cuenta',
             'order-info' => 'Información de pedido',
@@ -363,14 +372,19 @@ return [
             'tax-percent' => 'Porcentaje de impuestos',
             'tax-amount' => 'Importe del impuesto',
             'discount-amount' => 'Importe del descuento',
-            'discount-amount' => 'Importe del descuento',
             'grand-total' => 'Total',
             'total-paid' => 'Total pagado',
             'total-refunded' => 'Total reembolsado',
             'total-due' => 'Total adeudado',
             'cancel-confirm-msg' => '¿Estás seguro de que deseas cancelar este pedido?',
             'refund-btn-title' => 'Reembolso',
-            'refunds' => 'Reembolsos'
+            'refunds' => 'Refunds',
+            'comment-added-success' => 'Comment addded successfully.',
+            'comment' => 'Comment',
+            'submit-comment' => 'Submit Comment',
+            'notify-customer' => 'Notify Customer',
+            'customer-notified' => ':date | Customer <b>Notified</b>',
+            'customer-not-notified' => ':date | Customer <b>Not Notified</b>'
         ],
 
         'invoices' => [
@@ -474,8 +488,6 @@ return [
             'price' => 'Precio',
             'weight' => 'Peso',
             'status' => 'Estado',
-            'enabled' => 'Habilitado',
-            'disabled' => 'Deshabilitado',
             'add-variant-title' => 'Agregar variante',
             'variant-already-exist-message' => 'La variante con las mismas opciones de atributo ya existe.',
             'add-image-btn-title' => 'Agregar imagen',
@@ -520,7 +532,12 @@ return [
             'checkbox' => 'Checkbox',
             'multiselect' => 'Multiselect',
             'new-option' => 'Nueva opción',
-            'is-default' => 'Es predeterminado'
+            'is-default' => 'Es predeterminado',
+            'customer-group' => 'Customer Group',
+            'add-group-price' => 'Add Customer Group Price',
+            'all-group' => 'All Groups',
+            'fixed' => 'Fixed',
+            'discount' => 'Discount',
         ],
 
         'attributes' => [
@@ -1218,7 +1235,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => '© :year - Marketplace desarrollado por Euphorium Software',
+        'copy-right' => '© :year - Tineda eCommerce desarrollada por Webphorium Software',
     ],
 
     'admin' => [
@@ -1305,12 +1322,40 @@ return [
             'order-number-prefix' => 'Prefijo de número de orden',
             'order-number-length' => 'Longitud del número de pedido',
             'order-number-suffix' => 'Sufijo de número de pedido',
+            'order-number-generator-class' => 'Order Number Generator',
             'default' => 'Predeterminado',
             'sandbox' => 'Sandbox',
             'all-channels' => 'Todo',
             'all-locales' => 'Todo',
+            'all-customer-groups' => 'All Customer groups',
             'invoice-slip-design' => 'Diseño de factura PDF',
-            'logo' => 'Logo'
+            'logo' => 'Logo',
+            'storefront' => 'Storefront',
+            'default-list-mode' => 'Default List Mode',
+            'grid' => 'Grid',
+            'list' => 'List',
+            'products-per-page' => 'Products Per Page',
+            'sort-by' => 'Sort By',
+            'from-z-a' => 'From Z-A',
+            'from-a-z' => 'From A-Z',
+            'newest-first' => 'Newest First',
+            'oldest-first' => 'Oldest First',
+            'cheapest-first' => 'Cheapest First',
+            'expensive-first' => 'Expensive First',
+            'comma-seperated' => 'Comma Seperated',
+            'favicon' => 'Favicon',
+            'seo' => 'SEO',
+            'rich-snippets' => 'Rich Snippets',
+            'enable' => 'Enable',
+            'show-weight' => 'Show Weight',
+            'show-categories' => 'Show Categories',
+            'show-images' => 'Show Images',
+            'show-reviews' => 'Show Reviews',
+            'show-ratings' => 'Show Ratings',
+            'show-offers' => 'Show Offers',
+            'show-sku' => 'Show SKU',
+            'categories' => 'Categories',
+            'show-search-input-field' => 'Show Search Input Field'
         ]
     ]
 ];
