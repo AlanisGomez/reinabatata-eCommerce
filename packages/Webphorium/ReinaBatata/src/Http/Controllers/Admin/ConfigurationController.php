@@ -9,9 +9,9 @@ use Webphorium\ReinaBatata\Repositories\ReinaBatataMetadataRepository;
 class ConfigurationController extends Controller
 {
     /**
-     * VelocityMetadataRepository object
+     * ReinaBatataMetadataRepository object
      *
-     * @var \Webkul\Velocity\Repositories\ReinaBatataMetadataRepository
+     * @var \Webkul\ReinaBatata\Repositories\ReinaBatataMetadataRepository
      */
     protected $reinabatataMetaDataRepository;
 
@@ -23,11 +23,11 @@ class ConfigurationController extends Controller
      * @param  \Webkul\ReinaBatata\Repositories\MetadataRepository  $reinabatataMetaDataRepository
      * @return void
      */
-    public function __construct (VelocityMetadataRepository $reinabatataMetadataRepository)
+    public function __construct (ReinaBatataMetadataRepository $reinabatataMetadataRepository)
     {
         $this->_config = request('_config');
 
-        $this->reinabatataHelper = app('Webkul\Velocity\Helpers\Helper');
+        $this->reinabatataHelper = app('Webphorium\ReinaBatata\Helpers\Helper');
 
         $this->reinabatataMetaDataRepository = $reinabatataMetadataRepository;
 
@@ -39,12 +39,12 @@ class ConfigurationController extends Controller
      */
     public function renderMetaData()
     {
-        $reinabatataMetaData = $this->reinabatataHelper->getVelocityMetaData($this->locale, false);
+        $reinabatataMetaData = $this->reinabatataHelper->getReinaBatataMetaData($this->locale, false);
 
         if (! $reinabatataMetaData) {
             $this->createMetaData($this->locale);
 
-            $reinabatataMetaData = $this->reinabatataHelper->getVelocityMetaData($this->locale);
+            $reinabatataMetaData = $this->reinabatataHelper->getReinaBatataMetaData($this->locale);
         }
 
         $reinabatataMetaData->advertisement = $this->manageAddImages(json_decode($reinabatataMetaData->advertisement, true) ?: []);
