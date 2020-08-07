@@ -144,7 +144,7 @@
 
             <accordian :title="'{{ __('reinabatata::app.admin.meta-data.footer') }}'" :active="false">
                 <div slot="body">
-                    <!-- <div class="control-group">
+                    <div class="control-group">
                         <label>{{ __('reinabatata::app.admin.meta-data.subscription-content') }}</label>
 
                         <textarea
@@ -153,7 +153,7 @@
                             name="subscription_bar_content">
                             {{ $metaData ? $metaData->subscription_bar_content : '' }}
                         </textarea>
-                    </div> -->
+                    </div>
 
                     <div class="control-group">
                         <label style="width:100%;">{{ __('reinabatata::app.admin.meta-data.footer-left-content') }} <span class="locale">[{{ $metaData ? $metaData->locale : 'en' }}]</span></label>

@@ -9,9 +9,9 @@ use Webphorium\ReinaBatata\Repositories\ReinaBatataMetadataRepository;
 class ConfigurationController extends Controller
 {
     /**
-     * ReinaBatataMetadataRepository object
+     * VelocityMetadataRepository object
      *
-     * @var \Webphorium\ReinaBatata\Repositories\ReinaBatataMetadataRepository
+     * @var \Webkul\Velocity\Repositories\ReinaBatataMetadataRepository
      */
     protected $reinabatataMetaDataRepository;
 
@@ -20,14 +20,14 @@ class ConfigurationController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webphorium\ReinaBatata\Repositories\MetadataRepository  $reinabatataMetaDataRepository
+     * @param  \Webkul\ReinaBatata\Repositories\MetadataRepository  $reinabatataMetaDataRepository
      * @return void
      */
-    public function __construct (ReinaBatataMetadataRepository $reinabatataMetadataRepository)
+    public function __construct (VelocityMetadataRepository $reinabatataMetadataRepository)
     {
         $this->_config = request('_config');
 
-        $this->reinabatataHelper = app('Webphorium\ReinaBatata\Helpers\Helper');
+        $this->reinabatataHelper = app('Webkul\Velocity\Helpers\Helper');
 
         $this->reinabatataMetaDataRepository = $reinabatataMetadataRepository;
 
@@ -39,12 +39,12 @@ class ConfigurationController extends Controller
      */
     public function renderMetaData()
     {
-        $reinabatataMetaData = $this->reinabatataHelper->getReinaBatataMetaData($this->locale, false);
+        $reinabatataMetaData = $this->reinabatataHelper->getVelocityMetaData($this->locale, false);
 
         if (! $reinabatataMetaData) {
             $this->createMetaData($this->locale);
 
-            $reinabatataMetaData = $this->reinabatataHelper->getReinaBatataMetaData($this->locale);
+            $reinabatataMetaData = $this->reinabatataHelper->getVelocityMetaData($this->locale);
         }
 
         $reinabatataMetaData->advertisement = $this->manageAddImages(json_decode($reinabatataMetaData->advertisement, true) ?: []);
