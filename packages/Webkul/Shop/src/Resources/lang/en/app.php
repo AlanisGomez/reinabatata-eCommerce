@@ -89,6 +89,18 @@ return [
     ],
 
     'customer' => [
+        'compare'           => [
+            'text'                  => 'Compare',
+            'compare_similar_items' => 'Compare Similar Items',
+            'add-tooltip'           => 'Add product to compare list',
+            'added'                 => 'Item successfully added to compare list',
+            'already_added'         => 'Item already added to compare list',
+            'removed'               => 'Item successfully removed from compare list',
+            'empty-text'            => "You don't have any items in your compare list",
+            'product_image'         => 'Product Image',
+            'actions'               => 'Actions',
+        ],
+
         'signup-text' => [
             'account_exists' => 'Ya tenés una cuenta',
             'title' => 'Entrar'
@@ -312,6 +324,7 @@ return [
                 'add' => 'Artículo agregado a la lista de deseos',
                 'remove' => 'Artículo eliminado de la lista de deseos',
                 'moved' => 'Producto movido al carrito exitosamente',
+                'option-missing' => 'Algunas opciones del producto se perdieron, por eso el producto no se puede mover a Favoritos',
                 'move-error' => 'El artículo no se puede añadir a la lista de deseos, por favor inténtalo más tarde',
                 'success' => 'Artículo agregado a la lista de deseos',
                 'failure' => 'El artículo no se puede añadir a la lista de deseos, por favor inténtalo más tarde',
@@ -319,7 +332,7 @@ return [
                 'removed' => 'Artículo eliminado de la lista de deseos',
                 'remove-fail' => 'El artículo no se puede eliminar de la lista de deseos, por favor inténtalo más tarde',
                 'empty' => 'No tiene ningún producto en su lista de deseos',
-                'remove-all-success' => 'Todos los artículos de su lista de deseos han sido eliminados',
+                'remove-all-success' => 'Todos los artículos de su lista de deseos han sido eliminados'
             ],
 
             'downloadable_products' => [
