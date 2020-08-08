@@ -10,7 +10,7 @@
         </div>
 
         <div slot="body">
-            <div class="full-description">
+            <div class="full-description mt-3">
                 {!! $product->description !!}
             </div>
         </div>

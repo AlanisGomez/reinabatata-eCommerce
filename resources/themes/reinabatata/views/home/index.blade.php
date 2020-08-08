@@ -56,6 +56,7 @@
 @section('full-content-wrapper')
 
     <div class="full-content-wrapper">
+        {{ Breadcrumbs::render('home') }}
         {!! view_render_event('bagisto.shop.home.content.before') !!}
 
             @if ($reinabatataMetaData)

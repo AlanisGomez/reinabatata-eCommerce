@@ -7,7 +7,7 @@
             </slot>
         </div>
 
-        <div class="accordian-content" ref="controls">
+        <div class="accordian-content mt-2" ref="controls">
             <slot name="body"></slot>
         </div>
     </div>
