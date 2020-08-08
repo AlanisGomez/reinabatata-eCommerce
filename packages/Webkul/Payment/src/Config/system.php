@@ -102,8 +102,8 @@ return [
             ]
         ]
     ], [
-        'key'    => 'sales.paymentmethods.paypal_standard',
-        'name'   => 'admin::app.admin.system.paypal-standard',
+        'key'    => 'sales.paymentmethods.mercadopago',
+        'name'   => 'admin::app.admin.system.mercadopago',
         'sort'   => 3,
         'fields' => [
             [
@@ -119,26 +119,13 @@ return [
                 'type'          => 'textarea',
                 'channel_based' => false,
                 'locale_based'  => true,
-            ],  [
-                'name'       => 'business_account',
-                'title'      => 'admin::app.admin.system.business-account',
-                'type'       => 'select',
-                'type'       => 'text',
-                'validation' => 'required',
-            ],  [
+            ], [
                 'name'          => 'active',
                 'title'         => 'admin::app.admin.system.status',
                 'type'          => 'boolean',
                 'validation'    => 'required',
                 'channel_based' => false,
                 'locale_based'  => true
-            ], [
-                'name'          => 'sandbox',
-                'title'         => 'admin::app.admin.system.sandbox',
-                'type'          => 'boolean',
-                'validation'    => 'required',
-                'channel_based' => false,
-                'locale_based'  => true,
             ], [
                 'name'    => 'sort',
                 'title'   => 'admin::app.admin.system.sort_order',

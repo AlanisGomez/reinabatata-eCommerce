@@ -18,14 +18,14 @@
                     <div class="container mb-2 no-padding">
                         <div class="option">
                             <input
-                                    type="radio"
-                                    name="payment[method]"
-                                    v-validate="'required'"
-                                    v-model="payment.method"
-                                    @change="methodSelected()"
-                                    id="{{ $payment['method'] }}"
-                                    value="{{ $payment['method'] }}"
-                                    data-vv-as="&quot;{{ __('shop::app.checkout.onepage.payment-method') }}&quot;" />
+                                type="radio"
+                                name="payment[method]"
+                                v-validate="'required'"
+                                v-model="payment.method"
+                                @change="methodSelected()"
+                                id="{{ $payment['method'] }}"
+                                value="{{ $payment['method'] }}"
+                                data-vv-as="&quot;{{ __('shop::app.checkout.onepage.payment-method') }}&quot;" />
                             <label class="address" for="{{ $payment['method'] }}" aria-label="Silver">
                                 <span></span>
                                 <div>

@@ -29,7 +29,7 @@
     {!! view_render_event('bagisto.shop.customers.account.profile.view.before', ['customer' => $customer]) !!}
 
     <div class="account-table-content profile-page-content">
-        <div class="table row no-gutters p-3 pt-md-5">
+        <div class="table row no-gutters mt-3 p-3 pt-md-5">
             <div class="col-12 d-block d-md-none">
                 <a href="{{ route('customer.profile.edit') }}" class="pull-right">
                     {{ __('shop::app.customer.account.profile.index.edit') }}
