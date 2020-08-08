@@ -7,7 +7,7 @@
 @endsection
 
 @section('page-detail-wrapper')
-    <div class="account-head mt-3 ml-md-3 d-md-flex align-items-center justify-content-between">
+    <div class="account-head d-md-flex align-items-center justify-content-between">
         <h2 class="account-heading">{{ __('shop::app.customer.account.wishlist.title') }}</h2>
         @if (count($items))
             <div class="d-flex flex-row-reverse account-action mt-3">

@@ -195,7 +195,7 @@ header #search-form > *:focus {
         border: none;
         padding: 20px 10px;
         background: $white;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: $box-shadow;
 
         .policy {
             display: table;

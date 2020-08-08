@@ -24,8 +24,8 @@
     @include('shop::checkout.cart.coupon')
 
     <script type="text/x-template" id="cart-template">
-        <div class="container">
-            <section class="cart-details row  mx-0 px-0 mt-3 col-12">
+        <div class="container py-5">
+            <section class="cart-details row  mx-0 px-0 col-12">
                 <h1 class="fw5 col-12 px-0 px-md-3">{{ __('shop::app.checkout.cart.title') }}</h1>
 
                 @if ($cart)

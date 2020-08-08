@@ -6,7 +6,7 @@
 
 @section('page-detail-wrapper')
 <div class="myAccount-Form-container">
-    <div class="account-head mt-3">
+    <div class="account-head">
         <span class="back-icon"><a href="{{ route('customer.account.index') }}"><i class="icon icon-menu-back"></i></a></span>
         <span class="account-heading">{{ __('shop::app.customer.account.address.edit.title') }}</span>
         <span></span>

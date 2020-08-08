@@ -6,7 +6,7 @@
 
 @section('page-detail-wrapper')
 <div class="myAccount-Form-container">
-    <div class="account-head mt-3">
+    <div class="account-head">
         <h1 class="account-heading">
             {{ __('shop::app.customer.account.profile.index.title') }}
         </h1>
