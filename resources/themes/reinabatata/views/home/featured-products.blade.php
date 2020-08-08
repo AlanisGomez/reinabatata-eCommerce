@@ -6,7 +6,7 @@
 
 @push('scripts')
     <script type="text/x-template" id="featured-products-template">
-        <div class="container-fluid featured-products">
+        <div v-if="featuredProducts.length" class="container-fluid featured-products">
             <shimmer-component v-if="isLoading && !isMobileView"></shimmer-component>
 
             <template v-else-if="featuredProducts.length > 0">

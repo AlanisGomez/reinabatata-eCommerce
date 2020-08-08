@@ -87,6 +87,7 @@ class MPController extends Controller
         $payer->name = $paymentData['billing_address']['first_name'];
         $payer->surname = $paymentData['billing_address']['last_name'];
         $payer->email = $paymentData['billing_address']['email'];
+        // $payer->email = 'test_user_40361301@testuser.com';
         $payer->phone = array(
             "area_code" => "",
             "number" => $paymentData['billing_address']['phone']

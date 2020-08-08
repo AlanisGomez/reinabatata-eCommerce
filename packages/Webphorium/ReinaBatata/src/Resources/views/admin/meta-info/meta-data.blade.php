@@ -92,7 +92,7 @@
                         </textarea>
                     </div>
 
-                    <!-- <div class="control-group">
+                    <div class="control-group">
                         <label>{{ __('reinabatata::app.admin.meta-data.product-policy') }}</label>
 
                         <textarea
@@ -101,7 +101,7 @@
                             name="product_policy">
                             {{ $metaData ? $metaData->product_policy : '' }}
                         </textarea>
-                    </div> -->
+                    </div>
 
                 </div>
             </accordian>

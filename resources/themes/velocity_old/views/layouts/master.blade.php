@@ -1,7 +1,7 @@
 @php
     $velocityHelper = app('Webkul\Velocity\Helpers\Helper');
     $velocityMetaData = $velocityHelper->getVelocityMetaData();
-    
+
     view()->share('velocityMetaData', $velocityMetaData);
 @endphp
 
