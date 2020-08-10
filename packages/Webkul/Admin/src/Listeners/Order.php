@@ -23,19 +23,17 @@ class Order
      */
     public function sendNewOrderMail($order)
     {
-        $customerLocale = $this->getLocale($order);
-
         try {
             /* email to customer */
             $configKey = 'emails.general.notifications.emails.general.notifications.new-order';
-            if (core()->getConfigData($configKey)) {
-                $this->prepareMail($customerLocale, new NewOrderNotification($order));
-            }
+            if (core()->getConfigData($configKey))
+                Mail::queue(new NewOrderNotification($order));
 
             /* email to admin */
             $configKey = 'emails.general.notifications.emails.general.notifications.new-admin';
             if (core()->getConfigData($configKey)) {
-                $this->prepareMail(env('APP_LOCALE'), new NewAdminNotification($order));
+                app()->setLocale(env('APP_LOCALE'));
+                Mail::queue(new NewAdminNotification($order));
             }
         } catch (\Exception $e) {
             report($e);
@@ -50,17 +48,15 @@ class Order
      */
     public function sendNewInvoiceMail($invoice)
     {
-        $customerLocale = $this->getLocale($invoice);
-
         try {
             if ($invoice->email_sent) {
                 return;
             }
 
-            /* email to customer */
             $configKey = 'emails.general.notifications.emails.general.notifications.new-invoice';
+
             if (core()->getConfigData($configKey)) {
-                $this->prepareMail($customerLocale, new NewInvoiceNotification($invoice));
+                Mail::queue(new NewInvoiceNotification($invoice));
             }
         } catch (\Exception $e) {
             report($e);
@@ -75,13 +71,11 @@ class Order
      */
     public function sendNewRefundMail($refund)
     {
-        $customerLocale = $this->getLocale($refund);
-
         try {
-            /* email to customer */
             $configKey = 'emails.general.notifications.emails.general.notifications.new-refund';
+
             if (core()->getConfigData($configKey)) {
-                $this->prepareMail($customerLocale, new NewRefundNotification($refund));
+                Mail::queue(new NewRefundNotification($refund));
             }
         } catch (\Exception $e) {
             report($e);
@@ -96,23 +90,21 @@ class Order
      */
     public function sendNewShipmentMail($shipment)
     {
-        $customerLocale = $this->getLocale($shipment);
-
         try {
             if ($shipment->email_sent) {
                 return;
             }
 
-            /* email to customer */
             $configKey = 'emails.general.notifications.emails.general.notifications.new-shipment';
+
             if (core()->getConfigData($configKey)) {
-                $this->prepareMail($customerLocale, new NewShipmentNotification($shipment));
+                Mail::queue(new NewShipmentNotification($shipment));
             }
 
-            /* email to admin */
             $configKey = 'emails.general.notifications.emails.general.notifications.new-inventory-source';
+
             if (core()->getConfigData($configKey)) {
-                $this->prepareMail(env('APP_LOCALE'), new NewInventorySourceNotification($shipment));
+                Mail::queue(new NewInventorySourceNotification($shipment));
             }
         } catch (\Exception $e) {
             report($e);
@@ -125,19 +117,18 @@ class Order
      */
     public function sendCancelOrderMail($order)
     {
-        $customerLocale = $this->getLocale($order);
-
         try {
             /* email to customer */
             $configKey = 'emails.general.notifications.emails.general.notifications.cancel-order';
             if (core()->getConfigData($configKey)) {
-                $this->prepareMail($customerLocale, new CancelOrderNotification($order));
+                Mail::queue(new CancelOrderNotification($order));
             }
 
             /* email to admin */
             $configKey = 'emails.general.notifications.emails.general.notifications.new-admin';
             if (core()->getConfigData($configKey)) {
-                $this->prepareMail(env('APP_LOCALE'), new CancelOrderAdminNotification($order));
+                app()->setLocale(env('APP_LOCALE'));
+                Mail::queue(new CancelOrderAdminNotification($order));
             }
         } catch (\Exception $e) {
             report($e);
@@ -150,43 +141,14 @@ class Order
      */
     public function sendOrderCommentMail($comment)
     {
-        $customerLocale = $this->getLocale($comment);
-
         if (! $comment->customer_notified) {
             return;
         }
 
         try {
-            /* email to customer */
-            $this->prepareMail($customerLocale, new OrderCommentNotification($comment));
+            Mail::queue(new OrderCommentNotification($comment));
         } catch (\Exception $e) {
             report($e);
         }
-    }
-
-    /**
-     * Get the locale of the customer if somehow item name changes then the english locale will pe provided.
-     *
-     * @param object \Webkul\Sales\Contracts\Order|\Webkul\Sales\Contracts\Invoice|\Webkul\Sales\Contracts\Refund|\Webkul\Sales\Contracts\Shipment|\Webkul\Sales\Contracts\OrderComment
-     * @return string
-     */
-    private function getLocale($object)
-    {
-        if ($object instanceof \Webkul\Sales\Contracts\OrderComment) {
-            $object = $object->order;
-        }
-
-        $objectFirstItem = $object->items->first();
-        return isset($objectFirstItem->additional['locale']) ? $objectFirstItem->additional['locale'] : 'en';
-    }
-
-    /**
-     * Prepare Mail.
-     * @return void
-     */
-    private function prepareMail($locale, $notification)
-    {
-        app()->setLocale($locale);
-        Mail::queue($notification);
     }
 }

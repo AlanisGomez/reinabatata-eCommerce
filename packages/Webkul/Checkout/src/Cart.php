@@ -886,8 +886,6 @@ class Cart
      */
     public function prepareDataForOrderItem($data): array
     {
-        $locale = ['locale' => core()->getCurrentLocale()->code];
-
         $finalData = [
             'product'              => $this->productRepository->find($data['product_id']),
             'sku'                  => $data['sku'],
@@ -906,7 +904,7 @@ class Cart
             'discount_percent'     => $data['discount_percent'],
             'discount_amount'      => $data['discount_amount'],
             'base_discount_amount' => $data['base_discount_amount'],
-            'additional'           => is_array($data['additional']) ? array_merge($data['additional'], $locale) : $locale,
+            'additional'           => $data['additional'],
         ];
 
         if (isset($data['children']) && $data['children']) {
