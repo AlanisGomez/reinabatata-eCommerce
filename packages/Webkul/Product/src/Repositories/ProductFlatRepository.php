@@ -90,7 +90,7 @@ class ProductFlatRepository extends Repository
 
     /**
      * update product_flat custom column
-     * 
+     *
      * @param \Webkul\Attribute\Models\Attribute $attribute
      * @param \Webkul\Product\Listeners\ProductFlat $listener
      */

@@ -32,7 +32,7 @@
 ?>
 
 <div class="layered-filter-wrapper col-md-3">
-
+    <div class="col-12 no-padding d-none d-md-block my-2">{{ Breadcrumbs::render('category', $category) }}</div>
     {!! view_render_event('bagisto.shop.products.list.layered-nagigation.before') !!}
 
         <layered-navigation></layered-navigation>

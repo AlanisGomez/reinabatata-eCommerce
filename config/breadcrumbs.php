@@ -37,7 +37,7 @@ return [
     |
     */
 
-    'files' => base_path('packages/Webkul/Shop/src/Http/breadcrumbs.php'),
+    'files' => base_path('routes/breadcrumbs.php'),
 
     /*
     |--------------------------------------------------------------------------

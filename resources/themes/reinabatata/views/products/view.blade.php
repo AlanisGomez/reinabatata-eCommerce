@@ -48,6 +48,7 @@
 @endpush
 
 @section('full-content-wrapper')
+    <div class="col-12 no-padding">{{ Breadcrumbs::render('product', $product)}}</div>
     {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
         <div class="row no-margin">
             <section class="col-12 product-detail">

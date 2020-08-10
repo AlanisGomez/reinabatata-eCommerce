@@ -3,10 +3,6 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
 
-    @include laptop-sm {
-        margin-top: 2rem;
-    }
-
     .magnifier {
         > img {
             width: 100%;
@@ -239,7 +235,7 @@
                 width: 100%;
                 height: 6rem;
                 background-size: cover;
-                
+
                 @include laptop-sm {
                     background-size: contain;
                     height: 8rem;
