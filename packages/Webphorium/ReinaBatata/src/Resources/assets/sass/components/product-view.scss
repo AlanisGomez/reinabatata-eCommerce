@@ -414,6 +414,10 @@
     }
 }
 
+.description {
+    height: 6rem;
+}
+
 .products-collection {
     @include laptop-sm {
         margin-top: 1rem;
