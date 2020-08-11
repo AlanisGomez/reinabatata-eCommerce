@@ -49,9 +49,8 @@
 
 
     .table {
-        width: 90%;
-        margin-bottom: 1rem;
-        margin-top: 68px;
+        width: 100%;
+        margin-top: 1rem;
         color: #212529;
         overflow-x: auto;
     }
@@ -443,12 +442,11 @@
 
                     tr {
                         margin-bottom: 20px;
-                        border: 1px solid $gray-400;
-                        border-radius: $border-radius;
-                        display: block;
+                        border: 1px solid $border-common;
 
                         td {
                             width: 100%;
+                            display: block;
                             border-top: none;
                             border-right: 1px solid $border-common !important;
 
