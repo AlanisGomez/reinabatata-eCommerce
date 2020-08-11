@@ -66,8 +66,8 @@ $isProductsDisplayMode = in_array(
 
             <div class="category-container col-12 col-md-9">
                 <div class="row remove-padding-margin">
-                    <div class="pl0 col-12">
-                        <h1 class="fw6 mb10">{{ $category->name }}</h1>
+                    <div class="pl-md-0 col-12">
+                        <h1 class="categoryTitle fw5 mb10">{{ $category->name }}</h1>
 
                         @if ($isDescriptionDisplayMode)
                             <template v-if="products.length > 0">
@@ -94,7 +94,7 @@ $isProductsDisplayMode = in_array(
                 </div>
 
                 <div
-                    class="category-block"
+                    class="category-block px-3"
                     @if ($category->display_mode == 'description_only')
                         style="width: 100%"
                     @endif>

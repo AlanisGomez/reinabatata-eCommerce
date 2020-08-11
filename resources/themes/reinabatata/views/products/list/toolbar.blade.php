@@ -107,7 +107,7 @@
             </div>
 
             <div class="col-12 d-flex justify-content-end" @click="toggleLayeredNavigation({event: $event, actionType: 'open'})">
-                <a class="unset">
+                <a class="unset d-flex align-items-center">
                     <i class="material-icons">filter_list</i>
                     <span>{{ __('reinabatata::app.shop.general.filter') }}</span>
                 </a>

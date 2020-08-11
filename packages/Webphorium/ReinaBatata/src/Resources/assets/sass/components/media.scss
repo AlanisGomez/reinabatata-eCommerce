@@ -101,6 +101,7 @@
         &.open-hamburger {
             color: #7f7f7f;
             opacity: 0.8;
+            z-index: 999;
             overflow: hidden;
         }
     }
@@ -619,13 +620,13 @@
             padding-left: 0px !important;
             padding-right: 0px !important;
 
-            > div {
-                padding: 0 10px;
+            // > div {
+            //     padding: 0 10px;
 
-                &:first-child {
-                    padding: 0 10px !important;
-                }
-            }
+            //     &:first-child {
+            //         padding: 0 10px !important;
+            //     }
+            // }
 
             .filters-container {
                 left: 0px;

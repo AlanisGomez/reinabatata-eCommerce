@@ -123,6 +123,14 @@
     }
 }
 
+.categoryTitle {
+    font-size: 1.4rem;
+
+    @include laptop-sm {
+        font-size: 2rem;
+    }
+}
+
 .filters-container {
     margin: 20px 0;
 
