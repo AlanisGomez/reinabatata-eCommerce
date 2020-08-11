@@ -45,7 +45,7 @@
     <script type="text/x-template" id="layered-navigation-template">
         <div v-if="attributes.length > 0">
 
-            <h5 class="filter-title fw5 mb20">
+            <h5 class="filter-title fw5 mb20 d-none d-md-block">
                 {{ __('shop::app.products.layered-nav-title') }}
             </h5>
 

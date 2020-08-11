@@ -3,23 +3,10 @@
         <div class="vc-small-screen container" v-if="isMobile()">
             <div class="row">
                 <div class="col-7 d-flex align-items-center">
-                    <div v-if="hamburger" class="nav-container scrollable">
+                    <div class="nav-container scrollable" :class="{'hamburgerTransition': hamburger}">
                         <div class="wrapper" v-if="this.rootCategories">
                             <div class="greeting drawer-section fw6">
-                                <!-- <i class="material-icons">perm_identity</i> -->
                                 <span>
-                                    <!-- @guest('customer')
-                                        <a class="unset" href="{{ route('customer.session.index') }}">
-                                        {{ __('reinabatata::app.responsive.header.greeting', ['customer' => 'Guest']) }}
-                                        </a>
-                                    @endguest
-
-                                    @auth('customer')
-                                        <a class="unset" href="{{ route('customer.profile.index') }}">
-                                            {{ __('reinabatata::app.responsive.header.greeting', ['customer' => auth()->guard('customer')->user()->first_name]) }}
-                                        </a>
-                                    @endauth -->
-
                                     <i
                                         @click="closeDrawer()"
                                         class="material-icons pull-right text-dark">
@@ -106,37 +93,6 @@
                             @endauth
 
                             <ul type="none" class="meta-wrapper">
-                                <!-- <li>
-                                    @if ($locale)
-                                        <div class="language-logo-wrapper">
-                                            @if ($locale->locale_image)
-                                                <img
-                                                    class="language-logo"
-                                                    src="{{ asset('/storage/' . $locale->locale_image) }}" />
-                                            @elseif ($locale->code == "en")
-                                                <img
-                                                    class="language-logo"
-                                                    src="{{ asset('/themes/reinabatata/assets/images/flags/en.png') }}" />
-                                            @endif
-                                        </div>
-                                        <span>{{ $locale->name }}</span>
-                                    @endif
-
-                                    <i
-                                        class="rango-arrow-right"
-                                        @click="toggleMetaInfo('languages')">
-                                    </i>
-                                </li>
-
-                                <li>
-                                    <span>{{ $currency->code }}</span>
-
-                                    <i
-                                        class="rango-arrow-right"
-                                        @click="toggleMetaInfo('currencies')">
-                                    </i>
-                                </li> -->
-
                                 <li>
                                     @auth('customer')
                                         <a
@@ -450,8 +406,6 @@
                 },
 
                 closeDrawer: function() {
-                    $('.nav-container').hide();
-
                     this.toggleHamburger();
                     this.rootCategories = true;
                 },

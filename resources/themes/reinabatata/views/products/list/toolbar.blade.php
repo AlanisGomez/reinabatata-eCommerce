@@ -83,27 +83,27 @@
 
         <div class="toolbar-wrapper row col-12 remove-padding-margin" v-else>
             <div
-                v-if="layeredNavigation"
-                class="nav-container scrollable"
-                style="
-                    z-index: 1000;
-                    color: black;
-                    position: relative;
-                ">
-                <div class="header drawer-section">
-                    <i class="material-icons" @click="toggleLayeredNavigation">keyboard_backspace</i>
-
-                    <span class="fs24 fw6">
+                class="filterNav scrollable"
+                :class="{'filterTransition': layeredNavigation}"
+                >
+                <div class="header drawer-section mb-3">
+                    <span class="fs20 fw6">
                         {{ __('reinabatata::app.shop.general.filter') }}
                     </span>
-                    <span class="pull-right link-color" @click="toggleLayeredNavigation">
-                        {{ __('reinabatata::app.responsive.header.done') }}
-                    </span>
+
+                    <i class="material-icons pull-right" @click="toggleLayeredNavigation">clear</i>
                 </div>
 
                 @if (request()->route()->getName() != 'reinabatata.search.index')
                     @include ('shop::products.list.layered-navigation')
                 @endif
+
+                <div class="px-3">
+                    <a class="btn btn-primary btn-block" @click="toggleLayeredNavigation">
+                        {{ __('reinabatata::app.responsive.header.done') }}
+                    </a>
+                </div>
+
             </div>
 
             <div class="col-12 d-flex justify-content-end" @click="toggleLayeredNavigation({event: $event, actionType: 'open'})">

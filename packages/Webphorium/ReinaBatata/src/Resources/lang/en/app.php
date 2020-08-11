@@ -260,7 +260,7 @@ return [
             'no'                     => 'No',
             'yes'                    => 'Si',
             'view'                   => 'Ver',
-            'filter'                 => 'Filtros',
+            'filter'                 => 'Filtrar por',
             'orders'                 => 'Pedidos',
             'update'                 => 'Actualizar',
             'reviews'                => 'Comentarios',
