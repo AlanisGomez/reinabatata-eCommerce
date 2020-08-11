@@ -195,7 +195,6 @@ header #search-form > *:focus {
         border: none;
         padding: 20px 10px;
         background: $white;
-        box-shadow: $box-shadow;
 
         .policy {
             display: table;
@@ -213,11 +212,13 @@ header #search-form > *:focus {
         }
     }
 
-    .product-policy-wrapper:nth-of-type(1) {
-        padding-left: 0px;
+    .product-policy-wrapper {
+        padding: 0px;
+        border-right: 1px solid $gray-400;
     }
+
     .product-policy-wrapper:nth-last-of-type(1) {
-        padding-right: 0px;
+        border: 0px;
     }
 }
 /* product policy section */
