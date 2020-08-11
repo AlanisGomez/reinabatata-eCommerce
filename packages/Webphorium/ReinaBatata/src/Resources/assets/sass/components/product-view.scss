@@ -415,7 +415,10 @@
 }
 
 .description {
-    height: 6rem;
+
+    @include laptop-sm {
+        height: 6rem;
+    }
 }
 
 .products-collection {
