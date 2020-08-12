@@ -511,10 +511,10 @@ return [
             'sort-order' => 'Sort Order',
             'browse-file' => 'Buscar archivo',
             'product-link' => 'Productos vinculados',
-            'cross-selling' => 'Venta cruzada',
+            'cross-selling' => 'Cross Selling',
             'up-selling' => 'Up Selling',
             'related-products' => 'Productos relacionados',
-            'product-search-hint' => 'Start typing product name',
+            'product-search-hint' => 'Comenza a escribir el nombre del producto',
             'no-result-found' => 'Productos no encontrados con el mismo nombre.
 ',
             'searching' => 'Buscando ...',
@@ -811,7 +811,7 @@ return [
             'last-delete-error' => 'Se requiere al menos un canal.',
             'seo' => 'Home page SEO',
             'seo-title' => 'Meta title',
-            'seo-description' => 'Meta description',
+            'seo-description' => 'Meta descripción',
             'seo-keywords' => 'Meta keywords',
 
         ],

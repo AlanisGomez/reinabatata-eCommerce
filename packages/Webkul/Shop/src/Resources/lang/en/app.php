@@ -381,7 +381,7 @@ return [
         'total-reviews' => ':total Reviews',
         'total-rating' => ':total_rating Ratings & :total_reviews Reviews',
         'by' => 'Por :name',
-        'up-sell-title' => '¡Hemos encontrado otros productos que te pueden gustar!',
+        'up-sell-title' => 'Quizas te puede interesar...',
         'related-product-title' => 'Productos relacionados',
         'cross-sell-title' => 'Más opciones',
         'reviews-title' => 'Calificación y Opiniones',
