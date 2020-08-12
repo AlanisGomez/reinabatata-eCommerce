@@ -7,7 +7,7 @@
     </head>
 
     <body style="font-family: Raleway, sans-serif;">
-        <div style="max-width: 1000px; margin-left: auto; margin-right: auto; widht: 100%;">
+        <div style="max-width: 1000px; margin-left: auto; margin-right: auto; width: 100%;">
             <div style="text-align: center;">
                 {{ $header ?? '' }}
             </div>
