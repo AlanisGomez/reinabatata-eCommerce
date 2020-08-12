@@ -517,6 +517,7 @@ return [
             'coupon' => 'Cupón',
             'coupon-applied' => 'Cupón aplicado',
             'remove-coupon' => 'Eliminar cupón',
+            'invalid-coupon' => 'Cupón invalido',
             'cannot-apply-coupon' => 'No se puede aplicar cupón'
         ],
 
