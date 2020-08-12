@@ -76,7 +76,6 @@
         "bagisto/laravel-sales": "v0.1.0",
         "bagisto/laravel-tax": "v0.1.0",
         "bagisto/laravel-api": "v0.1.0",
-        "bagisto/laravel-paypal": "v0.1.0",
         "bagisto/laravel-discount": "v0.1.0"
     },
 
@@ -101,7 +100,6 @@
         "Webkul\\Theme\\": "packages/Webkul/Theme/src",
         "Webkul\\Shipping\\": "packages/Webkul/Shipping/src",
         "Webkul\\Payment\\": "packages/Webkul/Payment/src",
-        "Webkul\\Paypal\\": "packages/Webkul/Paypal/src",
         "Webkul\\Sales\\": "packages/Webkul/Sales/src",
         "Webkul\\Tax\\": "packages/Webkul/Tax/src",
         "Webkul\\API\\": "packages/Webkul/API",
@@ -109,7 +107,6 @@
         "Webkul\\CartRule\\": "packages/Webkul/CartRule/src",
         "Webkul\\Rule\\": "packages/Webkul/Rule/src",
         "Webkul\\CMS\\": "packages/Webkul/CMS/src",
-        "Webkul\\BookingProduct\\": "packages/Webkul/BookingProduct/src",
         "Webkul\\SocialLogin\\": "packages/Webkul/SocialLogin/src",
         "Laravel\\Mercadopago\\": "packages/Laravel/Mercadopago/src",
         "Webphorium\\ReinaBatata\\": "packages/Webphorium/ReinaBatata/src"
