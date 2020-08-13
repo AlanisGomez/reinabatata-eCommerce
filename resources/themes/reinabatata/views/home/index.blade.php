@@ -43,8 +43,8 @@
 @push('css')
     <style type="text/css">
         .product-price span:first-child{
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 20px;
+            font-weight: 600;
         }
     </style>
 @endpush

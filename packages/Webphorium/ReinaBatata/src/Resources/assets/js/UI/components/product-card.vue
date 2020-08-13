@@ -59,7 +59,7 @@
                     :title="product.name"
                     :href="`${baseUrl}/${product.slug}`">
 
-                    <span class="fs18 fw6">{{ product.name }}</span>
+                    <span class="fs16 fw5">{{ product.name }}</span>
                 </a>
             </div>
 
