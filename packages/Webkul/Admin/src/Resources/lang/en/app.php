@@ -222,7 +222,7 @@ return [
         'created-date' => 'Fecha de creación',
         'expiration-date' => 'Fecha de expiración',
         'edit' => 'Editar',
-        'delete' => 'Eliminar',
+        'delete' => 'Terminar',
         'view' => 'Ver',
         'rtl' => 'RTL',
         'ltr' => 'LTR',
@@ -348,7 +348,7 @@ return [
             'address' => 'Direcciones',
             'shipping-address' => 'Dirección de envío',
             'billing-address' => 'Dirección de envío',
-            'payment-and-shipping' => 'Pago y Envío',
+            'payment-and-shipping' => 'Pago y Envió',
             'payment-info' => 'Información de pago',
             'payment-method' => 'Método de pago',
             'currency' => 'Moneda',
@@ -381,12 +381,12 @@ return [
             'cancel-confirm-msg' => '¿Estás seguro de que deseas cancelar este pedido?',
             'refund-btn-title' => 'Reembolso',
             'refunds' => 'Refunds',
-            'comment-added-success' => 'Comentario agregado correctamente.',
-            'comment' => 'Comentario',
-            'submit-comment' => 'Enviar Comentario',
-            'notify-customer' => 'Notificar al cliente',
-            'customer-notified' => ':date | Cliente <b>Notificado</b>',
-            'customer-not-notified' => ':date | Cliente <b>No notificado</b>'
+            'comment-added-success' => 'Comment addded successfully.',
+            'comment' => 'Comment',
+            'submit-comment' => 'Submit Comment',
+            'notify-customer' => 'Notify Customer',
+            'customer-notified' => ':date | Customer <b>Notified</b>',
+            'customer-not-notified' => ':date | Customer <b>Not Notified</b>'
         ],
 
         'invoices' => [
