@@ -134,6 +134,7 @@ return [
         'order-count' => ':count Pedidos',
         'Ingresos' => 'Revenue :total',
         'stock-threshold' => 'Stock',
+        'revenue' => 'Total :total',
         'qty-left' => ':qty Izquierda'
     ],
 
