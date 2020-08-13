@@ -67,7 +67,7 @@
                 {{ product.new }}
             </div>
 
-            <div class="product-price my-3" v-html="product.priceHTML"></div>
+            <div class="my-2" v-html="product.priceHTML"></div>
             <hr>
 
             <vnode-injector :nodes="getDynamicHTML(product.addToCartHtml)"></vnode-injector>

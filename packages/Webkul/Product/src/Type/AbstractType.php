@@ -542,7 +542,7 @@ abstract class AbstractType
             if ($customerGroupPrice != $this->product->price) {
                 $haveSpecialPrice = true;
                 $this->product->special_price = $customerGroupPrice;
-            }     
+            }
         }
 
         return $haveSpecialPrice;
@@ -652,7 +652,7 @@ abstract class AbstractType
         if ($this->haveSpecialPrice()) {
             $html = '<div class="sticker sale">' . trans('shop::app.products.sale') . '</div>'
                 . '<span class="regular-price">' . core()->currency($this->product->price) . '</span>'
-                . '<span class="special-price">' . core()->currency($this->getSpecialPrice()) . '</span>';
+                . '<span class="special-price d-block">' . core()->currency($this->getSpecialPrice()) . '</span>';
         } else {
             $html = '<span>' . core()->currency($this->product->price) . '</span>';
         }
