@@ -97,7 +97,7 @@ class SessionController extends Controller
         $this->validate(request(), [
             'first_name'    => 'required',
             'last_name'     => 'required',
-            'gender'        => 'required',
+            'gender'        => 'nullable',
             'date_of_birth' => 'nullable|date|before:today',
             'email'         => 'email|unique:customers,email,' . $customer->id,
             'password'      => 'confirmed|min:6',

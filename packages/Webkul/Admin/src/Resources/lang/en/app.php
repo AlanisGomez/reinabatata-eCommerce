@@ -260,6 +260,12 @@ return [
             'back-link-title' => 'Volver al inicio',
             'submit-btn-title' => 'Cambiar contraseña'
         ],
+        'update-password' => [
+            'subject' => 'Contraseña actualizada',
+            'dear' => 'Estimado/a :name',
+            'info' => 'Está recibiendo este correo electrónico porque actualizaste tu contraseña.',
+            'thanks' => '¡Gracias!'
+        ],
 
         'roles' => [
             'title' => 'Roles',
@@ -368,7 +374,7 @@ return [
             'price' => 'Precio',
             'total' => 'Total',
             'subtotal' => 'Subtotal',
-            'shipping-handling' => 'Envío & Manejo',
+            'shipping-handling' => 'Envío',
             'discount' => 'Descuentos',
             'tax' => 'Impuestos',
             'tax-percent' => 'Porcentaje de impuestos',
@@ -380,13 +386,13 @@ return [
             'total-due' => 'Total adeudado',
             'cancel-confirm-msg' => '¿Estás seguro de que deseas cancelar este pedido?',
             'refund-btn-title' => 'Reembolso',
-            'refunds' => 'Refunds',
-            'comment-added-success' => 'Comment addded successfully.',
-            'comment' => 'Comment',
-            'submit-comment' => 'Submit Comment',
-            'notify-customer' => 'Notify Customer',
-            'customer-notified' => ':date | Customer <b>Notified</b>',
-            'customer-not-notified' => ':date | Customer <b>Not Notified</b>'
+            'refunds' => 'Reembolsos',
+            'comment-added-success' => 'Comentario agregado correctamente.',
+            'comment' => 'Comentario',
+            'submit-comment' => 'Enviar comentario',
+            'notify-customer' => 'Notificar al cliente',
+            'customer-notified' => ':date | Cliente <b>Notificado</b>',
+            'customer-not-notified' => ':date | Cliente <b>No notificado</b>'
         ],
 
         'invoices' => [

@@ -556,7 +556,7 @@ return [
 
             'comment' => [
                 'subject' => 'Nuevo comentario agregado a su pedido #:order_id',
-                'dear' => 'Querida :customer_name',
+                'dear' => ':customer_name',
                 'final-summary' => 'Gracias por mostrar su interés en nuestra tienda.',
                 'help' => 'Si necesita algún tipo de ayuda, contáctenos en :support_email',
                 'thanks' => '¡Gracias!',
@@ -566,7 +566,7 @@ return [
                 'subject' => 'Confirmación de pedido cancelado',
                 'heading' => 'Pedido cancelado',
                 'dear' => ':customer_name',
-                'greeting' => 'Tu pedido con el número #:order_id placed on :created_at ha sido cancelado',
+                'greeting' => 'Tu pedido con el número :order_id predido el :created_at ha sido cancelado',
                 'summary' => 'Detalle de facturación',
                 'shipping-address' => 'Dirección de envío',
                 'billing-address' => 'Dirección de facturación',
@@ -589,10 +589,10 @@ return [
             'summary' => 'Detalle de facturación',
         ],
         'shipment' => [
-            'heading' => 'El Envío #:shipment_id  ha sido generado por el pedido #:order_id',
-            'inventory-heading' => 'Nuevo envío #:shipment_id ha sido generado por el pedido #:order_id',
+            'heading' => 'El Envío #:shipment_id  ha sido generado para el pedido #:order_id',
+            'inventory-heading' => 'Nuevo envío #:shipment_id ha sido generado para el pedido #:order_id',
             'subject' => 'Envío de tu pedido #:order_id',
-            'inventory-subject' => 'Nuevo envío ha sido generado por el pedido #:order_id',
+            'inventory-subject' => 'Nuevo envío ha sido generado para el pedido #:order_id',
             'summary' => 'Detalle de facturación',
             'carrier' => 'Transportista',
             'tracking-number' => 'Número de seguimiento',

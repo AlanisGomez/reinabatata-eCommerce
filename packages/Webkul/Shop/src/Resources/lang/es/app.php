@@ -555,7 +555,7 @@ return [
 
             'comment' => [
                 'subject' => 'Nuevo comentario agregado a su pedido #:order_id',
-                'dear' => 'Querida :customer_name',
+                'dear' => ':customer_name',
                 'final-summary' => 'Gracias por mostrar su interés en nuestra tienda.',
                 'help' => 'Si necesita algún tipo de ayuda, contáctenos en :support_email',
                 'thanks' => '¡Gracias!',

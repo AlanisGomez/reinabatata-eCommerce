@@ -88,7 +88,7 @@ class CustomerController extends Controller
         $this->validate(request(), [
             'first_name'            => 'string',
             'last_name'             => 'string',
-            'gender'                => 'required',
+            'gender'                => 'string',
             'date_of_birth'         => 'date|before:today',
             'email'                 => 'email|unique:customers,email,' . $id,
             'password'              => 'confirmed|min:6|required_with:oldpassword',
