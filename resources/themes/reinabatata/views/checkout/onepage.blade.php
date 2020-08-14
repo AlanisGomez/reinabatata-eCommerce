@@ -38,10 +38,6 @@
 
                         <payment-section @onPaymentMethodSelected="paymentMethodSelected($event)">
                         </payment-section>
-                        <coupon-component class="d-block d-md-none"
-                            @onApplyCoupon="getOrderSummary"
-                            @onRemoveCoupon="getOrderSummary">
-                        </coupon-component>
                     </div>
 
                     <div
@@ -77,11 +73,6 @@
 
                 <div class="col-lg-4 col-md-12 offset-lg-2 order-summary-container no-padding top pt0 d-none d-md-block">
                     <summary-section :key="summeryComponentKey"></summary-section>
-
-                     <coupon-component
-                            @onApplyCoupon="getOrderSummary"
-                            @onRemoveCoupon="getOrderSummary">
-                        </coupon-component>
                 </div>
             </div>
         </div>

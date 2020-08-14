@@ -1492,11 +1492,6 @@
     .order-summary-container {
         top: 75px;
 
-        .btn {
-            display: block;
-            width: 100%;
-        }
-
         &.bottom {
             h3 {
                 display: none;
@@ -1703,10 +1698,6 @@
     height: max-content;
     position: sticky !important;
     max-width: 500px !important;
-    .btn {
-        display: block;
-        width: 100%;
-    }
 
     > div {
         width: 100%;

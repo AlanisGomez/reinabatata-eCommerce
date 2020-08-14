@@ -240,14 +240,14 @@
                     @if ($cart)
                         <div class="col-lg-4 col-md-12 offset-lg-1 no-padding order-summary-container">
                             @include('shop::checkout.total.summary', ['cart' => $cart])
+                            <coupon-component></coupon-component>
                             <div class="mt-3">
                                 <a
                                 href="{{ route('shop.checkout.onepage.index') }}"
-                                class="btn btn-primary text-uppercase remove-decoration fw6 text-center">
+                                class="btn btn-primary text-uppercase btn-block remove-decoration fw6 text-center">
                                 {{ __('reinabatata::app.checkout.proceed') }}
-                            </a>
-                        </div>
-                        <!-- <coupon-component class="d-none d-md"></coupon-component> -->
+                                </a>
+                            </div>
                         </div>
                     @else
                         <div class="fs16 col-12 empty-cart-message">
