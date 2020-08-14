@@ -2,6 +2,15 @@
     <script type="text/x-template" id="coupon-component-template">
         <div class="coupon-container">
             <div class="discount-control mt-3 mb-4">
+                <div class="applied-coupon-details" v-if="applied_coupon">
+                    <label>{{ __('shop::app.checkout.total.coupon-applied') }}</label>
+
+                    <label class="right" style="display: inline-flex; align-items: center;">
+                        <b>@{{ applied_coupon }}</b>
+
+                        <i class="rango-close ml-3 text-primary fs18" title="{{ __('shop::app.checkout.total.remove-coupon') }}" v-on:click="removeCoupon"></i>
+                    </label>
+                </div>
                 <form  class="d-flex flex-column align-items-end" method="post" @submit.prevent="applyCoupon">
                     <div class="control-group w-100" :class="[error_message ? 'has-error' : '']">
                         <input
@@ -17,15 +26,6 @@
                 </form>
             </div>
 
-            <div class="applied-coupon-details" v-if="applied_coupon">
-                <label>{{ __('shop::app.checkout.total.coupon-applied') }}</label>
-
-                <label class="right" style="display: inline-flex; align-items: center;">
-                    <b>@{{ applied_coupon }}</b>
-
-                    <i class="rango-close ml-3 text-primary fs18" title="{{ __('shop::app.checkout.total.remove-coupon') }}" v-on:click="removeCoupon"></i>
-                </label>
-            </div>
         </div>
     </script>
 
