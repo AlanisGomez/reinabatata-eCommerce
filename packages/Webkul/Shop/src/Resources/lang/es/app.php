@@ -259,13 +259,13 @@ return [
                     'status' => 'Estado',
                     'total' => 'Total',
                     'order_number' => 'Número de pedido',
-                    'processing' => 'Processing',
-                    'completed' => 'Completed',
-                    'canceled' => 'Canceled',
-                    'closed' => 'Closed',
-                    'pending' => 'Pending',
-                    'pending-payment' => 'Pending Payment',
-                    'fraud' => 'Fraud'
+                    'processing' => 'Procesando',
+                    'completed' => 'Completo',
+                    'canceled' => 'Cancelado',
+                    'closed' => 'Cerrado',
+                    'pending' => 'Pendiente',
+                    'pending-payment' => 'Pago pendiente',
+                    'fraud' => 'Fraude'
                 ],
 
                 'view' => [
@@ -460,7 +460,7 @@ return [
             'information' => 'Información',
             'shipping' => 'Envío',
             'payment' => 'Pago',
-            'complete' => 'Completado',
+            'complete' => 'Completo',
             'review' => 'revisión',
             'billing-address' => 'Dirección de facturación',
             'sign-in' => 'Entrar',

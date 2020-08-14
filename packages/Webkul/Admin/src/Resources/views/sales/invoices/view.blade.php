@@ -259,7 +259,7 @@
     <script type="text/x-template" id="options-template">
     <form method="POST" action="{{ route('admin.sales.invoices.update.state', $invoice->id) }}">
         <div class="page-content">
-            <p>Please select the new invoice state:</p>
+            <p>{{ __('admin::app.sales.orders.invoices-change-state-desc') }}</p>
 
             <div class="form-container">
                 @csrf()
