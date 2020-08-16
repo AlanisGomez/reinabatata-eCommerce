@@ -64,7 +64,7 @@
                                 <div class="mb20">
                                     <button
                                         type="button"
-                                        class="theme-btn"
+                                        class="btn btn-primary"
                                         @click="placeOrder()"
                                         :disabled="!isPlaceOrderEnabled"
                                         id="checkout-place-order-button">

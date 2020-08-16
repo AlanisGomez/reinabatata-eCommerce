@@ -54,7 +54,8 @@ class MPController extends Controller
             "excluded_payment_types" => array(
                 array("id" => "ticket"),
                 array("id" => "atm")
-            )
+            ),
+            "installments" => 1
         );
         $preference->back_urls = $paymentData['back_urls'];
         $preference->external_reference = $paymentData['external_reference'];

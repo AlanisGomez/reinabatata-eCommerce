@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <button type='button' id="" class="theme-btn" @click="loginCustomer">
+    <button type='button' id="" class="btn btn-primary" @click="loginCustomer">
         {{ __('shop::app.customer.login-form.button_title') }}
     </button>
 </div>

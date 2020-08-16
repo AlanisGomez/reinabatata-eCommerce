@@ -500,8 +500,10 @@ return [
             'cash-desc' => 'Pago en efectivo',
             'money-desc' => 'Transferencia bancaria',
             'paypal-desc' => 'Paypal',
+            'password' => 'Contraseña',
             'free-desc' => 'Envío gratuito',
-            'flat-desc' => 'Esta es una tarifa plana'
+            'flat-desc' => 'Esta es una tarifa plana',
+            'enter-coupon-code' => 'Ingresar cupón'
         ],
 
         'total' => [
