@@ -19,7 +19,7 @@
 @endsection
 
 @section('content-wrapper')
-    <div class="cms-page-container col-12 col-md-8 offset-md-4">
+    <div class="cms-page-container mt-5 col-12 col-md-8 d-flex flex-column align-items-center">
         {!! DbView::make($page)->field('html_content')->render() !!}
     </div>
 @endsection
