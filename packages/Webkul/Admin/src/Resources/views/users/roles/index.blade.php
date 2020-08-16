@@ -13,7 +13,7 @@
 
             <div class="page-action">
                 <a href="{{ route('admin.roles.create') }}" class="btn btn-lg btn-primary">
-                    {{ __('Add Role') }}
+                    {{ __('Agregar Rol') }}
                 </a>
             </div>
         </div>

@@ -206,7 +206,7 @@ return [
             'new-customer'          => 'Nuevo cliente',
             'customer-login'        => 'Iniciar sesión',
             'registered-user'       => 'Usuario registrado',
-            'your-email-address'    => 'Tu correo electrónico',
+            'your-email-address'    => 'Suscribite a nuestro newsletter',
             'form-login-text'       => 'Si ya tenés una cuenta, ingresá con tu email',
         ],
         'signup-form'       => [
