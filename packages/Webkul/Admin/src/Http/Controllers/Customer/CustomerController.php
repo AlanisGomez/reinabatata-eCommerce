@@ -109,7 +109,7 @@ class CustomerController extends Controller
         $this->validate(request(), [
             'first_name'    => 'string|required',
             'last_name'     => 'string|required',
-            'gender'        => 'required',
+            'gender'        => 'string',
             'email'         => 'required|unique:customers,email',
             'date_of_birth' => 'date|before:today',
         ]);
@@ -169,7 +169,7 @@ class CustomerController extends Controller
         $this->validate(request(), [
             'first_name'    => 'string|required',
             'last_name'     => 'string|required',
-            'gender'        => 'required',
+            'gender'        => 'string',
             'email'         => 'required|unique:customers,email,' . $id,
             'date_of_birth' => 'date|before:today',
         ]);
