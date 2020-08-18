@@ -1,10 +1,4 @@
 @component('shop::emails.layouts.master')
-    <div style="text-align: center;">
-        <a href="{{ config('app.url') }}">
-            @include ('shop::emails.layouts.logo')
-        </a>
-    </div>
-
     <?php $order = $shipment->order; ?>
 
     <div style="padding: 30px 0;">

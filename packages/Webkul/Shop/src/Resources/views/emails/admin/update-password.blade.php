@@ -1,13 +1,4 @@
 @component('shop::emails.layouts.master')
-    <div style="text-align: center;">
-        <a href="{{ config('app.url') }}">
-            @if (core()->getConfigData('general.design.admin_logo.logo_image'))
-                <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}"/>
-            @else
-                <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
-            @endif
-        </a>
-    </div>
 
     <div style="padding: 30px;">
         <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
