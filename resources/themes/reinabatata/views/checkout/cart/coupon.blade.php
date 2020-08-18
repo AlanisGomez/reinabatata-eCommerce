@@ -22,7 +22,7 @@
                         </div>
                         <div class="control-error">@{{ error_message }}</div>
 
-                    <button class="theme-btn btn d-block light" :disabled="disable_button">{{ __('shop::app.checkout.onepage.apply-coupon') }}</button>
+                    <button class="theme-btn btn w-25 d-block light" :disabled="disable_button">{{ __('shop::app.checkout.onepage.apply-coupon') }}</button>
                 </form>
             </div>
 
