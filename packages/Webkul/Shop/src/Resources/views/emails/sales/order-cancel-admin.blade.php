@@ -1,15 +1,11 @@
 @component('shop::emails.layouts.master')
     <div style="text-align: center;">
-        <a href="{{ config('app.url') }}">
-            @if (core()->getConfigData('general.design.admin_logo.logo_image'))
-                <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}"/>
-            @else
-                <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
-            @endif
+    <a href="{{ config('app.url') }}">
+            @include ('shop::emails.layouts.logo')
         </a>
     </div>
 
-    <div style="padding: 30px;">
+    <div style="padding: 30px 0;">
         <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
             <span style="font-weight: bold;">
                 {{ __('shop::app.mail.order.cancel.heading') }}
@@ -21,7 +17,7 @@
 
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!! __('shop::app.mail.order.cancel.greeting', [
-                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #0041FF; font-weight: bold;">#' . $order->increment_id . '</a>',
+                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #fa8ba4; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
@@ -31,47 +27,40 @@
         <div style="font-weight: bold;font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 20px !important;">
             {{ __('shop::app.mail.order.cancel.summary') }}
         </div>
+        <div style="margin-top: 20px;margin-bottom: 40px;">
+            @if ($order->shipping_address)
+                <div>
+                    <div style="font-weight: bold;font-size: 16px;color: #242424;">
+                        {{ __('shop::app.mail.order.shipping-address') }}
+                    </div>
 
-        <div style="display: flex;flex-direction: row;margin-top: 20px;justify-content: space-between;margin-bottom: 40px;">
-            <div style="line-height: 25px;">
+                    <div>
+                        {{ $order->shipping_address->company_name ?? '' }}
+                    </div>
+
+                    <div>
+                        {{ $order->shipping_address->name }}
+                    </div>
+
+                    <div>
+                        {{ $order->shipping_address->address1 }}, {{ $order->shipping_address->state }}
+                    </div>
+
+                    <div>
+                        {{ core()->country_name($order->shipping_address->country) }} {{ $order->shipping_address->postcode }}
+                    </div>
+
+                    <div>---</div>
+
+                    <div style="margin-bottom: 40px;">
+                        {{ __('shop::app.mail.order.contact') }} : {{ $order->shipping_address->phone }}
+                    </div>
+                </div>
+            @endif
+
+            <div>
                 <div style="font-weight: bold;font-size: 16px;color: #242424;">
-                    {{ __('shop::app.mail.order.cancel.shipping-address') }}
-                </div>
-
-                <div>
-                    {{ $order->shipping_address->company_name ?? '' }}
-                </div>
-
-                <div>
-                    {{ $order->shipping_address->name }}
-                </div>
-
-                <div>
-                    {{ $order->shipping_address->address1 }}, {{ $order->shipping_address->state }}
-                </div>
-
-                <div>
-                    {{ core()->country_name($order->shipping_address->country) }} {{ $order->shipping_address->postcode }}
-                </div>
-
-                <div>---</div>
-
-                <div style="margin-bottom: 40px;">
-                    {{ __('shop::app.mail.order.cancel.contact') }} : {{ $order->shipping_address->phone }}
-                </div>
-
-                <div style="font-size: 16px;color: #242424; font-weight: bold">
-                    {{ __('shop::app.mail.order.cancel.shipping') }}
-                </div>
-
-                <div style="font-size: 16px;color: #242424;">
-                    {{ $order->shipping_title }}
-                </div>
-            </div>
-
-            <div style="line-height: 25px;">
-                <div style="font-weight: bold;font-size: 16px;color: #242424;">
-                    {{ __('shop::app.mail.order.cancel.billing-address') }}
+                    {{ __('shop::app.mail.order.billing-address') }}
                 </div>
 
                 <div>
@@ -93,16 +82,32 @@
                 <div>---</div>
 
                 <div style="margin-bottom: 40px;">
-                    {{ __('shop::app.mail.order.cancel.contact') }} : {{ $order->billing_address->phone }}
+                    {{ __('shop::app.mail.order.contact') }} : {{ $order->billing_address->phone }}
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div style="font-size: 16px;color: #242424;">
+                        {{ __('shop::app.mail.order.shipping') }}
+                    </div>
+
+                    <div style="font-weight: bold;font-size: 16px;color: #242424;">
+                        {{ $order->shipping_title }}
+                    </div>
+
                 </div>
 
-                <div style="font-size: 16px; color: #242424; font-weight: bold">
-                    {{ __('shop::app.mail.order.cancel.payment') }}
+                <div>
+                    <div style="font-size: 16px; color: #242424;">
+                        {{ __('shop::app.mail.order.payment') }}
+                    </div>
+
+                    <div style="font-weight: bold;font-size: 16px; color: #242424;">
+                        {{ core()->getConfigData('sales.paymentmethods.' . $order->payment->method . '.title') }}
+                    </div>
                 </div>
 
-                <div style="font-size: 16px; color: #242424;">
-                    {{ core()->getConfigData('sales.paymentmethods.' . $order->payment->method . '.title') }}
-                </div>
             </div>
         </div>
 
@@ -154,7 +159,7 @@
             </div>
         </div>
 
-        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 40%;margin-top: 20px;">
+        <div style="font-size: 16px;color: #242424;line-height: 30px;width: 100%;margin-top: 20px;">
             <div>
                 <span>{{ __('shop::app.mail.order.cancel.subtotal') }}</span>
                 <span style="float: right;">
@@ -186,7 +191,7 @@
                     </span>
                 </div>
             @endif
-
+            <hr>
             <div style="font-weight: bold">
                 <span>{{ __('shop::app.mail.order.cancel.grand-total') }}</span>
                 <span style="float: right;">
@@ -199,7 +204,7 @@
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.cancel.help', [
-                        'support_email' => '<a style="color:#0041FF" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
+                        'support_email' => '<a style="color:#fa8ba4" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
                         ])
                 !!}
             </p>

@@ -5,7 +5,7 @@
         </a>
     </div>
 
-    <div style="padding: 30px;">
+    <div style="padding: 30px 0;">
         <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
             <span style="font-weight: bold;">
                 {{ __('shop::app.mail.order.heading') }}
@@ -28,9 +28,9 @@
             {{ __('shop::app.mail.order.summary') }}
         </div>
 
-        <div style="display: flex;flex-direction: row;margin-top: 20px;justify-content: space-between;margin-bottom: 40px;">
+        <div style="margin-top: 20px;margin-bottom: 40px;">
             @if ($order->shipping_address)
-                <div style="line-height: 25px;">
+                <div>
                     <div style="font-weight: bold;font-size: 16px;color: #242424;">
                         {{ __('shop::app.mail.order.shipping-address') }}
                     </div>
@@ -56,18 +56,10 @@
                     <div style="margin-bottom: 40px;">
                         {{ __('shop::app.mail.order.contact') }} : {{ $order->shipping_address->phone }}
                     </div>
-
-                    <div style="font-size: 16px;color: #242424;">
-                        {{ __('shop::app.mail.order.shipping') }}
-                    </div>
-
-                    <div style="font-weight: bold;font-size: 16px;color: #242424;">
-                        {{ $order->shipping_title }}
-                    </div>
                 </div>
             @endif
 
-            <div class="col-12style="line-height: 25px;">
+            <div>
                 <div style="font-weight: bold;font-size: 16px;color: #242424;">
                     {{ __('shop::app.mail.order.billing-address') }}
                 </div>
@@ -93,14 +85,30 @@
                 <div style="margin-bottom: 40px;">
                     {{ __('shop::app.mail.order.contact') }} : {{ $order->billing_address->phone }}
                 </div>
+            </div>
 
-                <div style="font-size: 16px; color: #242424;">
-                    {{ __('shop::app.mail.order.payment') }}
+            <div>
+                <div>
+                    <div style="font-size: 16px;color: #242424;">
+                        {{ __('shop::app.mail.order.shipping') }}
+                    </div>
+
+                    <div style="font-weight: bold;font-size: 16px;color: #242424;">
+                        {{ $order->shipping_title }}
+                    </div>
+
                 </div>
 
-                <div style="font-weight: bold;font-size: 16px; color: #242424;">
-                    {{ core()->getConfigData('sales.paymentmethods.' . $order->payment->method . '.title') }}
+                <div>
+                    <div style="font-size: 16px; color: #242424;">
+                        {{ __('shop::app.mail.order.payment') }}
+                    </div>
+
+                    <div style="font-weight: bold;font-size: 16px; color: #242424;">
+                        {{ core()->getConfigData('sales.paymentmethods.' . $order->payment->method . '.title') }}
+                    </div>
                 </div>
+
             </div>
         </div>
 
@@ -147,7 +155,7 @@
             </div>
         </div>
 
-        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 40%;margin-top: 20px;">
+        <div style="font-size: 16px;color: #242424;line-height: 30px;width: 100%;margin-top: 20px;">
             <div>
                 <span>{{ __('shop::app.mail.order.subtotal') }}</span>
                 <span style="float: right;">
@@ -172,7 +180,7 @@
                     </span>
                 </div>
             @endif
-
+            <hr>
             <div style="font-weight: bold">
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
