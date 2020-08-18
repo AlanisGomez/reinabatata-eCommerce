@@ -187,7 +187,7 @@
                 Si elegiste pagar a traves de Transferencia Bancaria, a la brevedad te enviaremos un correo con los datos necesarios para finalizar la transacción.
             </p>
             <p  style="font-size: 16px;color: #5E5E5E;line-height: 24px; font-weight:600">
-                Si residis dentro de CABA y elegiste la opción Pagar al Recibir, a la brevedad nos pondremos en contacto con vos para coordinar la entrega.
+                Si residis dentro del AMBA y elegiste la opción Pagar al Recibir, a la brevedad nos pondremos en contacto con vos para coordinar la entrega.
             </p>
 
             <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
