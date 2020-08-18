@@ -911,13 +911,13 @@ return [
         ],
 
         'addresses' => [
-            'title' => ':customer_name\'s Lista de direcciones',
+            'title' => ':customer_name direcciones',
             'vat_id' => 'Vat id',
             'create-title' => 'Crear dirección del cliente',
             'edit-title' => 'Actualizar la dirección del cliente',
-            'title-orders' => ':customer_name\'s Lista de pedidos',
-            'address-list' => 'Address\'s Lista',
-            'order-list' => 'Order\'s Lista',
+            'title-orders' => ':customer_name pedidos',
+            'address-list' => 'Lista de direcciones',
+            'order-list' => 'Lista de pedidos',
             'address-id' => 'ID de direccion',
             'address-1' => 'Dirección 1',
             'city' => 'Ciudad',
@@ -938,6 +938,7 @@ return [
             'success-delete' => 'Correcto: la dirección del cliente se eliminó correctamente.',
             'success-mass-delete' => 'Correcto: las direcciones seleccionadas se eliminaron correctamente.',
             'error-create' => 'Error: dirección del cliente no creada.',
+            'company-name' => 'Nombre de direccion',
         ],
 
         'note' => [
