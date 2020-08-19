@@ -11,7 +11,7 @@
 <div class="social-login-links">
     @if (core()->getConfigData('customer.settings.social_login.enable_facebook'))
         <div class="control-group">
-            <a href="{{ route('customer.social-login.index', 'facebook') }}" class="link facebook-link">
+            <a href="{{ route('customer.social-login.index', 'facebook') }}" class="link btn btn-block facebook-link">
                 <span class="icon icon-facebook-login"></span>
                 {{ __('sociallogin::app.shop.customer.login-form.continue-with-facebook') }}
             </a>
@@ -29,7 +29,7 @@
 
     @if (core()->getConfigData('customer.settings.social_login.enable_google'))
         <div class="control-group">
-            <a href="{{ route('customer.social-login.index', 'google') }}" class="link google-link">
+            <a href="{{ route('customer.social-login.index', 'google') }}" class="link btn btn-block google-link">
                 <span class="icon icon-google-login"></span>
                 {{ __('sociallogin::app.shop.customer.login-form.continue-with-google') }}
             </a>
