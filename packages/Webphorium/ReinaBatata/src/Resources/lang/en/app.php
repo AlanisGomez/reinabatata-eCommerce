@@ -213,7 +213,7 @@ return [
             'login'             => 'Iniciar sesión',
             'become-user'       => 'Nuevo usuario',
             'user-registration' => 'Registrate',
-            'form-sginup-text'  => 'Creá una cuenta',
+            'form-sginup-text'  => 'Administrá tus pedidos, datos y direcciones',
         ],
         'forget-password'   => [
             'login'                 => 'Login',

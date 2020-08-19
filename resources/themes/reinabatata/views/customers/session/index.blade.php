@@ -28,7 +28,7 @@
                         <div class="content-login">
                         <div class="form-header">
                             <p class="fs16">
-                                {{ __('reinabatata::app.customer.login-form.form-login-text')}}
+                                <!-- {{ __('reinabatata::app.customer.login-form.form-login-text')}} -->
                             </p>
                         </div>
 
