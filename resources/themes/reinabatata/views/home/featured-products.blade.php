@@ -37,7 +37,7 @@
 
                 <div class="carousel-products vc-small-screen" v-else>
                     <carousel-component
-                        :perPageCustom="[[320, 1], [375, 1.2], [410, 1.3],[768, 3]]"
+                        :perPageCustom="[[320, 1], [360, 1.2], [410, 1.3],[768, 3]]"
                         slides-per-page="1"
                         navigation-enabled="hide"
                         pagination-enabled="hide"

@@ -33,7 +33,7 @@
     <div class="carousel-products vc-small-screen">
         <carousel-component
             :slides-count="{{ sizeof($relatedProducts) }}"
-            :perPageCustom="[[320, 1], [375, 1.2], [410, 1.3],[768, 3]]"
+            :perPageCustom="[[320, 1], [365, 1.2], [410, 1.3],[768, 3]]"
             slides-per-page="1"
             id="related-products-carousel"
             navigation-enabled="hide"
