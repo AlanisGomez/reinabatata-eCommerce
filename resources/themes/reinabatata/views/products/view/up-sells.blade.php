@@ -32,7 +32,7 @@
     <div class="carousel-products vc-small-screen">
         <carousel-component
             :slides-count="{{ sizeof($productUpSells) }}"
-            :perPageCustom="[[320, 1], [365, 1.2], [410, 1.3],[768, 3]]"
+            :perPageCustom="[[320, 1], [360, 1.2], [410, 1.3],[768, 3]]"
             id="upsell-products-carousel"
             navigation-enabled="hide"
             pagination-enabled="hide">
