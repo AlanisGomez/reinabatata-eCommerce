@@ -7,13 +7,13 @@
         <div id="account">
             @guest('customer')
                 <a href="{{ route('customer.session.index') }}" class=" unset welcome-content pull-right">
-                    <i class="material-icons">perm_identity</i>
+                    <i class="rango-user"></i>
                 </a>
             @endguest
 
             @auth('customer')
                 <div class="welcome-content pull-right" @click="togglePopup">
-                    <i class="material-icons">perm_identity</i>
+                    <i class="rango-user"></i>
                     <span class="select-icon rango-arrow-down"></span>
                 </div>
             @endauth

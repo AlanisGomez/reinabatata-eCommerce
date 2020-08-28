@@ -5,7 +5,7 @@
         href="{{ route('shop.checkout.cart.index') }}"
         :class="`mini-cart-content unset disable-box-shadow ${itemCount == 0 ? 'cursor-not-allowed' : ''}`">
 
-        <i class="material-icons-outlined">shopping_cart</i>
+        <i class="rango-cart-3"></i>
         <div class="badge-container">
             <span class="badge" v-text="itemCount" v-if="itemCount != 0"></span>
         </div>
@@ -117,7 +117,7 @@
 
         {!! view_render_event('bagisto.shop.layout.header.wishlist.before') !!}
             <a class="wishlist-btn unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('reinabatata.product.guest-wishlist') }}'}`">
-                <i class="material-icons">favorite_border</i>
+                <i class="rango-heart"></i>
                 <div class="badge-container" v-if="wishlistCount > 0">
                 <span class="badge" v-text="wishlistCount"></span>
                 </div>
