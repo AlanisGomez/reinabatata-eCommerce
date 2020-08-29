@@ -3,11 +3,9 @@
         <button
             type="submit"
             :disabled="isButtonEnable == 'false' || isButtonEnable == false"
-            :class="`btn btn-add-to-cart btn-primary ${addClassToBtn}`">
+            :class="`btn btn-add-to-cart btn-primary`">
 
-            <i class="material-icons-outlined text-down-3" v-if="showCartIcon">shopping_cart</i>
-
-            <span class="fs14 fw6 text-up-4" v-text="btnText"></span>
+            <span class="fs14 fw6" v-text="btnText"></span>
         </button>
     </form>
 </template>
@@ -61,7 +59,7 @@
                         }
 
                         // window.showAlert(`alert-success`, this.__('shop.general.alert.success'), response.data.message);
-                        
+
                         if (response.data.redirectionRoute) {
                             window.location.href = response.data.redirectionRoute;
                         }

@@ -58,7 +58,7 @@
                         <span class="fs14 align-vertical-top fw6">ADD TO CART</span>
                     </button>
                     {{-- <span class="rango-exchange fs24"></span> --}}
-                    <span class="rango-heart"></span>
+                    <span class="rango-heart fw6 fs18"></span>
                 </div>
 
             </div>

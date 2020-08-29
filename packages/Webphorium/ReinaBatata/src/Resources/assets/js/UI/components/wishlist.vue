@@ -1,11 +1,9 @@
 <template>
     <i
         v-if="isCustomer == 'true'"
-        :class="`material-icons ${addClass ? addClass : ''}`"
+        v-bind:class="[ isActive ? 'rango-heart-fill' : 'rango-heart', 'fw5', 'fs24']"
         @mouseover="isActive ? isActive = !isActive : ''"
         @mouseout="active !== '' && !isActive ? isActive = !isActive : ''">
-
-        {{ isActive ? 'favorite_border' : 'favorite' }}
     </i>
 
     <a
@@ -16,9 +14,7 @@
         <i
             @mouseout="! isStateChanged ? isActive = !isActive : isStateChanged = false"
             @mouseover="! isStateChanged ? isActive = !isActive : isStateChanged = false"
-            :class="`material-icons ${addClass ? addClass : ''}`">
-
-            {{ isActive ? 'favorite' : 'favorite_border' }}
+            v-bind:class="[ isActive ? 'rango-heart-fill' : 'rango-heart', 'fw5', 'fs24']">
         </i>
 
         <span style="vertical-align: super;" v-html="text"></span>

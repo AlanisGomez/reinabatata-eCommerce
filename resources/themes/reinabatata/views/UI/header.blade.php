@@ -270,14 +270,14 @@
                         <div class="badge-wrapper" v-if="wishlistCount > 0">
                             <span class="badge" v-text="wishlistCount"></span>
                         </div>
-                        <i class="rango-heart"></i>
+                        <i class="rango-heart fw6 fs18"></i>
                     </a>
 
                     <a href="{{ route('shop.checkout.cart.index') }}" class="unset">
                         <div class="badge-wrapper">
                             <span class="badge">@{{ cartItemsCount }}</span>
                         </div>
-                        <i class="rango-cart-3"></i>
+                        <i class="rango-cart-3 fw5 fs18"></i>
                     </a>
                 </div>
 

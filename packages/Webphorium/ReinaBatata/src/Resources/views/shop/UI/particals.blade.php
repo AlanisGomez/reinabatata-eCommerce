@@ -107,7 +107,7 @@
                                 placeholder="{{ __('reinabatata::app.header.search-text') }}" />
 
                             <button class="btn" type="submit" id="header-search-icon">
-                                <i class="fs16 fw6 rango-search"></i>
+                                <i class="fs16 fw5 rango-search"></i>
                             </button>
                         </div>
                     </div>

@@ -143,7 +143,7 @@ return [
 
     'home'          => [
         'view-all'           => 'Ver todo',
-        'add-to-cart'        => 'Agregar al carrito',
+        'add-to-cart'        => 'Agregar a la bolsa',
         'hot-categories'     => 'Categorías populares',
         'payment-methods'    => 'Metodos de pago',
         'customer-reviews'   => 'Valoración de los clientes',
@@ -206,14 +206,14 @@ return [
             'new-customer'          => 'Nuevo cliente',
             'customer-login'        => 'Iniciar sesión',
             'registered-user'       => 'Usuario registrado',
-            'your-email-address'    => 'Tu correo electrónico',
+            'your-email-address'    => 'Suscribite a nuestro newsletter',
             'form-login-text'       => 'Si ya tenés una cuenta, ingresá con tu email',
         ],
         'signup-form'       => [
             'login'             => 'Iniciar sesión',
             'become-user'       => 'Nuevo usuario',
             'user-registration' => 'Registrate',
-            'form-sginup-text'  => 'Creá una cuenta',
+            'form-sginup-text'  => 'Administrá tus pedidos, datos y direcciones',
         ],
         'forget-password'   => [
             'login'                 => 'Login',
@@ -260,7 +260,7 @@ return [
             'no'                     => 'No',
             'yes'                    => 'Si',
             'view'                   => 'Ver',
-            'filter'                 => 'Filtros',
+            'filter'                 => 'Filtrar por',
             'orders'                 => 'Pedidos',
             'update'                 => 'Actualizar',
             'reviews'                => 'Comentarios',

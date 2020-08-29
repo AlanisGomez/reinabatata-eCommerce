@@ -6,80 +6,80 @@ return [
 
     'layouts' => [
         'my-account' => 'Mi Cuenta',
-        'profile' => 'Perfil',
+        'profile' => 'Mis datos',
         'address' => 'Dirección',
         'reviews' => 'Opiniones',
-        'wishlist' => 'Lista de deseos',
+        'wishlist' => 'Favoritos',
         'orders' => 'Pedidos',
         'downloadable-products' => 'Productos descargables'
     ],
 
     'common' => [
-        'error' => 'Algo ha ido mal, por favor prueba más tarde.'
+        'error' => 'Algo salió mal, por favor probá más tarde.'
     ],
 
     'home' => [
         'page-title' => config('app.name') . ' - Inicio',
-        'featured-products' => 'Productos Destacados',
-        'new-products' => 'Nuevos Productos',
-        'verify-email' => 'Verifica tu cuenta de correo',
+        'featured-products' => 'Productos destacados',
+        'new-products' => 'Nuevos ingresos',
+        'verify-email' => 'Verificá tu cuenta de correo',
         'resend-verify-email' => 'Reenviar correo de verificación'
     ],
 
     'header' => [
         'title' => 'Cuenta',
-        'dropdown-text' => 'Gestionar carrito, pedidos y lista de deseos',
+        'dropdown-text' => 'Gestioná tu carrito, pedidos y lista de deseos',
         'sign-in' => 'Entrar',
-        'sign-up' => 'Regístrate',
+        'sign-up' => 'Registrate',
         'account' => 'Cuenta',
-        'cart' => 'Cesta',
-        'profile' => 'Perfil',
-        'wishlist' => 'Lista de deseos',
-        'logout' => 'Salir',
+        'cart' => 'Carrito',
+        'profile' => 'Mis datos',
+        'wishlist' => 'Favoritos',
+        'logout' => 'Cerrar sesión',
         'search-text' => 'Buscar productos'
     ],
 
     'minicart' => [
-        'view-cart' => 'Ver Cesta',
+        'view-cart' => 'Ver carrito',
         'checkout' => 'Hacer pedido',
-        'cart' => 'Cesta',
+        'cart' => 'Carrito',
         'zero' => '0'
     ],
 
     'footer' => [
-        'subscribe-newsletter' => 'Suscríbete a la Newsletter',
-        'subscribe' => 'Suscríbete',
-        'locale' => 'Idioma',
+        'subscribe-newsletter' => 'Suscribite al Newsletter',
+        'subscribe' => 'Suscribite',
+        'locale' => 'Region',
         'currency' => 'Moneda',
     ],
 
     'subscription' => [
         'unsubscribe' => 'Darse de baja',
-        'subscribe' => 'Suscríbete',
-        'subscribed' => 'Te has suscrito a la newsletter',
-        'not-subscribed' => 'No se pudo suscribir a la newsletter, inténtalo de nuevo más tarde',
+        'subscribe' => 'Suscribite',
+        'subscribed' => 'Te subscribiste a nuestro newsletter',
+        'not-subscribed' => 'No se pudo suscribir al newsletter, por favor intentalo de nuevo más tarde',
         'already' => 'Ya estás suscrito',
-        'unsubscribed' => 'Te has desuscrito',
-        'already-unsub' => 'Ya estás desuscrito',
-        'not-subscribed' => '¡Error! El correo no se puede enviar actualmente, inténtalo de nuevo más tarde'
+        'unsubscribed' => 'Ya no estás suscrito',
+        'already-unsub' => 'Ya no estás suscrito',
+        'not-subscribed' => '¡Error! El correo no se puede enviar actualmente, intentalo de nuevo más tarde'
     ],
 
     'search' => [
         'no-results' => 'No hay resultados',
         'page-title' => 'Búsqueda',
-        'found-results' => 'No hay resultados de búsqueda',
-        'found-result' => 'Resultados de la búsqueda',
-        'analysed-keywords' => 'Analysed Keywords'
+        'found-results' => 'Resultados',
+        'found-result' => 'Resultado',
+        'analysed-keywords' => 'Palabras clave '
     ],
 
     'reviews' => [
         'title' => 'Título',
-        'add-review-page-title' => 'Añadir opinión',
+        'add-review-page-title' => 'Agregar opinión',
         'write-review' => 'Escribir una opinión',
         'review-title' => 'Título de la opinión',
         'product-review-page-title' => 'Opinión del producto',
         'rating-reviews' => 'Calificación y opiniones',
-        'submit' => 'ENVIAR',
+        'submit' => 'Enviar',
         'delete-all' => 'Todas las opiniones se han eliminado con éxito',
         'ratingreviews' => ':rating calificaciones & :review opiniones',
         'star' => 'Star',
@@ -90,64 +90,64 @@ return [
 
     'customer' => [
         'compare'           => [
-            'text'                  => 'Comparar',
-            'compare_similar_items' => 'Comparar artículos similares',
-            'add-tooltip'           => 'Agregar producto para comparar lista',
-            'added'                 => 'Elemento agregado con éxito a la lista de comparación',
-            'already_added'         => 'Elemento ya agregado a la lista de comparación',
-            'removed'               => 'Elemento eliminado con éxito de la lista de comparación',
-            'empty-text'            => "No tienes ningún artículo en tu lista de comparación",
+            'text'                  => 'Compare',
+            'compare_similar_items' => 'Compare Similar Items',
+            'add-tooltip'           => 'Add product to compare list',
+            'added'                 => 'Item successfully added to compare list',
+            'already_added'         => 'Item already added to compare list',
+            'removed'               => 'Item successfully removed from compare list',
+            'empty-text'            => "You don't have any items in your compare list",
             'product_image'         => 'Product Image',
             'actions'               => 'Actions',
         ],
 
         'signup-text' => [
-            'account_exists' => 'Ya tienes una cuenta',
+            'account_exists' => 'Ya tenés una cuenta',
             'title' => 'Entrar'
         ],
 
         'signup-form' => [
             'page-title' => 'Cliente - Formulario de registro',
-            'title' => 'Regístrate',
+            'title' => 'Registrate',
             'firstname' => 'Nombre',
             'lastname' => 'Apellido',
             'email' => 'Email',
             'password' => 'Contraseña',
             'confirm_pass' => 'Confirma la contraseña',
             'button_title' => 'Registro',
-            'agree' => 'De acuerdo',
+            'agree' => 'Esto de acuerdo',
             'terms' => 'Términos',
-            'conditions' => 'Condiciones',
+            'conditions' => 'Condiciónes',
             'using' => 'Mediante el uso de este sitio web',
             'agreement' => 'Acuerdo',
             'success' => 'Cuenta creada exitosamente',
-            'success-verify' => 'Cuenta creada con éxito, se ha enviado un correo electrónico para su verificación.',
-            'success-verify-email-unsent' => 'Cuenta creada correctamente, pero no se envió el correo electrónico de verificación',
-            'failed' => '¡Error! No se puede crear su cuenta, intente nuevamente más tarde',
-            'already-verified' => 'Su cuenta ya está verificada o intente enviar un nuevo correo electrónico de verificación nuevamente',
-            'verification-not-sent' => '¡Error! Problema al enviar el correo electrónico de verificación, intente nuevamente más tarde',
-            'verification-sent' => 'El correo de verificación ha sido enviado',
-            'verified' => 'Su cuenta ha sido verificada, intente iniciar sesión ahora',
-            'verify-failed' => 'No podemos verificar su cuenta de correo',
-            'dont-have-account' => 'No tienes cuenta con nosotros',
+            'success-verify' => 'Cuenta creada con éxito, te enviamos un correo electrónico para su verificación.',
+            'success-verify-email-unsent' => 'Cuenta creada correctamente, pero no se pudo enviar el correo electrónico de verificación',
+            'failed' => '¡Error! No se puede crear tu cuenta, intentá nuevamente más tarde',
+            'already-verified' => 'Tu cuenta ya está verificada. Intentá enviar un nuevo correo electrónico de verificación nuevamente',
+            'verification-not-sent' => '¡Error! Problema al enviar el correo electrónico de verificación, intentá nuevamente más tarde',
+            'verification-sent' => 'Te enviamos un correo de verificación',
+            'verified' => 'Tu cuenta ha sido verificada, intentá iniciar sesión ahora',
+            'verify-failed' => 'No podemos verificar tu cuenta de correo',
+            'dont-have-account' => 'No tenés cuenta con nosotros',
             'customer-registration' => 'Registrado con éxito'
         ],
 
         'login-text' => [
-            'no_account' => 'No tienes una cuenta',
-            'title' => 'Regístrate',
+            'no_account' => 'No tenés una cuenta',
+            'title' => 'Registrate',
         ],
 
         'login-form' => [
             'page-title' => 'Cliente-Formulario de registro',
-            'title' => 'Entrar',
-            'email' => 'Correo electrónico',
+            'title' => 'Iniciar sesión',
+            'email' => 'Email',
             'password' => 'Contraseña',
-            'forgot_pass' => '¿Has olvidado la contraseña?',
+            'forgot_pass' => '¿Olvidaste tu contrseña?',
             'button_title' => 'Entrar',
             'remember' => 'Recuérdame',
-            'footer' => '© Copyright :year Webkul Software, All rights reserved',
-            'invalid-creds' => 'Por favor, verifica tus credenciales e intenta de nuevo',
+            'footer' => '© :year - Marketplace desarrollado por Euphorium Software',
+            'invalid-creds' => 'Por favor, verificá tus credenciales e intentá de nuevo',
             'verify-first' => 'Verifica tu correo electrónico primero',
             'not-activated' => 'La activación de la cuenta será aprovada por el administrador',
             'resend-verification' => 'Se ha reenviado un correo de verificación'
@@ -155,14 +155,14 @@ return [
 
         'forgot-password' => [
             'title' => 'Recuperar contraseña',
-            'email' => 'Correo electrónico',
-            'submit' => 'ENVIAR',
+            'email' => 'Email',
+            'submit' => 'Enviar',
             'page_title' => 'Cliente - Formulario de contraseña olvidada'
         ],
 
         'reset-password' => [
             'title' => 'Restablecer contraseña',
-            'email' => 'Correo registrado',
+            'email' => 'Email',
             'password' => 'Contraseña',
             'confirm-password' => 'Confirma la contraseña',
             'back-link-title' => 'Reinicia sesión',
@@ -176,12 +176,12 @@ return [
             'profile' => [
                 'index' => [
                     'page-title' => 'Cliente - Perfil',
-                    'title' => 'Perfil',
+                    'title' => 'Mis datos',
                     'edit' => 'Editar',
                 ],
 
                 'edit-success' => 'Perfil actualizado exitosamente',
-                'edit-fail' => '¡Error! El perfil no puede ser actualizado, por favor, inténtalo más tarde',
+                'edit-fail' => '¡Error! El perfil no puede ser actualizado, por favor, intentalo más tarde',
                 'unmatch' => 'La anterior contraseña no coincide',
 
                 'fname' => 'Nombre',
@@ -189,10 +189,10 @@ return [
                 'gender' => 'Género',
                 'other' => 'Otro',
                 'male' => 'Masculino',
-                'female' => 'Hembra',
+                'female' => 'Femenino',
                 'dob' => 'Fecha de nacimiento',
-                'phone' => 'Móvil',
-                'email' => 'Correo electrónico',
+                'phone' => 'Celular',
+                'email' => 'Email',
                 'opassword' => 'Contraseña anterior',
                 'password' => 'Contraseña',
                 'cpassword' => 'Confirma la contraseña',
@@ -208,31 +208,31 @@ return [
                 'index' => [
                     'page-title' => 'Cliente - Dirección',
                     'title' => 'Dirección',
-                    'add' => 'Añadir Dirección',
+                    'add' => 'Agregar dirección',
                     'edit' => 'Editar',
-                    'empty' => 'No tienes ninguna dirección guardada, por favor, crea una clicando en el enlace de abajo',
+                    'empty' => 'Todavía no ingresaste ninguna dirección',
                     'create' => 'Crear Dirección',
                     'delete' => 'Eliminar',
                     'make-default' => 'Elegir por defecto',
                     'default' => 'Por defecto',
                     'contact' => 'Contacto',
-                    'confirm-delete' =>  '¿Quieres eleminar esta dirección?',
+                    'confirm-delete' =>  '¿Querés eleminar esta dirección?',
                     'default-delete' => 'La dirección por defecto no puede ser cambiada',
-                    'enter-password' => 'Enter Your Password.',
+                    'enter-password' => 'Ingresá tu contraseña',
                 ],
 
                 'create' => [
                     'page-title' => 'Cliente - Formulario de dirección',
-                    'title' => 'Añadir dirección',
+                    'title' => 'Agregar dirección',
                     'street-address' => 'Calle',
                     'country' => 'País',
-                    'state' => 'Estado',
+                    'state' => 'Provincia',
                     'select-state' => 'Selecciona una región, estado o provincia',
                     'city' => 'Ciudad',
                     'postcode' => 'Código postal',
                     'phone' => 'Teléfono',
                     'submit' => 'Guardar dirección',
-                    'success' => 'La dirección se ha añadido correctamente.',
+                    'success' => 'La dirección agregó correctamente.',
                     'error' => 'La dirección no se puede añadir.'
                 ],
 
@@ -246,7 +246,7 @@ return [
                 'delete' => [
                     'success' => 'Dirección eliminada correctamente',
                     'failure' => 'La dirección no puede ser eliminada',
-                    'wrong-password' => 'Wrong Password !'
+                    'wrong-password' => 'Contraseña incorrecta'
                 ]
             ],
 
@@ -254,31 +254,31 @@ return [
                 'index' => [
                     'page-title' => 'Cliente - Pedidos',
                     'title' => 'Pedidos',
-                    'order_id' => 'ID Pedido',
+                    'order_id' => 'Nº de pedido',
                     'date' => 'Fecha',
                     'status' => 'Estado',
                     'total' => 'Total',
                     'order_number' => 'Número de pedido',
                     'processing' => 'Procesando',
-                    'completed' => 'Completo',
+                    'completed' => 'Completado',
                     'canceled' => 'Cancelado',
                     'closed' => 'Cerrado',
                     'pending' => 'Pendiente',
                     'pending-payment' => 'Pago pendiente',
-                    'fraud' => 'Fraude'
+                    'fraud' => 'Falló'
                 ],
 
                 'view' => [
                     'page-tile' => 'Pedido #:order_id',
                     'info' => 'Información',
-                    'placed-on' => 'Ubicación',
+                    'placed-on' => 'Fecha',
                     'products-ordered' => 'Productos pedidos',
                     'invoices' => 'Facturas',
                     'shipments' => 'Envíos',
                     'SKU' => 'SKU',
                     'product-name' => 'Nombre',
-                    'qty' => 'Qty',
-                    'item-status' => 'Estado Item',
+                    'qty' => 'Cantidad',
+                    'item-status' => 'Estado producto',
                     'item-ordered' => 'Ordenado (:qty_ordered)',
                     'item-invoice' => 'Facturado (:qty_invoiced)',
                     'item-shipped' => 'Enviado (:qty_shipped)',
@@ -286,12 +286,12 @@ return [
                     'price' => 'Precio',
                     'total' => 'Total',
                     'subtotal' => 'Total parcial',
-                    'shipping-handling' => 'Envío y Manipulación',
+                    'shipping-handling' => 'Envío',
                     'tax' => 'Impuesto',
                     'discount' => 'Descuento',
                     'tax-percent' => 'Porcentaje IVA',
                     'tax-amount' => 'Cantidad impuesto',
-                    'discount-amount' => 'Cantidad descontada',
+                    'discount-amount' => 'Cantidad de dto.',
                     'grand-total' => 'Total',
                     'total-paid' => 'Total 	Pago',
                     'total-refunded' => 'Total Reembolsado',
@@ -303,37 +303,36 @@ return [
                     'individual-invoice' => 'Factura #:invoice_id',
                     'individual-shipment' => 'Envío #:shipment_id',
                     'print' => 'Imprimir',
-                    'invoice-id' => 'Factura Id',
-                    'order-id' => 'Pedido Id',
+                    'invoice-id' => 'Nº de factura',
+                    'order-id' => 'Nº de Pedido',
                     'order-date' => 'Fecha pedido',
                     'bill-to' => 'Facturar a',
                     'ship-to' => 'Envío a',
                     'contact' => 'Contacto',
-                    'tracking-number' => 'Tracking Number',
-                    'cancel-confirm-msg' => 'Estás segura de que deseas cancelar este pedido ?'
+                    'tracking-number' => 'Número de tracking',
+                    'cancel-confirm-msg' => '¿Estás seguro de que deseas cancelar este pedido?'
                 ]
             ],
 
             'wishlist' => [
-                'page-title' => 'Cliente - Lista de deseos',
-                'title' => 'Lista de deseos',
+                'page-title' => 'Lista de deseos',
+                'title' => 'Favoritos',
                 'deleteall' => 'Eliminar todo',
-                'moveall' => 'Mover todos los productos a la cesta',
-                'move-to-cart' => 'Mover a la cesta',
+                'moveall' => 'Mover todos los productos al carrito',
+                'move-to-cart' => 'Mover a la bolsa',
                 'error' => 'No se puede agregar el producto a la lista de deseos por problemas desconocidos, inténtelo más tarde.',
-                'add' => 'Artículo añadido a la lista de deseos',
+                'add' => 'Artículo agregado a la lista de deseos',
                 'remove' => 'Artículo eliminado de la lista de deseos',
-                'add-wishlist-text'     => 'Añadir producto a la lista de deseos',
-                'remove-wishlist-text'  => 'Eliminar producto de la lista de deseos',
-                'moved' => 'Artículo movido a la cesta exitosamente',
+                'moved' => 'Producto movido al carrito exitosamente',
+                'option-missing' => 'Algunas opciones del producto se perdieron, por eso el producto no se puede mover a Favoritos',
                 'move-error' => 'El artículo no se puede añadir a la lista de deseos, por favor inténtalo más tarde',
-                'success' => 'Artículo añadido a la lista de deseos',
+                'success' => 'Artículo agregado a la lista de deseos',
                 'failure' => 'El artículo no se puede añadir a la lista de deseos, por favor inténtalo más tarde',
                 'already' => 'Este artículo ya está en tu lista de deseos.',
                 'removed' => 'Artículo eliminado de la lista de deseos',
                 'remove-fail' => 'El artículo no se puede eliminar de la lista de deseos, por favor inténtalo más tarde',
                 'empty' => 'No tiene ningún producto en su lista de deseos',
-                'remove-all-success' => 'Todos los artículos de su lista de deseos han sido eliminados',
+                'remove-all-success' => 'Todos los artículos de su lista de deseos han sido eliminados'
             ],
 
             'downloadable_products' => [
@@ -364,8 +363,8 @@ return [
     ],
 
     'products' => [
-        'layered-nav-title' => 'Comprado por',
-        'price-label' => 'Tan bajo como',
+        'layered-nav-title' => 'Filtrar por',
+        'price-label' => 'Al precio de',
         'remove-filter-link-title' => 'Limpiar todo',
         'filter-to' => 'a',
         'sort-by' => 'Ordenar por',
@@ -373,7 +372,7 @@ return [
         'from-z-a' => 'De Z-A',
         'newest-first' => 'Lo más nuevo primero',
         'oldest-first' => 'Lo más antiguo primero',
-        'cheapest-first' => 'Lo más barato primero',
+        'cheapest-first' => 'Lo más economico primero',
         'expensive-first' => 'Lo más caro primero',
         'show' => 'Show',
         'pager-info' => 'Mostrar :showing of :total Items',
@@ -382,28 +381,28 @@ return [
         'total-reviews' => ':total Reviews',
         'total-rating' => ':total_rating Ratings & :total_reviews Reviews',
         'by' => 'Por :name',
-        'up-sell-title' => '¡Hemos encontrado otros productos que te pueden gustar!',
+        'up-sell-title' => 'Quizas te puede interesar...',
         'related-product-title' => 'Productos relacionados',
         'cross-sell-title' => 'Más opciones',
         'reviews-title' => 'Calificación y Opiniones',
         'write-review-btn' => 'Escribe una valoración',
-        'choose-option' => 'Elige una opción',
-        'sale' => 'En venta',
+        'choose-option' => 'Seleccioná',
+        'sale' => 'On sale',
         'new' => 'Nuevo',
         'empty' => 'No hay prodcutos disponibles en esta categoría',
-        'add-to-cart' => 'Añadir a la cesta',
+        'add-to-cart' => 'Agregar a la bolsa',
         'book-now' => 'reservar ahora',
         'buy-now' => 'Comprar ahora',
         'whoops' => 'Ups!',
         'quantity' => 'Cantidad',
-        'in-stock' => 'En estoc',
-        'out-of-stock' => 'Sin estoc',
+        'in-stock' => 'En stock',
+        'out-of-stock' => 'Sin stock',
         'view-all' => 'Ver todo',
         'select-above-options' => 'Primero selecciona las opciones de arriba.',
         'less-quantity' => 'La cantidad no debe ser inferior a uno.',
         'available-for-order' => 'Disponible para ordenar',
-        'settings' => 'Settings',
-        'compare_options' => 'Compare Options',
+        'settings' => 'Opciones',
+        'compare_options' => 'Opcion de comparación',
     ],
 
     // 'reviews' => [
@@ -414,37 +413,36 @@ return [
         'no-options' => 'Por favor selecciona las opciones antes de comprar este producto'
     ],
 
-
     'checkout' => [
         'cart' => [
             'integrity' => [
                 'missing_fields' =>'Faltan algunos campos requeridos',
                 'missing_options' =>'Faltan opciones configurables del producto',
             ],
-            'create-error' => 'Se encontraron problemas con la cesta de compra',
-            'title' => 'Cesta de la compra',
-            'empty' => 'Tu cesta está vacía',
-            'update-cart' => 'Actualizar cesta',
+            'create-error' => 'Se encontraron algunos problemas con el carrito',
+            'title' => 'Mi carrito',
+            'empty' => 'Tu carrito está vacío',
+            'update-cart' => 'Actualizar carrito',
             'continue-shopping' => 'Seguir comprando',
             'proceed-to-checkout' => 'Continuar con el pago',
             'remove' => 'Eliminar',
             'remove-link' => 'Eliminar',
-            'move-to-wishlist' => 'Mover a la lista de deseos',
+            'move-to-wishlist' => 'Mover a Favoritos',
             'move-to-wishlist-success' => 'Artículo movido a la lista de deseos',
             'move-to-wishlist-error' => 'El artículo no se puede añadir a la lista de deseos, por favor inténtalo más tarde',
-            'add-config-warning' => 'Por favor selecciona las opciones antes de añadir a la cesta',
+            'add-config-warning' => 'Por favor selecciona las opciones antes de añadir al carrito',
             'quantity' => [
                 'quantity' => 'Cantidad',
-                'success' => 'Cesta actualizada exitosamente',
+                'success' => 'Carrito actualizado exitosamente',
                 'illegal' => 'La cantidad no puede ser menor que uno',
                 'inventory_warning' => 'La cantidad solicitada no está disponible, inténtelo más tarde',
                 'error' => 'No se pueden actualizar los artículos, inténtelo más tarde'
             ],
             'item' => [
-                'error_remove' => 'No hay artículos que eliminar en la cesta',
-                'success' => 'El artículp se añadió a la cesta',
-                'success-remove' => 'El artículo se eliminó de la cesta',
-                'error-add' => 'El artículo no se puede añadir a la cesta, inténtelo más tarde',
+                'error_remove' => 'No hay productos que eliminar en el carrito',
+                'success' => 'El producto se añadió al carrito',
+                'success-remove' => 'El producto se eliminó del carrito',
+                'error-add' => 'El producto no se puede añadir al carrito, inténtelo más tarde',
             ],
             'quantity-error' => 'La cantidad solicitada no está disponible',
             'cart-subtotal' => 'Total parcial',
@@ -460,28 +458,29 @@ return [
             'information' => 'Información',
             'shipping' => 'Envío',
             'payment' => 'Pago',
-            'complete' => 'Completo',
+            'complete' => 'Completado',
             'review' => 'revisión',
             'billing-address' => 'Dirección de facturación',
             'sign-in' => 'Entrar',
             'first-name' => 'Nombre',
             'last-name' => 'Apellido',
-            'email' => 'Correo electrónico',
+            'email' => 'Email',
             'address1' => 'Calle',
             'city' => 'Ciudad',
-            'state' => 'Estado',
+            'state' => 'Provincia',
             'select-state' => 'Selecciona una región, estado o provincia',
             'postcode' => 'Código postal',
             'phone' => 'Teléfono',
             'country' => 'País',
-            'order-summary' => 'Resumen del pedido',
+            'enter-coupon-code' => 'Cupón de descuento',
+            'order-summary' => 'Detalle de facturación',
             'shipping-address' => 'Dirección de envío',
             'use_for_shipping' => 'Enviar a esta dirección',
             'continue' => 'Continuar',
-            'shipping-method' => 'Seleccionar método de envío',
-            'payment-methods' => 'Seleccionar forma de pago',
+            'shipping-method' => 'Método de envío',
+            'payment-methods' => 'Forma de pago',
             'payment-method' => 'Forma de pago',
-            'summary' => 'Resumen del pedido',
+            'summary' => 'Detalle de facturación',
             'price' => 'Precio',
             'quantity' => 'Cantidad',
             'billing-address' => 'Dirección de facturación',
@@ -500,22 +499,25 @@ return [
             'cash-desc' => 'Pago en efectivo',
             'money-desc' => 'Transferencia bancaria',
             'paypal-desc' => 'Paypal',
+            'password' => 'Contraseña',
             'free-desc' => 'Envío gratuito',
-            'flat-desc' => 'Esta es una tarifa plana'
+            'flat-desc' => 'Esta es una tarifa plana',
+            'enter-coupon-code' => 'Ingresar cupón'
         ],
 
         'total' => [
-            'order-summary' => 'Resumen del pedido',
+            'order-summary' => 'Detalle de facturación',
             'sub-total' => 'Artículos',
             'grand-total' => 'Total',
             'delivery-charges' => 'Gastos de envío',
             'tax' => 'Impuesto',
             'discount' => 'Descuento',
             'price' => 'Precio',
-            'disc-amount' => 'Cantidad descontada',
+            'disc-amount' => 'Cantidad de dto.',
             'new-grand-total' => 'Total',
             'coupon' => 'Cupón',
             'coupon-applied' => 'Cupón aplicado',
+            'invalid-coupon' => 'Cupón inválido.',
             'remove-coupon' => 'Eliminar cupón',
             'cannot-apply-coupon' => 'No se puede aplicar cupón'
         ],
@@ -532,11 +534,11 @@ return [
         'order' => [
             'subject' => 'Nuevo pedido confirmado',
             'heading' => '¡Pedido Confirmado!',
-            'dear' => 'Estimado/a :customer_name',
-            'dear-admin' => 'Estimado/a :admin_name',
-            'greeting' => 'Gracias por tu pedido :order_id placed on :created_at',
-            'greeting-admin' => 'Pedido número :order_id placed on :created_at',
-            'summary' => 'Resumen del pedido',
+            'dear' => ' :customer_name',
+            'dear-admin' => ' :admin_name',
+            'greeting' => 'Gracias por tu compra :order_id solicitada el :created_at',
+            'greeting-admin' => 'Número de pedido :order_id, solicitado el :created_at',
+            'summary' => 'Detalle de facturación',
             'shipping-address' => 'Dirección de envío',
             'billing-address' => 'Dirección de facturación',
             'contact' => 'Contacto',
@@ -545,7 +547,7 @@ return [
             'price' => 'Precio',
             'quantity' => 'Cantidad',
             'subtotal' => 'Subtotal',
-            'shipping-handling' => 'Envío y manipulación',
+            'shipping-handling' => 'Envío',
             'tax' => 'Impuesto',
             'discount' => 'Descuento',
             'grand-total' => 'Total',
@@ -564,16 +566,16 @@ return [
             'cancel' => [
                 'subject' => 'Confirmación de pedido cancelado',
                 'heading' => 'Pedido cancelado',
-                'dear' => 'Estimado/a :customer_name',
-                'greeting' => 'Tu pedido con el número #:order_id placed on :created_at ha sido cancelado',
-                'summary' => 'Resumen del pedido',
+                'dear' => ':customer_name',
+                'greeting' => 'Tu pedido con el número :order_id predido el :created_at ha sido cancelado',
+                'summary' => 'Detalle de facturación',
                 'shipping-address' => 'Dirección de envío',
                 'billing-address' => 'Dirección de facturación',
                 'contact' => 'Contacto',
                 'shipping' => 'Método de envío',
                 'payment' => 'Forma de pago',
                 'subtotal' => 'Subtotal',
-                'shipping-handling' => 'Envío y Manipulación',
+                'shipping-handling' => 'Envío',
                 'tax' => 'Impuesto',
                 'discount' => 'Descuento',
                 'grand-total' => 'Total',
@@ -583,37 +585,37 @@ return [
             ]
         ],
         'invoice' => [
-            'heading' => 'Tu factura #:invoice_id for Order #:order_id',
+            'heading' => 'Tu factura #:invoice_id del pedido #:order_id',
             'subject' => 'Factura de tu pedido #:order_id',
-            'summary' => 'Resumen de pedido',
+            'summary' => 'Detalle de facturación',
         ],
         'shipment' => [
-            'heading' => 'El Envío #:shipment_id  ha sido generado por el pedido #:order_id',
-            'inventory-heading' => 'Nuevo envío #:shipment_id ha sido generado por el pedido #:order_id',
+            'heading' => 'El Envío #:shipment_id  ha sido generado para el pedido #:order_id',
+            'inventory-heading' => 'Nuevo envío #:shipment_id ha sido generado para el pedido #:order_id',
             'subject' => 'Envío de tu pedido #:order_id',
-            'inventory-subject' => 'Nuevo envío ha sido generado por el pedido #:order_id',
-            'summary' => 'Resumen de envío',
+            'inventory-subject' => 'Nuevo envío ha sido generado para el pedido #:order_id',
+            'summary' => 'Detalle de facturación',
             'carrier' => 'Transportista',
             'tracking-number' => 'Número de seguimiento',
             'greeting' => 'El pedido :order_id ha sido enviado a :created_at',
         ],
         'forget-password' => [
-            'subject' => 'Restablecer contraseña cliente',
-            'dear' => 'Estimado/a :name',
-            'info' => 'Te hemos enviado este correo porque hemos recibido una solicitud para restablecer la contraseña de tu cuenta',
+            'subject' => 'Restablecer contraseña',
+            'dear' => ':name',
+            'info' => 'Te enviamos este correo porque recibimos una solicitud para restablecer la contraseña de tu cuenta',
             'reset-password' => 'Restablecer contraseña',
-            'final-summary' => 'Si no has solicitado cambiar de contraseña, ninguna acción es requerida por tu parte.',
+            'final-summary' => 'Si no solicitaste cambiar tu contraseña, ignorá este correo.',
             'thanks' => '¡Gracias!'
         ],
         'update-password' => [
-            'subject' => 'Contraseña actualiza',
+            'subject' => 'Contraseña actualizada',
             'dear' => 'Estimado/a :name',
             'info' => 'Está recibiendo este correo electrónico porque ha actualizado su contraseña.',
             'thanks' => '¡Gracias!'
         ],
         'customer' => [
             'new' => [
-                'dear' => 'Estimado/a :customer_name',
+                'dear' => ':customer_name',
                 'username-email' => 'Nombre de usuario/Email',
                 'subject' => 'Nuevo registro de cliente',
                 'password' => 'Contraseña',
@@ -625,32 +627,32 @@ return [
             'registration' => [
                 'subject' => 'Nuevo registro de cliente',
                 'customer-registration' => 'Cliente registrado exitosamente',
-                'dear' => 'Estimado/a :customer_name',
-                'greeting' => '¡Bienvenido y gracias por registrarte en Bassar!',
-                'summary' => 'Your account has now been created successfully and you can login using your email address and password credentials. Upon logging in, you will be able to access other services including reviewing past orders, wishlists and editing your account information.',
+                'dear' => ':customer_name',
+                'greeting' => '¡Bienvenido y gracias por registrarte en Reina Batata!',
+                'summary' => 'Tu cuenta se creó con éxito, ya podes iniciar sesión con tu email y contraseña.',
                 'thanks' => '¡Gracias!',
             ],
 
             'verification' => [
-                'heading' => 'Bassar - Verificación por correo',
+                'heading' => 'Verificación por correo',
                 'subject' => 'Verificación por correo',
-                'verify' => 'Verifica tu cuenta',
+                'verify' => 'Verificá tu cuenta',
                 'summary' => 'Este mensaje es para verificar que esta dirección de mail es tuya.
-                Por favor, clica el botón de abajo para verificar tu cuenta.'
+                Por favor, seleccioná el botón de abajo para verificar tu cuenta.'
             ],
 
             'subscription' => [
-                'subject' => 'Subscripción mail',
-                'greeting' => ' Bienvenido a Bassar - Subscripción por mail',
+                'subject' => 'Mail de suscripción',
+                'greeting' => ' Bienvenido a Reina Batata - Subscripción por mail',
                 'unsubscribe' => 'Darse de baja',
-                'summary' => 'Gracias por ponernos en tu bandeja de entrada. Ha pasado un tiempo desde que leyó el último correo electrónico de Bassar, y no queremos abrumar su bandeja de entrada. Si ya no quiere recibir
-                las últimas noticias de marketing, haga clic en el botón de abajo.'
+                'summary' => 'Gracias por ponernos en tu bandeja de entrada. Te vamos a mantener al tanto de nuestras promociones y sorteos. Si ya no queŕes recibir
+                nuestras últimas noticias, hacé clic en el botón de abajo.'
             ]
         ]
     ],
 
     'webkul' => [
-        'copy-right' => '© Copyright :year Webkul Software, All rights reserved',
+        'copy-right' => '©:year - Marketplace desarrollado por Euphorium Software.',
     ],
 
     'response' => [
