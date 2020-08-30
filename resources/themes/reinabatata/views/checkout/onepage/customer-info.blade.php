@@ -57,9 +57,7 @@
                                 @click="validateFormAfterAction"
                                 class="card-body add-address-button">
                                     <div class="cursor-pointer" @click="newBillingAddress()">
-                                        <i class="material-icons">
-                                            add_circle_outline
-                                        </i>
+                                        <i class="rango-zoom-plus fs24"></i>
                                         <span>{{ __('shop::app.checkout.onepage.new-address') }}</span>
                                     </div>
                                 </div>
@@ -194,9 +192,7 @@
                             @click="validateFormAfterAction"
                             class="card-body add-address-button">
                                 <div class="cursor-pointer" @click="newShippingAddress()">
-                                    <i class="material-icons">
-                                        add_circle_outline
-                                    </i>
+                                    <i class="rango-zoom-plus fs24"></i>
                                     <span>{{ __('shop::app.checkout.onepage.new-address') }}</span>
                                 </div>
                             </div>

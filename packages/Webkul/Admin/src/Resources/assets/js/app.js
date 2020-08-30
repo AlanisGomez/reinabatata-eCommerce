@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VeeValidate, { Validator } from 'vee-validate';
-import de from 'vee-validate/dist/locale/de';
+import es from 'vee-validate/dist/locale/es';
 import ar from 'vee-validate/dist/locale/ar';
 
 import './bootstrap';
@@ -11,7 +11,7 @@ window.VeeValidate = VeeValidate;
 Vue.use(VeeValidate, {
     dictionary: {
         ar: ar,
-        de: de,
+        es: es,
     },
     events: 'input|change|blur',
 });

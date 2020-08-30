@@ -6,13 +6,6 @@
 
 @section('page-detail-wrapper')
     <div class="account-head mt-3 mb-10">
-        <!-- <span class="back-icon">
-            <a class="unset" href="{{ route('customer.account.index') }}">
-                <span class="material-icons">
-                    keyboard_backspace
-                </span>
-            </a>
-        </span> -->
 
         <span class="account-heading">
             {{ __('shop::app.customer.account.order.index.title') }}

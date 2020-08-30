@@ -263,7 +263,7 @@
 
 
                     <a class="unset cursor-pointer" @click="openSearchBar">
-                        <i class="material-icons">search</i>
+                        <i class="fs16 fw5 rango-search"></i>
                     </a>
 
                     <a class="unset" :href="`${isCustomer ? '{{ route('customer.wishlist.index') }}' : '{{ route('reinabatata.product.guest-wishlist') }}'}`">
