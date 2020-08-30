@@ -528,7 +528,11 @@ class Core
 
         $formatter = new \NumberFormatter(app()->getLocale(), \NumberFormatter::CURRENCY);
 
-        return $formatter->formatCurrency($price, $currencyCode);
+        $price_symbol = $formatter->formatCurrency($price, $currencyCode);
+
+        $price  = explode("A", $price_symbol);
+
+        return $price[0];
     }
 
     /**

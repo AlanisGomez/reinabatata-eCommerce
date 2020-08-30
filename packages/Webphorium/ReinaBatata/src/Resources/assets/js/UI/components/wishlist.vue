@@ -1,7 +1,7 @@
 <template>
     <i
         v-if="isCustomer == 'true'"
-        v-bind:class="[ isActive ? 'rango-heart-fill' : 'rango-heart', 'fw5', 'fs24']"
+        v-bind:class="[ isActive ? 'rango-heart' : 'rango-heart-fill', 'fw5', 'fs24']"
         @mouseover="isActive ? isActive = !isActive : ''"
         @mouseout="active !== '' && !isActive ? isActive = !isActive : ''">
     </i>

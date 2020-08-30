@@ -400,7 +400,7 @@ class Configurable extends AbstractType
      */
     public function getPriceHtml()
     {
-        return '<span class="final-price">' . core()->currency($this->getMinimalPrice()) . '</span>';
+        return '<span class="final-price"> ARS' . core()->currency($this->getMinimalPrice()) . '</span>';
     }
 
     /**

@@ -40,11 +40,7 @@
     <div class="payable-amount row" id="grand-total-detail">
         <span class="col-6">{{ __('shop::app.checkout.total.grand-total') }}</span>
         <span class="col-6 text-right fw6" id="grand-total-amount-detail">
-            {{ core()->currency($cart->base_grand_total) }}
+            ARS {{ core()->currency($cart->base_grand_total) }}
         </span>
     </div>
-     <!-- <coupon-component class="d-block d-md-none"
-        @onApplyCoupon="getOrderSummary"
-        @onRemoveCoupon="getOrderSummary">
-    </coupon-component> -->
 </div>

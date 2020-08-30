@@ -143,7 +143,7 @@ return [
 
     'home'          => [
         'view-all'           => 'Ver todo',
-        'add-to-cart'        => 'Agregar a la bolsa',
+        'add-to-cart'        => 'Agregar al carrito',
         'hot-categories'     => 'Categorías populares',
         'payment-methods'    => 'Metodos de pago',
         'customer-reviews'   => 'Valoración de los clientes',
